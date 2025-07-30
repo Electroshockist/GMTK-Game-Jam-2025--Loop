@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bubo87ikeduf4"
-path.s3tc="res://.godot/imported/concrete_bare_01.jpg-ccd1935592f81c68801f7a55cd9d6879.s3tc.ctex"
+path.s3tc="res://.godot/imported/concrete_bare_01.jpg-8a2f6c2b2eb0855bc7c4fea81c69ca60.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Sewer/Sewer/textures/concrete_bare_01.jpg"
-dest_files=["res://.godot/imported/concrete_bare_01.jpg-ccd1935592f81c68801f7a55cd9d6879.s3tc.ctex"]
+source_file="res://assets/Sewer/Sewer/Textures/concrete_bare_01.jpg"
+dest_files=["res://.godot/imported/concrete_bare_01.jpg-8a2f6c2b2eb0855bc7c4fea81c69ca60.s3tc.ctex"]
 
 [params]
 

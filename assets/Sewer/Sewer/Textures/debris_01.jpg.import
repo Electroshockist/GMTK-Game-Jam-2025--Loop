@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://rfhmukfl654v"
-path.s3tc="res://.godot/imported/debris_01.jpg-fa16e19e1834ed4f4817eb3fa58777a5.s3tc.ctex"
+path.s3tc="res://.godot/imported/debris_01.jpg-212af3bcd75c5b2e59a261a7a761963a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Sewer/Sewer/textures/debris_01.jpg"
-dest_files=["res://.godot/imported/debris_01.jpg-fa16e19e1834ed4f4817eb3fa58777a5.s3tc.ctex"]
+source_file="res://assets/Sewer/Sewer/Textures/debris_01.jpg"
+dest_files=["res://.godot/imported/debris_01.jpg-212af3bcd75c5b2e59a261a7a761963a.s3tc.ctex"]
 
 [params]
 

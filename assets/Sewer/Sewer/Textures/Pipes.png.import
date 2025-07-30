@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxhel06fsepm5"
-path.s3tc="res://.godot/imported/Pipes.png-a9f1495746e7f413f057379e5e1037bb.s3tc.ctex"
+path.s3tc="res://.godot/imported/Pipes.png-95c5bcd429e855363d51a5d612bf65d9.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Sewer/Sewer/textures/Pipes.png"
-dest_files=["res://.godot/imported/Pipes.png-a9f1495746e7f413f057379e5e1037bb.s3tc.ctex"]
+source_file="res://assets/Sewer/Sewer/Textures/Pipes.png"
+dest_files=["res://.godot/imported/Pipes.png-95c5bcd429e855363d51a5d612bf65d9.s3tc.ctex"]
 
 [params]
 

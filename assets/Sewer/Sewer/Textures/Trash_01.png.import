@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dp7cplmlotw5a"
-path.s3tc="res://.godot/imported/Trash_01.png-43cb79a1103ba55d473439c44fe2e8c7.s3tc.ctex"
+path.s3tc="res://.godot/imported/Trash_01.png-a969c378eaa982057bce41399a3968fa.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Sewer/Sewer/textures/Trash_01.png"
-dest_files=["res://.godot/imported/Trash_01.png-43cb79a1103ba55d473439c44fe2e8c7.s3tc.ctex"]
+source_file="res://assets/Sewer/Sewer/Textures/Trash_01.png"
+dest_files=["res://.godot/imported/Trash_01.png-a969c378eaa982057bce41399a3968fa.s3tc.ctex"]
 
 [params]
 
