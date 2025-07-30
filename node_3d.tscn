@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwi6rklknjg7d"]
+
+[ext_resource type="Script" uid="uid://c0n43rc1ljco5" path="res://node_3d.gd" id="1_noarx"]
+[ext_resource type="PackedScene" uid="uid://bp3vqc03pikct" path="res://assets/Sewer/Sewer/Models/Sewers.fbx" id="2_noarx"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_noarx")
+
+[node name="Sewers" parent="." instance=ExtResource("2_noarx")]
