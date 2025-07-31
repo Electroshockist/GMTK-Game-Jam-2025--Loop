@@ -1,12 +1,16 @@
-[gd_scene load_steps=8 format=3 uid="uid://b4ewryohmxcko"]
+[gd_scene load_steps=10 format=3 uid="uid://b4ewryohmxcko"]
 
-[ext_resource type="PackedScene" uid="uid://xp63vea7nc4c" path="res://assets/Metro_PSX/Metro_PSX/Models/Metro_slipt/st_04.tscn" id="1_8tuet"]
-[ext_resource type="PackedScene" uid="uid://b6n28aiqja6it" path="res://assets/Sewer/Sewer/Models/Sewer_slipt/serwers_003.tscn" id="3_4pgfi"]
-[ext_resource type="PackedScene" uid="uid://gwlueupaotra" path="res://assets/Sewer/Sewer/Models/Sewer_slipt/serwers.tscn" id="4_dcp4o"]
-[ext_resource type="PackedScene" uid="uid://dovndgw0vum6n" path="res://assets/Metro_PSX/Metro_PSX/Models/Metro_slipt/st_03.tscn" id="5_4pgfi"]
-[ext_resource type="PackedScene" uid="uid://cp0jc0ns1wdlx" path="res://assets/Sewer/Sewer/Models/Sewer_slipt/serwers_p_1_008.tscn" id="5_nhwf4"]
-[ext_resource type="PackedScene" uid="uid://cl2wj13fhfm3g" path="res://assets/Sewer/Sewer/Models/Sewer_slipt/serwers_001.tscn" id="6_dcp4o"]
-[ext_resource type="PackedScene" uid="uid://daantvv3eeq2c" path="res://assets/Sewer/Sewer/Models/Sewer_slipt/serwers_p_1_010.tscn" id="7_nhwf4"]
+[ext_resource type="PackedScene" uid="uid://xp63vea7nc4c" path="res://assets/model/Metro_PSX/Models/Metro_slipt/st_04.tscn" id="1_8tuet"]
+[ext_resource type="PackedScene" uid="uid://b6n28aiqja6it" path="res://assets/model/Sewer/Models/Sewer_split/serwers_003.tscn" id="3_4pgfi"]
+[ext_resource type="PackedScene" uid="uid://gwlueupaotra" path="res://assets/model/Sewer/Models/Sewer_split/serwers.tscn" id="4_dcp4o"]
+[ext_resource type="PackedScene" uid="uid://dovndgw0vum6n" path="res://assets/model/Metro_PSX/Models/Metro_slipt/st_03.tscn" id="5_4pgfi"]
+[ext_resource type="PackedScene" uid="uid://cp0jc0ns1wdlx" path="res://assets/model/Sewer/Models/Sewer_split/serwers_p_1_008.tscn" id="5_nhwf4"]
+[ext_resource type="PackedScene" uid="uid://cl2wj13fhfm3g" path="res://assets/model/Sewer/Models/Sewer_split/serwers_001.tscn" id="6_dcp4o"]
+[ext_resource type="PackedScene" uid="uid://daantvv3eeq2c" path="res://assets/model/Sewer/Models/Sewer_split/serwers_p_1_010.tscn" id="7_nhwf4"]
+[ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/Character/character.tscn" id="8_dcp4o"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dcp4o"]
+size = Vector3(6, 1, 1.63818)
 
 [node name="Scene_01" type="Node3D"]
 
@@ -53,3 +57,13 @@ transform = Transform3D(100, 0, -0.0366449, 0, 100, 0, 0.0366449, 0, 100, -12.42
 
 [node name="SerwersP1_010" parent="." instance=ExtResource("7_nhwf4")]
 transform = Transform3D(-7.35748e-06, 1.92619e-08, 168.32, 0.44066, 168.319, 1.49498e-15, -168.319, 0.44066, -7.3575e-06, -12.5161, 2.58542, 15.8461)
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("8_dcp4o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.7048, 2.12076, 17.0941)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.725942, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0.506547, -1.20438)
+shape = SubResource("BoxShape3D_dcp4o")
