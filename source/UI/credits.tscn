@@ -13,31 +13,32 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = -12.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Sample Text"
 label_settings = SubResource("LabelSettings_muyvs")
 horizontal_alignment = 1
 
-[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/VBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = 30
 theme_override_constants/margin_right = 30
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/VBoxContainer/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer"]
 layout_mode = 2
 theme_override_constants/separation = 10
 
-[node name="BackButton" parent="CenterContainer/VBoxContainer/MarginContainer/VBoxContainer" instance=ExtResource("1_v75xs")]
+[node name="BackButton" parent="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer" instance=ExtResource("1_v75xs")]
 layout_mode = 2

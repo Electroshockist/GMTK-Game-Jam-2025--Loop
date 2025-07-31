@@ -1,6 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://cych0u7ljeb2n"]
+[gd_scene load_steps=15 format=3 uid="uid://cych0u7ljeb2n"]
 
-[ext_resource type="Script" uid="uid://kr5yhfbwvjje" path="res://source/game/character.gd" id="1_os8ji"]
+[ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/Character/character.tscn" id="1_os8ji"]
+[ext_resource type="PackedScene" uid="uid://bg7fmswynb4pb" path="res://source/game/interactable.tscn" id="2_8huq6"]
+[ext_resource type="Material" uid="uid://c7s34nxjen1xw" path="res://assets/shaders/psx_mat.tres" id="2_s5pdw"]
+[ext_resource type="PackedScene" uid="uid://daq2ktcnqj41c" path="res://assets/model/Metro_PSX/Models/Metro_slipt/chair.tscn" id="4_b6cy3"]
+[ext_resource type="Shader" uid="uid://h8trqbl805pv" path="res://assets/shaders/psx_shader.gdshader" id="5_0sa0k"]
+[ext_resource type="Texture2D" uid="uid://c0pmufhk586e0" path="res://assets/model/Metro_PSX/Models/Metro_Chair.png" id="6_2e1t2"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8huq6"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -14,10 +19,6 @@ background_mode = 2
 sky = SubResource("Sky_e4lxu")
 tonemap_mode = 2
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3fkvc"]
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_odid6"]
-
 [sub_resource type="PlaneMesh" id="PlaneMesh_7slvv"]
 size = Vector2(30, 30)
 
@@ -26,6 +27,15 @@ size = Vector2(30, 30)
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_qjn7n"]
 
 [sub_resource type="TorusMesh" id="TorusMesh_kvde8"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yhrcq"]
+render_priority = 0
+shader = ExtResource("5_0sa0k")
+shader_parameter/affine_mapping = true
+shader_parameter/albedo = ExtResource("6_2e1t2")
+shader_parameter/alpha_scissor = 0.5
+shader_parameter/jitter = 0.25
+shader_parameter/resolution = Vector2i(320, 240)
 
 [node name="CharacterTest" type="Node3D"]
 
@@ -36,22 +46,10 @@ environment = SubResource("Environment_fm3sh")
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
 shadow_enabled = true
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="." node_paths=PackedStringArray("camera")]
-script = ExtResource("1_os8ji")
-camera = NodePath("Camera3D")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-shape = SubResource("CapsuleShape3D_3fkvc")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-mesh = SubResource("CapsuleMesh_odid6")
-
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
+[node name="CharacterBody3D" parent="." instance=ExtResource("1_os8ji")]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = ExtResource("2_s5pdw")
 mesh = SubResource("PlaneMesh_7slvv")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
@@ -61,8 +59,17 @@ shape = SubResource("WorldBoundaryShape3D_g7fi7")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.77519, -1.12609, -5.79369, -2.4358, -4.10672, 1.18432, -7.96744, 1.00461, -1.65294, 0, 1.89294, -7.00298)
+material_override = ExtResource("2_s5pdw")
 mesh = SubResource("CapsuleMesh_qjn7n")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
 transform = Transform3D(-6.49298, 1.00737, -0.503834, -3.34719, -2.10078, 0.596512, -0.596142, 0.823393, 2.13833, -0.728171, 3.95255, 0.454929)
+material_override = ExtResource("2_s5pdw")
 mesh = SubResource("TorusMesh_kvde8")
+
+[node name="Interactable" parent="." instance=ExtResource("2_8huq6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.98892, 0.926293, 3.7885)
+
+[node name="Chair" parent="." instance=ExtResource("4_b6cy3")]
+transform = Transform3D(113.949, 0, 0, 0, -1.35838e-05, 113.949, 0, -113.949, -1.35838e-05, -1.98928, 0.526775, 4.90891)
+material_override = SubResource("ShaderMaterial_yhrcq")

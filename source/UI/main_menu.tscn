@@ -1,8 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://t851h6i8wqeo"]
+[gd_scene load_steps=13 format=3 uid="uid://t851h6i8wqeo"]
 
 [ext_resource type="Script" uid="uid://cttmxvcvuh4oy" path="res://source/UI/main_menu.gd" id="1_ekxnf"]
 [ext_resource type="Texture2D" uid="uid://c7eaotevcyuo1" path="res://assets/1000_F_254347897_MVMdx2XoHbI6KLIayKJCBKRtbBZAIPeV.jpg" id="1_l6cm7"]
-[ext_resource type="LabelSettings" uid="uid://b6psyydw0sybp" path="res://source/UI/main_menu_label_settings.tres" id="3_xig0v"]
+[ext_resource type="Texture2D" uid="uid://bvboke1inuk1e" path="res://assets/sprites/Buttons/START BASE.png" id="3_41ywg"]
+[ext_resource type="Texture2D" uid="uid://cspwq1xseltv6" path="res://assets/sprites/Buttons/START PRESSED.png" id="4_w6174"]
+[ext_resource type="Texture2D" uid="uid://bvha5b2st5u72" path="res://assets/sprites/Buttons/START SELECTED.png" id="5_xm3wm"]
+[ext_resource type="Texture2D" uid="uid://dpctlipbq780o" path="res://assets/sprites/Buttons/CREDITS BASE.png" id="6_dmxiq"]
+[ext_resource type="Texture2D" uid="uid://brrl3g2qi51cd" path="res://assets/sprites/Buttons/CREDITS PRESSED.png" id="7_ou2qn"]
+[ext_resource type="Texture2D" uid="uid://bv3y88isrprqw" path="res://assets/sprites/Buttons/CREDITS SELECTED.png" id="8_c2npr"]
+[ext_resource type="Texture2D" uid="uid://ds5xsm2ohwsdk" path="res://assets/sprites/Buttons/QUIT BASE.png" id="9_nk7bp"]
+[ext_resource type="Texture2D" uid="uid://ctmj738hcym7t" path="res://assets/sprites/Buttons/QUIT PRESSED.png" id="10_p3fqg"]
+[ext_resource type="Texture2D" uid="uid://b0nofbx6tdwwy" path="res://assets/sprites/Buttons/QUIT SELECTED.png" id="11_k3u35"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_vue75"]
 font_size = 48
@@ -25,85 +33,69 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_l6cm7")
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 300
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 300
+theme_override_constants/margin_bottom = 175
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Sample Text"
 label_settings = SubResource("LabelSettings_vue75")
 horizontal_alignment = 1
 
-[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/VBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_constants/margin_left = 30
-theme_override_constants/margin_right = 30
+size_flags_vertical = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/VBoxContainer/MarginContainer"]
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer"]
 layout_mode = 2
+size_flags_vertical = 3
 theme_override_constants/separation = 10
 
-[node name="Container" type="MarginContainer" parent="CenterContainer/VBoxContainer/MarginContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Play Button" type="TextureButton" parent="CenterContainer/VBoxContainer/MarginContainer/VBoxContainer/Container"]
+[node name="Play Button" type="TextureButton" parent="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer2"]
 layout_mode = 2
 size_flags_vertical = 3
+texture_normal = ExtResource("3_41ywg")
+texture_pressed = ExtResource("4_w6174")
+texture_hover = ExtResource("5_xm3wm")
+ignore_texture_size = true
+stretch_mode = 5
 
-[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/MarginContainer/VBoxContainer/Container"]
-layout_mode = 2
-text = "Play"
-label_settings = ExtResource("3_xig0v")
-horizontal_alignment = 1
-
-[node name="Container2" type="MarginContainer" parent="CenterContainer/VBoxContainer/MarginContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Options Button" type="TextureButton" parent="CenterContainer/VBoxContainer/MarginContainer/VBoxContainer/Container2"]
+[node name="Options Button" type="TextureButton" parent="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer2"]
 layout_mode = 2
 size_flags_vertical = 3
+ignore_texture_size = true
 
-[node name="Label2" type="Label" parent="CenterContainer/VBoxContainer/MarginContainer/VBoxContainer/Container2"]
-layout_mode = 2
-text = "Options"
-label_settings = ExtResource("3_xig0v")
-horizontal_alignment = 1
-
-[node name="Container3" type="MarginContainer" parent="CenterContainer/VBoxContainer/MarginContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Credits Button" type="TextureButton" parent="CenterContainer/VBoxContainer/MarginContainer/VBoxContainer/Container3"]
+[node name="Credits Button" type="TextureButton" parent="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer2"]
 layout_mode = 2
 size_flags_vertical = 3
+texture_normal = ExtResource("6_dmxiq")
+texture_pressed = ExtResource("7_ou2qn")
+texture_hover = ExtResource("8_c2npr")
+ignore_texture_size = true
+stretch_mode = 5
 
-[node name="Label3" type="Label" parent="CenterContainer/VBoxContainer/MarginContainer/VBoxContainer/Container3"]
-layout_mode = 2
-text = "Credits"
-label_settings = ExtResource("3_xig0v")
-horizontal_alignment = 1
-
-[node name="CenterContainer3" type="MarginContainer" parent="CenterContainer/VBoxContainer/MarginContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Quit Button" type="TextureButton" parent="CenterContainer/VBoxContainer/MarginContainer/VBoxContainer/CenterContainer3"]
+[node name="Quit Button" type="TextureButton" parent="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer2"]
 layout_mode = 2
 size_flags_vertical = 3
+texture_normal = ExtResource("9_nk7bp")
+texture_pressed = ExtResource("10_p3fqg")
+texture_hover = ExtResource("11_k3u35")
+ignore_texture_size = true
+stretch_mode = 5
 
-[node name="Label4" type="Label" parent="CenterContainer/VBoxContainer/MarginContainer/VBoxContainer/CenterContainer3"]
-layout_mode = 2
-text = "Quit"
-label_settings = ExtResource("3_xig0v")
-horizontal_alignment = 1
-
-[connection signal="pressed" from="CenterContainer/VBoxContainer/MarginContainer/VBoxContainer/Container/Play Button" to="." method="_on_button_pressed" binds= [0]]
-[connection signal="pressed" from="CenterContainer/VBoxContainer/MarginContainer/VBoxContainer/Container2/Options Button" to="." method="_on_button_pressed" binds= [1]]
-[connection signal="pressed" from="CenterContainer/VBoxContainer/MarginContainer/VBoxContainer/Container3/Credits Button" to="." method="_on_button_pressed" binds= [2]]
-[connection signal="pressed" from="CenterContainer/VBoxContainer/MarginContainer/VBoxContainer/CenterContainer3/Quit Button" to="." method="_on_button_pressed" binds= [-1]]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer2/Play Button" to="." method="_on_button_pressed" binds= [0]]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer2/Options Button" to="." method="_on_button_pressed" binds= [1]]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer2/Credits Button" to="." method="_on_button_pressed" binds= [2]]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer2/Quit Button" to="." method="_on_button_pressed" binds= [-1]]

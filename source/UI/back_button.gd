@@ -1,4 +1,4 @@
-extends Button
+extends TextureButton
 
 @export var prev_scene: PackedScene
 

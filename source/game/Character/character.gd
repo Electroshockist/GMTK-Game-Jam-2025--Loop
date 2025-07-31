@@ -7,7 +7,7 @@ const JUMP_VELOCITY = 4.5
 
 func _input(event):
 	if event is InputEventMouseMotion:
-		rotation_degrees.y += event.relative.x
+		rotation_degrees.y -= event.relative.x
 		camera.rotation_degrees.x -= event.relative.y
 
 		
