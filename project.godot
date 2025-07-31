@@ -21,6 +21,13 @@ config/icon="res://icon.svg"
 SceneManager="*res://source/scene_manager.gd"
 GameManager="*res://source/game_manager.gd"
 
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=620
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
+
 [input]
 
 move_up={

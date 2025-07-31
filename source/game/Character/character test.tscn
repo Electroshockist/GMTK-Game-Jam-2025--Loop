@@ -1,11 +1,10 @@
-[gd_scene load_steps=15 format=3 uid="uid://cych0u7ljeb2n"]
+[gd_scene load_steps=16 format=3 uid="uid://cych0u7ljeb2n"]
 
 [ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/Character/character.tscn" id="1_os8ji"]
 [ext_resource type="PackedScene" uid="uid://bg7fmswynb4pb" path="res://source/game/interactable.tscn" id="2_8huq6"]
 [ext_resource type="Material" uid="uid://c7s34nxjen1xw" path="res://assets/shaders/psx_mat.tres" id="2_s5pdw"]
 [ext_resource type="PackedScene" uid="uid://daq2ktcnqj41c" path="res://assets/model/Metro_PSX/Models/Metro_slipt/chair.tscn" id="4_b6cy3"]
-[ext_resource type="Shader" uid="uid://h8trqbl805pv" path="res://assets/shaders/psx_shader.gdshader" id="5_0sa0k"]
-[ext_resource type="Texture2D" uid="uid://c0pmufhk586e0" path="res://assets/model/Metro_PSX/Models/Metro_Chair.png" id="6_2e1t2"]
+[ext_resource type="Texture2D" uid="uid://c0pmufhk586e0" path="res://assets/model/Metro_PSX/Models/Metro_Chair.png" id="5_jf753"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8huq6"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -19,6 +18,66 @@ background_mode = 2
 sky = SubResource("Sky_e4lxu")
 tonemap_mode = 2
 
+[sub_resource type="Shader" id="Shader_yy5kp"]
+code = "shader_type spatial;
+render_mode blend_mix,
+	cull_disabled,
+	depth_prepass_alpha,
+	shadows_disabled,
+	specular_disabled,
+	vertex_lighting;
+
+uniform bool affine_mapping = false;
+uniform sampler2D albedo : source_color, filter_nearest;
+uniform float alpha_scissor : hint_range(0, 1) = 0.5;
+uniform float jitter: hint_range(0, 1) = 0.25;
+uniform ivec2 resolution = ivec2(320, 240);
+
+vec4 snap_to_position(vec4 base_position)
+{
+	vec4 snapped_position = base_position;
+	snapped_position.xyz = base_position.xyz / base_position.w;
+
+	vec2 snap_resulotion = floor(vec2(resolution) * (1.0 - jitter));
+	snapped_position.x = floor(snap_resulotion.x * snapped_position.x) / snap_resulotion.x;
+	snapped_position.y = floor(snap_resulotion.y * snapped_position.y) / snap_resulotion.y;
+
+	snapped_position.xyz *= base_position.w;
+	return snapped_position;
+}
+
+void vertex()
+{
+	vec4 snapped_position = snap_to_position(PROJECTION_MATRIX * MODELVIEW_MATRIX * vec4(VERTEX, 1.0));
+	if (affine_mapping)
+	{
+		POSITION = snapped_position;
+		POSITION /= abs(POSITION.w);
+	}
+	else
+	{
+		POSITION = snapped_position;
+	}
+}
+
+void fragment()
+{
+	vec4 color_base = COLOR;
+	vec4 texture_color = texture(albedo, UV);
+
+	ALBEDO = (color_base * texture_color).rgb;
+	ALPHA = texture_color.a * color_base.a;
+	ALPHA_SCISSOR_THRESHOLD = alpha_scissor;
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_b6cy3"]
+render_priority = 0
+shader = SubResource("Shader_yy5kp")
+shader_parameter/affine_mapping = true
+shader_parameter/alpha_scissor = 0.5
+shader_parameter/jitter = 0.25
+shader_parameter/resolution = Vector2i(320, 240)
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_7slvv"]
 size = Vector2(30, 30)
 
@@ -28,11 +87,11 @@ size = Vector2(30, 30)
 
 [sub_resource type="TorusMesh" id="TorusMesh_kvde8"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_yhrcq"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0sa0k"]
 render_priority = 0
-shader = ExtResource("5_0sa0k")
-shader_parameter/affine_mapping = true
-shader_parameter/albedo = ExtResource("6_2e1t2")
+shader = SubResource("Shader_yy5kp")
+shader_parameter/affine_mapping = false
+shader_parameter/albedo = ExtResource("5_jf753")
 shader_parameter/alpha_scissor = 0.5
 shader_parameter/jitter = 0.25
 shader_parameter/resolution = Vector2i(320, 240)
@@ -49,7 +108,7 @@ shadow_enabled = true
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_os8ji")]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-material_override = ExtResource("2_s5pdw")
+material_override = SubResource("ShaderMaterial_b6cy3")
 mesh = SubResource("PlaneMesh_7slvv")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
@@ -72,4 +131,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.98892, 0.926293, 3.7885)
 
 [node name="Chair" parent="." instance=ExtResource("4_b6cy3")]
 transform = Transform3D(113.949, 0, 0, 0, -1.35838e-05, 113.949, 0, -113.949, -1.35838e-05, -1.98928, 0.526775, 4.90891)
-material_override = SubResource("ShaderMaterial_yhrcq")
+material_override = SubResource("ShaderMaterial_0sa0k")
