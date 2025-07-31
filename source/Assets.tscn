@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dddnvoo5x5r0d"]
 
-[ext_resource type="PackedScene" uid="uid://ck7ufqnd7duvn" path="res://assets/Metro_PSX/Metro_PSX/Models/Metro.glb" id="1_yygsb"]
+[ext_resource type="PackedScene" uid="uid://ck7ufqnd7duvn" path="res://assets/model/Metro_PSX/Models/Metro.glb" id="1_yygsb"]
 
 [node name="Assets" type="Node3D"]
 

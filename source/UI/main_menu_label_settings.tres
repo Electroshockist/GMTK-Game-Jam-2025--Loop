@@ -1,4 +1,7 @@
-[gd_resource type="LabelSettings" format=3 uid="uid://b6psyydw0sybp"]
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://b6psyydw0sybp"]
+
+[ext_resource type="FontFile" uid="uid://5lck5jj3neiv" path="res://assets/fonts/Glass_Antiqua/GlassAntiqua-Regular.ttf" id="1_1sy3r"]
 
 [resource]
+font = ExtResource("1_1sy3r")
 font_size = 32

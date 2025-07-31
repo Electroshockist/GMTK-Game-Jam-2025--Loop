@@ -1,0 +1,110 @@
+[gd_scene load_steps=9 format=4 uid="uid://v3rjtej3pfb0"]
+
+[ext_resource type="Texture2D" uid="uid://ch6tqtebaxs7w" path="res://assets/model/Sewer/Textures/brick_modern.jpg" id="1_kyqc6"]
+[ext_resource type="Texture2D" uid="uid://bubo87ikeduf4" path="res://assets/model/Sewer/Textures/concrete_bare_01.jpg" id="2_islee"]
+[ext_resource type="Texture2D" uid="uid://b6mla7pm740lk" path="res://assets/model/Sewer/Textures/brick_pavement.jpg" id="3_6pyky"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ckohk"]
+resource_name = "brick_modern"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_kyqc6")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ni70p"]
+resource_name = "concrete_bare_01"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("2_islee")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1inbi"]
+resource_name = "brick_pavement"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("3_6pyky")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_winr6"]
+_surfaces = [{
+"aabb": AABB(-0.0209336, -0.00310414, -0.0192669, 0.0418672, 0.0283978, 0.0385337),
+"format": 34359742465,
+"index_count": 48,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAgAEAAAABQAAAAQABAAGAAUAAQAHAAMACAADAAcABwAJAAgACAAJAAoACgALAAgACwAKAAwADAANAAsADQAMAA4ADgAPAA0ADwAOABAAEAARAA8A"),
+"name": "brick_modern",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 18,
+"vertex_data": PackedByteArray("8nyrvBwlHzy+ZZ288nyrvEDSizw2pX+88nyrPK1WNTw2pX+88nyrPJSxiTySmB288nyrPCRdczu+ZZ288nyrvHTIPTuI1Z288nyrPNhuS7uI1Z288nyrvH3YujySmB288nyrPMINnjz3ZA+y8nyrvKw0zzxv5hOy8nyrvH3YujyCmB088nyrPJSxiTyCmB088nyrvEHSizw4pX888nyrPK9WNTw4pX888nyrvBclHzzCZZ088nyrPA9dczvCZZ088nyrvHfIPTuI1Z088nyrPNZuS7uI1Z08")
+}, {
+"aabb": AABB(-0.0209336, -0.0166847, -0.0192669, 0.0418672, 0.0195805, 0.0385337),
+"format": 34359742465,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQA"),
+"name": "concrete_bare_01",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("8nyrvMwOL7wGRUu88nyrvHTIPTuI1Z288nyrPNhuS7uI1Z288nyrPE+uiLwGRUu88nyrvMwOL7z8REs88nyrPE+uiLz8REs88nyrPNZuS7uI1Z088nyrvHfIPTuI1Z08")
+}, {
+"aabb": AABB(-0.0209336, -0.0166847, -0.0124066, 0.0418672, 0.006, 0.0248132),
+"format": 34359742465,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAgADAAAA"),
+"name": "brick_pavement",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("8nyrvMwOL7wGRUu88nyrPE+uiLwGRUu88nyrPE+uiLz8REs88nyrvMwOL7z8REs8")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_58y0i"]
+resource_name = "SerwersP1_005"
+_surfaces = [{
+"aabb": AABB(-0.0209336, -0.00310414, -0.0192669, 0.0418672, 0.0283978, 0.0385337),
+"attribute_data": PackedByteArray("YYsbv3Yy/T5gixu/yH+gPhjTLz/Kf6A+GtMvP3Iy/T5fixu/eJgnPxjTLz94mCc/GNMvPwPLAz9eixu/AssDP16LG7+VD0g/X4sbv1I2+z4X0y8/VDb7PhbTLz+TD0g/Xosbv3oy/T4X0y8/ejL9PhjTLz/If6A+Xosbv8R/oD5dixu/MyppP2CLG79JNDk/GNMvP0o0OT8X0y8/NCppP1yLG7/YwV8+GdMvP9TBXz4Y0y8/3mQCP1yLG7/eZAI/Xosbv3iYJz9fixu/AMsDPxjTLz//ygM/GNMvP3iYJz9gixu/SK62PRjTLz84rrY9GdMvP3KXjT5eixu/dJeNPg=="),
+"format": 34359742487,
+"index_count": 48,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAHAAdAB4AHgAfABwA"),
+"material": SubResource("StandardMaterial3D_ckohk"),
+"name": "brick_modern",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 32,
+"vertex_data": PackedByteArray("8nyrvBwlHzy+ZZ288nyrvEDSizw2pX+88nyrPK1WNTw2pX+88nyrPCRdczu+ZZ288nyrvHfIPTuI1Z088nyrPNZuS7uI1Z088nyrPA9dczvCZZ088nyrvBclHzzCZZ088nyrvH3YujySmB288nyrvKw0zzxv5hOy8nyrPMINnjz3ZA+y8nyrPJSxiTySmB288nyrvBclHzzCZZ088nyrPA9dczvCZZ088nyrPK9WNTw4pX888nyrvEHSizw4pX888nyrvEDSizw2pX+88nyrvH3YujySmB288nyrPJSxiTySmB288nyrPK1WNTw2pX+88nyrvH3YujyCmB088nyrPJSxiTyCmB088nyrPMINnjz3ZA+y8nyrvKw0zzxv5hOy8nyrvHTIPTuI1Z288nyrvBwlHzy+ZZ288nyrPCRdczu+ZZ288nyrPNhuS7uI1Z288nyrvEHSizw4pX888nyrPK9WNTw4pX888nyrPJSxiTyCmB088nyrvH3YujyCmB08WnyTZvPv+beWeExM8+/5t814x03z7/m303zcafPv+bck6t388+8FSKbmXfzz7wVIIxYsA/PvBUhsGaQD8+8FSB91HjTz7/m39G8LEPPv+bf0bwsQ8+/5t091aTXz7/m3bBmkA/PvBUgjFiwD8+8FSDcyMgfz7wVIszNoB/PvBUiWeExM8+/5tx91HjTz7/m3T3VpNfPv+bfNeMdN8+/5t+BL3wrz7/m3lUqwCvPv+bf0bwsQ8+/5t/RvCxDz7/m3IYPalfPv+bdafJNm8+/5t9N83Gnz7/m3oYNYmfPv+bezM2gH8+/5tzcyMgfz7/m3lUqwCvPv+bfgS98K8+/5tw==")
+}, {
+"aabb": AABB(-0.0209336, -0.0166847, -0.0192669, 0.0418672, 0.0195805, 0.0385337),
+"attribute_data": PackedByteArray("kCTivyqpfT+SJOK/AEYZOwTwoz8ARhk7BPCjPyqpfT+SJOK/Kql9PwTwoz8qqX0/BPCjPwBFGTuQJOK/AEYZOw=="),
+"format": 34359742487,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQA"),
+"material": SubResource("StandardMaterial3D_ni70p"),
+"name": "concrete_bare_01",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("8nyrvMwOL7wGRUu88nyrvHTIPTuI1Z288nyrPNhuS7uI1Z288nyrPE+uiLwGRUu88nyrvMwOL7z8REs88nyrPE+uiLz8REs88nyrPNZuS7uI1Z088nyrvHfIPTuI1Z0834X8qPPv+bchg9qV8+/5t6GDWJnz7/m334X8qPPv+bcC1x/68+8FSALXH/rz7wVIpuZd/PPvBUgk6t388+8FSA==")
+}, {
+"aabb": AABB(-0.0209336, -0.0166847, -0.0124066, 0.0418672, 0.006, 0.0248132),
+"attribute_data": PackedByteArray("rPgrvw+ofj9gcX8/D6h+P2Bxfz+A+Ks7qvgrv4D4qzs="),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAgADAAAA"),
+"material": SubResource("StandardMaterial3D_1inbi"),
+"name": "brick_pavement",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("8nyrvMwOL7wGRUu88nyrPE+uiLwGRUu88nyrPE+uiLz8REs88nyrvMwOL7z8REs8CpDz7/PvBUgKkPPv8+8FSAqQ8+/z7wVICpDz7/PvBUg=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_winr6")
+
+[node name="SerwersP1_005" type="MeshInstance3D"]
+transform = Transform3D(100, 0, 0, 0, 100, -4.37114e-06, 0, 4.37114e-06, 100, 0, 0, 0)
+mesh = SubResource("ArrayMesh_58y0i")
+skeleton = NodePath("")
