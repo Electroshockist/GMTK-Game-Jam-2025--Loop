@@ -258,11 +258,16 @@ shadow_mesh = SubResource("ArrayMesh_35mvt")
 [node name="St_04" type="Node3D"]
 
 [node name="St_01" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, 75.6441, -2.25437e-06, 2.25437e-06, 0, 75.6441, -75.6441, 2.25437e-06, 0, 11.9777, 3.71432, 5.54884)
+transform = Transform3D(0, 75.6441, -2.25437e-06, 2.25437e-06, 0, 75.6441, -75.6441, 2.25437e-06, 0, 12.091, 3.79188, 4.91634)
 mesh = SubResource("ArrayMesh_g37ec")
 skeleton = NodePath("")
 
 [node name="Column" type="MeshInstance3D" parent="."]
-transform = Transform3D(0, 66.6506, -2.25437e-06, 1.97955e-06, 0, 75.6441, -66.4227, 1.98634e-06, 0, 12.3064, 3.87694, 5.54884)
+transform = Transform3D(0, 66.6506, -2.25437e-06, 1.97955e-06, 0, 75.6441, -66.4227, 1.98634e-06, 0, 12.4197, 3.9545, 4.91634)
+mesh = SubResource("ArrayMesh_qvhyj")
+skeleton = NodePath("")
+
+[node name="Column2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.38409, -66.6361, 2.25388e-06, 1.97955e-06, 8.26284e-14, 75.6441, 66.4083, 1.38884, -4.6976e-08, 12.4197, 3.9545, 4.91634)
 mesh = SubResource("ArrayMesh_qvhyj")
 skeleton = NodePath("")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=4 uid="uid://dovndgw0vum6n"]
+[gd_scene load_steps=34 format=4 uid="uid://dovndgw0vum6n"]
 
 [ext_resource type="Texture2D" uid="uid://c68emgpql6b4o" path="res://assets/Metro_PSX/Metro_PSX/Textures/Tiles.png" id="1_5ld2u"]
 [ext_resource type="Texture2D" uid="uid://d08b4ik4fuuqy" path="res://assets/Metro_PSX/Metro_PSX/Textures/TactilePaving.png" id="2_pitxp"]
@@ -7,7 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://li3nxaeyh055" path="res://assets/Metro_PSX/Metro_PSX/Textures/metal_02.png" id="5_5bmw1"]
 [ext_resource type="Texture2D" uid="uid://dkp3ibarnnqp0" path="res://assets/Metro_PSX/Metro_PSX/Textures/ConcreteBare.png" id="6_7wjgp"]
 [ext_resource type="Texture2D" uid="uid://bnm8pv4sanu1r" path="res://assets/Metro_PSX/Metro_PSX/Textures/metal_01.jpg" id="7_vn4x0"]
-[ext_resource type="Texture2D" uid="uid://63r1s4famq31" path="res://assets/Metro_PSX/Metro_PSX/Textures/metro_map.png" id="8_i30v5"]
 [ext_resource type="Texture2D" uid="uid://dvyq4m1tsymge" path="res://assets/Metro_PSX/Metro_PSX/Textures/Door_01.jpg" id="9_pitxp"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bpmie"]
@@ -308,46 +307,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_58wmw")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h7ceb"]
-resource_name = "metro_map"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("8_i30v5")
-emission_enabled = true
-emission = Color(1, 1, 1, 1)
-emission_energy_multiplier = 0.0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_tqses"]
-_surfaces = [{
-"aabb": AABB(-0.01, -0.00059925, -0.0122594, 0.02, 0.0011985, 0.0245188),
-"format": 34359742465,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAgADAAAAAQAAAAQABAAAAAMABQACAAEAAwACAAUABAAGAAEAAQAGAAUAAwAHAAQABgAEAAcABQAHAAMABwAFAAYA"),
-"name": "metro_map",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 8,
-"vertex_data": PackedByteArray("CtcjvAoXHTqx20g8CtcjvPYWHbqx20g8CtcjvPYWHbqx20i8CtcjvAoXHTqx20i8CtcjPAoXHTqx20g8CtcjPPYWHbqx20i8CtcjPPYWHbqx20g8CtcjPAoXHTqx20i8")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_swncf"]
-resource_name = "metro_map"
-_surfaces = [{
-"aabb": AABB(-0.01, -0.00059925, -0.0122594, 0.02, 0.0011985, 0.0245188),
-"attribute_data": PackedByteArray("QIbdPAAAvD1A6LK8AAC8PUDosrwAgGg/QIbdPACAaD8AAIA/APDiuQAAAAAA8OK5AAAAADAOgD8AAIA/MA6AP0DosrwAALw9QIbdPAAAvD1Aht08AIBoP0DosrwAgGg/AAAAAADw4rkAAIA/APDiuQAAgD8wDoA/AAAAADAOgD9Q6LK8nD1VP0CG3TycPVU/QIbdPIwJKz4w6LK8jAkrPjDosryMCSs+QIbdPIwJKz5Aht08nD1VP1DosrycPVU/"),
-"format": 34359742487,
-"index_count": 36,
-"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
-"material": SubResource("StandardMaterial3D_h7ceb"),
-"name": "metro_map",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 24,
-"vertex_data": PackedByteArray("CtcjvAoXHTqx20g8CtcjvPYWHbqx20g8CtcjvPYWHbqx20i8CtcjvAoXHTqx20i8CtcjPAoXHTqx20g8CtcjvAoXHTqx20g8CtcjvAoXHTqx20i8CtcjPAoXHTqx20i8CtcjPPYWHbqx20g8CtcjPAoXHTqx20g8CtcjPAoXHTqx20i8CtcjPPYWHbqx20i8CtcjvPYWHbqx20g8CtcjPPYWHbqx20g8CtcjPPYWHbqx20i8CtcjvPYWHbqx20i8CtcjPPYWHbqx20i8CtcjPAoXHTqx20i8CtcjvAoXHTqx20i8CtcjvPYWHbqx20i8CtcjvPYWHbqx20g8CtcjvAoXHTqx20g8CtcjPAoXHTqx20g8CtcjPPYWHbqx20g8AAD/f/9/AAAAAP9//38AAAAA/3//fwAAAAD/f/9/AAD/f///////P/9///////8//3///////z//f///////P////3//f///////f/9///////9//3///////3//f////38AAP///7//fwAA////v/9/AAD///+//38AAP///7///////38AAP//////fwAA//////9/AAD//////38AAP9//3//f////3//f/9/////f/9//3////9//3//f///")
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_tqses")
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jclx8"]
 resource_name = "Door_01"
 vertex_color_use_as_albedo = true
@@ -514,11 +473,6 @@ skeleton = NodePath("")
 [node name="Railing" type="MeshInstance3D" parent="."]
 transform = Transform3D(0, -100, -2.98023e-06, -2.98023e-06, 0, 100, -100, 2.98023e-06, 0, 22.5159, 12.1225, 76.2417)
 mesh = SubResource("ArrayMesh_ffgdl")
-skeleton = NodePath("")
-
-[node name="metro_map" type="MeshInstance3D" parent="."]
-transform = Transform3D(64.458, 0, 0, 0, -7.68399e-06, 64.458, 0, -64.458, -7.68399e-06, -4.26911, 3.6577, -13.0255)
-mesh = SubResource("ArrayMesh_swncf")
 skeleton = NodePath("")
 
 [node name="Door_A_01" type="MeshInstance3D" parent="."]
