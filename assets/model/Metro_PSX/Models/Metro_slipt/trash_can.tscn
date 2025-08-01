@@ -1,6 +1,17 @@
-[gd_scene load_steps=5 format=4 uid="uid://d26nnggxojrx4"]
+[gd_scene load_steps=7 format=4 uid="uid://d26nnggxojrx4"]
 
+[ext_resource type="Shader" uid="uid://h8trqbl805pv" path="res://assets/shaders/psx_shader.gdshader" id="1_ja3ny"]
 [ext_resource type="Texture2D" uid="uid://cwhobp0uopy4s" path="res://assets/model/Metro_PSX/Textures/trash_can.png" id="1_s0s2u"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r8u0w"]
+render_priority = 0
+shader = ExtResource("1_ja3ny")
+shader_parameter/affine_mapping = true
+shader_parameter/albedo = ExtResource("1_s0s2u")
+shader_parameter/emission_multiplier = 0.0
+shader_parameter/alpha_scissor = 0.5
+shader_parameter/jitter = 0.25
+shader_parameter/resolution = Vector2i(320, 240)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_joj74"]
 resource_name = "trash_can"
@@ -46,5 +57,6 @@ shadow_mesh = SubResource("ArrayMesh_s55s0")
 
 [node name="trash_can" type="MeshInstance3D"]
 transform = Transform3D(87.8458, 0, 0, 0, 5.23602e-06, 87.8458, 0, -87.8458, 5.23602e-06, 0, 0, 0)
+material_override = SubResource("ShaderMaterial_r8u0w")
 mesh = SubResource("ArrayMesh_qmwy4")
 skeleton = NodePath("")

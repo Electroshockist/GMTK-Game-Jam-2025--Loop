@@ -23,11 +23,11 @@ GameManager="*res://source/game_manager.gd"
 
 [display]
 
-window/size/viewport_width=1280
-window/size/viewport_height=960
+window/size/viewport_width=640
+window/size/viewport_height=480
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
-window/stretch/scale=4.0
+window/stretch/scale=1.5
 
 [input]
 

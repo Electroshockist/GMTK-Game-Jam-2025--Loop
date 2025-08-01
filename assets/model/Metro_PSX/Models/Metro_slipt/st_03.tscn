@@ -1,13 +1,13 @@
 [gd_scene load_steps=34 format=4 uid="uid://dovndgw0vum6n"]
 
-[ext_resource type="Texture2D" uid="uid://c68emgpql6b4o" path="res://assets/Metro_PSX/Metro_PSX/Textures/Tiles.png" id="1_5ld2u"]
-[ext_resource type="Texture2D" uid="uid://d08b4ik4fuuqy" path="res://assets/Metro_PSX/Metro_PSX/Textures/TactilePaving.png" id="2_pitxp"]
-[ext_resource type="Texture2D" uid="uid://dyyk4ga8smi7m" path="res://assets/Metro_PSX/Metro_PSX/Textures/road_rails.jpg" id="3_qbnfu"]
-[ext_resource type="Texture2D" uid="uid://uov44fo4jrrd" path="res://assets/Metro_PSX/Metro_PSX/Textures/tile_tile.jpg" id="4_bq60f"]
-[ext_resource type="Texture2D" uid="uid://li3nxaeyh055" path="res://assets/Metro_PSX/Metro_PSX/Textures/metal_02.png" id="5_5bmw1"]
-[ext_resource type="Texture2D" uid="uid://dkp3ibarnnqp0" path="res://assets/Metro_PSX/Metro_PSX/Textures/ConcreteBare.png" id="6_7wjgp"]
-[ext_resource type="Texture2D" uid="uid://bnm8pv4sanu1r" path="res://assets/Metro_PSX/Metro_PSX/Textures/metal_01.jpg" id="7_vn4x0"]
-[ext_resource type="Texture2D" uid="uid://dvyq4m1tsymge" path="res://assets/Metro_PSX/Metro_PSX/Textures/Door_01.jpg" id="9_pitxp"]
+[ext_resource type="Texture2D" uid="uid://c68emgpql6b4o" path="res://assets/model/Metro_PSX/Textures/Tiles.png" id="1_5ld2u"]
+[ext_resource type="Texture2D" uid="uid://d08b4ik4fuuqy" path="res://assets/model/Metro_PSX/Textures/TactilePaving.png" id="2_pitxp"]
+[ext_resource type="Texture2D" uid="uid://dyyk4ga8smi7m" path="res://assets/model/Metro_PSX/Textures/road_rails.jpg" id="3_qbnfu"]
+[ext_resource type="Texture2D" uid="uid://uov44fo4jrrd" path="res://assets/model/Metro_PSX/Textures/tile_tile.jpg" id="4_bq60f"]
+[ext_resource type="Texture2D" uid="uid://li3nxaeyh055" path="res://assets/model/Metro_PSX/Textures/metal_02.png" id="5_5bmw1"]
+[ext_resource type="Texture2D" uid="uid://dkp3ibarnnqp0" path="res://assets/model/Metro_PSX/Textures/ConcreteBare.png" id="6_7wjgp"]
+[ext_resource type="Texture2D" uid="uid://bnm8pv4sanu1r" path="res://assets/model/Metro_PSX/Textures/metal_01.jpg" id="7_vn4x0"]
+[ext_resource type="Texture2D" uid="uid://dvyq4m1tsymge" path="res://assets/model/Metro_PSX/Textures/Door_01.jpg" id="9_pitxp"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bpmie"]
 resource_name = "Tiles"

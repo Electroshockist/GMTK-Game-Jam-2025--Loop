@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=4 uid="uid://3g4l8qqfd515"]
+[gd_scene load_steps=6 format=4 uid="uid://3g4l8qqfd515"]
 
 [ext_resource type="Texture2D" uid="uid://bljqd004yxns6" path="res://assets/model/Metro_PSX/Textures/Vending_machine.png" id="1_5k3r5"]
+[ext_resource type="Material" uid="uid://c7s34nxjen1xw" path="res://assets/shaders/psx_mat.tres" id="1_r0lwh"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tqn5k"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lp73t"]
 resource_name = "Vending_machine"
 vertex_color_use_as_albedo = true
 albedo_texture = ExtResource("1_5k3r5")
@@ -32,7 +33,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 204,
 "index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAHAAdAB4AHgAfABwAIAAhACIAIgAjACAAJAAlACYAJgAnACQAKAApACoAKgArACgALAAtAC4ALgAvACwAMAAxADIAMgAzADAANAA1ADYANgA3ADQAOAA5ADoAOgA7ADgAPAA9AD4APgA/ADwAQABBAEIAQgBDAEAARABFAEYARgBHAEQASABJAEoASgBLAEgATABNAE4ATgBPAEwAUABRAFIAUgBTAFAAVABVAFYAVgBXAFQAWABZAFoAWgBbAFgAXABdAF4AXgBfAFwAYABhAGIAYgBjAGAAZABlAGYAZgBnAGQAaABpAGoAagBrAGgAbABtAG4AbgBvAGwAcABxAHIAcgBzAHAAdAB1AHYAdgB3AHQAeAB5AHoAegB7AHgAfAB9AH4AfgB/AHwAgACBAIIAggCDAIAAhACFAIYAhgCHAIQA"),
-"material": SubResource("StandardMaterial3D_tqn5k"),
+"material": SubResource("StandardMaterial3D_lp73t"),
 "name": "Vending_machine",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -44,5 +45,6 @@ shadow_mesh = SubResource("ArrayMesh_nrtem")
 
 [node name="Vending_machine" type="MeshInstance3D"]
 transform = Transform3D(113.232, 0, 0, 0, -1.34983e-05, 113.232, 0, -113.232, -1.34983e-05, 0, 0, 0)
+material_override = ExtResource("1_r0lwh")
 mesh = SubResource("ArrayMesh_8o5af")
 skeleton = NodePath("")
