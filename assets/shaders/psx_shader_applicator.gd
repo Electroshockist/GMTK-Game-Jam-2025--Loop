@@ -9,20 +9,9 @@ func _ready() -> void:
 	_apply_shader()
 
 func _apply_shader():
-	print("applying shader to ", name)
 	var surface_count: int = get_surface_override_material_count()
 
-	# for i in surface_count:
-	# 	print(get_active_material(i))
-	# 	var mat := get_active_material(i)
-	# 	var stdmat = mat as StandardMaterial3D
-	# 	var shader_material := ShaderMaterial.new()
-	# 	shader_material.shader = shader
-	# 	_handle_albedo(stdmat, shader_material)
-	# 	_handle_emission(stdmat, shader_material)
-
 	for i in surface_count:
-		print(get_active_material(i))
 		var material := mesh.surface_get_material(i)
 		var stdmat := StandardMaterial3D.new() if material == null else material as StandardMaterial3D
 		var shader_material := ShaderMaterial.new()

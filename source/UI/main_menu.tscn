@@ -90,7 +90,7 @@ texture_hover = ExtResource("11_k3u35")
 ignore_texture_size = true
 stretch_mode = 5
 
-[connection signal="pressed" from="VBoxContainer/VBoxContainer2/Play Button" to="." method="_on_button_pressed" binds= [0]]
-[connection signal="pressed" from="VBoxContainer/VBoxContainer2/Options Button" to="." method="_on_button_pressed" binds= [1]]
-[connection signal="pressed" from="VBoxContainer/VBoxContainer2/Credits Button" to="." method="_on_button_pressed" binds= [2]]
+[connection signal="pressed" from="VBoxContainer/VBoxContainer2/Play Button" to="." method="_on_button_pressed" binds= [1]]
+[connection signal="pressed" from="VBoxContainer/VBoxContainer2/Options Button" to="." method="_on_button_pressed" binds= [2]]
+[connection signal="pressed" from="VBoxContainer/VBoxContainer2/Credits Button" to="." method="_on_button_pressed" binds= [3]]
 [connection signal="pressed" from="VBoxContainer/VBoxContainer2/Quit Button" to="." method="_on_button_pressed" binds= [-1]]

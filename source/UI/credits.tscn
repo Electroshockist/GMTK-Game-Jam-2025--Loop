@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://dx1uuohowbh22" path="res://source/UI/back_button.tscn" id="1_v75xs"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_muyvs"]
-font_size = 48
+[sub_resource type="LabelSettings" id="LabelSettings_jfnf3"]
+font_size = 36
 
 [node name="Credits" type="Control"]
 layout_mode = 3
@@ -13,32 +13,33 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = -12.0
+anchors_preset = -1
+anchor_left = 0.2
+anchor_top = 0.2
+anchor_right = 0.8
+anchor_bottom = 0.8
+offset_left = -348.0
+offset_top = -82.0
+offset_right = 348.0
+offset_bottom = -32.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+[node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
+size_flags_horizontal = 4
 text = "Sample Text"
-label_settings = SubResource("LabelSettings_muyvs")
+label_settings = SubResource("LabelSettings_jfnf3")
 horizontal_alignment = 1
 
-[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_constants/margin_left = 30
-theme_override_constants/margin_right = 30
-
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer"]
-layout_mode = 2
+size_flags_vertical = 3
 theme_override_constants/separation = 10
 
-[node name="BackButton" parent="MarginContainer/VBoxContainer/MarginContainer/VBoxContainer" instance=ExtResource("1_v75xs")]
+[node name="BackButton" parent="VBoxContainer/VBoxContainer2" instance=ExtResource("1_v75xs")]
 layout_mode = 2
+stretch_mode = 5
+prev_scene = 0
