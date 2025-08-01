@@ -44,7 +44,7 @@ void fragment(){
 	vec4 color_base = COLOR;
 	vec4 texture_color = texture(albedo, UV);
 	vec4 emission_color = texture(emission, UV);
-	
+
 	EMISSION = (emission_color * emission_multiplier).rgb;
 	ALBEDO = (color_base * texture_color).rgb;
 	ALPHA = texture_color.a * color_base.a;

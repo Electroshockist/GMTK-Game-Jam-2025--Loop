@@ -5,4 +5,4 @@ func _on_button_pressed(scene_id: int) -> void:
 		get_tree().quit()
 		pass
 
-	get_tree().change_scene_to_packed(SceneManager.buttons[scene_id])
+	SceneManager.change_scene(scene_id)

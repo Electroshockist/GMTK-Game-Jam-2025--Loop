@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://olxebp8opmt8"]
+[gd_scene load_steps=5 format=3 uid="uid://olxebp8opmt8"]
 
 [ext_resource type="Script" uid="uid://kr5yhfbwvjje" path="res://source/game/Character/character.gd" id="1_hhptx"]
 [ext_resource type="Script" uid="uid://chrffhy8fd76o" path="res://source/game/Character/interact.gd" id="2_7d3ex"]
@@ -6,43 +6,6 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3fkvc"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_odid6"]
-
-[sub_resource type="Animation" id="Animation_it8m4"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Camera3D/RayCast3D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_t1pmt"]
-resource_name = "t"
-length = 15.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Camera3D/RayCast3D:position")
-tracks/0/interp = 0
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 15),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0, 1.76599, 0)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_lreof"]
-_data = {
-&"RESET": SubResource("Animation_it8m4"),
-&"t": SubResource("Animation_t1pmt")
-}
 
 [node name="CharacterBody3D" type="CharacterBody3D" node_paths=PackedStringArray("camera")]
 script = ExtResource("1_hhptx")
@@ -65,8 +28,3 @@ target_position = Vector3(0, 0, -5)
 collide_with_areas = true
 collide_with_bodies = false
 script = ExtResource("2_7d3ex")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_lreof")
-}
