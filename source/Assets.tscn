@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://dddnvoo5x5r0d"]
-
-[ext_resource type="PackedScene" uid="uid://ck7ufqnd7duvn" path="res://assets/model/Metro_PSX/Models/Metro.glb" id="1_yygsb"]
-
-[node name="Assets" type="Node3D"]
-
-[node name="Metro" parent="." instance=ExtResource("1_yygsb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.353223, 0, 13.9063)

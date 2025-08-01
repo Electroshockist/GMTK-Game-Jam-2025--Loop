@@ -1,18 +1,19 @@
-[gd_scene load_steps=8 format=4 uid="uid://yx5g6gub48g"]
+[gd_scene load_steps=7 format=4 uid="uid://yx5g6gub48g"]
 
 [ext_resource type="Texture2D" uid="uid://c04ly7byc7sd8" path="res://assets/model/Metro_PSX/Textures/light.png" id="1_3d2xf"]
+[ext_resource type="Shader" uid="uid://h8trqbl805pv" path="res://assets/shaders/psx_shader.gdshader" id="1_a53ik"]
 [ext_resource type="Texture2D" uid="uid://cbfxtvb82we4w" path="res://assets/model/Metro_PSX/Textures/light_Emissor.png" id="2_4183m"]
-[ext_resource type="Script" uid="uid://di1emexw4rps5" path="res://assets/shaders/psx_shader_applicator.gd" id="3_a53ik"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_a53ik"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fo1il"]
-resource_name = "light"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_3d2xf")
-emission_enabled = true
-emission_energy_multiplier = 7.4
-emission_texture = ExtResource("2_4183m")
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4t352"]
+render_priority = 0
+shader = ExtResource("1_a53ik")
+shader_parameter/affine_mapping = false
+shader_parameter/albedo = ExtResource("1_3d2xf")
+shader_parameter/emission = ExtResource("2_4183m")
+shader_parameter/emission_multiplier = 0.0
+shader_parameter/alpha_scissor = 0.5
+shader_parameter/jitter = 0.25
+shader_parameter/resolution = Vector2i(640, 480)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_1pt5w"]
 _surfaces = [{
@@ -36,7 +37,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 228,
 "index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAHAAYABgAJAAgACgALAAwADAANAAoADgANAAwADAAPAA4AEAARABIAEgATABAAFAATABIAEgAVABQAFgAXABgAGAAZABYAGgAbABwAHAAdABoAHgAfACAAIAAhAB4AHwAeACIAIgAjAB8AJAAlACYAJgAnACQAJQAkACgAKAApACUAKgArACwALAAtACoALgAvADAAMAAxAC4AMgAzADQANAA1ADIANgA3ADgAOAA5ADYAOgA7ADwAPAA9ADoAPgA/AEAAQABBAD4AQgBDAEQARABFAEIARgBHAEgASABJAEYASgBLAEwATABNAEoATgBPAFAAUABRAE4AUQBQAFIAUgBTAFEAVABVAFYAVgBXAFQAWABZAFoAWgBbAFgAXABdAF4AXABfAF0AXwBgAF0AYQBiAGMAYwBkAGEAZQBmAGcAZQBoAGYAaABpAGYAagBrAGwAbABtAGoAbgBsAGsAawBvAG4AcABxAHIAcgBzAHAAdAB1AHYAdgB3AHQAeAB5AHoAeAB7AHkAeAB6AHwAfQB+AH8AfwCAAH0AgQCCAIMAgQCEAIIAhACFAIIA"),
-"material": SubResource("StandardMaterial3D_fo1il"),
+"material": SubResource("ShaderMaterial_4t352"),
 "name": "light",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -48,7 +49,5 @@ shadow_mesh = SubResource("ArrayMesh_1pt5w")
 
 [node name="light" type="MeshInstance3D"]
 transform = Transform3D(100, 0, 0, 0, -1.19209e-05, 100, 0, -100, -1.19209e-05, 0, 0, 0)
-material_override = SubResource("ShaderMaterial_a53ik")
 mesh = SubResource("ArrayMesh_ad88l")
 skeleton = NodePath("")
-script = ExtResource("3_a53ik")

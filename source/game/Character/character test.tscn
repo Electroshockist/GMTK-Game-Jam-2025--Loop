@@ -1,23 +1,12 @@
-[gd_scene load_steps=17 format=3 uid="uid://cych0u7ljeb2n"]
+[gd_scene load_steps=16 format=3 uid="uid://cych0u7ljeb2n"]
 
+[ext_resource type="Environment" uid="uid://cms3emih1j6kt" path="res://source/game/world.tres" id="1_2e1t2"]
 [ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/Character/character.tscn" id="1_os8ji"]
 [ext_resource type="PackedScene" uid="uid://bg7fmswynb4pb" path="res://source/game/interactable.tscn" id="2_8huq6"]
 [ext_resource type="PackedScene" uid="uid://daq2ktcnqj41c" path="res://assets/model/Metro_PSX/Models/Metro_slipt/chair.tscn" id="4_b6cy3"]
 [ext_resource type="PackedScene" uid="uid://c186wglas7s41" path="res://assets/model/Metro_PSX/Models/Metro_slipt/automatic_ticket_gate.tscn" id="5_0sa0k"]
 [ext_resource type="Texture2D" uid="uid://8qoflni6nisf" path="res://assets/model/Metro_PSX/Textures/Chair.png" id="5_jf753"]
-[ext_resource type="PackedScene" uid="uid://bpo17x0lmjd2i" path="res://assets/model/Metro_PSX/Models/Metro_slipt/st_01.tscn" id="6_2e1t2"]
-
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8huq6"]
-sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
-ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
-
-[sub_resource type="Sky" id="Sky_e4lxu"]
-sky_material = SubResource("ProceduralSkyMaterial_8huq6")
-
-[sub_resource type="Environment" id="Environment_fm3sh"]
-background_mode = 2
-sky = SubResource("Sky_e4lxu")
-tonemap_mode = 2
+[ext_resource type="PackedScene" uid="uid://blk6m1hhnnjq8" path="res://source/render_texture.tscn" id="6_0sa0k"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_7slvv"]
 size = Vector2(30, 30)
@@ -98,10 +87,13 @@ func _ready() -> void:
 	pass # Replace with function body.
 "
 
+[sub_resource type="ViewportTexture" id="ViewportTexture_2e1t2"]
+viewport_path = NodePath(".")
+
 [node name="CharacterTest" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_fm3sh")
+environment = ExtResource("1_2e1t2")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
@@ -136,5 +128,12 @@ script = SubResource("GDScript_jf753")
 [node name="automatic_ticket_gate" parent="." instance=ExtResource("5_0sa0k")]
 transform = Transform3D(100, 0, 0, 0, -1.19209e-05, 100, 0, -100, -1.19209e-05, -0.776039, 0.561892, 6.39379)
 
-[node name="St_01" parent="." instance=ExtResource("6_2e1t2")]
-transform = Transform3D(-0.770313, 0, -0.637666, 0, 1, 0, 0.637666, 0, -0.770313, 5.26804, 0.534824, -2.57296)
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4769, 0)
+texture = SubResource("ViewportTexture_2e1t2")
+
+[node name="Render Texture" parent="." node_paths=PackedStringArray("camera", "render_surface") instance=ExtResource("6_0sa0k")]
+camera = NodePath("../CharacterBody3D/Camera3D")
+render_surface = NodePath("../Sprite3D")
+
+[editable path="CharacterBody3D"]
