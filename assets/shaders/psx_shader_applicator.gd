@@ -3,26 +3,32 @@ extends MeshInstance3D
 
 var shader: Shader = preload("res://assets/shaders/psx_shader.gdshader")
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	_apply_shader()
 
 func _apply_shader():
 	var surface_count: int = get_surface_override_material_count()
-
+	print(name)
 	for i in surface_count:
 		var material := mesh.surface_get_material(i)
-		var stdmat := StandardMaterial3D.new() if material == null else material as StandardMaterial3D
+		if material is ShaderMaterial or material == null:
+			continue
+		# var stdmat := StandardMaterial3D.new() if material == null else material as StandardMaterial3D
 		var shader_material := ShaderMaterial.new()
 		shader_material.shader = shader
+		print("\t", material.resource_name, shader_material.resource_name)
+
+		if material is ShaderMaterial:
+			print("fuck you")
 		
-		_handle_albedo(stdmat, shader_material)
-		_handle_emission(stdmat, shader_material)
+		_handle_albedo(material, shader_material)
+		if (material is StandardMaterial3D):
+			_handle_emission(material as StandardMaterial3D, shader_material)
 
 		mesh.surface_set_material(i, shader_material)
 
-func _handle_albedo(mat: StandardMaterial3D, shader_material: ShaderMaterial):
+func _handle_albedo(mat: Material, shader_material: ShaderMaterial):
 	if mat.albedo_texture:
 		shader_material.set_shader_parameter("albedo", mat.albedo_texture)
 
