@@ -9,7 +9,6 @@ func _ready() -> void:
 
 func _apply_shader():
 	var surface_count: int = get_surface_override_material_count()
-	print(name)
 	for i in surface_count:
 		var material := mesh.surface_get_material(i)
 		if material is ShaderMaterial or material == null:
@@ -17,10 +16,6 @@ func _apply_shader():
 		# var stdmat := StandardMaterial3D.new() if material == null else material as StandardMaterial3D
 		var shader_material := ShaderMaterial.new()
 		shader_material.shader = shader
-		print("\t", material.resource_name, shader_material.resource_name)
-
-		if material is ShaderMaterial:
-			print("fuck you")
 		
 		_handle_albedo(material, shader_material)
 		if (material is StandardMaterial3D):

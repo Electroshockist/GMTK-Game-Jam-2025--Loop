@@ -6,7 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://daq2ktcnqj41c" path="res://assets/model/Metro_PSX/Models/Metro_slipt/chair.tscn" id="4_b6cy3"]
 [ext_resource type="PackedScene" uid="uid://c186wglas7s41" path="res://assets/model/Metro_PSX/Models/Metro_slipt/automatic_ticket_gate.tscn" id="5_0sa0k"]
 [ext_resource type="Texture2D" uid="uid://8qoflni6nisf" path="res://assets/model/Metro_PSX/Textures/Chair.png" id="5_jf753"]
-[ext_resource type="PackedScene" uid="uid://blk6m1hhnnjq8" path="res://source/render_texture.tscn" id="6_0sa0k"]
+[ext_resource type="PackedScene" uid="uid://blk6m1hhnnjq8" path="res://source/portal renderer/render_viewport.tscn" id="6_0sa0k"]
+[ext_resource type="PackedScene" uid="uid://dy6kocd8kf1dp" path="res://assets/model/Metro_PSX/Models/Metro_slipt/st_02.tscn" id="8_yhrcq"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_7slvv"]
 size = Vector2(30, 30)
@@ -87,9 +88,6 @@ func _ready() -> void:
 	pass # Replace with function body.
 "
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_2e1t2"]
-viewport_path = NodePath(".")
-
 [node name="CharacterTest" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -128,12 +126,12 @@ script = SubResource("GDScript_jf753")
 [node name="automatic_ticket_gate" parent="." instance=ExtResource("5_0sa0k")]
 transform = Transform3D(100, 0, 0, 0, -1.19209e-05, 100, 0, -100, -1.19209e-05, -0.776039, 0.561892, 6.39379)
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4769, 0)
-texture = SubResource("ViewportTexture_2e1t2")
-
-[node name="Render Texture" parent="." node_paths=PackedStringArray("camera", "render_surface") instance=ExtResource("6_0sa0k")]
+[node name="Render Texture" parent="." node_paths=PackedStringArray("camera") instance=ExtResource("6_0sa0k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00132418, -0.0407639, 0.0042634)
+world = ExtResource("8_yhrcq")
 camera = NodePath("../CharacterBody3D/Camera3D")
-render_surface = NodePath("../Sprite3D")
+
+[node name="St_02" parent="." instance=ExtResource("8_yhrcq")]
+transform = Transform3D(0, 75.6441, -2.25437e-06, 2.25437e-06, 0, 75.6441, -75.6441, 2.25437e-06, 0, 12.71, 3.75054, 1.60244)
 
 [editable path="CharacterBody3D"]

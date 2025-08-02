@@ -13,6 +13,9 @@ script = ExtResource("1_du4lc")
 mesh = SubResource("SphereMesh_du4lc")
 
 [node name="Area3D" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 0
+monitoring = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 shape = SubResource("SphereShape3D_cn4ge")

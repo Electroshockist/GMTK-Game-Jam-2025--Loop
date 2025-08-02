@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ctnylvjn5wryd"
+path="res://.godot/imported/shadow creature breathing.mp3-a4f5583d4da99ca54b9ebf0f47c69c41.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/shadow creature breathing.mp3"
+dest_files=["res://.godot/imported/shadow creature breathing.mp3-a4f5583d4da99ca54b9ebf0f47c69c41.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
