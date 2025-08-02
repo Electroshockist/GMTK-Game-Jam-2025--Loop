@@ -1,9 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://b8bywxsadph2r"]
+[gd_scene load_steps=17 format=3 uid="uid://b8bywxsadph2r"]
 
 [ext_resource type="PackedScene" uid="uid://xp63vea7nc4c" path="res://assets/model/Metro_PSX/Models/Metro_slipt/st_04.tscn" id="1_57708"]
 [ext_resource type="PackedScene" uid="uid://b6n28aiqja6it" path="res://assets/model/Sewer/Models/Sewer_split/serwers_003.tscn" id="2_ymx0b"]
 [ext_resource type="PackedScene" uid="uid://gwlueupaotra" path="res://assets/model/Sewer/Models/Sewer_split/serwers.tscn" id="3_wep7x"]
-[ext_resource type="PackedScene" uid="uid://cp0jc0ns1wdlx" path="res://assets/model/Sewer/Models/Sewer_split/serwers_p_1_008.tscn" id="4_cqf6l"]
 [ext_resource type="PackedScene" uid="uid://cl2wj13fhfm3g" path="res://assets/model/Sewer/Models/Sewer_split/serwers_001.tscn" id="6_tjw6b"]
 [ext_resource type="PackedScene" uid="uid://daantvv3eeq2c" path="res://assets/model/Sewer/Models/Sewer_split/serwers_p_1_010.tscn" id="7_xa7i5"]
 [ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/Character/character.tscn" id="8_l3ql1"]
@@ -11,9 +10,30 @@
 [ext_resource type="PackedScene" uid="uid://dm40vc64xo461" path="res://assets/model/modified/sewer connection.glb" id="9_cqf6l"]
 [ext_resource type="PackedScene" uid="uid://bdd8v8auf7pun" path="res://assets/model/modified/metro end.blend" id="10_uwrbm"]
 [ext_resource type="PackedScene" uid="uid://cvy0ew3tgc55k" path="res://assets/model/Sewer/Models/Sewer_split/serwers_012.tscn" id="11_cqf6l"]
+[ext_resource type="PackedScene" uid="uid://cx6xdhceq0q7x" path="res://assets/model/Sewer/Models/Sewer_split/serwers_013.tscn" id="12_hvywh"]
 [ext_resource type="PackedScene" uid="uid://b827ama0a773a" path="res://assets/model/modified/pillar_sewer.glb" id="12_uwrbm"]
+[ext_resource type="PackedScene" uid="uid://mekhtpuqcaok" path="res://assets/model/Sewer/Models/Sewer_split/serwers_007.tscn" id="13_6r15g"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hvywh"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_6r15g"]
+sky_material = SubResource("ProceduralSkyMaterial_hvywh")
+
+[sub_resource type="Environment" id="Environment_55w0h"]
+background_mode = 2
+sky = SubResource("Sky_6r15g")
+tonemap_mode = 2
 
 [node name="Scene_01" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_55w0h")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
 
 [node name="St_04" parent="." instance=ExtResource("1_57708")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.348, 1.214, -28.414)
@@ -43,10 +63,10 @@ transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, 
 transform = Transform3D(-1.48047e-05, 0, 338.693, 0, 338.693, 0, -338.693, 0, -1.48047e-05, 1.96, 2.387, -37.29)
 
 [node name="Serwers_006" parent="." instance=ExtResource("2_ymx0b")]
-transform = Transform3D(-1.48047e-05, 0, 338.693, 0, 338.693, 0, -338.693, 0, -1.48047e-05, 14.5928, 2.37692, 19.2162)
+transform = Transform3D(-1.48047e-05, 0, 338.693, 0, 338.693, 0, -338.693, 0, -1.48047e-05, 14.593, 2.3773, 19.2162)
 
-[node name="SerwersP1_008" parent="." instance=ExtResource("4_cqf6l")]
-transform = Transform3D(175.155, 0, 0, 0, 175.155, -7.65627e-06, 0, 7.65627e-06, 175.155, 17.4628, 2.86377, 19.2516)
+[node name="Serwers_013" parent="." instance=ExtResource("2_ymx0b")]
+transform = Transform3D(-1.48048e-05, 0, -338.693, 0, 338.693, 0, 338.693, 0, -1.48048e-05, -0.867, 2.377, 51.998)
 
 [node name="Serwers_001" parent="." instance=ExtResource("6_tjw6b")]
 transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -12.793, 2.3563, -3.23584)
@@ -54,11 +74,17 @@ transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, 
 [node name="Serwers_002" parent="." instance=ExtResource("6_tjw6b")]
 transform = Transform3D(100, 0, -0.0366449, 0, 100, 0, 0.0366449, 0, 100, -12.802, 2.39, -37.293)
 
+[node name="Serwers_010" parent="." instance=ExtResource("6_tjw6b")]
+transform = Transform3D(0.0366405, 0, 100, 0, 100, 0, -100, 0, 0.0366405, 13.909, 2.382, 43.232)
+
+[node name="Serwers_011" parent="." instance=ExtResource("6_tjw6b")]
+transform = Transform3D(-100, 0, 0.0366362, 0, 100, 0, -0.0366362, 0, -100, 13.9043, 2.382, 51.9994)
+
 [node name="SerwersP1_010" parent="." instance=ExtResource("7_xa7i5")]
-transform = Transform3D(-7.35748e-06, 1.92619e-08, 168.32, 0.44066, 168.319, 1.49498e-15, -168.319, 0.44066, -7.3575e-06, -12.7402, 2.57214, -6.68643)
+transform = Transform3D(-7.63245e-06, 2.08477e-08, 174.59, 0.45713, 182.177, 2.32188e-14, -174.61, 0.47694, -7.63157e-06, -12.7967, 2.29695, -6.68643)
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("8_l3ql1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5804, 3.10668, -13.4929)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5804, 7.72258, -75.6504)
 
 [node name="metro stairs" parent="." instance=ExtResource("8_wep7x")]
 transform = Transform3D(1, 8.74228e-08, 0, -8.74228e-08, 1, 0, 0, 0, -1, 6.454, 1.291, -69.446)
@@ -84,3 +110,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0447, 1.28999, -36.4674)
 
 [node name="SerwersP1_011" parent="." instance=ExtResource("7_xa7i5")]
 transform = Transform3D(170.37, 0, 0, 0, 178.02, -7.44711e-06, 0, 7.7815e-06, 170.37, 11.9173, 3.42601, -37.2897)
+
+[node name="SerwersP1_012" parent="." instance=ExtResource("7_xa7i5")]
+transform = Transform3D(-7.44711e-06, 7.97051e-06, 170.37, 0, 182.344, -7.44711e-06, -170.37, 9.47229e-13, -7.44711e-06, 26.7795, 2.34318, 33.8695)
+
+[node name="Serwers_021" parent="." instance=ExtResource("12_hvywh")]
+transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, 26.7694, 2.38224, 24.2904)
+
+[node name="Serwers_023" parent="." instance=ExtResource("12_hvywh")]
+transform = Transform3D(-1.48047e-05, -1.48047e-05, -338.693, 0, 338.693, -1.48047e-05, 338.693, -6.47134e-13, -1.48047e-05, 21.682, 2.38224, 43.2335)
+
+[node name="Serwers_022" parent="." instance=ExtResource("13_6r15g")]
+transform = Transform3D(-338.693, -1.29427e-12, -2.96095e-05, 0, 338.693, -1.48047e-05, 2.96095e-05, -1.48047e-05, -338.693, 26.7658, 2.37854, 31.0621)
