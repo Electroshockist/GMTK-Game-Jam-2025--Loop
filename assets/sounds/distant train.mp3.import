@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c0d8gxns8uebq"
+path="res://.godot/imported/distant train.mp3-9311a47bc7e44cf8188ad3e40b124eb5.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/distant train.mp3"
+dest_files=["res://.godot/imported/distant train.mp3-9311a47bc7e44cf8188ad3e40b124eb5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

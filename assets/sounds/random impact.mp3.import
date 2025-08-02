@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dqaf7p7r2cfbk"
+path="res://.godot/imported/random impact.mp3-764ff08205a6a588a0780830da13ecfe.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/random impact.mp3"
+dest_files=["res://.godot/imported/random impact.mp3-764ff08205a6a588a0780830da13ecfe.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

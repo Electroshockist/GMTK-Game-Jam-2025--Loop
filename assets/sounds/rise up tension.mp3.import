@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://brs4o658ujjvj"
+path="res://.godot/imported/rise up tension.mp3-9f2ab27ef427483142fb1431b8616755.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/rise up tension.mp3"
+dest_files=["res://.godot/imported/rise up tension.mp3-9f2ab27ef427483142fb1431b8616755.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

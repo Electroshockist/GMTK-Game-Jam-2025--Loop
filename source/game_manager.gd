@@ -18,12 +18,12 @@ func _ready():
 			toggle_mouse_lock()
 	)
 
-func _input(event):
+func _input(_event):
 	if Input.is_action_just_pressed("menu"):
 		menu_toggled.emit()
 
 func _apply_shader_to_all(node: Node):
-	for child in node.get_children():
+	for child in node.get_children(true):
 		if (child is MeshInstance3D and child.get_script() == null):
 			child.set_script(psx_shader_applicator)
 		_apply_shader_to_all(child)
