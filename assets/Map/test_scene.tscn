@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://b8bywxsadph2r"]
+[gd_scene load_steps=13 format=3 uid="uid://b8bywxsadph2r"]
 
 [ext_resource type="PackedScene" uid="uid://xp63vea7nc4c" path="res://assets/model/Metro_PSX/Models/Metro_slipt/st_04.tscn" id="1_57708"]
 [ext_resource type="PackedScene" uid="uid://b6n28aiqja6it" path="res://assets/model/Sewer/Models/Sewer_split/serwers_003.tscn" id="2_ymx0b"]
@@ -10,53 +10,55 @@
 [ext_resource type="PackedScene" uid="uid://drq3x5xr6o1a6" path="res://assets/model/modified/metro stairs.glb" id="8_wep7x"]
 [ext_resource type="PackedScene" uid="uid://dm40vc64xo461" path="res://assets/model/modified/sewer connection.glb" id="9_cqf6l"]
 [ext_resource type="PackedScene" uid="uid://bdd8v8auf7pun" path="res://assets/model/modified/metro end.blend" id="10_uwrbm"]
+[ext_resource type="PackedScene" uid="uid://cvy0ew3tgc55k" path="res://assets/model/Sewer/Models/Sewer_split/serwers_012.tscn" id="11_cqf6l"]
+[ext_resource type="PackedScene" uid="uid://b827ama0a773a" path="res://assets/model/modified/pillar_sewer.glb" id="12_uwrbm"]
 
 [node name="Scene_01" type="Node3D"]
 
 [node name="St_04" parent="." instance=ExtResource("1_57708")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.348, 1.214, -28.414)
 
-[node name="St_05" parent="." instance=ExtResource("1_57708")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.343, 1.214, -40.935)
-
 [node name="Serwers_003" parent="." instance=ExtResource("2_ymx0b")]
-transform = Transform3D(-1.48047e-05, 0, -338.693, 0, 338.693, 0, 338.693, 0, -1.48047e-05, -4.79712, 2.37297, 19.2968)
+transform = Transform3D(-1.48047e-05, 0, -338.693, 0, 338.693, 0, 338.693, 0, -1.48047e-05, -5.02122, 2.35969, -3.23573)
 
 [node name="Serwers_004" parent="." instance=ExtResource("2_ymx0b")]
-transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, -12.5626, 2.36367, 33.9911)
+transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, -12.7867, 2.35039, 11.4586)
 
 [node name="Serwers2" parent="." instance=ExtResource("3_wep7x")]
-transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -12.5487, 2.36595, 41.7514)
+transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -12.7728, 2.35267, 19.2189)
 
 [node name="Serwers_005" parent="." instance=ExtResource("2_ymx0b")]
-transform = Transform3D(-1.48047e-05, 0, 338.693, 0, 338.693, 0, -338.693, 0, -1.48047e-05, 2.10435, 2.3902, 41.7436)
+transform = Transform3D(-1.48047e-05, 0, 338.693, 0, 338.693, 0, -338.693, 0, -1.48047e-05, 1.88025, 2.37692, 19.2111)
 
 [node name="Serwers_007" parent="." instance=ExtResource("2_ymx0b")]
-transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, -12.4611, 2.36958, 11.5448)
+transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.24638e-05, 0, 1.48047e-05, 285.139, -12.7938, 2.3563, -10.4422)
+
+[node name="Serwers_009" parent="." instance=ExtResource("2_ymx0b")]
+transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, -12.7938, 2.3563, -22.511)
 
 [node name="Serwers3" parent="." instance=ExtResource("3_wep7x")]
-transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -21.1438, 2.35838, -3.23185)
+transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -21.573, 2.39, -37.293)
 
 [node name="Serwers_008" parent="." instance=ExtResource("2_ymx0b")]
-transform = Transform3D(-1.48047e-05, 0, 338.693, 0, 338.693, 0, -338.693, 0, -1.48047e-05, 1.96104, 2.3902, -3.21103)
+transform = Transform3D(-1.48047e-05, 0, 338.693, 0, 338.693, 0, -338.693, 0, -1.48047e-05, 1.96, 2.387, -37.29)
 
 [node name="Serwers_006" parent="." instance=ExtResource("2_ymx0b")]
-transform = Transform3D(-1.48047e-05, 0, 338.693, 0, 338.693, 0, -338.693, 0, -1.48047e-05, 14.8169, 2.3902, 41.7487)
+transform = Transform3D(-1.48047e-05, 0, 338.693, 0, 338.693, 0, -338.693, 0, -1.48047e-05, 14.5928, 2.37692, 19.2162)
 
 [node name="SerwersP1_008" parent="." instance=ExtResource("4_cqf6l")]
-transform = Transform3D(175.155, 0, 0, 0, 175.155, -7.65627e-06, 0, 7.65627e-06, 175.155, 17.6869, 2.87705, 41.7841)
+transform = Transform3D(175.155, 0, 0, 0, 175.155, -7.65627e-06, 0, 7.65627e-06, 175.155, 17.4628, 2.86377, 19.2516)
 
 [node name="Serwers_001" parent="." instance=ExtResource("6_tjw6b")]
-transform = Transform3D(1.04716, 0, 99.9945, 0, 100, 0, -99.9945, 0, 1.04716, -12.5197, 2.36958, 19.2639)
+transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -12.793, 2.3563, -3.23584)
 
 [node name="Serwers_002" parent="." instance=ExtResource("6_tjw6b")]
-transform = Transform3D(100, 0, -0.0366449, 0, 100, 0, 0.0366449, 0, 100, -12.4277, 2.368, -3.2232)
+transform = Transform3D(100, 0, -0.0366449, 0, 100, 0, 0.0366449, 0, 100, -12.802, 2.39, -37.293)
 
 [node name="SerwersP1_010" parent="." instance=ExtResource("7_xa7i5")]
-transform = Transform3D(-7.35748e-06, 1.92619e-08, 168.32, 0.44066, 168.319, 1.49498e-15, -168.319, 0.44066, -7.3575e-06, -12.5161, 2.58542, 15.8461)
+transform = Transform3D(-7.35748e-06, 1.92619e-08, 168.32, 0.44066, 168.319, 1.49498e-15, -168.319, 0.44066, -7.3575e-06, -12.7402, 2.57214, -6.68643)
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("8_l3ql1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.7048, 2.12076, 17.0941)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5804, 3.10668, -13.4929)
 
 [node name="metro stairs" parent="." instance=ExtResource("8_wep7x")]
 transform = Transform3D(1, 8.74228e-08, 0, -8.74228e-08, 1, 0, 0, 0, -1, 6.454, 1.291, -69.446)
@@ -66,3 +68,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.461, 1.259, -10.997)
 
 [node name="metro end" parent="." instance=ExtResource("10_uwrbm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.462, 1.259, 6.641)
+
+[node name="metro end2" parent="." instance=ExtResource("10_uwrbm")]
+transform = Transform3D(1, 8.74228e-08, 0, -8.74228e-08, 1, 0, 0, 0, -1, 6.457, 1.291, -66.178)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.04716, 0, 99.9945, 0, 100, 0, -99.9945, 0, 1.04716, -12.7438, 2.3563, -3.26863)
+skeleton = NodePath("../Serwers_001")
+
+[node name="Serwers_012" parent="." instance=ExtResource("11_cqf6l")]
+transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, -21.573, 2.39, -45.064)
+
+[node name="pillar_sewer" parent="." instance=ExtResource("12_uwrbm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0447, 1.28999, -36.4674)
+
+[node name="SerwersP1_011" parent="." instance=ExtResource("7_xa7i5")]
+transform = Transform3D(170.37, 0, 0, 0, 178.02, -7.44711e-06, 0, 7.7815e-06, 170.37, 11.9173, 3.42601, -37.2897)
