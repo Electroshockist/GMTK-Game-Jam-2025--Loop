@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4t5u2y2xgina"]
+
+[ext_resource type="PackedScene" uid="uid://cyrai5ger6j4j" path="res://assets/Skeletons/fishflop.blend" id="1_pxgk2"]
+
+[node name="fishflop" instance=ExtResource("1_pxgk2")]
+
+[node name="Skeleton3D" parent="Armature_001" index="0"]
+bones/0/position = Vector3(-5.14159, -4.74304, -0.180869)
+bones/0/rotation = Quaternion(0.707011, 0.707096, -0.0116181, 0.00384849)
+bones/2/rotation = Quaternion(-7.26854e-11, -1.50102e-08, 0.013817, 0.999905)
+bones/4/rotation = Quaternion(1.47694e-08, 1.29921e-10, 0.0026385, 0.999997)
+bones/5/rotation = Quaternion(0.703211, 0.710981, 8.44115e-08, -2.32434e-08)
+bones/6/rotation = Quaternion(-0.00259004, 0.999997, -4.44518e-08, -7.55329e-08)
+bones/7/rotation = Quaternion(-0.00662212, 0.999978, -1.23432e-09, 3.20935e-08)
+bones/8/rotation = Quaternion(0.703211, 0.710981, 1.14613e-07, -2.22233e-08)
+
+[node name="AnimationPlayer" parent="." index="1"]
+autoplay = "Armature|fishflop|BaseLayer"
