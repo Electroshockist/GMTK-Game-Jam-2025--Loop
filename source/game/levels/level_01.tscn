@@ -1593,13 +1593,22 @@ transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 11
 [node name="Chair2" parent="Enviroment" instance=ExtResource("50_4oxtu")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -20.772)
 
-[node name="light" parent="Enviroment" instance=ExtResource("51_6w72y")]
+[node name="Subway light" parent="Enviroment" instance=ExtResource("51_6w72y")]
 transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 100, 4.37114e-06, 5.21079e-13, 21.6309, 6.48184, -51.9358)
 
-[node name="light3" parent="Enviroment" instance=ExtResource("51_6w72y")]
+[node name="Hallway Light1" parent="Enviroment" instance=ExtResource("51_6w72y")]
+transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 100, 4.37114e-06, 5.21079e-13, 21.6309, 9.95316, -77.3057)
+
+[node name="Hallway Light2" parent="Enviroment" instance=ExtResource("51_6w72y")]
+transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 100, 4.37114e-06, 5.21079e-13, 21.6309, 9.95316, -71.7829)
+
+[node name="Hallway Light3" parent="Enviroment" instance=ExtResource("51_6w72y")]
+transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 100, 4.37114e-06, 5.21079e-13, 21.6309, 9.95316, -66.1583)
+
+[node name="Subway light2" parent="Enviroment" instance=ExtResource("51_6w72y")]
 transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 100, 4.37114e-06, 5.21079e-13, 21.6309, 6.48184, -34.9694)
 
-[node name="light5" parent="Enviroment" instance=ExtResource("51_6w72y")]
+[node name="Subway light3" parent="Enviroment" instance=ExtResource("51_6w72y")]
 transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 100, 4.37114e-06, 5.21079e-13, 21.6255, 6.48184, -18.7423)
 
 [node name="metro pillar" type="Node3D" parent="Enviroment"]
