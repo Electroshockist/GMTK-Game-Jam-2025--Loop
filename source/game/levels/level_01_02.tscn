@@ -6,7 +6,7 @@
 [node name="Scene_01" instance=ExtResource("1_ptg1y")]
 
 [node name="Poster_01_frame" parent="." index="3" instance=ExtResource("2_6ri4p")]
-transform = Transform3D(7.64748e-06, -101.294, -4.4277e-06, 0, -4.4277e-06, 101.294, -101.294, -7.64748e-06, -3.34282e-13, 25.3021, 3.691, -44.8529)
+transform = Transform3D(1.13113e-05, -101.294, -5.64598e-06, 0, -4.4277e-06, 129.165, -149.823, -7.64748e-06, -4.2626e-13, 25.3021, 3.691, -51.3128)
 
 [node name="Poster_01_ground" parent="." index="4" instance=ExtResource("2_6ri4p")]
-transform = Transform3D(20.9807, -5.49537e-06, 99.0974, 1.5295e-05, -101.294, -8.8554e-06, 99.0974, 1.67975e-05, -20.9807, 23.8653, 1.3926, -44.2961)
+transform = Transform3D(31.0323, -5.49537e-06, 126.364, 2.26226e-05, -101.294, -1.1292e-05, 146.574, 1.67975e-05, -26.7535, 24.0584, 1.3926, -50.2652)
