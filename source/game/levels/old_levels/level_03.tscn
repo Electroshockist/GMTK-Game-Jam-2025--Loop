@@ -1,13 +1,13 @@
 [gd_scene load_steps=5 format=3 uid="uid://buaorifx580r"]
 
-[ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/level_01.tscn" id="1_6heeu"]
+[ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/old_levels/base_level.tscn" id="1_6heeu"]
 [ext_resource type="PackedScene" uid="uid://bntsvoj2tf7wp" path="res://assets/Low-Poly_Fish/GLB/Tuna.glb" id="2_io4qo"]
 [ext_resource type="PackedScene" uid="uid://b4t5u2y2xgina" path="res://source/game/levels/Props/fishflop.tscn" id="3_fvh57"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_fvh57"]
 radius = 0.389672
 
-[node name="Scene_01" instance=ExtResource("1_6heeu")]
+[node name="level_01_03" instance=ExtResource("1_6heeu")]
 
 [node name="Tuna2" parent="." index="3" instance=ExtResource("2_io4qo")]
 transform = Transform3D(0.702395, 0.246485, -1.07742e-08, -3.0763e-16, -3.25382e-08, -0.744388, -0.246485, 0.702395, -3.07027e-08, 23.0845, 1.55761, -40.9333)
