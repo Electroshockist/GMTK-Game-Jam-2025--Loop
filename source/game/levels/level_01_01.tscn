@@ -5,8 +5,8 @@
 
 [node name="Scene_01" instance=ExtResource("1_gc4bu")]
 
-[node name="Poster_01_frame" parent="." index="6" instance=ExtResource("2_svq3v")]
+[node name="Poster_01_frame" parent="." index="3" instance=ExtResource("2_svq3v")]
 transform = Transform3D(1.32831e-05, -101.294, -4.4277e-06, 0, -4.4277e-06, 101.294, -101.294, -1.32831e-05, -5.80623e-13, 25.3021, 3.691, -44.8529)
 
-[node name="Poster_01_ground" parent="." index="7" instance=ExtResource("2_svq3v")]
+[node name="Poster_01_ground" parent="." index="4" instance=ExtResource("2_svq3v")]
 transform = Transform3D(-22.924, -9.62769e-06, 98.6659, 4.4277e-06, -101.294, -8.8554e-06, 98.6659, 2.30875e-06, 22.924, 24.268, 1.3926, -45.5384)
