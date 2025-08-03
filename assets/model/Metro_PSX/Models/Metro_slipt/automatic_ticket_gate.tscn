@@ -12,7 +12,7 @@ shader = ExtResource("1_ya4hw")
 shader_parameter/affine_mapping = true
 shader_parameter/albedo = SubResource("CompressedTexture2D_m8qcf")
 shader_parameter/emission_multiplier = 0.0
-shader_parameter/alpha_scissor = 0.5
+shader_parameter/alpha_scissor = 0.1
 shader_parameter/jitter = 0.25
 shader_parameter/resolution = Vector2i(640, 480)
 

@@ -11,7 +11,7 @@ uniform sampler2D albedo : source_color, filter_nearest;
 uniform sampler2D emission : source_color, filter_nearest; // you can also use source_emission if bound in Godot
 uniform float emission_multiplier = 0.0f;
 
-uniform float alpha_scissor : hint_range(0, 1) = 0.5;
+uniform float alpha_scissor : hint_range(0, 1) = 0.1;
 uniform float jitter: hint_range(0, 1) = 0.25;
 uniform ivec2 resolution = ivec2(640, 480);
 
