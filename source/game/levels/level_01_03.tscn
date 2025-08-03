@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://buaorifx580r"]
+
+[ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/level_01.tscn" id="1_6heeu"]
+[ext_resource type="PackedScene" uid="uid://b0g2mythu0m84" path="res://assets/Skeletons/clownfish_skeleton.fbx" id="2_io4qo"]
+[ext_resource type="PackedScene" uid="uid://2b2qo7obk3dx" path="res://assets/Low-Poly_Fish/FBX/Tuna.fbx" id="3_fvh57"]
+
+[node name="Scene_01" instance=ExtResource("1_6heeu")]
+
+[node name="clownfish_skeleton" parent="Enviroment" index="35" instance=ExtResource("2_io4qo")]
+transform = Transform3D(1.40355, 0, 0, 0, 1.40355, 0, 0, 0, 1.40355, 22, 1.44487, -41)
+
+[node name="Tuna" parent="Enviroment" index="36" instance=ExtResource("3_fvh57")]
+transform = Transform3D(0.676884, 0.390799, -1.70824e-08, 0, -3.41648e-08, -0.781599, -0.390799, 0.676884, -2.95876e-08, 22.3343, 1.54813, -43.5493)

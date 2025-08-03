@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://cgucjqiosmv10"
+path.s3tc="res://.godot/imported/pencil_skeleton_0.png-f056b9f8df477d7e065faf849a0103d2.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "ebe0c2fdae8a2451b43e14b67f83ddc0"
+}
+
+[deps]
+
+source_file="res://assets/Skeletons/pencil_skeleton_0.png"
+dest_files=["res://.godot/imported/pencil_skeleton_0.png-f056b9f8df477d7e065faf849a0103d2.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0
