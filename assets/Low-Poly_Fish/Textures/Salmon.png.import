@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://chtrdbjvvoh8k"
-path.s3tc="res://.godot/imported/Salmon.png-5069d242ee4bb6d3b12e51c89b4bbc19.s3tc.ctex"
+path.s3tc="res://.godot/imported/Salmon.png-396d83d7ff40fbd27ecb1020a0662b85.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Low-Poly_Fish/textures/Salmon.png"
-dest_files=["res://.godot/imported/Salmon.png-5069d242ee4bb6d3b12e51c89b4bbc19.s3tc.ctex"]
+source_file="res://assets/Low-Poly_Fish/Textures/Salmon.png"
+dest_files=["res://.godot/imported/Salmon.png-396d83d7ff40fbd27ecb1020a0662b85.s3tc.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://n8xnqrot4gcl"
-path.s3tc="res://.godot/imported/Clownfish.png-f7978108171ccb911a9aca191de8689a.s3tc.ctex"
+path.s3tc="res://.godot/imported/Clownfish.png-8ce7640ef7d3fee2a5f19aff17ac1764.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Low-Poly_Fish/textures/Clownfish.png"
-dest_files=["res://.godot/imported/Clownfish.png-f7978108171ccb911a9aca191de8689a.s3tc.ctex"]
+source_file="res://assets/Low-Poly_Fish/Textures/Clownfish.png"
+dest_files=["res://.godot/imported/Clownfish.png-8ce7640ef7d3fee2a5f19aff17ac1764.s3tc.ctex"]
 
 [params]
 

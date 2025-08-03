@@ -1,4 +1,4 @@
-[gd_scene load_steps=146 format=4 uid="uid://upfh8uyt1rip"]
+[gd_scene load_steps=148 format=4 uid="uid://upfh8uyt1rip"]
 
 [ext_resource type="Environment" uid="uid://pq7vqvfywr8t" path="res://source/game/levels/level_01.tres" id="1_28da1"]
 [ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/Character/character.tscn" id="1_h15o5"]
@@ -56,6 +56,7 @@
 [ext_resource type="PackedScene" uid="uid://dotut1d78ligr" path="res://assets/model/Sewer/Models/Sewer_split/debris_04.tscn" id="54_lkjo7"]
 [ext_resource type="PackedScene" uid="uid://cnop7bbq2fabs" path="res://assets/model/Sewer/Models/Sewer_split/debris_05.tscn" id="55_oa3gj"]
 [ext_resource type="PackedScene" uid="uid://40jd1ww81xp5" path="res://source/game/levels/Props/door.tscn" id="56_drwwt"]
+[ext_resource type="Script" uid="uid://cctc243k7wmk5" path="res://source/game/levels/level_trigger.gd" id="56_loslf"]
 
 [sub_resource type="FogMaterial" id="FogMaterial_r64ux"]
 albedo = Color(0.0962047, 0.0962048, 0.0962047, 1)
@@ -1323,6 +1324,10 @@ backface_collision = true
 [sub_resource type="BoxShape3D" id="BoxShape3D_mp6dy"]
 size = Vector3(7.10437, 4.69043, 5.98651)
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_drwwt"]
+height = 0.455566
+radius = 3.46533
+
 [node name="Scene_01" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -1758,6 +1763,20 @@ transform = Transform3D(-194.995, -185.952, -38.7991, -28.0366, -26.7365, 269.84
 
 [node name="debris_07" parent="Enviroment" instance=ExtResource("55_oa3gj")]
 transform = Transform3D(152.762, -1.30918e-06, -21.9644, 21.9644, 9.10537e-06, 152.762, 0, -154.333, 9.19901e-06, 8.51089, -1.21598, -3.12987)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Enviroment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.4213, 1.61393, -3.42675)
+visible = false
+light_color = Color(0.636089, 0.118183, 0.0751494, 1)
+light_energy = 2.263
+
+[node name="LevelTrigger" type="Area3D" parent="Enviroment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.6484, 0, 7.69938)
+script = ExtResource("56_loslf")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Enviroment/LevelTrigger"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.167366, 1.22178, 0.772217)
+shape = SubResource("CylinderShape3D_drwwt")
 
 [node name="InNode" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.822, 6.74, -79.89)

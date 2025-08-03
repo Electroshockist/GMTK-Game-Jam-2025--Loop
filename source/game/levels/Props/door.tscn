@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://40jd1ww81xp5"]
+[gd_scene load_steps=8 format=3 uid="uid://40jd1ww81xp5"]
 
+[ext_resource type="Script" uid="uid://oyhg5k6bwfnj" path="res://source/game/levels/Props/door.gd" id="1_d357e"]
 [ext_resource type="PackedScene" uid="uid://cbxb8qgbp346k" path="res://assets/model/Sewer/Models/Sewer_split/serwers_p_013.tscn" id="1_v587y"]
 
 [sub_resource type="Animation" id="Animation_6vvvs"]
@@ -81,6 +82,7 @@ _data = {
 size = Vector3(0.2, 2.01855, 0.9)
 
 [node name="Door" type="Node3D"]
+script = ExtResource("1_d357e")
 
 [node name="SerwersP_013" parent="." instance=ExtResource("1_v587y")]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
