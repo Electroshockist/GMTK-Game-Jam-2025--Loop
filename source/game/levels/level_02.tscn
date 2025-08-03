@@ -1,61 +1,60 @@
-[gd_scene load_steps=146 format=4 uid="uid://upfh8uyt1rip"]
+[gd_scene load_steps=145 format=4 uid="uid://sbgk8w8dfmdd"]
 
-[ext_resource type="Environment" uid="uid://pq7vqvfywr8t" path="res://source/game/levels/level_01.tres" id="1_28da1"]
-[ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/Character/character.tscn" id="1_h15o5"]
-[ext_resource type="PackedScene" uid="uid://cvy0ew3tgc55k" path="res://assets/model/Sewer/Models/Sewer_split/serwers_012.tscn" id="2_tgpox"]
-[ext_resource type="PackedScene" uid="uid://2gyp74jynwr2" path="res://source/game/effects/eyeballs.tscn" id="3_8ejdx"]
-[ext_resource type="PackedScene" uid="uid://daantvv3eeq2c" path="res://assets/model/Sewer/Models/Sewer_split/serwers_p_1_010.tscn" id="3_jb36t"]
-[ext_resource type="PackedScene" uid="uid://cx6xdhceq0q7x" path="res://assets/model/Sewer/Models/Sewer_split/serwers_013.tscn" id="4_x4qt1"]
-[ext_resource type="PackedScene" uid="uid://mekhtpuqcaok" path="res://assets/model/Sewer/Models/Sewer_split/serwers_007.tscn" id="5_kofw2"]
-[ext_resource type="PackedScene" uid="uid://b6n28aiqja6it" path="res://assets/model/Sewer/Models/Sewer_split/serwers_003.tscn" id="6_grdit"]
-[ext_resource type="PackedScene" uid="uid://gwlueupaotra" path="res://assets/model/Sewer/Models/Sewer_split/serwers.tscn" id="7_fe7hj"]
-[ext_resource type="PackedScene" uid="uid://cl2wj13fhfm3g" path="res://assets/model/Sewer/Models/Sewer_split/serwers_001.tscn" id="8_qp77h"]
-[ext_resource type="Texture2D" uid="uid://c68emgpql6b4o" path="res://assets/model/Metro_PSX/Textures/Tiles.png" id="9_sflts"]
-[ext_resource type="Texture2D" uid="uid://d08b4ik4fuuqy" path="res://assets/model/Metro_PSX/Textures/TactilePaving.png" id="10_g0iqu"]
-[ext_resource type="Texture2D" uid="uid://dyyk4ga8smi7m" path="res://assets/model/Metro_PSX/Textures/road_rails.jpg" id="11_28da1"]
-[ext_resource type="Texture2D" uid="uid://uov44fo4jrrd" path="res://assets/model/Metro_PSX/Textures/tile_tile.jpg" id="12_8ejdx"]
-[ext_resource type="Texture2D" uid="uid://li3nxaeyh055" path="res://assets/model/Metro_PSX/Textures/metal_02.png" id="13_6w72y"]
-[ext_resource type="Texture2D" uid="uid://dkp3ibarnnqp0" path="res://assets/model/Metro_PSX/Textures/ConcreteBare.png" id="14_4oxtu"]
-[ext_resource type="Texture2D" uid="uid://q3cqbfgf5stx" path="res://assets/model/modified/metro stairs_brick_modern.jpg" id="15_j3brg"]
-[ext_resource type="Texture2D" uid="uid://c4khg3vwvpg4d" path="res://assets/model/modified/sewer connection_Tiles.png" id="25_oa3gj"]
-[ext_resource type="Texture2D" uid="uid://djpttai8mjmf6" path="res://assets/model/modified/sewer connection_TactilePaving.png" id="26_gjhwq"]
-[ext_resource type="Texture2D" uid="uid://b6ykbv7rmh5yc" path="res://assets/model/modified/sewer connection_road_rails.jpg" id="27_02jhy"]
-[ext_resource type="Texture2D" uid="uid://k1v4cpf6we0l" path="res://assets/model/modified/sewer connection_tile_tile.jpg" id="28_53c1v"]
-[ext_resource type="Texture2D" uid="uid://3t1wf7yxmfvf" path="res://assets/model/modified/sewer connection_metal_02.png" id="29_f2o58"]
-[ext_resource type="Texture2D" uid="uid://c4apqkh4bwmgy" path="res://assets/model/modified/sewer connection_ConcreteBare.png" id="30_hpmxj"]
-[ext_resource type="Texture2D" uid="uid://c674kybia1pgu" path="res://assets/model/modified/sewer connection_concrete_base.png" id="31_uagty"]
-[ext_resource type="Texture2D" uid="uid://d1n556ab3t4xc" path="res://assets/model/modified/sewer connection_brick_modern_01.jpg" id="32_jpq1r"]
-[ext_resource type="Texture2D" uid="uid://vm2iqc1p7sef" path="res://assets/model/modified/metro stairs_Door_01.jpg" id="33_51rap"]
-[ext_resource type="Texture2D" uid="uid://b2ixijxkbntd2" path="res://assets/model/modified/metro stairs_tile_tile.jpg" id="34_eplpv"]
-[ext_resource type="Texture2D" uid="uid://cdlkvhw8clr1w" path="res://assets/model/modified/metro stairs_metal_02.png" id="35_li54c"]
-[ext_resource type="Texture2D" uid="uid://dyv1y2we15kv2" path="res://assets/model/modified/metro stairs_Tiles.png" id="36_lnjdh"]
-[ext_resource type="Texture2D" uid="uid://bo0s0kulhkqva" path="res://assets/model/modified/metro stairs_TactilePaving.png" id="37_aeqvp"]
-[ext_resource type="Texture2D" uid="uid://cc4ghklm4ahi1" path="res://assets/model/modified/metro stairs_road_rails.jpg" id="38_phfhb"]
-[ext_resource type="Texture2D" uid="uid://bjbr6yk33ru5q" path="res://assets/model/modified/metro stairs_ConcreteBare.png" id="39_3yvk4"]
-[ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/model/Metro_PSX/Models/Metro_slipt/poster_01.tscn" id="40_sflts"]
-[ext_resource type="PackedScene" uid="uid://dit2phk8j4yj8" path="res://assets/model/Metro_PSX/Models/Metro_slipt/poster_02.tscn" id="41_g0iqu"]
-[ext_resource type="PackedScene" uid="uid://c4pjrhejiegb6" path="res://assets/model/Metro_PSX/Models/Metro_slipt/poster_03.tscn" id="42_28da1"]
-[ext_resource type="PackedScene" uid="uid://dxgqniedvllnp" path="res://assets/model/Metro_PSX/Models/Metro_slipt/poster_04.tscn" id="43_8ejdx"]
-[ext_resource type="PackedScene" uid="uid://db1w44w0gdaly" path="res://assets/model/Metro_PSX/Models/Metro_slipt/poster_05.tscn" id="44_6w72y"]
-[ext_resource type="Texture2D" uid="uid://bo5ua055cb1rk" path="res://assets/model/modified/metro pillar_Tiles.png" id="44_28da1"]
-[ext_resource type="PackedScene" uid="uid://dl0itebvpe5fy" path="res://assets/model/Metro_PSX/Models/Metro_slipt/poster_06.tscn" id="45_4oxtu"]
-[ext_resource type="Texture2D" uid="uid://bx4iuh5ho6wd3" path="res://assets/model/modified/metro pillar_TactilePaving.png" id="45_8ejdx"]
-[ext_resource type="Texture2D" uid="uid://clc7a6hh1841l" path="res://assets/model/modified/metro pillar_road_rails.jpg" id="46_6w72y"]
-[ext_resource type="PackedScene" uid="uid://c2prm0sxpm4dx" path="res://assets/model/Metro_PSX/Models/Metro_slipt/poster_07.tscn" id="46_j3brg"]
-[ext_resource type="PackedScene" uid="uid://c2qvfmytwf71t" path="res://assets/model/Metro_PSX/Models/Metro_slipt/poster_08.tscn" id="47_0nr7a"]
-[ext_resource type="Texture2D" uid="uid://1rn2884sybr" path="res://assets/model/modified/metro pillar_tile_tile.jpg" id="47_4oxtu"]
-[ext_resource type="PackedScene" uid="uid://d26nnggxojrx4" path="res://assets/model/Metro_PSX/Models/Metro_slipt/trash_can.tscn" id="48_8ejdx"]
-[ext_resource type="Texture2D" uid="uid://c5du3namakr54" path="res://assets/model/modified/metro pillar_metal_02.png" id="48_j3brg"]
-[ext_resource type="Texture2D" uid="uid://peheuq4363q6" path="res://assets/model/modified/metro pillar_ConcreteBare.png" id="49_0nr7a"]
-[ext_resource type="PackedScene" uid="uid://3g4l8qqfd515" path="res://assets/model/Metro_PSX/Models/Metro_slipt/vending_machine.tscn" id="49_6w72y"]
-[ext_resource type="PackedScene" uid="uid://daq2ktcnqj41c" path="res://assets/model/Metro_PSX/Models/Metro_slipt/chair.tscn" id="50_4oxtu"]
-[ext_resource type="PackedScene" uid="uid://di7pqbr2tlfqr" path="res://assets/model/Sewer/Models/Sewer_split/debris.tscn" id="50_x050o"]
-[ext_resource type="PackedScene" uid="uid://yx5g6gub48g" path="res://assets/model/Metro_PSX/Models/Metro_slipt/light.tscn" id="51_6w72y"]
-[ext_resource type="PackedScene" uid="uid://c5ouyrekxlh6e" path="res://assets/model/Sewer/Models/Sewer_split/debris_01.tscn" id="51_mtro8"]
-[ext_resource type="PackedScene" uid="uid://b6bwj6e06h10p" path="res://assets/model/Sewer/Models/Sewer_split/debris_02.tscn" id="52_nmuv1"]
-[ext_resource type="PackedScene" uid="uid://bayjcxtfwaphs" path="res://assets/model/Sewer/Models/Sewer_split/debris_03.tscn" id="53_mp6dy"]
-[ext_resource type="PackedScene" uid="uid://dotut1d78ligr" path="res://assets/model/Sewer/Models/Sewer_split/debris_04.tscn" id="54_lkjo7"]
-[ext_resource type="PackedScene" uid="uid://cnop7bbq2fabs" path="res://assets/model/Sewer/Models/Sewer_split/debris_05.tscn" id="55_oa3gj"]
+[ext_resource type="Environment" uid="uid://pq7vqvfywr8t" path="res://source/game/levels/level_01.tres" id="1_gyggk"]
+[ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/Character/character.tscn" id="2_1a8gr"]
+[ext_resource type="PackedScene" uid="uid://cvy0ew3tgc55k" path="res://assets/model/Sewer/Models/Sewer_split/serwers_012.tscn" id="4_n7y00"]
+[ext_resource type="PackedScene" uid="uid://daantvv3eeq2c" path="res://assets/model/Sewer/Models/Sewer_split/serwers_p_1_010.tscn" id="5_tmeo5"]
+[ext_resource type="PackedScene" uid="uid://cx6xdhceq0q7x" path="res://assets/model/Sewer/Models/Sewer_split/serwers_013.tscn" id="6_am48e"]
+[ext_resource type="PackedScene" uid="uid://mekhtpuqcaok" path="res://assets/model/Sewer/Models/Sewer_split/serwers_007.tscn" id="7_7necg"]
+[ext_resource type="PackedScene" uid="uid://b6n28aiqja6it" path="res://assets/model/Sewer/Models/Sewer_split/serwers_003.tscn" id="8_1828a"]
+[ext_resource type="PackedScene" uid="uid://gwlueupaotra" path="res://assets/model/Sewer/Models/Sewer_split/serwers.tscn" id="9_8l7a7"]
+[ext_resource type="PackedScene" uid="uid://cl2wj13fhfm3g" path="res://assets/model/Sewer/Models/Sewer_split/serwers_001.tscn" id="10_frfje"]
+[ext_resource type="Texture2D" uid="uid://c68emgpql6b4o" path="res://assets/model/Metro_PSX/Textures/Tiles.png" id="11_vkf6p"]
+[ext_resource type="Texture2D" uid="uid://d08b4ik4fuuqy" path="res://assets/model/Metro_PSX/Textures/TactilePaving.png" id="12_iv8h5"]
+[ext_resource type="Texture2D" uid="uid://dyyk4ga8smi7m" path="res://assets/model/Metro_PSX/Textures/road_rails.jpg" id="13_xiufb"]
+[ext_resource type="Texture2D" uid="uid://uov44fo4jrrd" path="res://assets/model/Metro_PSX/Textures/tile_tile.jpg" id="14_4m735"]
+[ext_resource type="Texture2D" uid="uid://li3nxaeyh055" path="res://assets/model/Metro_PSX/Textures/metal_02.png" id="15_gkmp7"]
+[ext_resource type="Texture2D" uid="uid://dkp3ibarnnqp0" path="res://assets/model/Metro_PSX/Textures/ConcreteBare.png" id="16_djrh5"]
+[ext_resource type="Texture2D" uid="uid://c4khg3vwvpg4d" path="res://assets/model/modified/sewer connection_Tiles.png" id="17_dc17u"]
+[ext_resource type="Texture2D" uid="uid://djpttai8mjmf6" path="res://assets/model/modified/sewer connection_TactilePaving.png" id="18_lfvt2"]
+[ext_resource type="Texture2D" uid="uid://b6ykbv7rmh5yc" path="res://assets/model/modified/sewer connection_road_rails.jpg" id="19_o1vsv"]
+[ext_resource type="Texture2D" uid="uid://k1v4cpf6we0l" path="res://assets/model/modified/sewer connection_tile_tile.jpg" id="20_i4teh"]
+[ext_resource type="Texture2D" uid="uid://3t1wf7yxmfvf" path="res://assets/model/modified/sewer connection_metal_02.png" id="21_71k4w"]
+[ext_resource type="Texture2D" uid="uid://c4apqkh4bwmgy" path="res://assets/model/modified/sewer connection_ConcreteBare.png" id="22_udjfn"]
+[ext_resource type="Texture2D" uid="uid://c674kybia1pgu" path="res://assets/model/modified/sewer connection_concrete_base.png" id="23_l1cfj"]
+[ext_resource type="Texture2D" uid="uid://d1n556ab3t4xc" path="res://assets/model/modified/sewer connection_brick_modern_01.jpg" id="24_v0gl6"]
+[ext_resource type="Texture2D" uid="uid://vm2iqc1p7sef" path="res://assets/model/modified/metro stairs_Door_01.jpg" id="25_aijy4"]
+[ext_resource type="Texture2D" uid="uid://b2ixijxkbntd2" path="res://assets/model/modified/metro stairs_tile_tile.jpg" id="26_qae7p"]
+[ext_resource type="Texture2D" uid="uid://cdlkvhw8clr1w" path="res://assets/model/modified/metro stairs_metal_02.png" id="27_v8uad"]
+[ext_resource type="Texture2D" uid="uid://dyv1y2we15kv2" path="res://assets/model/modified/metro stairs_Tiles.png" id="28_khssa"]
+[ext_resource type="Texture2D" uid="uid://bo0s0kulhkqva" path="res://assets/model/modified/metro stairs_TactilePaving.png" id="29_ijkex"]
+[ext_resource type="Texture2D" uid="uid://cc4ghklm4ahi1" path="res://assets/model/modified/metro stairs_road_rails.jpg" id="30_5tstb"]
+[ext_resource type="Texture2D" uid="uid://bjbr6yk33ru5q" path="res://assets/model/modified/metro stairs_ConcreteBare.png" id="31_3mq5l"]
+[ext_resource type="Texture2D" uid="uid://q3cqbfgf5stx" path="res://assets/model/modified/metro stairs_brick_modern.jpg" id="32_bkq4d"]
+[ext_resource type="Texture2D" uid="uid://bo5ua055cb1rk" path="res://assets/model/modified/metro pillar_Tiles.png" id="33_sgq3d"]
+[ext_resource type="Texture2D" uid="uid://bx4iuh5ho6wd3" path="res://assets/model/modified/metro pillar_TactilePaving.png" id="34_4ju53"]
+[ext_resource type="Texture2D" uid="uid://clc7a6hh1841l" path="res://assets/model/modified/metro pillar_road_rails.jpg" id="35_bdubl"]
+[ext_resource type="Texture2D" uid="uid://1rn2884sybr" path="res://assets/model/modified/metro pillar_tile_tile.jpg" id="36_ddua0"]
+[ext_resource type="Texture2D" uid="uid://c5du3namakr54" path="res://assets/model/modified/metro pillar_metal_02.png" id="37_wajrr"]
+[ext_resource type="Texture2D" uid="uid://peheuq4363q6" path="res://assets/model/modified/metro pillar_ConcreteBare.png" id="38_xjnrh"]
+[ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/model/Metro_PSX/Models/Metro_slipt/poster_01.tscn" id="39_getn8"]
+[ext_resource type="PackedScene" uid="uid://dit2phk8j4yj8" path="res://assets/model/Metro_PSX/Models/Metro_slipt/poster_02.tscn" id="40_gqmbq"]
+[ext_resource type="PackedScene" uid="uid://c4pjrhejiegb6" path="res://assets/model/Metro_PSX/Models/Metro_slipt/poster_03.tscn" id="41_1rl1a"]
+[ext_resource type="PackedScene" uid="uid://dxgqniedvllnp" path="res://assets/model/Metro_PSX/Models/Metro_slipt/poster_04.tscn" id="42_t7a5v"]
+[ext_resource type="PackedScene" uid="uid://db1w44w0gdaly" path="res://assets/model/Metro_PSX/Models/Metro_slipt/poster_05.tscn" id="43_3pjaj"]
+[ext_resource type="PackedScene" uid="uid://dl0itebvpe5fy" path="res://assets/model/Metro_PSX/Models/Metro_slipt/poster_06.tscn" id="44_dbp4i"]
+[ext_resource type="PackedScene" uid="uid://c2prm0sxpm4dx" path="res://assets/model/Metro_PSX/Models/Metro_slipt/poster_07.tscn" id="45_cka32"]
+[ext_resource type="PackedScene" uid="uid://c2qvfmytwf71t" path="res://assets/model/Metro_PSX/Models/Metro_slipt/poster_08.tscn" id="46_xvjd4"]
+[ext_resource type="PackedScene" uid="uid://d26nnggxojrx4" path="res://assets/model/Metro_PSX/Models/Metro_slipt/trash_can.tscn" id="47_rm7s5"]
+[ext_resource type="PackedScene" uid="uid://3g4l8qqfd515" path="res://assets/model/Metro_PSX/Models/Metro_slipt/vending_machine.tscn" id="48_dneof"]
+[ext_resource type="PackedScene" uid="uid://daq2ktcnqj41c" path="res://assets/model/Metro_PSX/Models/Metro_slipt/chair.tscn" id="49_f2aar"]
+[ext_resource type="PackedScene" uid="uid://yx5g6gub48g" path="res://assets/model/Metro_PSX/Models/Metro_slipt/light.tscn" id="50_gokl5"]
+[ext_resource type="PackedScene" uid="uid://di7pqbr2tlfqr" path="res://assets/model/Sewer/Models/Sewer_split/debris.tscn" id="51_3l0wx"]
+[ext_resource type="PackedScene" uid="uid://c5ouyrekxlh6e" path="res://assets/model/Sewer/Models/Sewer_split/debris_01.tscn" id="52_2e4vw"]
+[ext_resource type="PackedScene" uid="uid://b6bwj6e06h10p" path="res://assets/model/Sewer/Models/Sewer_split/debris_02.tscn" id="53_1frd1"]
+[ext_resource type="PackedScene" uid="uid://bayjcxtfwaphs" path="res://assets/model/Sewer/Models/Sewer_split/debris_03.tscn" id="54_nbhgf"]
+[ext_resource type="PackedScene" uid="uid://dotut1d78ligr" path="res://assets/model/Sewer/Models/Sewer_split/debris_04.tscn" id="55_nglbf"]
+[ext_resource type="PackedScene" uid="uid://cnop7bbq2fabs" path="res://assets/model/Sewer/Models/Sewer_split/debris_05.tscn" id="56_diiu5"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_u4q6f"]
 data = PackedVector3Array(-0.0002, -0.0166, -0.0015, -0.0002, 0.0184, -0.0015, -0.0002, 0.0184, -0.0009, -0.0002, 0.0184, -0.0009, -0.0002, -0.0166, -0.0009, -0.0002, -0.0166, -0.0015, 0.0002, 0.0184, -0.0015, -0.0002, 0.0184, -0.0015, -0.0002, -0.0166, -0.0015, -0.0002, -0.0166, -0.0015, 0.0002, -0.0166, -0.0015, 0.0002, 0.0184, -0.0015, 0.0002, 0.0184, -0.0009, 0.0002, 0.0184, -0.0015, 0.0002, -0.0166, -0.0015, 0.0002, -0.0166, -0.0015, 0.0002, -0.0166, -0.0009, 0.0002, 0.0184, -0.0009, -0.0002, 0.0184, -0.0009, 0.0002, 0.0184, -0.0009, 0.0002, -0.0166, -0.0009, 0.0002, -0.0166, -0.0009, -0.0002, -0.0166, -0.0009, -0.0002, 0.0184, -0.0009, -0.0002, -0.0166, -0.004, -0.0002, 0.0179, -0.004, -0.0002, 0.0179, -0.0034, -0.0002, 0.0179, -0.0034, -0.0002, -0.0166, -0.0034, -0.0002, -0.0166, -0.004, 0.0002, 0.0179, -0.004, -0.0002, 0.0179, -0.004, -0.0002, -0.0166, -0.004, -0.0002, -0.0166, -0.004, 0.0002, -0.0166, -0.004, 0.0002, 0.0179, -0.004, 0.0002, 0.0179, -0.0034, 0.0002, 0.0179, -0.004, 0.0002, -0.0166, -0.004, 0.0002, -0.0166, -0.004, 0.0002, -0.0166, -0.0034, 0.0002, 0.0179, -0.0034, -0.0002, 0.0179, -0.0034, 0.0002, 0.0179, -0.0034, 0.0002, -0.0166, -0.0034, 0.0002, -0.0166, -0.0034, -0.0002, -0.0166, -0.0034, -0.0002, 0.0179, -0.0034, -0.0002, -0.0166, -0.0064, -0.0002, 0.0172, -0.0064, -0.0002, 0.0172, -0.0057, -0.0002, 0.0172, -0.0057, -0.0002, -0.0166, -0.0057, -0.0002, -0.0166, -0.0064, 0.0002, 0.0172, -0.0064, -0.0002, 0.0172, -0.0064, -0.0002, -0.0166, -0.0064, -0.0002, -0.0166, -0.0064, 0.0002, -0.0166, -0.0064, 0.0002, 0.0172, -0.0064, 0.0002, 0.0172, -0.0057, 0.0002, 0.0172, -0.0064, 0.0002, -0.0166, -0.0064, 0.0002, -0.0166, -0.0064, 0.0002, -0.0166, -0.0057, 0.0002, 0.0172, -0.0057, -0.0002, 0.0172, -0.0057, 0.0002, 0.0172, -0.0057, 0.0002, -0.0166, -0.0057, 0.0002, -0.0166, -0.0057, -0.0002, -0.0166, -0.0057, -0.0002, 0.0172, -0.0057, -0.0002, -0.0166, -0.0093, -0.0002, 0.0163, -0.0093, -0.0002, 0.0163, -0.0087, -0.0002, 0.0163, -0.0087, -0.0002, -0.0166, -0.0087, -0.0002, -0.0166, -0.0093, 0.0002, 0.0163, -0.0093, -0.0002, 0.0163, -0.0093, -0.0002, -0.0166, -0.0093, -0.0002, -0.0166, -0.0093, 0.0002, -0.0166, -0.0093, 0.0002, 0.0163, -0.0093, 0.0002, 0.0163, -0.0087, 0.0002, 0.0163, -0.0093, 0.0002, -0.0166, -0.0093, 0.0002, -0.0166, -0.0093, 0.0002, -0.0166, -0.0087, 0.0002, 0.0163, -0.0087, -0.0002, 0.0163, -0.0087, 0.0002, 0.0163, -0.0087, 0.0002, -0.0166, -0.0087, 0.0002, -0.0166, -0.0087, -0.0002, -0.0166, -0.0087, -0.0002, 0.0163, -0.0087, -0.0002, 0.0184, 0.0009, -0.0002, 0.0184, 0.0015, -0.0002, -0.0166, 0.0015, -0.0002, -0.0166, 0.0015, -0.0002, -0.0166, 0.0009, -0.0002, 0.0184, 0.0009, 0.0002, 0.0184, 0.0015, 0.0002, -0.0166, 0.0015, -0.0002, -0.0166, 0.0015, -0.0002, -0.0166, 0.0015, -0.0002, 0.0184, 0.0015, 0.0002, 0.0184, 0.0015, 0.0002, 0.0184, 0.0009, 0.0002, -0.0166, 0.0009, 0.0002, -0.0166, 0.0015, 0.0002, -0.0166, 0.0015, 0.0002, 0.0184, 0.0015, 0.0002, 0.0184, 0.0009, -0.0002, 0.0184, 0.0009, -0.0002, -0.0166, 0.0009, 0.0002, -0.0166, 0.0009, 0.0002, -0.0166, 0.0009, 0.0002, 0.0184, 0.0009, -0.0002, 0.0184, 0.0009, -0.0002, 0.0179, 0.0034, -0.0002, 0.0179, 0.004, -0.0002, -0.0166, 0.004, -0.0002, -0.0166, 0.004, -0.0002, -0.0166, 0.0034, -0.0002, 0.0179, 0.0034, 0.0002, 0.0179, 0.004, 0.0002, -0.0166, 0.004, -0.0002, -0.0166, 0.004, -0.0002, -0.0166, 0.004, -0.0002, 0.0179, 0.004, 0.0002, 0.0179, 0.004, 0.0002, 0.0179, 0.0034, 0.0002, -0.0166, 0.0034, 0.0002, -0.0166, 0.004, 0.0002, -0.0166, 0.004, 0.0002, 0.0179, 0.004, 0.0002, 0.0179, 0.0034, -0.0002, 0.0179, 0.0034, -0.0002, -0.0166, 0.0034, 0.0002, -0.0166, 0.0034, 0.0002, -0.0166, 0.0034, 0.0002, 0.0179, 0.0034, -0.0002, 0.0179, 0.0034, -0.0002, 0.0172, 0.0057, -0.0002, 0.0172, 0.0064, -0.0002, -0.0166, 0.0064, -0.0002, -0.0166, 0.0064, -0.0002, -0.0166, 0.0057, -0.0002, 0.0172, 0.0057, 0.0002, 0.0172, 0.0064, 0.0002, -0.0166, 0.0064, -0.0002, -0.0166, 0.0064, -0.0002, -0.0166, 0.0064, -0.0002, 0.0172, 0.0064, 0.0002, 0.0172, 0.0064, 0.0002, 0.0172, 0.0057, 0.0002, -0.0166, 0.0057, 0.0002, -0.0166, 0.0064, 0.0002, -0.0166, 0.0064, 0.0002, 0.0172, 0.0064, 0.0002, 0.0172, 0.0057, -0.0002, 0.0172, 0.0057, -0.0002, -0.0166, 0.0057, 0.0002, -0.0166, 0.0057, 0.0002, -0.0166, 0.0057, 0.0002, 0.0172, 0.0057, -0.0002, 0.0172, 0.0057, -0.0002, 0.0163, 0.0087, -0.0002, 0.0163, 0.0093, -0.0002, -0.0166, 0.0093, -0.0002, -0.0166, 0.0093, -0.0002, -0.0166, 0.0087, -0.0002, 0.0163, 0.0087, 0.0002, 0.0163, 0.0093, 0.0002, -0.0166, 0.0093, -0.0002, -0.0166, 0.0093, -0.0002, -0.0166, 0.0093, -0.0002, 0.0163, 0.0093, 0.0002, 0.0163, 0.0093, 0.0002, 0.0163, 0.0087, 0.0002, -0.0166, 0.0087, 0.0002, -0.0166, 0.0093, 0.0002, -0.0166, 0.0093, 0.0002, 0.0163, 0.0093, 0.0002, 0.0163, 0.0087, -0.0002, 0.0163, 0.0087, -0.0002, -0.0166, 0.0087, 0.0002, -0.0166, 0.0087, 0.0002, -0.0166, 0.0087, 0.0002, 0.0163, 0.0087, -0.0002, 0.0163, 0.0087, -0.0002, -0.01, 0.0159, -0.0002, -0.0105, 0.0159, -0.0002, -0.0105, -0.016, -0.0002, -0.0105, -0.016, -0.0002, -0.01, -0.016, -0.0002, -0.01, 0.0159, 0.0002, -0.01, 0.0159, -0.0002, -0.01, 0.0159, -0.0002, -0.01, -0.016, -0.0002, -0.01, -0.016, 0.0002, -0.01, -0.016, 0.0002, -0.01, 0.0159, 0.0002, -0.0105, -0.016, 0.0002, -0.0105, 0.0159, 0.0002, -0.01, 0.0159, 0.0002, -0.01, 0.0159, 0.0002, -0.01, -0.016, 0.0002, -0.0105, -0.016, -0.0002, -0.0105, 0.0159, 0.0002, -0.0105, 0.0159, 0.0002, -0.0105, -0.016, 0.0002, -0.0105, -0.016, -0.0002, -0.0105, -0.016, -0.0002, -0.0105, 0.0159, -0.0002, -0.0028, -0.019, -0.0002, -0.0028, 0.0188, -0.0002, -0.0034, 0.0188, -0.0002, -0.0034, 0.0188, -0.0002, -0.0034, -0.019, -0.0002, -0.0028, -0.019, 0.0002, -0.0028, 0.0188, -0.0002, -0.0028, 0.0188, -0.0002, -0.0028, -0.019, -0.0002, -0.0028, -0.019, 0.0002, -0.0028, -0.019, 0.0002, -0.0028, 0.0188, 0.0002, -0.0034, 0.0188, 0.0002, -0.0028, 0.0188, 0.0002, -0.0028, -0.019, 0.0002, -0.0028, -0.019, 0.0002, -0.0034, -0.019, 0.0002, -0.0034, 0.0188, -0.0002, -0.0034, 0.0188, 0.0002, -0.0034, 0.0188, 0.0002, -0.0034, -0.019, 0.0002, -0.0034, -0.019, -0.0002, -0.0034, -0.019, -0.0002, -0.0034, 0.0188, -0.0002, 0.0071, -0.0173, -0.0002, 0.0071, 0.0172, -0.0002, 0.0065, 0.0172, -0.0002, 0.0065, 0.0172, -0.0002, 0.0065, -0.0173, -0.0002, 0.0071, -0.0173, 0.0002, 0.0071, 0.0172, -0.0002, 0.0071, 0.0172, -0.0002, 0.0071, -0.0173, -0.0002, 0.0071, -0.0173, 0.0002, 0.0071, -0.0173, 0.0002, 0.0071, 0.0172, 0.0002, 0.0065, 0.0172, 0.0002, 0.0071, 0.0172, 0.0002, 0.0071, -0.0173, 0.0002, 0.0071, -0.0173, 0.0002, 0.0065, -0.0173, 0.0002, 0.0065, 0.0172, -0.0002, 0.0065, 0.0172, 0.0002, 0.0065, 0.0172, 0.0002, 0.0065, -0.0173, 0.0002, 0.0065, -0.0173, -0.0002, 0.0065, -0.0173, -0.0002, 0.0065, 0.0172, 0.0006, 0.0035, -0.0185, 0.0006, 0.0036, -0.0192, 0.0006, -0.0034, -0.0195, 0.0006, -0.0034, -0.0195, 0.0006, -0.0034, -0.0187, 0.0006, 0.0035, -0.0185, -0.0006, -0.0034, -0.0195, -0.0006, 0.0036, -0.0192, -0.0006, 0.0035, -0.0185, -0.0006, 0.0035, -0.0185, -0.0006, -0.0034, -0.0187, -0.0006, -0.0034, -0.0195, -0.0006, -0.017, 0.0124, -0.0006, -0.0166, 0.0119, -0.0006, -0.0034, 0.0187, -0.0006, -0.0034, 0.0187, -0.0006, -0.0034, 0.0195, -0.0006, -0.017, 0.0124, -0.0006, 0.0109, 0.0156, -0.0006, 0.0036, 0.0192, -0.0006, 0.0035, 0.0185, -0.0006, 0.0035, 0.0185, -0.0006, 0.0106, 0.0149, -0.0006, 0.0109, 0.0156, -0.0006, -0.017, -0.0124, -0.0006, -0.0034, -0.0195, -0.0006, -0.0034, -0.0187, -0.0006, -0.0034, -0.0187, -0.0006, -0.0166, -0.0119, -0.0006, -0.017, -0.0124, 0.0006, -0.0166, -0.0119, 0.0006, -0.017, -0.0124, 0.0006, -0.017, 0.0124, 0.0006, -0.017, 0.0124, 0.0006, -0.0166, 0.0119, 0.0006, -0.0166, -0.0119, -0.0006, -0.0034, 0.0195, -0.0006, -0.0034, 0.0187, -0.0006, 0.0035, 0.0185, -0.0006, 0.0035, 0.0185, -0.0006, 0.0036, 0.0192, -0.0006, -0.0034, 0.0195, -0.0006, 0.0191, 0, -0.0006, 0.0186, 0, -0.0006, 0.0161, -0.0094, -0.0006, 0.0161, -0.0094, -0.0006, 0.0165, -0.0097, -0.0006, 0.0191, 0, -0.0006, 0.0191, 0, -0.0006, 0.0165, 0.0097, -0.0006, 0.0161, 0.0094, -0.0006, 0.0161, 0.0094, -0.0006, 0.0186, 0, -0.0006, 0.0191, 0, -0.0006, 0.0165, 0.0097, -0.0006, 0.0109, 0.0156, -0.0006, 0.0106, 0.0149, -0.0006, 0.0106, 0.0149, -0.0006, 0.0161, 0.0094, -0.0006, 0.0165, 0.0097, -0.0006, 0.0109, -0.0156, -0.0006, 0.0106, -0.0149, -0.0006, 0.0035, -0.0185, -0.0006, 0.0035, -0.0185, -0.0006, 0.0036, -0.0192, -0.0006, 0.0109, -0.0156, -0.0006, 0.0165, -0.0097, -0.0006, 0.0161, -0.0094, -0.0006, 0.0106, -0.0149, -0.0006, 0.0106, -0.0149, -0.0006, 0.0109, -0.0156, -0.0006, 0.0165, -0.0097, 0.0006, -0.017, 0.0124, 0.0006, -0.0034, 0.0195, 0.0006, -0.0034, 0.0187, 0.0006, -0.0034, 0.0187, 0.0006, -0.0166, 0.0119, 0.0006, -0.017, 0.0124, 0.0006, 0.0035, 0.0185, 0.0006, 0.0036, 0.0192, 0.0006, 0.0109, 0.0156, 0.0006, 0.0109, 0.0156, 0.0006, 0.0106, 0.0149, 0.0006, 0.0035, 0.0185, 0.0006, -0.0034, -0.0187, 0.0006, -0.0034, -0.0195, 0.0006, -0.017, -0.0124, 0.0006, -0.017, -0.0124, 0.0006, -0.0166, -0.0119, 0.0006, -0.0034, -0.0187, 0.0006, -0.017, -0.0124, -0.0006, -0.017, -0.0124, -0.0006, -0.017, 0.0124, -0.0006, -0.017, 0.0124, 0.0006, -0.017, 0.0124, 0.0006, -0.017, -0.0124, -0.0006, -0.0166, -0.0119, 0.0006, -0.0166, -0.0119, 0.0006, -0.0166, 0.0119, 0.0006, -0.0166, 0.0119, -0.0006, -0.0166, 0.0119, -0.0006, -0.0166, -0.0119, 0.0006, -0.0034, 0.0195, 0.0006, 0.0036, 0.0192, 0.0006, 0.0035, 0.0185, 0.0006, 0.0035, 0.0185, 0.0006, -0.0034, 0.0187, 0.0006, -0.0034, 0.0195, 0.0006, 0.0191, 0, 0.0006, 0.0165, -0.0097, 0.0006, 0.0161, -0.0094, 0.0006, 0.0161, -0.0094, 0.0006, 0.0186, 0, 0.0006, 0.0191, 0, 0.0006, 0.0161, 0.0094, 0.0006, 0.0165, 0.0097, 0.0006, 0.0191, 0, 0.0006, 0.0191, 0, 0.0006, 0.0186, 0, 0.0006, 0.0161, 0.0094, 0.0006, 0.0106, 0.0149, 0.0006, 0.0109, 0.0156, 0.0006, 0.0165, 0.0097, 0.0006, 0.0165, 0.0097, 0.0006, 0.0161, 0.0094, 0.0006, 0.0106, 0.0149, 0.0006, 0.0109, -0.0156, 0.0006, 0.0036, -0.0192, 0.0006, 0.0035, -0.0185, 0.0006, 0.0035, -0.0185, 0.0006, 0.0106, -0.0149, 0.0006, 0.0109, -0.0156, 0.0006, 0.0165, -0.0097, 0.0006, 0.0109, -0.0156, 0.0006, 0.0106, -0.0149, 0.0006, 0.0106, -0.0149, 0.0006, 0.0161, -0.0094, 0.0006, 0.0165, -0.0097, 0.0006, 0.0161, 0.0094, 0.0006, 0.0186, 0, -0.0006, 0.0186, 0, -0.0006, 0.0186, 0, -0.0006, 0.0161, 0.0094, 0.0006, 0.0161, 0.0094, 0.0006, 0.0035, -0.0185, 0.0006, -0.0034, -0.0187, -0.0006, -0.0034, -0.0187, -0.0006, -0.0034, -0.0187, -0.0006, 0.0035, -0.0185, 0.0006, 0.0035, -0.0185, 0.0006, -0.0166, 0.0119, 0.0006, -0.0034, 0.0187, -0.0006, -0.0034, 0.0187, -0.0006, -0.0034, 0.0187, -0.0006, -0.0166, 0.0119, 0.0006, -0.0166, 0.0119, 0.0006, 0.0036, 0.0192, 0.0006, -0.0034, 0.0195, -0.0006, -0.0034, 0.0195, -0.0006, -0.0034, 0.0195, -0.0006, 0.0036, 0.0192, 0.0006, 0.0036, 0.0192, 0.0006, 0.0106, -0.0149, 0.0006, 0.0035, -0.0185, -0.0006, 0.0035, -0.0185, -0.0006, 0.0035, -0.0185, -0.0006, 0.0106, -0.0149, 0.0006, 0.0106, -0.0149, -0.0006, 0.0035, 0.0185, 0.0006, 0.0035, 0.0185, 0.0006, 0.0106, 0.0149, 0.0006, 0.0106, 0.0149, -0.0006, 0.0106, 0.0149, -0.0006, 0.0035, 0.0185, 0.0006, 0.0165, -0.0097, 0.0006, 0.0191, 0, -0.0006, 0.0191, 0, -0.0006, 0.0191, 0, -0.0006, 0.0165, -0.0097, 0.0006, 0.0165, -0.0097, 0.0006, 0.0161, -0.0094, 0.0006, 0.0106, -0.0149, -0.0006, 0.0106, -0.0149, -0.0006, 0.0106, -0.0149, -0.0006, 0.0161, -0.0094, 0.0006, 0.0161, -0.0094, 0.0006, -0.0034, -0.0187, 0.0006, -0.0166, -0.0119, -0.0006, -0.0166, -0.0119, -0.0006, -0.0166, -0.0119, -0.0006, -0.0034, -0.0187, 0.0006, -0.0034, -0.0187, 0.0006, 0.0191, 0, 0.0006, 0.0165, 0.0097, -0.0006, 0.0165, 0.0097, -0.0006, 0.0165, 0.0097, -0.0006, 0.0191, 0, 0.0006, 0.0191, 0, 0.0006, -0.0034, -0.0195, 0.0006, 0.0036, -0.0192, -0.0006, 0.0036, -0.0192, -0.0006, 0.0036, -0.0192, -0.0006, -0.0034, -0.0195, 0.0006, -0.0034, -0.0195, -0.0006, -0.017, -0.0124, -0.0006, -0.0166, -0.0119, -0.0006, -0.0166, 0.0119, -0.0006, -0.0166, 0.0119, -0.0006, -0.017, 0.0124, -0.0006, -0.017, -0.0124, 0.0006, 0.0165, 0.0097, 0.0006, 0.0109, 0.0156, -0.0006, 0.0109, 0.0156, -0.0006, 0.0109, 0.0156, -0.0006, 0.0165, 0.0097, 0.0006, 0.0165, 0.0097, 0.0006, -0.0034, 0.0195, 0.0006, -0.017, 0.0124, -0.0006, -0.017, 0.0124, -0.0006, -0.017, 0.0124, -0.0006, -0.0034, 0.0195, 0.0006, -0.0034, 0.0195, 0.0006, -0.0034, 0.0187, 0.0006, 0.0035, 0.0185, -0.0006, 0.0035, 0.0185, -0.0006, 0.0035, 0.0185, -0.0006, -0.0034, 0.0187, 0.0006, -0.0034, 0.0187, -0.0006, 0.0036, -0.0192, 0.0006, 0.0036, -0.0192, 0.0006, 0.0109, -0.0156, 0.0006, 0.0109, -0.0156, -0.0006, 0.0109, -0.0156, -0.0006, 0.0036, -0.0192, 0.0006, 0.0109, 0.0156, 0.0006, 0.0036, 0.0192, -0.0006, 0.0036, 0.0192, -0.0006, 0.0036, 0.0192, -0.0006, 0.0109, 0.0156, 0.0006, 0.0109, 0.0156, 0.0006, 0.0186, 0, 0.0006, 0.0161, -0.0094, -0.0006, 0.0161, -0.0094, -0.0006, 0.0161, -0.0094, -0.0006, 0.0186, 0, 0.0006, 0.0186, 0, 0.0006, 0.0109, -0.0156, 0.0006, 0.0165, -0.0097, -0.0006, 0.0165, -0.0097, -0.0006, 0.0165, -0.0097, -0.0006, 0.0109, -0.0156, 0.0006, 0.0109, -0.0156, 0.0006, -0.017, -0.0124, 0.0006, -0.0034, -0.0195, -0.0006, -0.0034, -0.0195, -0.0006, -0.0034, -0.0195, -0.0006, -0.017, -0.0124, 0.0006, -0.017, -0.0124, -0.0002, -0.0166, -0.0127, -0.0002, 0.0136, -0.0127, -0.0002, 0.0136, -0.0121, -0.0002, 0.0136, -0.0121, -0.0002, -0.0166, -0.0121, -0.0002, -0.0166, -0.0127, 0.0002, 0.0136, -0.0127, -0.0002, 0.0136, -0.0127, -0.0002, -0.0166, -0.0127, -0.0002, -0.0166, -0.0127, 0.0002, -0.0166, -0.0127, 0.0002, 0.0136, -0.0127, 0.0002, 0.0136, -0.0121, 0.0002, 0.0136, -0.0127, 0.0002, -0.0166, -0.0127, 0.0002, -0.0166, -0.0127, 0.0002, -0.0166, -0.0121, 0.0002, 0.0136, -0.0121, -0.0002, 0.0136, -0.0121, 0.0002, 0.0136, -0.0121, 0.0002, -0.0166, -0.0121, 0.0002, -0.0166, -0.0121, -0.0002, -0.0166, -0.0121, -0.0002, 0.0136, -0.0121, -0.0002, -0.0166, 0.0116, -0.0002, 0.0141, 0.0116, -0.0002, 0.0141, 0.0123, -0.0002, 0.0141, 0.0123, -0.0002, -0.0166, 0.0123, -0.0002, -0.0166, 0.0116, 0.0002, 0.0141, 0.0116, -0.0002, 0.0141, 0.0116, -0.0002, -0.0166, 0.0116, -0.0002, -0.0166, 0.0116, 0.0002, -0.0166, 0.0116, 0.0002, 0.0141, 0.0116, 0.0002, 0.0141, 0.0123, 0.0002, 0.0141, 0.0116, 0.0002, -0.0166, 0.0116, 0.0002, -0.0166, 0.0116, 0.0002, -0.0166, 0.0123, 0.0002, 0.0141, 0.0123, -0.0002, 0.0141, 0.0123, 0.0002, 0.0141, 0.0123, 0.0002, -0.0166, 0.0123, 0.0002, -0.0166, 0.0123, -0.0002, -0.0166, 0.0123, -0.0002, 0.0141, 0.0123, -0.0002, -0.0113, 0.0146, -0.0002, 0.011, 0.0146, -0.0002, 0.011, 0.0153, -0.0002, 0.011, 0.0153, -0.0002, -0.0113, 0.0153, -0.0002, -0.0113, 0.0146, 0.0002, 0.011, 0.0146, -0.0002, 0.011, 0.0146, -0.0002, -0.0113, 0.0146, -0.0002, -0.0113, 0.0146, 0.0002, -0.0113, 0.0146, 0.0002, 0.011, 0.0146, 0.0002, 0.011, 0.0153, 0.0002, 0.011, 0.0146, 0.0002, -0.0113, 0.0146, 0.0002, -0.0113, 0.0146, 0.0002, -0.0113, 0.0153, 0.0002, 0.011, 0.0153, -0.0002, 0.011, 0.0153, 0.0002, 0.011, 0.0153, 0.0002, -0.0113, 0.0153, 0.0002, -0.0113, 0.0153, -0.0002, -0.0113, 0.0153, -0.0002, 0.011, 0.0153, -0.0002, -0.0101, -0.0159, -0.0002, 0.0102, -0.0159, -0.0002, 0.0102, -0.0153, -0.0002, 0.0102, -0.0153, -0.0002, -0.0101, -0.0153, -0.0002, -0.0101, -0.0159, 0.0002, 0.0102, -0.0159, -0.0002, 0.0102, -0.0159, -0.0002, -0.0101, -0.0159, -0.0002, -0.0101, -0.0159, 0.0002, -0.0101, -0.0159, 0.0002, 0.0102, -0.0159, 0.0002, 0.0102, -0.0153, 0.0002, 0.0102, -0.0159, 0.0002, -0.0101, -0.0159, 0.0002, -0.0101, -0.0159, 0.0002, -0.0101, -0.0153, 0.0002, 0.0102, -0.0153, -0.0002, 0.0102, -0.0153, 0.0002, 0.0102, -0.0153, 0.0002, -0.0101, -0.0153, 0.0002, -0.0101, -0.0153, -0.0002, -0.0101, -0.0153, -0.0002, 0.0102, -0.0153, -0.0006, 0.0106, 0.0149, 0.0006, 0.0106, 0.0149, 0.0006, 0.0161, 0.0094, 0.0006, 0.0161, 0.0094, -0.0006, 0.0161, 0.0094, -0.0006, 0.0106, 0.0149)
@@ -116,7 +115,7 @@ backface_collision = true
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bpmie"]
 resource_name = "Tiles"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("9_sflts")
+albedo_texture = ExtResource("11_vkf6p")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -124,7 +123,7 @@ emission_energy_multiplier = 0.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tjf7m"]
 resource_name = "TactilePaving"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("10_g0iqu")
+albedo_texture = ExtResource("12_iv8h5")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -132,7 +131,7 @@ emission_energy_multiplier = 0.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hxnjd"]
 resource_name = "road_rails"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("11_28da1")
+albedo_texture = ExtResource("13_xiufb")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -140,7 +139,7 @@ emission_energy_multiplier = 0.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5hjm2"]
 resource_name = "tile_tile"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("12_8ejdx")
+albedo_texture = ExtResource("14_4m735")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -148,7 +147,7 @@ emission_energy_multiplier = 0.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xgbg4"]
 resource_name = "metal_02"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("13_6w72y")
+albedo_texture = ExtResource("15_gkmp7")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -156,7 +155,7 @@ emission_energy_multiplier = 0.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yunpr"]
 resource_name = "ConcreteBare"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("14_4oxtu")
+albedo_texture = ExtResource("16_djrh5")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -363,17 +362,17 @@ shadow_mesh = SubResource("ArrayMesh_35mvt")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hxjrm"]
 resource_name = "Tiles"
-albedo_texture = ExtResource("9_sflts")
+albedo_texture = ExtResource("11_vkf6p")
 texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_abu2g"]
 resource_name = "road_rails"
-albedo_texture = ExtResource("11_28da1")
+albedo_texture = ExtResource("13_xiufb")
 texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wjlas"]
 resource_name = "ConcreteBare"
-albedo_texture = ExtResource("14_4oxtu")
+albedo_texture = ExtResource("16_djrh5")
 texture_filter = 2
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_iou3k"]
@@ -458,42 +457,42 @@ shadow_mesh = SubResource("ArrayMesh_iou3k")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mj3kx"]
 resource_name = "Tiles"
-albedo_texture = ExtResource("25_oa3gj")
+albedo_texture = ExtResource("17_dc17u")
 texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pmptu"]
 resource_name = "TactilePaving"
-albedo_texture = ExtResource("26_gjhwq")
+albedo_texture = ExtResource("18_lfvt2")
 texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jkxy1"]
 resource_name = "road_rails"
-albedo_texture = ExtResource("27_02jhy")
+albedo_texture = ExtResource("19_o1vsv")
 texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bvnm7"]
 resource_name = "tile_tile"
-albedo_texture = ExtResource("28_53c1v")
+albedo_texture = ExtResource("20_i4teh")
 texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2jcme"]
 resource_name = "metal_02"
-albedo_texture = ExtResource("29_f2o58")
+albedo_texture = ExtResource("21_71k4w")
 texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wks5r"]
 resource_name = "ConcreteBare"
-albedo_texture = ExtResource("30_hpmxj")
+albedo_texture = ExtResource("22_udjfn")
 texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xx32o"]
 resource_name = "concrete_base.001"
-albedo_texture = ExtResource("31_uagty")
+albedo_texture = ExtResource("23_l1cfj")
 texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gkt1v"]
 resource_name = "brick_modern_01.001"
-albedo_texture = ExtResource("32_jpq1r")
+albedo_texture = ExtResource("24_v0gl6")
 texture_filter = 2
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_g5kp4"]
@@ -685,7 +684,7 @@ shadow_mesh = SubResource("ArrayMesh_g5kp4")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3dfwu"]
 resource_name = "Door_01"
 cull_mode = 2
-albedo_texture = ExtResource("33_51rap")
+albedo_texture = ExtResource("25_aijy4")
 texture_filter = 2
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_u3qtd"]
@@ -722,7 +721,7 @@ shadow_mesh = SubResource("ArrayMesh_u3qtd")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y2qyd"]
 resource_name = "tile_tile"
-albedo_texture = ExtResource("34_eplpv")
+albedo_texture = ExtResource("26_qae7p")
 texture_filter = 2
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_i13jw"]
@@ -760,7 +759,7 @@ shadow_mesh = SubResource("ArrayMesh_i13jw")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k4a2c"]
 resource_name = "metal_02"
-albedo_texture = ExtResource("35_li54c")
+albedo_texture = ExtResource("27_v8uad")
 texture_filter = 2
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_usrkl"]
@@ -835,22 +834,22 @@ shadow_mesh = SubResource("ArrayMesh_78bma")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v4h8e"]
 resource_name = "Tiles"
-albedo_texture = ExtResource("36_lnjdh")
+albedo_texture = ExtResource("28_khssa")
 texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ji16"]
 resource_name = "TactilePaving"
-albedo_texture = ExtResource("37_aeqvp")
+albedo_texture = ExtResource("29_ijkex")
 texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i5iqm"]
 resource_name = "road_rails"
-albedo_texture = ExtResource("38_phfhb")
+albedo_texture = ExtResource("30_5tstb")
 texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_63ydh"]
 resource_name = "ConcreteBare"
-albedo_texture = ExtResource("39_3yvk4")
+albedo_texture = ExtResource("31_3mq5l")
 texture_filter = 2
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_gegly"]
@@ -999,7 +998,7 @@ shadow_mesh = SubResource("ArrayMesh_gegly")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1hww6"]
 resource_name = "brick_modern"
 cull_mode = 2
-albedo_texture = ExtResource("15_j3brg")
+albedo_texture = ExtResource("32_bkq4d")
 texture_filter = 2
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_vtt20"]
@@ -1036,32 +1035,32 @@ shadow_mesh = SubResource("ArrayMesh_vtt20")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_trv1v"]
 resource_name = "Tiles"
-albedo_texture = ExtResource("44_28da1")
+albedo_texture = ExtResource("33_sgq3d")
 texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rq8j5"]
 resource_name = "TactilePaving"
-albedo_texture = ExtResource("45_8ejdx")
+albedo_texture = ExtResource("34_4ju53")
 texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5jwqj"]
 resource_name = "road_rails"
-albedo_texture = ExtResource("46_6w72y")
+albedo_texture = ExtResource("35_bdubl")
 texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7htrj"]
 resource_name = "tile_tile"
-albedo_texture = ExtResource("47_4oxtu")
+albedo_texture = ExtResource("36_ddua0")
 texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kagw3"]
 resource_name = "metal_02"
-albedo_texture = ExtResource("48_j3brg")
+albedo_texture = ExtResource("37_wajrr")
 texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qq8jf"]
 resource_name = "ConcreteBare"
-albedo_texture = ExtResource("49_0nr7a")
+albedo_texture = ExtResource("38_xjnrh")
 texture_filter = 2
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_gtgxb"]
@@ -1326,126 +1325,123 @@ size = Vector3(7.10437, 4.69043, 5.98651)
 [node name="Scene_01" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = ExtResource("1_28da1")
+environment = ExtResource("1_gyggk")
 
-[node name="CharacterBody3D" parent="." instance=ExtResource("1_h15o5")]
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_1a8gr")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 21.4772, 6.06308, -69.8996)
-
-[node name="Eyeballs" parent="CharacterBody3D" instance=ExtResource("3_8ejdx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.72823, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
-[node name="Serwers_012" parent="StaticBody3D" instance=ExtResource("2_tgpox")]
+[node name="Serwers_012" parent="StaticBody3D" instance=ExtResource("4_n7y00")]
 transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, -21.5891, 1.09977, -45.0656)
 
-[node name="SerwersP1_012" parent="StaticBody3D" instance=ExtResource("3_jb36t")]
+[node name="SerwersP1_012" parent="StaticBody3D" instance=ExtResource("5_tmeo5")]
 transform = Transform3D(-7.44711e-06, 7.97051e-06, 170.37, 0, 182.344, -7.44711e-06, -170.37, 9.47229e-13, -7.44711e-06, 27.9304, 1.06077, 34.0134)
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(-7.44711e-06, 7.97051e-06, 170.37, 0, 182.344, -7.44711e-06, -170.37, 9.47229e-13, -7.44711e-06, 27.9304, 1.06077, 34.0134)
 shape = SubResource("ConcavePolygonShape3D_u4q6f")
 
-[node name="Serwers_021" parent="StaticBody3D" instance=ExtResource("4_x4qt1")]
+[node name="Serwers_021" parent="StaticBody3D" instance=ExtResource("6_am48e")]
 transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, 27.9105, 1.09991, 24.4232)
 
 [node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, 27.9105, 1.09991, 24.4232)
 shape = SubResource("ConcavePolygonShape3D_1eq5v")
 
-[node name="Serwers_023" parent="StaticBody3D" instance=ExtResource("4_x4qt1")]
+[node name="Serwers_023" parent="StaticBody3D" instance=ExtResource("6_am48e")]
 transform = Transform3D(-1.48047e-05, -1.48047e-05, -338.693, 0, 338.693, -1.48047e-05, 338.693, -6.47134e-13, -1.48047e-05, 22.8329, 1.09983, 43.3774)
 
 [node name="CollisionShape3D5" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(-1.48047e-05, -1.48047e-05, -338.693, 0, 338.693, -1.48047e-05, 338.693, -6.47134e-13, -1.48047e-05, 22.8329, 1.09983, 43.3774)
 shape = SubResource("ConcavePolygonShape3D_bvisc")
 
-[node name="Serwers_022" parent="StaticBody3D" instance=ExtResource("5_kofw2")]
+[node name="Serwers_022" parent="StaticBody3D" instance=ExtResource("7_7necg")]
 transform = Transform3D(-338.693, -1.29427e-12, -2.96095e-05, 0, 338.693, -1.48047e-05, 2.96095e-05, -1.48047e-05, -338.693, 27.9104, 1.10003, 31.1971)
 
 [node name="CollisionShape3D6" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(-338.693, -1.29427e-12, -2.96095e-05, 0, 338.693, -1.48047e-05, 2.96095e-05, -1.48047e-05, -338.693, 27.9104, 1.10003, 31.1971)
 shape = SubResource("ConcavePolygonShape3D_hs1po")
 
-[node name="Serwers_003" parent="StaticBody3D" instance=ExtResource("6_grdit")]
+[node name="Serwers_003" parent="StaticBody3D" instance=ExtResource("8_1828a")]
 transform = Transform3D(-1.48047e-05, 0, -338.693, 0, 338.693, 0, 338.693, 0, -1.48047e-05, -5.04294, 1.09947, -3.20124)
 
 [node name="CollisionShape3D7" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(-1.48047e-05, 0, -338.693, 0, 338.693, 0, 338.693, 0, -1.48047e-05, -5.04294, 1.09947, -3.20124)
 shape = SubResource("ConcavePolygonShape3D_8oxgw")
 
-[node name="Serwers_004" parent="StaticBody3D" instance=ExtResource("6_grdit")]
+[node name="Serwers_004" parent="StaticBody3D" instance=ExtResource("8_1828a")]
 transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, -12.8169, 1.09973, 11.5726)
 
 [node name="CollisionShape3D8" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, -12.8169, 1.09973, 11.5726)
 shape = SubResource("ConcavePolygonShape3D_712sx")
 
-[node name="Serwers2" parent="StaticBody3D" instance=ExtResource("7_fe7hj")]
+[node name="Serwers2" parent="StaticBody3D" instance=ExtResource("9_8l7a7")]
 transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -12.817, 1.09982, 19.3465)
 
 [node name="CollisionShape3D9" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -12.817, 1.09982, 19.3465)
 shape = SubResource("ConcavePolygonShape3D_8xhuy")
 
-[node name="Serwers_005" parent="StaticBody3D" instance=ExtResource("6_grdit")]
+[node name="Serwers_005" parent="StaticBody3D" instance=ExtResource("8_1828a")]
 transform = Transform3D(-1.48047e-05, 0, 338.693, 0, 338.693, 0, -338.693, 0, -1.48047e-05, 1.95702, 1.09977, 19.3465)
 
 [node name="CollisionShape3D10" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(-1.48047e-05, 0, 338.693, 0, 338.693, 0, -338.693, 0, -1.48047e-05, 1.95702, 1.09977, 19.3465)
 shape = SubResource("ConcavePolygonShape3D_e344x")
 
-[node name="Serwers_007" parent="StaticBody3D" instance=ExtResource("6_grdit")]
+[node name="Serwers_007" parent="StaticBody3D" instance=ExtResource("8_1828a")]
 transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.24638e-05, 0, 1.48047e-05, 285.139, -12.8166, 1.0999, -10.4395)
 
-[node name="Serwers_009" parent="StaticBody3D" instance=ExtResource("6_grdit")]
+[node name="Serwers_009" parent="StaticBody3D" instance=ExtResource("8_1828a")]
 transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, -12.8184, 1.0999, -22.5178)
 
-[node name="Serwers3" parent="StaticBody3D" instance=ExtResource("7_fe7hj")]
+[node name="Serwers3" parent="StaticBody3D" instance=ExtResource("9_8l7a7")]
 transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -21.5903, 1.09987, -37.292)
 
-[node name="Serwers_008" parent="StaticBody3D" instance=ExtResource("6_grdit")]
+[node name="Serwers_008" parent="StaticBody3D" instance=ExtResource("8_1828a")]
 transform = Transform3D(-1.48047e-05, 0, 338.693, 0, 338.693, 0, -338.693, 0, -1.48047e-05, 1.95666, 1.09979, -37.2888)
 
-[node name="Serwers_006" parent="StaticBody3D" instance=ExtResource("6_grdit")]
+[node name="Serwers_006" parent="StaticBody3D" instance=ExtResource("8_1828a")]
 transform = Transform3D(-1.48047e-05, 0, 338.693, 0, 338.693, 0, -338.693, 0, -1.48047e-05, 15.7305, 1.09961, 19.3466)
 
 [node name="CollisionShape3D15" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(-1.48047e-05, 0, 338.693, 0, 338.693, 0, -338.693, 0, -1.48047e-05, 15.7305, 1.09961, 19.3466)
 shape = SubResource("ConcavePolygonShape3D_31e3l")
 
-[node name="Serwers_013" parent="StaticBody3D" instance=ExtResource("6_grdit")]
+[node name="Serwers_013" parent="StaticBody3D" instance=ExtResource("8_1828a")]
 transform = Transform3D(-1.48048e-05, 0, -338.693, 0, 338.693, 0, 338.693, 0, -1.48048e-05, 0.281614, 1.0999, 52.1417)
 
 [node name="CollisionShape3D16" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(-1.48048e-05, 0, -338.693, 0, 338.693, 0, 338.693, 0, -1.48048e-05, 0.281614, 1.0999, 52.1417)
 shape = SubResource("ConcavePolygonShape3D_uh0yb")
 
-[node name="Serwers_001" parent="StaticBody3D" instance=ExtResource("8_qp77h")]
+[node name="Serwers_001" parent="StaticBody3D" instance=ExtResource("10_frfje")]
 transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -12.8167, 1.09963, -3.20123)
 
 [node name="CollisionShape3D17" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -12.8167, 1.09963, -3.20123)
 shape = SubResource("ConcavePolygonShape3D_c5p3b")
 
-[node name="Serwers_002" parent="StaticBody3D" instance=ExtResource("8_qp77h")]
+[node name="Serwers_002" parent="StaticBody3D" instance=ExtResource("10_frfje")]
 transform = Transform3D(100, 0, -0.0366449, 0, 100, 0, 0.0366449, 0, 100, -12.8166, 1.09989, -37.2904)
 
-[node name="Serwers_010" parent="StaticBody3D" instance=ExtResource("8_qp77h")]
+[node name="Serwers_010" parent="StaticBody3D" instance=ExtResource("10_frfje")]
 transform = Transform3D(0.0366405, 0, 100, 0, 100, 0, -100, 0, 0.0366405, 15.0599, 1.09959, 43.3759)
 
 [node name="CollisionShape3D19" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(0.0366405, 0, 100, 0, 100, 0, -100, 0, 0.0366405, 15.0599, 1.09959, 43.3759)
 shape = SubResource("ConcavePolygonShape3D_4ss4c")
 
-[node name="Serwers_011" parent="StaticBody3D" instance=ExtResource("8_qp77h")]
+[node name="Serwers_011" parent="StaticBody3D" instance=ExtResource("10_frfje")]
 transform = Transform3D(-100, 0, 0.0366362, 0, 100, 0, -0.0366362, 0, -100, 15.0552, 1.09959, 52.1433)
 
 [node name="CollisionShape3D20" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(-100, 0, 0.0366362, 0, 100, 0, -0.0366362, 0, -100, 15.0552, 1.09959, 52.1433)
 shape = SubResource("ConcavePolygonShape3D_3mr12")
 
-[node name="SerwersP1_010" parent="StaticBody3D" instance=ExtResource("3_jb36t")]
+[node name="SerwersP1_010" parent="StaticBody3D" instance=ExtResource("5_tmeo5")]
 transform = Transform3D(-7.63245e-06, 2.08477e-08, 174.59, 0.45713, 182.177, 2.32188e-14, -174.61, 0.47694, -7.63157e-06, -12.7967, 1.04028, -6.65139)
 
 [node name="CollisionShape3D21" type="CollisionShape3D" parent="StaticBody3D"]
@@ -1532,50 +1528,50 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.0263, 3.01069, -63.378)
 size = Vector3(7.92211, 7.48425, 12.1033)
 material = SubResource("FogMaterial_r64ux")
 
-[node name="Poster_01" parent="." instance=ExtResource("40_sflts")]
+[node name="Poster_01" parent="." instance=ExtResource("39_getn8")]
 transform = Transform3D(-4.4277e-06, 101.294, 4.4277e-06, 0, -4.4277e-06, 101.294, 101.294, 4.4277e-06, 1.93541e-13, 25.321, 3.691, -44.8529)
 
-[node name="Poster_01_frame" parent="." instance=ExtResource("40_sflts")]
-transform = Transform3D(-4.4277e-06, -101.294, -4.4277e-06, 0, -4.4277e-06, 101.294, -101.294, 4.4277e-06, 1.93541e-13, 25.2943, 3.691, -44.8529)
-
-[node name="Poster_01_ground" parent="." instance=ExtResource("40_sflts")]
-transform = Transform3D(-91.3472, 0, -43.7741, -1.91343e-06, -101.294, 3.99291e-06, -43.7741, 4.4277e-06, 91.3472, 21.5597, 1.38248, -47.2389)
-
-[node name="Poster_02" parent="." instance=ExtResource("41_g0iqu")]
+[node name="Poster_02" parent="." instance=ExtResource("40_gqmbq")]
 transform = Transform3D(-4.4277e-06, 101.294, 4.4277e-06, 0, -4.4277e-06, 101.294, 101.294, 4.4277e-06, 1.93541e-13, 25.321, 3.652, -41.3529)
 
-[node name="Poster_03" parent="." instance=ExtResource("42_28da1")]
+[node name="Poster_03" parent="." instance=ExtResource("41_1rl1a")]
 transform = Transform3D(-4.4277e-06, 101.294, 4.4277e-06, 0, -4.4277e-06, 101.294, 101.294, 4.4277e-06, 1.93541e-13, 25.3206, 3.85393, -37.8571)
 
-[node name="Poster_04" parent="." instance=ExtResource("43_8ejdx")]
+[node name="Poster_04" parent="." instance=ExtResource("42_t7a5v")]
 transform = Transform3D(-4.4277e-06, 101.294, 4.4277e-06, 0, -4.4277e-06, 101.294, 101.294, 4.4277e-06, 1.93541e-13, 25.3206, 3.85393, -34.3529)
 
-[node name="Poster_05" parent="." instance=ExtResource("44_6w72y")]
+[node name="Poster_05" parent="." instance=ExtResource("43_3pjaj")]
 transform = Transform3D(-4.4277e-06, 101.294, 4.4277e-06, 0, -4.4277e-06, 101.294, 101.294, 4.4277e-06, 1.93541e-13, 25.321, 3.854, -25.8529)
 
-[node name="Poster_06" parent="." instance=ExtResource("45_4oxtu")]
+[node name="Poster_06" parent="." instance=ExtResource("44_dbp4i")]
 transform = Transform3D(-4.4277e-06, 101.294, 4.4277e-06, 0, -4.4277e-06, 101.294, 101.294, 4.4277e-06, 1.93541e-13, 25.321, 3.854, -22.3529)
 
-[node name="Poster_07" parent="." instance=ExtResource("46_j3brg")]
+[node name="Poster_07" parent="." instance=ExtResource("45_cka32")]
 transform = Transform3D(-4.4277e-06, 101.294, 4.4277e-06, 0, -4.4277e-06, 101.294, 101.294, 4.4277e-06, 1.93541e-13, 25.321, 3.854, -18.8529)
 
-[node name="Poster_08" parent="." instance=ExtResource("47_0nr7a")]
+[node name="Poster_07_frame" parent="." instance=ExtResource("45_cka32")]
+transform = Transform3D(1.32831e-05, -101.294, 4.4277e-06, -3.87082e-13, 4.4277e-06, 101.294, -101.294, -1.32831e-05, 1.93541e-13, 25.3098, 3.854, -18.8568)
+
+[node name="Poster_07_ground" parent="." instance=ExtResource("45_cka32")]
+transform = Transform3D(-8.24492, 99.23, 18.5987, 0.251037, -18.6404, 99.5638, 100.958, 8.15018, 1.27133, 25.1419, 2.53795, -20.1744)
+
+[node name="Poster_08" parent="." instance=ExtResource("46_xvjd4")]
 transform = Transform3D(-4.4277e-06, 101.294, 4.4277e-06, 0, -4.4277e-06, 101.294, 101.294, 4.4277e-06, 1.93541e-13, 25.321, 3.854, -15.3529)
 
-[node name="trash_can" parent="." instance=ExtResource("48_8ejdx")]
+[node name="trash_can" parent="." instance=ExtResource("47_rm7s5")]
 transform = Transform3D(87.8458, 0, 0, 0, 5.23602e-06, 87.8458, 0, -87.8458, 5.23602e-06, 24.7417, 1.99133, -54.0719)
 
-[node name="Vending_machine" parent="." instance=ExtResource("49_6w72y")]
+[node name="Vending_machine" parent="." instance=ExtResource("48_dneof")]
 transform = Transform3D(-4.94953e-06, -113.232, -1.34983e-05, 0, -1.34983e-05, 113.232, -113.232, 4.94953e-06, 5.90029e-13, 25.0011, 2.66998, -30.0201)
 material_override = null
 
-[node name="Chair" parent="." instance=ExtResource("50_4oxtu")]
+[node name="Chair" parent="." instance=ExtResource("49_f2aar")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -40.6675)
 
-[node name="Chair2" parent="." instance=ExtResource("50_4oxtu")]
+[node name="Chair2" parent="." instance=ExtResource("49_f2aar")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -20.772)
 
-[node name="light" parent="." instance=ExtResource("51_6w72y")]
+[node name="light" parent="." instance=ExtResource("50_gokl5")]
 transform = Transform3D(100, 0, 0, 0, -1.19209e-05, 100, 0, -100, -1.19209e-05, 21.6309, 6.48184, -51.9358)
 
 [node name="metro pillar" type="Node3D" parent="."]
@@ -1669,60 +1665,60 @@ shape = SubResource("ConcavePolygonShape3D_g0iqu")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.9543, 3.80621, -1.80653)
 shape = SubResource("BoxShape3D_mp6dy")
 
-[node name="debris" parent="." instance=ExtResource("50_x050o")]
+[node name="debris" parent="." instance=ExtResource("51_3l0wx")]
 transform = Transform3D(1.26383, -0.288196, -1.35823, 1.0895, -0.366483, 1.53274, -0.457349, -1.66943, -0.102004, 11.5701, -0.408311, -1.29476)
 visible = false
 
-[node name="debris4" parent="." instance=ExtResource("50_x050o")]
+[node name="debris4" parent="." instance=ExtResource("51_3l0wx")]
 transform = Transform3D(-0.910279, 0.168498, 0.54463, 0.464189, -0.0104967, 1.09425, 0.154921, 1.02151, -0.0785928, 11.1634, 0.0704902, -1.04444)
 
-[node name="debris3" parent="." instance=ExtResource("50_x050o")]
+[node name="debris3" parent="." instance=ExtResource("51_3l0wx")]
 transform = Transform3D(-1.20421, -0.650611, 0.49055, 0.634815, -0.402881, 1.44105, -0.435988, 1.21039, 0.743336, 9.96692, -0.210257, -5.80458)
 
-[node name="debris2" parent="." instance=ExtResource("50_x050o")]
+[node name="debris2" parent="." instance=ExtResource("51_3l0wx")]
 transform = Transform3D(-1.16567, -0.117348, 1.12452, 0.949344, -0.319339, 1.33557, 0.113062, 1.47152, 0.379513, 10.7193, -0.0971785, -5.70884)
 
-[node name="debris_01" parent="." instance=ExtResource("51_mtro8")]
+[node name="debris_01" parent="." instance=ExtResource("52_2e4vw")]
 transform = Transform3D(127.942, 4.26557e-06, -35.7823, 35.7823, -1.52519e-05, 127.942, 0, -132.852, -1.58371e-05, 10.9963, -0.761615, -3.07715)
 
-[node name="debris_18" parent="." instance=ExtResource("52_nmuv1")]
+[node name="debris_18" parent="." instance=ExtResource("53_1frd1")]
 transform = Transform3D(100, 0, 0, 0, -1.19209e-05, 100, 0, -100, -1.19209e-05, 12.4161, -0.523669, -2.81376)
 
-[node name="debris_19" parent="." instance=ExtResource("52_nmuv1")]
+[node name="debris_19" parent="." instance=ExtResource("53_1frd1")]
 transform = Transform3D(-32.9588, -34.5807, -9.91817, -10.1672, -3.79969, 52.0997, -40.5963, 29.0265, -4.99592, 6.3159, -1.60273, -2.47035)
 
-[node name="debris_12" parent="." instance=ExtResource("53_mp6dy")]
+[node name="debris_12" parent="." instance=ExtResource("54_nbhgf")]
 transform = Transform3D(86.9025, 1.07615e-06, -18.1691, 18.1691, -1.05287e-05, 86.9025, -1.10132e-06, -88.7815, -1.05261e-05, 7.83143, -1.32266, -2.48439)
 
-[node name="debris_11" parent="." instance=ExtResource("53_mp6dy")]
+[node name="debris_11" parent="." instance=ExtResource("54_nbhgf")]
 transform = Transform3D(-177.957, -35.9837, -16.8655, -17.0598, -0.717931, 181.539, -35.892, 178.753, -2.66599, 8.26526, -1.28642, -4.56838)
 
-[node name="debris_09" parent="." instance=ExtResource("53_mp6dy")]
+[node name="debris_09" parent="." instance=ExtResource("54_nbhgf")]
 transform = Transform3D(181.737, 1.76594e-06, -14.8138, 14.8138, -2.16647e-05, 181.737, 0, -182.34, -2.17366e-05, 6.85486, -1.59793, -4.30396)
 
-[node name="debris_10" parent="." instance=ExtResource("53_mp6dy")]
+[node name="debris_10" parent="." instance=ExtResource("54_nbhgf")]
 transform = Transform3D(-179.078, -26.8117, -21.4472, -21.4212, -1.76577, 181.069, -26.8324, 180.349, -1.41564, 9.19155, -0.424021, -1.03096)
 
-[node name="debris_14" parent="." instance=ExtResource("54_lkjo7")]
+[node name="debris_14" parent="." instance=ExtResource("55_nglbf")]
 transform = Transform3D(0, -127.814, -3.80916e-06, -3.80916e-06, 0, 127.814, -127.814, 3.80916e-06, 0, 11.5432, -0.00553393, 0.0422776)
 
-[node name="debris_13" parent="." instance=ExtResource("54_lkjo7")]
+[node name="debris_13" parent="." instance=ExtResource("55_nglbf")]
 transform = Transform3D(-108.523, -67.3447, 4.87866, 5.74008, 2.14577e-06, 127.685, -67.2768, 108.633, 3.02443, 11.5857, 0.0394716, -5.64536)
 
-[node name="debris_15" parent="." instance=ExtResource("55_oa3gj")]
+[node name="debris_15" parent="." instance=ExtResource("56_diiu5")]
 transform = Transform3D(-3.34298, 103.809, -58.048, -7.03335e-06, 58.071, 103.85, 118.937, 2.91779, -1.63156, 11.5909, -0.442493, -2.96665)
 
-[node name="debris_16" parent="." instance=ExtResource("55_oa3gj")]
+[node name="debris_16" parent="." instance=ExtResource("56_diiu5")]
 transform = Transform3D(22.4833, 81.6999, -3.61825, 1.05817, 3.46156, 84.7371, 81.7732, -22.5079, -0.101694, 12.4034, 0.0472066, -4.40622)
 
-[node name="debris_17" parent="." instance=ExtResource("55_oa3gj")]
+[node name="debris_17" parent="." instance=ExtResource("56_diiu5")]
 transform = Transform3D(73.0161, -43.0004, -3.61826, 3.06611, -1.92381, 84.737, -43.0433, -73.0803, -0.101694, 12.0474, 0.0351653, -1.77282)
 
-[node name="debris_06" parent="." instance=ExtResource("55_oa3gj")]
+[node name="debris_06" parent="." instance=ExtResource("56_diiu5")]
 transform = Transform3D(152.762, -1.30918e-06, -21.9644, 21.9644, 9.10537e-06, 152.762, 0, -154.333, 9.19901e-06, 9.8963, -1.02218, -3.57972)
 
-[node name="debris_08" parent="." instance=ExtResource("55_oa3gj")]
+[node name="debris_08" parent="." instance=ExtResource("56_diiu5")]
 transform = Transform3D(-194.995, -185.952, -38.7991, -28.0366, -26.7365, 269.848, -187.332, 197.56, 1.58026e-05, 9.88728, -1.01755, -2.28529)
 
-[node name="debris_07" parent="." instance=ExtResource("55_oa3gj")]
+[node name="debris_07" parent="." instance=ExtResource("56_diiu5")]
 transform = Transform3D(152.762, -1.30918e-06, -21.9644, 21.9644, 9.10537e-06, 152.762, 0, -154.333, 9.19901e-06, 8.51089, -1.21598, -3.12987)
