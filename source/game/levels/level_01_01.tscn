@@ -1,9 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://6r4rab06udrt"]
+[gd_scene load_steps=4 format=3 uid="uid://6r4rab06udrt"]
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/level_01.tscn" id="1_gc4bu"]
+[ext_resource type="PackedScene" uid="uid://0oitx7uc3blr" path="res://assets/Skeletons/metal_door_2/scene.gltf" id="2_10vm2"]
 [ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/model/Metro_PSX/Models/Metro_slipt/poster_01.tscn" id="2_svq3v"]
 
 [node name="Scene_01" instance=ExtResource("1_gc4bu")]
+
+[node name="Sketchfab_Scene" parent="Enviroment/StaticBody3D" index="48" instance=ExtResource("2_10vm2")]
+transform = Transform3D(0.00910855, 0, 0, 0, 0.0115246, 0, 0, 0, 0.00910855, 20.1449, 5.56184, -80.1002)
 
 [node name="Poster_01_frame" parent="." index="3" instance=ExtResource("2_svq3v")]
 transform = Transform3D(1.32831e-05, -101.294, -4.4277e-06, 0, -4.4277e-06, 101.294, -101.294, -1.32831e-05, -5.80623e-13, 25.3021, 3.691, -44.8529)
