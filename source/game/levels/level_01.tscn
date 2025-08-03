@@ -1,4 +1,4 @@
-[gd_scene load_steps=146 format=4 uid="uid://upfh8uyt1rip"]
+[gd_scene load_steps=147 format=4 uid="uid://upfh8uyt1rip"]
 
 [ext_resource type="Environment" uid="uid://pq7vqvfywr8t" path="res://source/game/levels/level_01.tres" id="1_28da1"]
 [ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/Character/character.tscn" id="1_h15o5"]
@@ -55,6 +55,7 @@
 [ext_resource type="PackedScene" uid="uid://bayjcxtfwaphs" path="res://assets/model/Sewer/Models/Sewer_split/debris_03.tscn" id="53_mp6dy"]
 [ext_resource type="PackedScene" uid="uid://dotut1d78ligr" path="res://assets/model/Sewer/Models/Sewer_split/debris_04.tscn" id="54_lkjo7"]
 [ext_resource type="PackedScene" uid="uid://cnop7bbq2fabs" path="res://assets/model/Sewer/Models/Sewer_split/debris_05.tscn" id="55_oa3gj"]
+[ext_resource type="PackedScene" uid="uid://40jd1ww81xp5" path="res://source/game/levels/Props/door.tscn" id="56_drwwt"]
 
 [sub_resource type="FogMaterial" id="FogMaterial_r64ux"]
 albedo = Color(0.0962047, 0.0962048, 0.0962047, 1)
@@ -1762,3 +1763,6 @@ transform = Transform3D(152.762, -1.30918e-06, -21.9644, 21.9644, 9.10537e-06, 1
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.822, 6.74, -79.89)
 
 [node name="OutNode" type="Node3D" parent="."]
+
+[node name="Door" parent="." instance=ExtResource("56_drwwt")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 31.7929, 0.0247633, 31.6939)
