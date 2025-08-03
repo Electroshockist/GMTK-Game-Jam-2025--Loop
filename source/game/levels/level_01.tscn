@@ -1,9 +1,4 @@
-<<<<<<< Updated upstream
-[gd_scene load_steps=140 format=4 uid="uid://dvm3xqwqg741m"]
-=======
 [gd_scene load_steps=145 format=4 uid="uid://dvm3xqwqg741m"]
->>>>>>> Stashed changes
-
 [ext_resource type="Environment" uid="uid://pq7vqvfywr8t" path="res://source/game/levels/level_01.tres" id="1_28da1"]
 [ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/Character/character.tscn" id="1_h15o5"]
 [ext_resource type="PackedScene" uid="uid://cvy0ew3tgc55k" path="res://assets/model/Sewer/Models/Sewer_split/serwers_012.tscn" id="2_tgpox"]
