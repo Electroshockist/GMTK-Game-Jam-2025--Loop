@@ -1,10 +1,21 @@
-[gd_scene load_steps=8 format=4 uid="uid://d2saacevvgkdy"]
+[gd_scene load_steps=9 format=4 uid="uid://d2saacevvgkdy"]
 
 [ext_resource type="Texture2D" uid="uid://bqb7fv1gb1iwj" path="res://assets/model/Metro_PSX/Textures/ticket_machine.png" id="1_5pp3g"]
 [ext_resource type="Shader" uid="uid://h8trqbl805pv" path="res://assets/shaders/psx_shader.gdshader" id="1_mx0mf"]
 [ext_resource type="Script" uid="uid://di1emexw4rps5" path="res://assets/shaders/psx_shader_applicator.gd" id="2_712ky"]
+[ext_resource type="Texture2D" uid="uid://bljqd004yxns6" path="res://assets/model/Metro_PSX/Textures/Vending_machine.png" id="2_mx0mf"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_1ny3i"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gwsmp"]
+render_priority = 0
+shader = ExtResource("1_mx0mf")
+shader_parameter/affine_mapping = true
+shader_parameter/albedo = ExtResource("2_mx0mf")
+shader_parameter/emission_multiplier = 0.0
+shader_parameter/alpha_scissor = 0.5
+shader_parameter/jitter = 0.25
+shader_parameter/resolution = Vector2i(640, 480)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bu4ki"]
 render_priority = 0
 shader = ExtResource("1_mx0mf")
 shader_parameter/affine_mapping = true
@@ -12,15 +23,7 @@ shader_parameter/albedo = ExtResource("1_5pp3g")
 shader_parameter/emission_multiplier = 0.0
 shader_parameter/alpha_scissor = 0.5
 shader_parameter/jitter = 0.25
-shader_parameter/resolution = Vector2i(320, 240)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7n5p3"]
-resource_name = "ticket_machine"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_5pp3g")
-emission_enabled = true
-emission = Color(1, 1, 1, 1)
-emission_energy_multiplier = 0.0
+shader_parameter/resolution = Vector2i(640, 480)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_5wg07"]
 _surfaces = [{
@@ -44,7 +47,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 66,
 "index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAHAAdAB4AHgAfABwAIAAhACIAIgAjACAAJAAlACYAJgAnACQAKAApACoAKgArACgA"),
-"material": SubResource("StandardMaterial3D_7n5p3"),
+"material": SubResource("ShaderMaterial_bu4ki"),
 "name": "ticket_machine",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -56,7 +59,7 @@ shadow_mesh = SubResource("ArrayMesh_5wg07")
 
 [node name="ticket_machine" type="MeshInstance3D"]
 transform = Transform3D(47.4736, 0, 0, 0, -5.6593e-06, 47.4736, 0, -47.4736, -5.6593e-06, 0, 0, 0)
-material_override = SubResource("ShaderMaterial_1ny3i")
+material_override = SubResource("ShaderMaterial_gwsmp")
 mesh = SubResource("ArrayMesh_wgynr")
 skeleton = NodePath("")
 script = ExtResource("2_712ky")

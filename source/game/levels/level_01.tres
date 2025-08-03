@@ -11,6 +11,6 @@ fog_sky_affect = 0.0
 fog_depth_curve = 0.450625
 fog_depth_end = 181.4
 volumetric_fog_enabled = true
-volumetric_fog_density = 0.2395
+volumetric_fog_density = 0.1284
 volumetric_fog_albedo = Color(0.0923971, 0.0923971, 0.0923971, 1)
 volumetric_fog_anisotropy = 0.9

@@ -1,6 +1,20 @@
-[gd_scene load_steps=9 format=4 uid="uid://c186wglas7s41"]
+[gd_scene load_steps=12 format=4 uid="uid://c186wglas7s41"]
 
 [ext_resource type="Texture2D" uid="uid://dxocqht5cr5ic" path="res://assets/model/Metro_PSX/Textures/automatic_ticket_gate.png" id="1_efqq7"]
+[ext_resource type="Shader" uid="uid://h8trqbl805pv" path="res://assets/shaders/psx_shader.gdshader" id="1_ya4hw"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_m8qcf"]
+load_path = "res://.godot/imported/automatic_ticket_gate.png-671498955ce3a9fd2e53ed080276f4d1.s3tc.ctex"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hne8p"]
+render_priority = 0
+shader = ExtResource("1_ya4hw")
+shader_parameter/affine_mapping = true
+shader_parameter/albedo = SubResource("CompressedTexture2D_m8qcf")
+shader_parameter/emission_multiplier = 0.0
+shader_parameter/alpha_scissor = 0.5
+shader_parameter/jitter = 0.25
+shader_parameter/resolution = Vector2i(640, 480)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nwjts"]
 resource_name = "automatic_ticket_gate"
@@ -143,6 +157,7 @@ shadow_mesh = SubResource("ArrayMesh_y21m8")
 
 [node name="automatic_ticket_gate" type="MeshInstance3D"]
 transform = Transform3D(100, 0, 0, 0, -1.19209e-05, 100, 0, -100, -1.19209e-05, 0, 0, 0)
+material_override = SubResource("ShaderMaterial_hne8p")
 mesh = SubResource("ArrayMesh_nigk6")
 skeleton = NodePath("")
 

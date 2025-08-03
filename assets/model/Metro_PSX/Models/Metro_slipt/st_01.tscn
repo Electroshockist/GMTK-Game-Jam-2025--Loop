@@ -1,5 +1,6 @@
-[gd_scene load_steps=26 format=4 uid="uid://bpo17x0lmjd2i"]
+[gd_scene load_steps=28 format=4 uid="uid://bpo17x0lmjd2i"]
 
+[ext_resource type="Shader" uid="uid://h8trqbl805pv" path="res://assets/shaders/psx_shader.gdshader" id="1_pm7jj"]
 [ext_resource type="Texture2D" uid="uid://dvyq4m1tsymge" path="res://assets/model/Metro_PSX/Textures/Door_01.jpg" id="1_y61ko"]
 [ext_resource type="Texture2D" uid="uid://uov44fo4jrrd" path="res://assets/model/Metro_PSX/Textures/tile_tile.jpg" id="2_sst2p"]
 [ext_resource type="Texture2D" uid="uid://li3nxaeyh055" path="res://assets/model/Metro_PSX/Textures/metal_02.png" id="3_lg4ny"]
@@ -7,6 +8,16 @@
 [ext_resource type="Texture2D" uid="uid://d08b4ik4fuuqy" path="res://assets/model/Metro_PSX/Textures/TactilePaving.png" id="5_nfnse"]
 [ext_resource type="Texture2D" uid="uid://dyyk4ga8smi7m" path="res://assets/model/Metro_PSX/Textures/road_rails.jpg" id="6_ki7xc"]
 [ext_resource type="Texture2D" uid="uid://dkp3ibarnnqp0" path="res://assets/model/Metro_PSX/Textures/ConcreteBare.png" id="7_ihppg"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_g4cwx"]
+render_priority = 0
+shader = ExtResource("1_pm7jj")
+shader_parameter/affine_mapping = true
+shader_parameter/albedo = ExtResource("1_y61ko")
+shader_parameter/emission_multiplier = 0.0
+shader_parameter/alpha_scissor = 0.5
+shader_parameter/jitter = 0.25
+shader_parameter/resolution = Vector2i(640, 480)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jclx8"]
 resource_name = "Door_01"
@@ -352,6 +363,7 @@ shadow_mesh = SubResource("ArrayMesh_7owrw")
 
 [node name="Door_A" type="MeshInstance3D" parent="."]
 transform = Transform3D(57.3277, 0, 0, 0, -6.83399e-06, 57.3277, 0, -57.3277, -6.83399e-06, 16.9679, 2.73411, -17.7401)
+material_override = SubResource("ShaderMaterial_g4cwx")
 mesh = SubResource("ArrayMesh_d1kt8")
 skeleton = NodePath("")
 

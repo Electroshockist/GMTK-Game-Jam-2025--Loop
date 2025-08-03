@@ -1,7 +1,17 @@
-[gd_scene load_steps=6 format=4 uid="uid://daq2ktcnqj41c"]
+[gd_scene load_steps=7 format=4 uid="uid://daq2ktcnqj41c"]
 
 [ext_resource type="Shader" uid="uid://h8trqbl805pv" path="res://assets/shaders/psx_shader.gdshader" id="1_0qq1v"]
 [ext_resource type="Texture2D" uid="uid://8qoflni6nisf" path="res://assets/model/Metro_PSX/Textures/Chair.png" id="1_kmoll"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0qq1v"]
+render_priority = 0
+shader = ExtResource("1_0qq1v")
+shader_parameter/affine_mapping = true
+shader_parameter/albedo = ExtResource("1_kmoll")
+shader_parameter/emission_multiplier = 0.0
+shader_parameter/alpha_scissor = 0.5
+shader_parameter/jitter = 0.25
+shader_parameter/resolution = Vector2i(640, 480)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_f3q3s"]
 render_priority = 0
@@ -49,5 +59,6 @@ shadow_mesh = SubResource("ArrayMesh_2kr65")
 
 [node name="Chair" type="MeshInstance3D"]
 transform = Transform3D(113.949, 0, 0, 0, -1.35838e-05, 113.949, 0, -113.949, -1.35838e-05, 0, 0, 0)
+material_override = SubResource("ShaderMaterial_0qq1v")
 mesh = SubResource("ArrayMesh_su7os")
 skeleton = NodePath("")

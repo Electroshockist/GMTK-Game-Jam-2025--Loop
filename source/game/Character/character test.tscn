@@ -1,8 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://cych0u7ljeb2n"]
+[gd_scene load_steps=18 format=3 uid="uid://cych0u7ljeb2n"]
 
 [ext_resource type="Environment" uid="uid://cms3emih1j6kt" path="res://source/game/world.tres" id="1_2e1t2"]
 [ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/Character/character.tscn" id="1_os8ji"]
-[ext_resource type="PackedScene" uid="uid://bg7fmswynb4pb" path="res://source/game/interactable.tscn" id="2_8huq6"]
 [ext_resource type="PackedScene" uid="uid://daq2ktcnqj41c" path="res://assets/model/Metro_PSX/Models/Metro_slipt/chair.tscn" id="4_b6cy3"]
 [ext_resource type="PackedScene" uid="uid://c186wglas7s41" path="res://assets/model/Metro_PSX/Models/Metro_slipt/automatic_ticket_gate.tscn" id="5_0sa0k"]
 [ext_resource type="Texture2D" uid="uid://8qoflni6nisf" path="res://assets/model/Metro_PSX/Textures/Chair.png" id="5_jf753"]
@@ -88,6 +87,26 @@ func _ready() -> void:
 	pass # Replace with function body.
 "
 
+[sub_resource type="SphereMesh" id="SphereMesh_2e1t2"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_yhrcq"]
+
+[sub_resource type="GDScript" id="GDScript_2e1t2"]
+script/source = "extends Node
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	GameManager.interactor.on_interact.connect(_on_interact)
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+func _on_interact(node: Node):
+	print(\"found:\", node.name)"
+
 [node name="CharacterTest" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -115,9 +134,6 @@ mesh = SubResource("CapsuleMesh_qjn7n")
 transform = Transform3D(-6.49298, 1.00737, -0.503834, -3.34719, -2.10078, 0.596512, -0.596142, 0.823393, 2.13833, -0.728171, 3.95255, 0.454929)
 mesh = SubResource("TorusMesh_kvde8")
 
-[node name="Interactable" parent="." instance=ExtResource("2_8huq6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.98892, 0.926293, 3.7885)
-
 [node name="Chair" parent="." instance=ExtResource("4_b6cy3")]
 transform = Transform3D(113.949, 0, 0, 0, -1.35838e-05, 113.949, 0, -113.949, -1.35838e-05, -1.98928, 0.526775, 4.90891)
 material_override = SubResource("ShaderMaterial_0sa0k")
@@ -133,5 +149,20 @@ camera = NodePath("../CharacterBody3D/Camera3D")
 
 [node name="St_02" parent="." instance=ExtResource("8_yhrcq")]
 transform = Transform3D(0, 75.6441, -2.25437e-06, 2.25437e-06, 0, 75.6441, -75.6441, 2.25437e-06, 0, 12.71, 3.75054, 1.60244)
+
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.09313, 11.6362)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D"]
+mesh = SubResource("SphereMesh_2e1t2")
+skeleton = NodePath("../../root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/CharacterTest")
+
+[node name="Area3D" type="Area3D" parent="Node3D" groups=["Interactable"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/Area3D"]
+shape = SubResource("SphereShape3D_yhrcq")
+
+[node name="Node3D2" type="Node3D" parent="."]
+script = SubResource("GDScript_2e1t2")
 
 [editable path="CharacterBody3D"]

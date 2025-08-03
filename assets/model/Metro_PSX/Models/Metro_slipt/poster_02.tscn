@@ -1,6 +1,17 @@
-[gd_scene load_steps=5 format=4 uid="uid://dit2phk8j4yj8"]
+[gd_scene load_steps=7 format=4 uid="uid://dit2phk8j4yj8"]
 
+[ext_resource type="Shader" uid="uid://h8trqbl805pv" path="res://assets/shaders/psx_shader.gdshader" id="1_25qpl"]
 [ext_resource type="Texture2D" uid="uid://ct828uirteev6" path="res://assets/model/Metro_PSX/Textures/Posters.png" id="1_nc2nc"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_un2ap"]
+render_priority = 0
+shader = ExtResource("1_25qpl")
+shader_parameter/affine_mapping = false
+shader_parameter/albedo = ExtResource("1_nc2nc")
+shader_parameter/emission_multiplier = 0.0
+shader_parameter/alpha_scissor = 0.5
+shader_parameter/jitter = 0.25
+shader_parameter/resolution = Vector2i(640, 480)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3cyf1"]
 resource_name = "Posters"
@@ -44,5 +55,6 @@ shadow_mesh = SubResource("ArrayMesh_ia4mr")
 
 [node name="Poster_02" type="MeshInstance3D"]
 transform = Transform3D(-101.294, 3.94455e-05, -2.87896e-12, 0, 6.03762e-06, 101.294, 3.94455e-05, 101.294, -1.20752e-05, 0, 0, 0)
+material_override = SubResource("ShaderMaterial_un2ap")
 mesh = SubResource("ArrayMesh_r124k")
 skeleton = NodePath("")

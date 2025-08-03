@@ -2,6 +2,8 @@ extends Node
 
 signal menu_toggled
 
+var interactor: Interactor
+
 const psx_shader_applicator := preload("res://assets/shaders/psx_shader_applicator.gd")
 
 var character: Character

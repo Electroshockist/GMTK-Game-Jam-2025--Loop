@@ -6,7 +6,7 @@ render_mode blend_mix,
 	specular_disabled,
 	vertex_lighting;
 
-uniform bool affine_mapping = false;
+uniform bool affine_mapping = true;
 uniform sampler2D albedo : source_color, filter_nearest;
 uniform sampler2D emission : source_color, filter_nearest; // you can also use source_emission if bound in Godot
 uniform float emission_multiplier = 0.0f;

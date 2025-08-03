@@ -1,7 +1,17 @@
-[gd_scene load_steps=6 format=4 uid="uid://3g4l8qqfd515"]
+[gd_scene load_steps=7 format=4 uid="uid://3g4l8qqfd515"]
 
 [ext_resource type="Texture2D" uid="uid://bljqd004yxns6" path="res://assets/model/Metro_PSX/Textures/Vending_machine.png" id="1_5k3r5"]
-[ext_resource type="Material" uid="uid://c7s34nxjen1xw" path="res://assets/shaders/psx_mat.tres" id="1_r0lwh"]
+[ext_resource type="Shader" uid="uid://h8trqbl805pv" path="res://assets/shaders/psx_shader.gdshader" id="1_r0lwh"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lp73t"]
+render_priority = 0
+shader = ExtResource("1_r0lwh")
+shader_parameter/affine_mapping = true
+shader_parameter/albedo = ExtResource("1_5k3r5")
+shader_parameter/emission_multiplier = 0.0
+shader_parameter/alpha_scissor = 0.5
+shader_parameter/jitter = 0.25
+shader_parameter/resolution = Vector2i(640, 480)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lp73t"]
 resource_name = "Vending_machine"
@@ -45,6 +55,6 @@ shadow_mesh = SubResource("ArrayMesh_nrtem")
 
 [node name="Vending_machine" type="MeshInstance3D"]
 transform = Transform3D(113.232, 0, 0, 0, -1.34983e-05, 113.232, 0, -113.232, -1.34983e-05, 0, 0, 0)
-material_override = ExtResource("1_r0lwh")
+material_override = SubResource("ShaderMaterial_lp73t")
 mesh = SubResource("ArrayMesh_8o5af")
 skeleton = NodePath("")
