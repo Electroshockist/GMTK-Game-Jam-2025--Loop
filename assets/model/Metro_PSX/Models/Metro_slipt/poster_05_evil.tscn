@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=4 uid="uid://db5k0ejgpmclx"]
+
+[ext_resource type="Material" uid="uid://c2tcwval88rm8" path="res://assets/model/Metro_PSX/Models/Metro_slipt/posters_evil.tres" id="1_tyfml"]
+[ext_resource type="Texture2D" uid="uid://ct828uirteev6" path="res://assets/model/Metro_PSX/Textures/Posters.png" id="2_mc6o2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3cyf1"]
+resource_name = "Posters"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("2_mc6o2")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_011se"]
+_surfaces = [{
+"aabb": AABB(-0.00470616, -0.000243514, -0.00677196, 0.00941233, 0.000487028, 0.0135439),
+"format": 34359742465,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAQAAAAgACAAAAAQAAgAEAAAABAAHAAgAAwACAAEABQAHAAQABAACAAUABgAIAAcACAAGAAEABwAFAAYAAgADAAkACQAFAAIAAQAKAAMACQADAAoACgABAAYABQAJAAsACgALAAkACwAGAAUABgALAAoA"),
+"lods": [0.00698624, PackedByteArray("AAABAAIAAwACAAEAAgAEAAAAAwAFAAIABAACAAUAAwAGAAUAAwABAAYABQAHAAQABwAFAAYACAAAAAQABAAHAAgAAQAAAAgABgAIAAcACAAGAAEA")],
+"name": "Posters",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("Kjaau8NXfzlR5907Kjaau8NXf7lR5907Kjaau8NXf7lR5927oMyTu8NXf7nIfde7Kjaau8NXfzlR5927KjaaO8NXf7lR5927KjaaO8NXf7lR5907KjaaO8NXfzlR5927KjaaO8NXfzlR5907oMyTO8NXf7nIfde7oMyTu8NXf7nIfdc7oMyTO8NXf7nIfdc7")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_2n4mk"]
+resource_name = "Poster_05"
+_surfaces = [{
+"aabb": AABB(-0.00470616, -0.000243514, -0.00677196, 0.00941233, 0.000487028, 0.0135439),
+"attribute_data": PackedByteArray("Y7efPjoErz5jt58+qDarPhCypDymNqs+KLKkPDoErz71rHg/WmhDP4hUWj9caEM/iFRaP1lQYj/1rHg/WVBiP2O3nz6oNqs+Y7efPjoErz4QsqQ8OgSvPiiypDymNqs+WDuaPsiJrz5YO5o+FmCqPmAq1DwWYKo+YCrUPMyJrz5gKtQ8zImvPmAq1DwWYKo+WDuaPhBgqj5YO5o+yImvPrzmCTyW/KY+4fHcOgxtqT7g8dw6AK6YOgyhpj4Mbak+DKGmPgCumDoHzrY+FpisPszWKj8YmKw+zdYqP8VFKD8HzrY+xUUoP7zmCTyASMI7yS6jPpb8pj7HLqM+gEnCO+Hx3DoMbak+vOYJPJb8pj7JLqM+lvymPgyhpj4Mbak+DKGmPgCumDrHLqM+gEnCO7zmCTyASMI74PHcOgCumDo="),
+"format": 34359742487,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgAGQAaABsAGwAcABkADAANAA4ADgAPAAwAEAARABIAEgATABAAFgAdABQAFAAVABYAFwAeAB8AHwAYABcAIAAhACIAIgAjACAAJAAlACYAJgAnACQA"),
+"lods": [0.00698624, PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFAAXABUAFAAWABgAFAAYABcA")],
+"material": SubResource("StandardMaterial3D_3cyf1"),
+"name": "Posters",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 40,
+"vertex_data": PackedByteArray("Kjaau8NXfzlR5907Kjaau8NXf7lR5907Kjaau8NXf7lR5927Kjaau8NXfzlR5927KjaaO8NXfzlR5907Kjaau8NXfzlR5907Kjaau8NXfzlR5927KjaaO8NXfzlR5927KjaaO8NXf7lR5907KjaaO8NXfzlR5907KjaaO8NXfzlR5927KjaaO8NXf7lR5927KjaaO8NXf7lR5927KjaaO8NXfzlR5927Kjaau8NXfzlR5927Kjaau8NXf7lR5927Kjaau8NXf7lR5907Kjaau8NXfzlR5907KjaaO8NXfzlR5907KjaaO8NXf7lR5907oMyTu8NXf7nIfde7Kjaau8NXf7lR5927Kjaau8NXf7lR5907KjaaO8NXf7lR5927KjaaO8NXf7lR5907oMyTu8NXf7nIfdc7oMyTO8NXf7nIfdc7oMyTO8NXf7nIfde7oMyTu8NXf7nIfde7oMyTu8NXf7nIfdc7oMyTO8NXf7nIfde7oMyTO8NXf7nIfdc7Kjaau8NXf7lR5927oMyTu8NXf7nIfde7oMyTO8NXf7nIfde7KjaaO8NXf7lR5927KjaaO8NXf7lR5907oMyTO8NXf7nIfdc7oMyTu8NXf7nIfdc7Kjaau8NXf7lR5907AAD/f/9//z8AAP9//3//PwAA/3//f/8/AAD/f/9//z//f///////P/9///////8//3///////z//f///////P////3//f/+/////f/9//7////9//3//v////3//f/+//////////z//////////P//////+//8///////7//z//f/9//v//v/9//3/+//+//3//f/7//7//f/9//v//v/9/AAD///+//38AAP///7//fwAA////v/9/AAD+//+//38AAP///7//fwAA/v//v/9/AAD+//+//38AAP///7//fwAA////v/9/AAD///+//38AAP7//7//fwAA////v/9/AAD///+//38AAP///7//fwAA////v/9/AAD///+//38AAP7//7//fwAA/v//v/9/AAD///+//38AAP///78=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_011se")
+
+[node name="Poster_05" type="MeshInstance3D"]
+transform = Transform3D(-101.294, 3.94455e-05, -2.87896e-12, 0, 6.03762e-06, 101.294, 3.94455e-05, 101.294, -1.20752e-05, 0, 0, 0)
+material_override = ExtResource("1_tyfml")
+mesh = SubResource("ArrayMesh_2n4mk")
+skeleton = NodePath("")

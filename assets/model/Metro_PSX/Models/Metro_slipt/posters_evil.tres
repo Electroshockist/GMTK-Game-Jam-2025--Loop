@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://c2tcwval88rm8"]
+
+[ext_resource type="Shader" uid="uid://h8trqbl805pv" path="res://assets/shaders/psx_shader.gdshader" id="1_lwb4d"]
+[ext_resource type="Texture2D" uid="uid://dmdkd77hi5h8f" path="res://assets/model/Metro_PSX/Textures/PostersBAD.png" id="2_lwb4d"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_lwb4d")
+shader_parameter/affine_mapping = true
+shader_parameter/albedo = ExtResource("2_lwb4d")
+shader_parameter/emission_multiplier = 0.0
+shader_parameter/alpha_scissor = 0.5
+shader_parameter/jitter = 0.25
+shader_parameter/resolution = Vector2i(640, 480)
