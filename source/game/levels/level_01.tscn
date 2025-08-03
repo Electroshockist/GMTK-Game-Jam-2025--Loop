@@ -1,8 +1,9 @@
-[gd_scene load_steps=139 format=4 uid="uid://dvm3xqwqg741m"]
+[gd_scene load_steps=140 format=4 uid="uid://dvm3xqwqg741m"]
 
 [ext_resource type="Environment" uid="uid://pq7vqvfywr8t" path="res://source/game/levels/level_01.tres" id="1_28da1"]
 [ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/Character/character.tscn" id="1_h15o5"]
 [ext_resource type="PackedScene" uid="uid://cvy0ew3tgc55k" path="res://assets/model/Sewer/Models/Sewer_split/serwers_012.tscn" id="2_tgpox"]
+[ext_resource type="PackedScene" uid="uid://2gyp74jynwr2" path="res://source/game/effects/eyeballs.tscn" id="3_8ejdx"]
 [ext_resource type="PackedScene" uid="uid://daantvv3eeq2c" path="res://assets/model/Sewer/Models/Sewer_split/serwers_p_1_010.tscn" id="3_jb36t"]
 [ext_resource type="PackedScene" uid="uid://cx6xdhceq0q7x" path="res://assets/model/Sewer/Models/Sewer_split/serwers_013.tscn" id="4_x4qt1"]
 [ext_resource type="PackedScene" uid="uid://mekhtpuqcaok" path="res://assets/model/Sewer/Models/Sewer_split/serwers_007.tscn" id="5_kofw2"]
@@ -1323,6 +1324,9 @@ environment = ExtResource("1_28da1")
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_h15o5")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 21.4772, 6.06308, -69.8996)
+
+[node name="Eyeballs" parent="CharacterBody3D" instance=ExtResource("3_8ejdx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.72823, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
