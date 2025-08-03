@@ -1759,5 +1759,6 @@ transform = Transform3D(-194.995, -185.952, -38.7991, -28.0366, -26.7365, 269.84
 transform = Transform3D(152.762, -1.30918e-06, -21.9644, 21.9644, 9.10537e-06, 152.762, 0, -154.333, 9.19901e-06, 8.51089, -1.21598, -3.12987)
 
 [node name="InNode" type="Node3D" parent="."]
-unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.822, 6.74, -79.89)
+
+[node name="OutNode" type="Node3D" parent="."]
