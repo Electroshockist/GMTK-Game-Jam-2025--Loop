@@ -1,5 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://cuymlq55sf47x"]
+[gd_scene load_steps=4 format=3 uid="uid://b22103bljmid4"]
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/level_01.tscn" id="1_klg5w"]
+[ext_resource type="PackedScene" uid="uid://2gyp74jynwr2" path="res://source/game/effects/eyeballs.tscn" id="2_asoai"]
+[ext_resource type="PackedScene" uid="uid://cvs2yxfndn70u" path="res://source/game/Sounds/SFX_EyeballWhisper.tscn" id="3_iiadw"]
 
 [node name="Scene_01" instance=ExtResource("1_klg5w")]
+
+[node name="Eyeballs" parent="." index="3" instance=ExtResource("2_asoai")]
+transform = Transform3D(0.497486, 0, 0, 0, 0.308011, 0, 0, 0, 0.96823, 14.9219, 4.30796, -60.2828)
+amount = 5
+
+[node name="EyeballWhisper" parent="." index="4" instance=ExtResource("3_iiadw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.7469, 3.45949, -60.3306)
