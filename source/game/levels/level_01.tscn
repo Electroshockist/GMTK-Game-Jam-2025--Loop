@@ -1,4 +1,4 @@
-[gd_scene load_steps=145 format=4 uid="uid://upfh8uyt1rip"]
+[gd_scene load_steps=147 format=4 uid="uid://upfh8uyt1rip"]
 
 [ext_resource type="Environment" uid="uid://pq7vqvfywr8t" path="res://source/game/levels/level_01.tres" id="1_28da1"]
 [ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/Character/character.tscn" id="1_h15o5"]
@@ -55,6 +55,7 @@
 [ext_resource type="PackedScene" uid="uid://bayjcxtfwaphs" path="res://assets/model/Sewer/Models/Sewer_split/debris_03.tscn" id="53_mp6dy"]
 [ext_resource type="PackedScene" uid="uid://dotut1d78ligr" path="res://assets/model/Sewer/Models/Sewer_split/debris_04.tscn" id="54_lkjo7"]
 [ext_resource type="PackedScene" uid="uid://cnop7bbq2fabs" path="res://assets/model/Sewer/Models/Sewer_split/debris_05.tscn" id="55_oa3gj"]
+[ext_resource type="PackedScene" uid="uid://40jd1ww81xp5" path="res://source/game/levels/Props/door.tscn" id="56_drwwt"]
 
 [sub_resource type="FogMaterial" id="FogMaterial_r64ux"]
 albedo = Color(0.0962047, 0.0962048, 0.0962047, 1)
@@ -1310,7 +1311,10 @@ size = Vector3(0.365479, 4.61795, 10.9743)
 size = Vector3(1.16327, 8.91364, 19.543)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0nr7a"]
-size = Vector3(5.46198, 4.51358, 0.393127)
+size = Vector3(1.81947, 4.51358, 0.393127)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lkjo7"]
+size = Vector3(1.19053, 2.09153, 0.393127)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_nqmpd"]
 size = Vector3(0.78064, 4.85638, 0.83461)
@@ -1678,9 +1682,17 @@ shape = SubResource("BoxShape3D_4oxtu")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0597, 5.60832, -64.5753)
 shape = SubResource("BoxShape3D_j3brg")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Enviroment/Subway"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.439, 7.79383, -80.031)
+[node name="Back Wall" type="CollisionShape3D" parent="Enviroment/Subway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.2603, 7.79383, -80.031)
 shape = SubResource("BoxShape3D_0nr7a")
+
+[node name="Back Wall2" type="CollisionShape3D" parent="Enviroment/Subway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.2634, 7.79383, -80.031)
+shape = SubResource("BoxShape3D_0nr7a")
+
+[node name="Back Wall3" type="CollisionShape3D" parent="Enviroment/Subway"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.7686, 9.00486, -80.031)
+shape = SubResource("BoxShape3D_lkjo7")
 
 [node name="Pillar" type="CollisionShape3D" parent="Enviroment/Subway"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.7675, 3.8362, -36.0135)
@@ -1755,3 +1767,11 @@ transform = Transform3D(-194.995, -185.952, -38.7991, -28.0366, -26.7365, 269.84
 
 [node name="debris_07" parent="Enviroment" instance=ExtResource("55_oa3gj")]
 transform = Transform3D(152.762, -1.30918e-06, -21.9644, 21.9644, 9.10537e-06, 152.762, 0, -154.333, 9.19901e-06, 8.51089, -1.21598, -3.12987)
+
+[node name="InNode" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.822, 6.74, -79.89)
+
+[node name="OutNode" type="Node3D" parent="."]
+
+[node name="Door" parent="." instance=ExtResource("56_drwwt")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 31.7929, 0.0247633, 31.6939)
