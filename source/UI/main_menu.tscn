@@ -1,7 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://t851h6i8wqeo"]
+[gd_scene load_steps=12 format=3 uid="uid://t851h6i8wqeo"]
 
 [ext_resource type="Script" uid="uid://cttmxvcvuh4oy" path="res://source/UI/main_menu.gd" id="1_ekxnf"]
-[ext_resource type="Texture2D" uid="uid://c7eaotevcyuo1" path="res://assets/1000_F_254347897_MVMdx2XoHbI6KLIayKJCBKRtbBZAIPeV.jpg" id="1_l6cm7"]
+[ext_resource type="Texture2D" uid="uid://d1alttnfwmnqk" path="res://assets/sprites/MenuBG/MainmenuBG.png" id="2_dmxiq"]
 [ext_resource type="Texture2D" uid="uid://bvboke1inuk1e" path="res://assets/sprites/Buttons/START BASE.png" id="3_41ywg"]
 [ext_resource type="Texture2D" uid="uid://cspwq1xseltv6" path="res://assets/sprites/Buttons/START PRESSED.png" id="4_w6174"]
 [ext_resource type="Texture2D" uid="uid://bvha5b2st5u72" path="res://assets/sprites/Buttons/START SELECTED.png" id="5_xm3wm"]
@@ -11,9 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://ds5xsm2ohwsdk" path="res://assets/sprites/Buttons/QUIT BASE.png" id="9_nk7bp"]
 [ext_resource type="Texture2D" uid="uid://ctmj738hcym7t" path="res://assets/sprites/Buttons/QUIT PRESSED.png" id="10_p3fqg"]
 [ext_resource type="Texture2D" uid="uid://b0nofbx6tdwwy" path="res://assets/sprites/Buttons/QUIT SELECTED.png" id="11_k3u35"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_vue75"]
-font_size = 36
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3
@@ -31,33 +28,33 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_l6cm7")
+texture = ExtResource("2_dmxiq")
 expand_mode = 1
 stretch_mode = 6
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.2
-anchor_top = 0.2
-anchor_right = 0.8
-anchor_bottom = 0.8
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 2.0
+offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_top = 110
+theme_override_constants/margin_bottom = 75
 
-[node name="Label" type="Label" parent="VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
-size_flags_horizontal = 4
-text = "Sample Text"
-label_settings = SubResource("LabelSettings_vue75")
-horizontal_alignment = 1
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer"]
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_constants/separation = 10
 
-[node name="Play Button" type="TextureButton" parent="VBoxContainer/VBoxContainer2"]
+[node name="Play Button" type="TextureButton" parent="MarginContainer/VBoxContainer/VBoxContainer2"]
 layout_mode = 2
 size_flags_vertical = 3
 texture_normal = ExtResource("3_41ywg")
@@ -66,13 +63,13 @@ texture_hover = ExtResource("5_xm3wm")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="Options Button" type="TextureButton" parent="VBoxContainer/VBoxContainer2"]
+[node name="Options Button" type="TextureButton" parent="MarginContainer/VBoxContainer/VBoxContainer2"]
 visible = false
 layout_mode = 2
 size_flags_vertical = 3
 ignore_texture_size = true
 
-[node name="Credits Button" type="TextureButton" parent="VBoxContainer/VBoxContainer2"]
+[node name="Credits Button" type="TextureButton" parent="MarginContainer/VBoxContainer/VBoxContainer2"]
 layout_mode = 2
 size_flags_vertical = 3
 texture_normal = ExtResource("6_dmxiq")
@@ -81,7 +78,7 @@ texture_hover = ExtResource("8_c2npr")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="Quit Button" type="TextureButton" parent="VBoxContainer/VBoxContainer2"]
+[node name="Quit Button" type="TextureButton" parent="MarginContainer/VBoxContainer/VBoxContainer2"]
 layout_mode = 2
 size_flags_vertical = 3
 texture_normal = ExtResource("9_nk7bp")
@@ -90,7 +87,7 @@ texture_hover = ExtResource("11_k3u35")
 ignore_texture_size = true
 stretch_mode = 5
 
-[connection signal="pressed" from="VBoxContainer/VBoxContainer2/Play Button" to="." method="_on_button_pressed" binds= [1]]
-[connection signal="pressed" from="VBoxContainer/VBoxContainer2/Options Button" to="." method="_on_button_pressed" binds= [2]]
-[connection signal="pressed" from="VBoxContainer/VBoxContainer2/Credits Button" to="." method="_on_button_pressed" binds= [3]]
-[connection signal="pressed" from="VBoxContainer/VBoxContainer2/Quit Button" to="." method="_on_button_pressed" binds= [-1]]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer2/Play Button" to="." method="_on_button_pressed" binds= [1]]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer2/Options Button" to="." method="_on_button_pressed" binds= [2]]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer2/Credits Button" to="." method="_on_button_pressed" binds= [3]]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer2/Quit Button" to="." method="_on_button_pressed" binds= [-1]]
