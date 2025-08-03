@@ -3,8 +3,8 @@ class_name Character
 
 @export var camera: Camera3D
 
-const SPEED = 5.0
-const JUMP_VELOCITY = 4.5
+const SPEED = 4.0
+const JUMP_VELOCITY = 6.5
 const LOOK_SENSITIVITY = 0.5
 
 var _input_enabled: bool = true
