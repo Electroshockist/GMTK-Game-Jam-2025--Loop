@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cych0u7ljeb2n"]
+[gd_scene load_steps=19 format=3 uid="uid://cych0u7ljeb2n"]
 
 [ext_resource type="Environment" uid="uid://cms3emih1j6kt" path="res://source/game/world.tres" id="1_2e1t2"]
 [ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/Character/character.tscn" id="1_os8ji"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://c186wglas7s41" path="res://assets/model/Metro_PSX/Models/Metro_slipt/automatic_ticket_gate.tscn" id="5_0sa0k"]
 [ext_resource type="Texture2D" uid="uid://8qoflni6nisf" path="res://assets/model/Metro_PSX/Textures/Chair.png" id="5_jf753"]
 [ext_resource type="PackedScene" uid="uid://blk6m1hhnnjq8" path="res://source/portal renderer/render_viewport.tscn" id="6_0sa0k"]
+[ext_resource type="PackedScene" uid="uid://40jd1ww81xp5" path="res://source/game/levels/Props/door.tscn" id="8_edamf"]
 [ext_resource type="PackedScene" uid="uid://dy6kocd8kf1dp" path="res://assets/model/Metro_PSX/Models/Metro_slipt/st_02.tscn" id="8_yhrcq"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_7slvv"]
@@ -117,6 +118,7 @@ transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -
 shadow_enabled = true
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_os8ji")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9.04483)
 
 [node name="Floor" type="MeshInstance3D" parent="."]
 mesh = SubResource("PlaneMesh_7slvv")
@@ -164,5 +166,8 @@ shape = SubResource("SphereShape3D_yhrcq")
 
 [node name="Node3D2" type="Node3D" parent="."]
 script = SubResource("GDScript_2e1t2")
+
+[node name="Door" parent="." instance=ExtResource("8_edamf")]
+transform = Transform3D(-0.443791, 0, 0.89613, 0, 1, 0, -0.89613, 0, -0.443791, 1.20916, 1.02463, 7.30251)
 
 [editable path="CharacterBody3D"]

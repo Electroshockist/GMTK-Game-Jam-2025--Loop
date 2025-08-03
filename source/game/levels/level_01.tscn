@@ -1,4 +1,4 @@
-[gd_scene load_steps=147 format=4 uid="uid://upfh8uyt1rip"]
+[gd_scene load_steps=146 format=4 uid="uid://upfh8uyt1rip"]
 
 [ext_resource type="Environment" uid="uid://pq7vqvfywr8t" path="res://source/game/levels/level_01.tres" id="1_28da1"]
 [ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/Character/character.tscn" id="1_h15o5"]
@@ -1268,9 +1268,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ydlln")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_h15o5"]
-size = Vector3(0.514526, 2.46179, 1)
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_mmwoj"]
 size = Vector3(5.31323, 6.61052, 0.460815)
 
@@ -1613,12 +1610,6 @@ transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 10
 
 [node name="metro pillar" type="Node3D" parent="Enviroment"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.8916, 0.465505, -36.7715)
-
-[node name="Sewer" type="StaticBody3D" parent="Enviroment"]
-
-[node name="Door" type="CollisionShape3D" parent="Enviroment/Sewer"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.3075, 0.190784, 31.1522)
-shape = SubResource("BoxShape3D_h15o5")
 
 [node name="Subway" type="StaticBody3D" parent="Enviroment"]
 

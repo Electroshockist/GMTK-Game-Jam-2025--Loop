@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://6r4rab06udrt"]
+[gd_scene load_steps=3 format=3 uid="uid://5tr5x1rg1h0g"]
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/level_01.tscn" id="1_gc4bu"]
 [ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/model/Metro_PSX/Models/Metro_slipt/poster_01.tscn" id="2_svq3v"]
