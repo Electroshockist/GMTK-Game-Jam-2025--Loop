@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://5tr5x1rg1h0g"]
+[gd_scene load_steps=5 format=3 uid="uid://5tr5x1rg1h0g"]
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/level_01.tscn" id="1_gc4bu"]
+[ext_resource type="PackedScene" uid="uid://0oitx7uc3blr" path="res://assets/Skeletons/metal_door_2/scene.gltf" id="2_10vm2"]
 [ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/model/Metro_PSX/Models/Metro_slipt/poster_01.tscn" id="2_svq3v"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_10vm2"]
+size = Vector3(1, 6.5849, 6.42096)
 
 [node name="Scene_02" instance=ExtResource("1_gc4bu")]
 
@@ -10,3 +14,13 @@ transform = Transform3D(1.13113e-05, -101.294, -5.64598e-06, 0, -4.4277e-06, 129
 
 [node name="Poster_01_ground" parent="." index="7" instance=ExtResource("2_svq3v")]
 transform = Transform3D(-33.9067, -1.20871e-05, 125.814, 2.26226e-05, -101.294, -1.1292e-05, 145.936, 1.28941e-05, 29.2315, 23.4379, 1.3926, -52.0017)
+
+[node name="entry_StaticBody3D" type="StaticBody3D" parent="." index="8"]
+transform = Transform3D(0.00418071, 0.9997, -0.024126, 0.0186431, 0.0240441, 0.999537, 0.999817, -0.00462855, -0.018537, 21.5224, 5.48947, -80.3046)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="entry_StaticBody3D" index="0"]
+transform = Transform3D(1.03561, -2.08616e-07, 5.02914e-08, -1.11759e-07, 0.999831, -4.39504e-07, 2.64496e-07, -2.24391e-07, 0.999344, 0.0501328, 0.21841, 1.26821)
+shape = SubResource("BoxShape3D_10vm2")
+
+[node name="Entry_Door" parent="." index="9" instance=ExtResource("2_10vm2")]
+transform = Transform3D(0.00921591, 0, 0, 0, 0.0120422, 0, 0, 0, 0.00921591, 20.1099, 5.47563, -80.2735)
