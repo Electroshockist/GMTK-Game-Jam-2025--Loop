@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bo16sqwgdwk6o"]
+
+[ext_resource type="PackedScene" uid="uid://di4tygw2fhbwb" path="res://assets/model/models/Sewer/Sewer_split/door_metal.tscn" id="1_1j7df"]
+[ext_resource type="PackedScene" uid="uid://40jd1ww81xp5" path="res://source/game/levels/Props/door.tscn" id="1_yjrys"]
+
+[node name="Door" instance=ExtResource("1_yjrys")]
+
+[node name="door_metal" parent="." index="0" instance=ExtResource("1_1j7df")]
+transform = Transform3D(-94, 0, -1.41936e-05, 0, 94, 0, 1.41936e-05, 0, -94, 0, 0, 0)

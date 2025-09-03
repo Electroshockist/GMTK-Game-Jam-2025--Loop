@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=4 uid="uid://07lkeabdm54a"]
+
+[ext_resource type="Material" uid="uid://c2tcwval88rm8" path="res://assets/model/materials/posters_evil.tres" id="1_5wqu6"]
+[ext_resource type="Texture2D" uid="uid://ct828uirteev6" path="res://assets/model/models/textures/Metro_PSX/Posters.png" id="2_tpryr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3cyf1"]
+resource_name = "Posters"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("2_tpryr")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ia4mr"]
+_surfaces = [{
+"aabb": AABB(-0.00470616, -0.000243514, -0.00677196, 0.00941233, 0.000487028, 0.0135439),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAAAQAAAAQABAAAAAMABQACAAEAAwACAAUABAAGAAEAAQAGAAUAAwAHAAQABgAEAAcABQAHAAMABwAFAAYA"),
+"name": "Posters",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("Kjaau5pXfzlP5907Kjaau+xXf7lP5907Kjaau+xXf7lS5927Kjaau5pXfzlS5927KjaaO5pXfzlP5907KjaaO+xXf7lS5927KjaaO+xXf7lP5907KjaaO5pXfzlS5927")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_r124k"]
+resource_name = "Poster_02"
+_surfaces = [{
+"aabb": AABB(-0.00470616, -0.000243514, -0.00677196, 0.00941233, 0.000487028, 0.0135439),
+"attribute_data": PackedByteArray("Y7efPjoErz5jt58+qDarPhCypDymNqs+KLKkPDoErz71rHg/WmhDP4hUWj9caEM/iFRaP1lQYj/1rHg/WVBiP2O3nz6oNqs+Y7efPjoErz4QsqQ8OgSvPiiypDymNqs+jbyvPgCumDpTwCo/AK6YOlPAKj8Mbak+jbyvPgxtqT5YO5o+yImvPlg7mj4WYKo+YCrUPBZgqj5gKtQ8zImvPmAq1DzMia8+YCrUPBZgqj5YO5o+EGCqPlg7mj7Iia8+"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_3cyf1"),
+"name": "Posters",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("Kjaau5pXfzlP5907Kjaau+xXf7lP5907Kjaau+xXf7lS5927Kjaau5pXfzlS5927KjaaO5pXfzlP5907Kjaau5pXfzlP5907Kjaau5pXfzlS5927KjaaO5pXfzlS5927KjaaO+xXf7lP5907KjaaO5pXfzlP5907KjaaO5pXfzlS5927KjaaO+xXf7lS5927Kjaau+xXf7lP5907KjaaO+xXf7lP5907KjaaO+xXf7lS5927Kjaau+xXf7lS5927KjaaO+xXf7lS5927KjaaO5pXfzlS5927Kjaau5pXfzlS5927Kjaau+xXf7lS5927Kjaau+xXf7lP5907Kjaau5pXfzlP5907KjaaO5pXfzlP5907KjaaO+xXf7lP5907AAD/f/9//z8AAP9//3//PwAA/3//f/8/AAD/f/9//z//f///////P/9///////8//3///////z//f///////P////3//f/+/////f/9//7////9//3//v////3//f/+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//////////P/////////8///////7//z///////v//P/9//3/+//+//3//f/7//7//f/9//v//v/9//3/+//+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ia4mr")
+
+[node name="Poster_02" type="MeshInstance3D"]
+transform = Transform3D(-101.294, 3.94455e-05, -2.87896e-12, 0, 6.03762e-06, 101.294, 3.94455e-05, 101.294, -1.20752e-05, 0, 0, 0)
+material_override = ExtResource("1_5wqu6")
+mesh = SubResource("ArrayMesh_r124k")
+skeleton = NodePath("")

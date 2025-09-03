@@ -2,12 +2,12 @@
 
 [ext_resource type="Environment" uid="uid://cms3emih1j6kt" path="res://source/game/world.tres" id="1_2e1t2"]
 [ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/Character/character.tscn" id="1_os8ji"]
-[ext_resource type="PackedScene" uid="uid://daq2ktcnqj41c" path="res://assets/model/Metro_PSX/Models/Metro_slipt/chair.tscn" id="4_b6cy3"]
-[ext_resource type="PackedScene" uid="uid://c186wglas7s41" path="res://assets/model/Metro_PSX/Models/Metro_slipt/automatic_ticket_gate.tscn" id="5_0sa0k"]
-[ext_resource type="Texture2D" uid="uid://8qoflni6nisf" path="res://assets/model/Metro_PSX/Textures/Chair.png" id="5_jf753"]
+[ext_resource type="PackedScene" uid="uid://daq2ktcnqj41c" path="res://assets/model/model_scenes/Metro_PSX_split/chair.tscn" id="4_b6cy3"]
+[ext_resource type="PackedScene" uid="uid://c186wglas7s41" path="res://assets/model/model_scenes/Metro_PSX_split/automatic_ticket_gate.tscn" id="5_0sa0k"]
+[ext_resource type="Texture2D" uid="uid://8qoflni6nisf" path="res://assets/model/models/textures/Metro_PSX/Chair.png" id="5_jf753"]
 [ext_resource type="PackedScene" uid="uid://blk6m1hhnnjq8" path="res://source/portal renderer/render_viewport.tscn" id="6_0sa0k"]
 [ext_resource type="PackedScene" uid="uid://40jd1ww81xp5" path="res://source/game/levels/Props/door.tscn" id="8_edamf"]
-[ext_resource type="PackedScene" uid="uid://dy6kocd8kf1dp" path="res://assets/model/Metro_PSX/Models/Metro_slipt/st_02.tscn" id="8_yhrcq"]
+[ext_resource type="PackedScene" uid="uid://dy6kocd8kf1dp" path="res://assets/model/model_scenes/Metro_PSX_split/st_02.tscn" id="8_yhrcq"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_7slvv"]
 size = Vector2(30, 30)

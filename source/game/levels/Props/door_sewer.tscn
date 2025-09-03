@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://u1pdnvthgg4"]
+
+[ext_resource type="PackedScene" uid="uid://40jd1ww81xp5" path="res://source/game/levels/Props/door.tscn" id="1_onjh6"]
+[ext_resource type="PackedScene" uid="uid://cbxb8qgbp346k" path="res://assets/model/models/Sewer/Sewer_split/serwers_p_013.tscn" id="2_p64ar"]
+
+[node name="Door" instance=ExtResource("1_onjh6")]
+
+[node name="SerwersP_013" parent="." index="0" instance=ExtResource("2_p64ar")]

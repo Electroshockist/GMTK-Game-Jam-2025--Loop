@@ -18,8 +18,8 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-SceneManager="*res://source/scene_manager.gd"
 GameManager="*res://source/game_manager.gd"
+SceneManager="*res://source/scene_manager.gd"
 LevelStitcher="*res://source/game/levels/level_stitcher.gd"
 
 [display]
@@ -33,6 +33,9 @@ window/stretch/scale=1.5
 [global_group]
 
 Interactable="Interactable objects"
+"Level Trigger"="Area3D that triggers level transition."
+OutNode="The node that the next level's \"InNode\"should be attached to."
+InNode="The node that the previous level's \"OutNode\"should be attached to."
 
 [input]
 

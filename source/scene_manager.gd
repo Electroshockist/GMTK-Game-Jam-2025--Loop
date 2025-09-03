@@ -7,17 +7,10 @@ enum SCENES {
 	CREDITS
 }
 
-var levels = [ # preload("res://source/game/levels/level_01.tscn"),
-	# preload("res://source/game/levels/level_02.tscn")
-	# preload("res://source/game/levels/level_01_02.tscn"),
-	# preload("res://source/game/levels/level_01_03.tscn"),
-	# preload("res://source/game/levels/level_01_04.tscn"),
-	# preload("res://source/game/levels/level_01_05.tscn"),
-	# preload("res://source/game/levels/level_01_06.tscn"),
-	# preload("res://source/game/levels/level_01_07.tscn"),
-	# preload("res://source/game/levels/level_01_08.tscn"),
-	# preload("res://source/game/levels/level_01_09.tscn"),
-	# preload("res://source/game/levels/level_01_10.tscn")
+@onready var levels = [
+	# preload("res://source/game/levels/level.tscn"),
+	preload("res://source/game/levels/old_levels/level_01.tscn"),
+	preload("res://source/game/levels/old_levels/level_02.tscn"),
 	]
 
 var packed_scenes := {
@@ -32,3 +25,13 @@ func change_scene(scene: SCENES):
 
 func on_interatable_collected():
 	pass
+
+func _ready():
+	var triggers := get_tree().get_nodes_in_group("Level Trigger")
+	if !triggers.is_empty():
+		for trigger in triggers as Array[Area3D]:
+				trigger.body_entered.connect(
+					func(body: Node3D):
+						if body is Character:
+							LevelStitcher._on_level_load_trigger()
+				)

@@ -1,30 +1,29 @@
-[gd_scene load_steps=8 format=3 uid="uid://40jd1ww81xp5"]
+[gd_scene load_steps=7 format=3 uid="uid://40jd1ww81xp5"]
 
 [ext_resource type="Script" uid="uid://oyhg5k6bwfnj" path="res://source/game/levels/Props/door.gd" id="1_d357e"]
-[ext_resource type="PackedScene" uid="uid://cbxb8qgbp346k" path="res://assets/model/Sewer/Models/Sewer_split/serwers_p_013.tscn" id="1_v587y"]
 
 [sub_resource type="Animation" id="Animation_6vvvs"]
 resource_name = "Door_Close"
 length = 0.3
-tracks/0/type = "value"
+tracks/0/type = "rotation_3d"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../Collider/CollisionShape3D:disabled")
-tracks/0/interp = 1
+tracks/0/path = NodePath(".")
+tracks/0/interp = 2
 tracks/0/loop_wrap = true
-tracks/0/keys = {
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0.676, 0, 0.737, 0.233333, 1, 0, 0, 0, 1, 0.266667, 1, 0, 0.061, 0, 0.998, 0.3, 1, 0, 0, 0, 1)
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Collider/CollisionShape3D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [false, false]
 }
-tracks/1/type = "rotation_3d"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".")
-tracks/1/interp = 2
-tracks/1/loop_wrap = true
-tracks/1/keys = PackedFloat32Array(0, 1, 0, 0.676, 0, 0.737, 0.233333, 1, 0, 0, 0, 1, 0.266667, 1, 0, 0.061, 0, 0.998, 0.3, 1, 0, 0, 0, 1)
 
 [sub_resource type="Animation" id="Animation_v587y"]
 resource_name = "Door_Open"
@@ -32,7 +31,7 @@ length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../Collider/CollisionShape3D:disabled")
+tracks/0/path = NodePath("Collider/CollisionShape3D:disabled")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -54,7 +53,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../Collider/CollisionShape3D:disabled")
+tracks/0/path = NodePath("Collider/CollisionShape3D:disabled")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -84,10 +83,7 @@ size = Vector3(0.2, 2.01855, 0.9)
 [node name="Door" type="Node3D"]
 script = ExtResource("1_d357e")
 
-[node name="SerwersP_013" parent="." instance=ExtResource("1_v587y")]
-transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="SerwersP_013"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 &"": SubResource("AnimationLibrary_vjd6b")
 }
