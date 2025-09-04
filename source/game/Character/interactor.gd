@@ -7,8 +7,8 @@ signal on_interact(object: Node3D)
 func _ready():
 	GameManager.interactor = self
 
-func _input(event):
-	if (event.is_action_pressed("interact")):
+func _input(_event):
+	if (Input.is_action_just_pressed("interact")):
 		var collision := get_collider()
 
 		if collision is Node:

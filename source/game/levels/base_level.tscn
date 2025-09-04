@@ -1333,7 +1333,7 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 
 shape = SubResource("BoxShape3D_8u6pu")
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("2_xh5w2")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 21.4772, 6.06308, -69.8996)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 22.0838, 5.78721, -75.0203)
 
 [node name="Enviroment" type="Node3D" parent="."]
 
@@ -1770,4 +1770,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.822, 6.74, -79.89)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.796, 0, 31.1603)
 
 [node name="Door" parent="." instance=ExtResource("57_8u6pu")]
-transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 31.7929, 0.28048, 31.7184)
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 31.7929, 0.28048, 30.6734)

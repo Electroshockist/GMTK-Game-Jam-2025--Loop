@@ -1,14 +1,16 @@
 extends Node
 
-@export var uninteracted_state: Node3D
-@export var interacted_state: Node3D
+class_name Interactable
 
+@onready var collider := $Collider
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	GameManager.interactor.on_interact.connect(
+		func(node: Node):
+			if (node == collider):
+				_on_interact()
+	)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _on_interact():
 	pass

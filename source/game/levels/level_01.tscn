@@ -9,12 +9,8 @@ size = Vector3(1, 6.5849, 6.42096)
 
 [node name="level_01_01" instance=ExtResource("1_gc4bu")]
 
-[node name="LevelTrigger" parent="Enviroment" index="50" groups=["Level Trigger"]]
-monitoring = false
-script = null
-
-[node name="CollisionShape3D" parent="Enviroment/LevelTrigger" index="0"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.167366, 1.22178, 0.772217)
+[node name="Back Wall3" parent="Enviroment/Subway" index="17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.7686, 7.77335, -80.031)
 
 [node name="Poster_01_frame" parent="." index="6" instance=ExtResource("2_svq3v")]
 transform = Transform3D(1.13113e-05, -101.294, -5.64598e-06, 0, -4.4277e-06, 129.165, -149.823, -7.64748e-06, -4.2626e-13, 25.2956, 3.691, -51.3162)

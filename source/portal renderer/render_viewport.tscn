@@ -2,7 +2,9 @@
 
 [ext_resource type="World3D" uid="uid://cwb0k00wakeqg" path="res://source/game/Isekai.tres" id="1_ortsw"]
 [ext_resource type="Script" uid="uid://ceyt0n0qvqaov" path="res://source/portal renderer/render_viewport.gd" id="1_xl2nu"]
-[ext_resource type="Texture2D" uid="uid://dme35uoiel6wa" path="res://source/portal renderer/new_viewport_texture.tres" id="3_ho6i6"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_fadpw"]
+viewport_path = NodePath("Render Viewport")
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ortsw"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -21,7 +23,7 @@ script = ExtResource("1_xl2nu")
 
 [node name="Render Texture" type="Sprite3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4769, 0)
-texture = ExtResource("3_ho6i6")
+texture = SubResource("ViewportTexture_fadpw")
 
 [node name="Render Viewport" type="SubViewport" parent="."]
 own_world_3d = true

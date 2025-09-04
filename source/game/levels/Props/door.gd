@@ -1,11 +1,5 @@
-extends Node3D
+extends Interactable
+@onready var anim_p: AnimationPlayer = $AnimationPlayer
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	GameManager.interactor.on_interact.connect(
-		func(node: Node):
-			if (node == self):
-				var anim_p := $SerwersP_013/AnimationPlayer
-				anim_p.play("Door_Open")
-	)
+func _on_interact():
+	anim_p.play("Door_Open")

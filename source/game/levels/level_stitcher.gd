@@ -9,7 +9,7 @@ var _next_loadable_level_id: int = 0
 var activeOutNode: Node
 var activeInNode: Node
 
-## When a new level is entered,
+## When a new level is entered, close door,
 ## set the level that was just exited to the prevoius level
 ## and delete the former previous level
 func _on_new_level_enter():
@@ -20,7 +20,7 @@ func _on_new_level_enter():
 	_current_level = _next_level
 	_next_level = null
 
-
+## When the next level should be loaded
 func _on_level_load_trigger():
 	var res: PackedScene = SceneManager.levels[_next_loadable_level_id]
 	var level := res.instantiate()
