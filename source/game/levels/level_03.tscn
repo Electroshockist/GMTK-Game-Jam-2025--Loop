@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://buaorifx580r"]
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/base_level.tscn" id="1_6heeu"]
-[ext_resource type="PackedScene" uid="uid://bntsvoj2tf7wp" path="res://assets/Low-Poly_Fish/GLB/Tuna.glb" id="2_io4qo"]
+[ext_resource type="PackedScene" uid="uid://bntsvoj2tf7wp" path="res://assets/model/models/Low-Poly_Fish/GLB/Tuna.glb" id="2_io4qo"]
 [ext_resource type="PackedScene" uid="uid://b4t5u2y2xgina" path="res://source/game/levels/Props/fishflop.tscn" id="3_fvh57"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_fvh57"]
