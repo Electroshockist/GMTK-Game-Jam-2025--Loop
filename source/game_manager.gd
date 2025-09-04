@@ -8,6 +8,16 @@ var interactor: Interactor
 
 var character: Character
 
+var is_fullscreen: bool = true:
+	get:
+		return is_fullscreen
+	set(value):
+		is_fullscreen = value
+		if value:
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+		else:
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+
 func _ready():
 	# _apply_shader_to_all(get_tree().root)
 	menu_toggled.connect(
@@ -17,9 +27,12 @@ func _ready():
 			toggle_mouse_lock()
 	)
 
-func _input(_event):
+func _input(event):
 	if Input.is_action_just_pressed("menu"):
 		menu_toggled.emit()
+
+	if Input.is_action_just_pressed("Fullscreen Toggle"):
+		is_fullscreen = !is_fullscreen
 
 # func _apply_shader_to_all(node: Node):
 # 	for child in node.get_children(true):
