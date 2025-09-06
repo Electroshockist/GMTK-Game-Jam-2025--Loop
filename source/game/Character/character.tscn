@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://olxebp8opmt8"]
 
-[ext_resource type="Script" uid="uid://kr5yhfbwvjje" path="res://source/game/Character/character.gd" id="1_hhptx"]
-[ext_resource type="Script" uid="uid://chrffhy8fd76o" path="res://source/game/Character/interactor.gd" id="2_7d3ex"]
+[ext_resource type="Script" uid="uid://kr5yhfbwvjje" path="res://source/game/character/character.gd" id="1_hhptx"]
+[ext_resource type="Script" uid="uid://chrffhy8fd76o" path="res://source/game/character/interactor.gd" id="2_7d3ex"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3fkvc"]
 radius = 0.3

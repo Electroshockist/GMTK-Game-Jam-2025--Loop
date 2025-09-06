@@ -8,7 +8,7 @@ var interactor: Interactor
 
 var character: Character
 
-var is_fullscreen: bool = true:
+var is_fullscreen: bool = false:
 	get:
 		return is_fullscreen
 	set(value):
@@ -43,9 +43,18 @@ func _input(event):
 func set_mouse_lock(lock: bool):
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED if lock else Input.MOUSE_MODE_VISIBLE
 
-
 func toggle_mouse_lock():
 	set_mouse_lock(get_is_mouse_visible())
 
 func get_is_mouse_visible() -> bool:
 	return Input.mouse_mode == Input.MOUSE_MODE_VISIBLE
+
+func get_input_key() -> String:
+	for event in InputMap.action_get_events("interact"):
+		if event is InputEventKey:
+			return OS.get_keycode_string(event.physical_keycode)
+		elif event is InputEventMouseButton:
+			return str(event.button_index)
+		elif event is InputEventJoypadButton:
+			return str(event.button_index)
+	return ""

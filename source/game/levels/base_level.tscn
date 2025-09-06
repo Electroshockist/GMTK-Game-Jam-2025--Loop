@@ -2,7 +2,7 @@
 
 [ext_resource type="Environment" uid="uid://pq7vqvfywr8t" path="res://source/game/levels/level_env.tres" id="1_48wgg"]
 [ext_resource type="Script" uid="uid://bs56ayrlo47wf" path="res://source/game/levels/level.gd" id="1_xh5w2"]
-[ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/Character/character.tscn" id="2_xh5w2"]
+[ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/character/character.tscn" id="2_xh5w2"]
 [ext_resource type="PackedScene" uid="uid://cvy0ew3tgc55k" path="res://assets/model/models/Sewer/Sewer_split/serwers_012.tscn" id="3_nk765"]
 [ext_resource type="PackedScene" uid="uid://daantvv3eeq2c" path="res://assets/model/models/Sewer/Sewer_split/serwers_p_1_010.tscn" id="4_kflkk"]
 [ext_resource type="PackedScene" uid="uid://cx6xdhceq0q7x" path="res://assets/model/models/Sewer/Sewer_split/serwers_013.tscn" id="5_udoio"]
@@ -1326,14 +1326,14 @@ script = ExtResource("1_xh5w2")
 environment = ExtResource("1_48wgg")
 
 [node name="Level trigger" type="Area3D" parent="." groups=["Level Trigger"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5487, 7.77593, -77.296)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5487, 7.77593, -76.2571)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Level trigger"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
 shape = SubResource("BoxShape3D_8u6pu")
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("2_xh5w2")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 22.0838, 5.78721, -75.0203)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 22.0838, 5.78721, -77.7478)
 
 [node name="Enviroment" type="Node3D" parent="."]
 

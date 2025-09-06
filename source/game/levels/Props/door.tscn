@@ -1,6 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://40jd1ww81xp5"]
+[gd_scene load_steps=8 format=3 uid="uid://40jd1ww81xp5"]
 
+[ext_resource type="PackedScene" uid="uid://d4at0b5ikgnwi" path="res://source/game/levels/Props/interactable.tscn" id="1_11vvi"]
 [ext_resource type="Script" uid="uid://oyhg5k6bwfnj" path="res://source/game/levels/Props/door.gd" id="1_d357e"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d357e"]
+size = Vector3(0.2, 2.01855, 0.9)
 
 [sub_resource type="Animation" id="Animation_6vvvs"]
 resource_name = "Door_Close"
@@ -77,19 +81,14 @@ _data = {
 &"RESET": SubResource("Animation_vjd6b")
 }
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_6vvvs"]
-size = Vector3(0.2, 2.01855, 0.9)
-
-[node name="Door" type="Node3D"]
+[node name="Door" instance=ExtResource("1_11vvi")]
 script = ExtResource("1_d357e")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="CollisionShape3D" parent="Collider" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.491895)
+shape = SubResource("BoxShape3D_d357e")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1"]
 libraries = {
 &"": SubResource("AnimationLibrary_vjd6b")
 }
-
-[node name="Collider" type="StaticBody3D" parent="." groups=["Interactable"]]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Collider"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.491895)
-shape = SubResource("BoxShape3D_6vvvs")

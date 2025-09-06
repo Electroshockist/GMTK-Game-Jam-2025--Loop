@@ -21,6 +21,7 @@ config/icon="res://icon.svg"
 GameManager="*res://source/game_manager.gd"
 SceneManager="*res://source/scene_manager.gd"
 LevelStitcher="*res://source/game/levels/level_stitcher.gd"
+InputHelper="*res://source/input_helper.gd"
 
 [display]
 
