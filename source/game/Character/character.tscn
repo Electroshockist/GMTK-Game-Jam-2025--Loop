@@ -1,7 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://olxebp8opmt8"]
+[gd_scene load_steps=8 format=3 uid="uid://olxebp8opmt8"]
 
-[ext_resource type="Script" uid="uid://kr5yhfbwvjje" path="res://source/game/character/character.gd" id="1_hhptx"]
-[ext_resource type="Script" uid="uid://chrffhy8fd76o" path="res://source/game/character/interactor.gd" id="2_7d3ex"]
+[ext_resource type="Script" uid="uid://kr5yhfbwvjje" path="res://source/game/Character/character.gd" id="1_hhptx"]
+[ext_resource type="Script" uid="uid://chrffhy8fd76o" path="res://source/game/Character/interactor.gd" id="2_7d3ex"]
+[ext_resource type="PackedScene" uid="uid://h6lpl62rmcj6" path="res://assets/Skeletons/Arms_skeleton_v001.blend" id="3_eg3st"]
+[ext_resource type="PackedScene" uid="uid://fcjbyn6fp4bu" path="res://assets/Skeletons/Pencil_skeleton_v001.blend" id="4_07k64"]
+[ext_resource type="PackedScene" uid="uid://byex2md5xqhvc" path="res://assets/Skeletons/Clipboard_skeleton_v001.blend" id="5_fkp72"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3fkvc"]
 radius = 0.3
@@ -29,3 +32,111 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 target_position = Vector3(0, 0, -5)
 collide_with_areas = true
 script = ExtResource("2_7d3ex")
+
+[node name="Arms_skeleton_v001" parent="Camera3D" instance=ExtResource("3_eg3st")]
+
+[node name="Skeleton3D" parent="Camera3D/Arms_skeleton_v001" index="0"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, -1.79371, 0)
+bones/3/rotation = Quaternion(-0.605155, -0.345862, -0.356134, 0.622363)
+bones/4/rotation = Quaternion(-0.0134985, 0.947886, -0.267419, 0.172674)
+bones/5/rotation = Quaternion(0.439522, 0.0172759, -0.37543, 0.815827)
+bones/6/rotation = Quaternion(-0.605155, 0.345862, 0.356134, 0.622363)
+bones/7/rotation = Quaternion(0.0527607, -0.499589, 0.565849, 0.653791)
+bones/8/rotation = Quaternion(0.832692, 0.0277343, 0.14093, 0.534784)
+bones/9/position = Vector3(0.338304, 1.18998, -0.19132)
+bones/9/rotation = Quaternion(0.329013, -0.650732, -0.488506, 0.479229)
+bones/10/position = Vector3(-1.9567e-07, -2.99402e-07, -3.18673e-08)
+bones/10/rotation = Quaternion(-0.118248, 0.0139192, -0.702279, 0.701875)
+bones/11/rotation = Quaternion(0.0802664, 0.777713, 0.000449609, 0.623474)
+bones/12/position = Vector3(-4.7715e-08, 0.0569673, 1.42085e-07)
+bones/12/rotation = Quaternion(0.225265, -0.0177573, -0.04207, 0.973227)
+bones/13/rotation = Quaternion(0.331782, -0.0126658, 0.0306538, 0.942773)
+bones/14/rotation = Quaternion(0.305162, 0.029019, 0.00068569, 0.951858)
+bones/15/rotation = Quaternion(0.0487596, 0.498992, 0.447742, 0.740376)
+bones/16/rotation = Quaternion(0.27021, 0.098637, -0.111459, 0.951228)
+bones/17/rotation = Quaternion(0.127131, -0.0207439, -0.00142723, 0.991668)
+bones/18/rotation = Quaternion(-0.00416296, 0.703745, -0.0611561, 0.707804)
+bones/19/position = Vector3(1.26775e-08, 0.0556262, 5.89256e-08)
+bones/19/rotation = Quaternion(0.325755, 0.0133199, -0.0308781, 0.944856)
+bones/20/rotation = Quaternion(0.307317, -0.0175677, 0.0101819, 0.951391)
+bones/21/rotation = Quaternion(0.344708, -0.0189028, 0.00932806, 0.938473)
+bones/22/rotation = Quaternion(-0.0162085, 0.686133, -0.0667501, 0.724226)
+bones/23/position = Vector3(1.88176e-08, 0.0563298, 1.18773e-07)
+bones/23/rotation = Quaternion(0.387359, 0.0195113, -0.0100196, 0.921668)
+bones/24/rotation = Quaternion(0.25848, -0.00398601, 0.0222712, 0.965752)
+bones/25/rotation = Quaternion(0.322943, -0.000331964, 9.39615e-05, 0.946418)
+bones/26/rotation = Quaternion(-0.0262695, 0.650519, -0.109785, 0.751054)
+bones/27/position = Vector3(8.8528e-08, 0.0538128, -4.72174e-08)
+bones/27/rotation = Quaternion(0.269927, -0.0380039, 0.0054039, 0.962115)
+bones/28/rotation = Quaternion(0.4117, -0.009359, -0.0095851, 0.911221)
+bones/29/rotation = Quaternion(0.261097, -0.00908792, 0.0268191, 0.964897)
+bones/30/position = Vector3(-0.240156, 1.59757, 0.265874)
+bones/30/rotation = Quaternion(-0.355493, 0.750217, -0.201419, 0.519835)
+bones/30/scale = Vector3(1, 1, 1)
+bones/31/position = Vector3(-5.29749e-08, -1.04462e-07, 1.48367e-08)
+bones/31/rotation = Quaternion(-0.118248, -0.0139193, 0.702279, 0.701875)
+bones/32/position = Vector3(0.00549154, 0.039659, 0.027655)
+bones/32/rotation = Quaternion(0.0802664, -0.777713, -0.000449604, 0.623474)
+bones/33/position = Vector3(6.14e-08, 0.0569673, -1.26664e-08)
+bones/33/rotation = Quaternion(0.261697, 0.0193266, 0.0413726, 0.964069)
+bones/34/rotation = Quaternion(0.424583, 0.00953033, -0.0317687, 0.904782)
+bones/35/rotation = Quaternion(0.437482, -0.0288214, 0.00344996, 0.898758)
+bones/36/rotation = Quaternion(-0.0261309, -0.550488, -0.379387, 0.743199)
+bones/37/rotation = Quaternion(0.171307, 0.0137561, 0.015349, 0.985002)
+bones/38/rotation = Quaternion(0.201489, 0.0208814, 0.00193079, 0.979266)
+bones/39/position = Vector3(0.00860378, 0.0428562, 0.00725433)
+bones/39/rotation = Quaternion(-0.0102544, -0.704332, 0.00463662, 0.709782)
+bones/40/position = Vector3(8.83776e-09, 0.0556263, 9.40293e-08)
+bones/40/rotation = Quaternion(0.405992, -0.0128485, 0.0312273, 0.913253)
+bones/41/rotation = Quaternion(0.363174, 0.0169333, -0.0112054, 0.9315)
+bones/42/rotation = Quaternion(0.442086, 0.0178096, -0.0112761, 0.896725)
+bones/43/position = Vector3(0.00786893, 0.0406032, -0.0111368)
+bones/43/rotation = Quaternion(-0.0342612, -0.687106, 0.0418927, 0.724538)
+bones/44/position = Vector3(2.43525e-08, 0.0563296, 8.81494e-09)
+bones/44/rotation = Quaternion(0.433403, -0.0204672, 0.0106465, 0.900905)
+bones/45/rotation = Quaternion(0.304565, 0.00291171, -0.0224369, 0.952223)
+bones/46/rotation = Quaternion(0.404297, 0.000322393, -0.000122479, 0.914628)
+bones/47/rotation = Quaternion(-0.0262694, -0.650519, 0.109785, 0.751054)
+bones/48/rotation = Quaternion(0.347449, 0.037437, -0.00848354, 0.936913)
+bones/49/rotation = Quaternion(0.462, 0.00988022, 0.00904684, 0.886779)
+bones/50/rotation = Quaternion(0.364888, 0.00610534, -0.027651, 0.930621)
+
+[node name="Camera" parent="Camera3D/Arms_skeleton_v001/Skeleton3D" index="0"]
+transform = Transform3D(-1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 0, 1.8001, 0)
+
+[node name="BoneAttachment3D_handL" type="BoneAttachment3D" parent="Camera3D/Arms_skeleton_v001/Skeleton3D" index="2"]
+transform = Transform3D(-0.182373, -0.143727, -0.972668, -0.267785, -0.944601, 0.189789, -0.946061, 0.295078, 0.133782, 0.338304, 1.18998, -0.19132)
+visible = false
+bone_name = "hand.L"
+bone_idx = 10
+
+[node name="Clipboard_skeleton_v001" parent="Camera3D/Arms_skeleton_v001/Skeleton3D/BoneAttachment3D_handL" instance=ExtResource("5_fkp72")]
+
+[node name="Skeleton3D" parent="Camera3D/Arms_skeleton_v001/Skeleton3D/BoneAttachment3D_handL/Clipboard_skeleton_v001" index="0"]
+bones/2/position = Vector3(5.1219, 0.184293, -18.5182)
+bones/2/rotation = Quaternion(0.829962, 0.408649, -0.276228, 0.260514)
+
+[node name="AnimationPlayer" parent="Camera3D/Arms_skeleton_v001/Skeleton3D/BoneAttachment3D_handL/Clipboard_skeleton_v001" index="1"]
+autoplay = "clipboard_pose_hold"
+
+[node name="BoneAttachment3D_handR" type="BoneAttachment3D" parent="Camera3D/Arms_skeleton_v001/Skeleton3D" index="3"]
+transform = Transform3D(-0.458483, 0.0365417, 0.887952, 0.639164, 0.707764, 0.300898, -0.617465, 0.705503, -0.347853, -0.240156, 1.59757, 0.265874)
+visible = false
+bone_name = "hand.R"
+bone_idx = 31
+
+[node name="Pencil_skeleton_v001" parent="Camera3D/Arms_skeleton_v001/Skeleton3D/BoneAttachment3D_handR" instance=ExtResource("4_07k64")]
+
+[node name="Skeleton3D" parent="Camera3D/Arms_skeleton_v001/Skeleton3D/BoneAttachment3D_handR/Pencil_skeleton_v001" index="0"]
+bones/2/position = Vector3(-2.37091, 8.32323, 4.0378)
+bones/2/rotation = Quaternion(0.0276958, -0.178193, -0.0109385, 0.983545)
+
+[node name="AnimationPlayer" parent="Camera3D/Arms_skeleton_v001/Skeleton3D/BoneAttachment3D_handR/Pencil_skeleton_v001" index="1"]
+autoplay = "pencil_pose_hold"
+
+[node name="AnimationPlayer" parent="Camera3D/Arms_skeleton_v001" index="1"]
+autoplay = "arms_anim_loop_walk"
+
+[editable path="Camera3D/Arms_skeleton_v001"]
+[editable path="Camera3D/Arms_skeleton_v001/Skeleton3D/BoneAttachment3D_handL/Clipboard_skeleton_v001"]
+[editable path="Camera3D/Arms_skeleton_v001/Skeleton3D/BoneAttachment3D_handR/Pencil_skeleton_v001"]
