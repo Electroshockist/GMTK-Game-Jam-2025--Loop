@@ -9,7 +9,7 @@ viewport_path = NodePath("Collider/CollisionShape3D/Sprite3D/SubViewport")
 [node name="Interactable" type="Node3D"]
 script = ExtResource("1_gu4vg")
 
-[node name="Collider" type="StaticBody3D" parent="." groups=["Interactable"]]
+[node name="Collider" type="StaticBody3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Collider"]
 
@@ -22,6 +22,7 @@ texture = SubResource("ViewportTexture_b2mec")
 [node name="SubViewport" type="SubViewport" parent="Collider/CollisionShape3D/Sprite3D"]
 transparent_bg = true
 handle_input_locally = false
+size = Vector2i(40, 23)
 script = ExtResource("2_7htdd")
 
 [node name="Label" type="Label" parent="Collider/CollisionShape3D/Sprite3D/SubViewport"]

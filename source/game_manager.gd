@@ -2,11 +2,11 @@ extends Node
 
 signal menu_toggled
 
-var interactor: Interactor
-
 # const psx_shader_applicator := preload("res://assets/shaders/psx_shader_applicator.gd")
 
 var character: Character
+
+var game: Game
 
 var is_fullscreen: bool = false:
 	get:
@@ -27,7 +27,7 @@ func _ready():
 			toggle_mouse_lock()
 	)
 
-func _input(event):
+func _input(_event):
 	if Input.is_action_just_pressed("menu"):
 		menu_toggled.emit()
 
@@ -48,13 +48,3 @@ func toggle_mouse_lock():
 
 func get_is_mouse_visible() -> bool:
 	return Input.mouse_mode == Input.MOUSE_MODE_VISIBLE
-
-func get_input_key() -> String:
-	for event in InputMap.action_get_events("interact"):
-		if event is InputEventKey:
-			return OS.get_keycode_string(event.physical_keycode)
-		elif event is InputEventMouseButton:
-			return str(event.button_index)
-		elif event is InputEventJoypadButton:
-			return str(event.button_index)
-	return ""

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://ta7visp2a0tw"]
+
+[ext_resource type="Script" uid="uid://5v5u31jajc5t" path="res://source/game/levels/game.gd" id="1_e0wy1"]
+[ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/character/character.tscn" id="2_hqrd8"]
+
+[node name="Game" type="Node3D"]
+script = ExtResource("1_e0wy1")
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_hqrd8")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 21.425, 5.8, -77.589)

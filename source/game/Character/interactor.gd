@@ -2,18 +2,13 @@ extends RayCast3D
 
 class_name Interactor
 
-signal on_interact(object: Node3D)
-
 var _collision: Node
 
 var _hovered_interactable: Node
 
-func _ready():
-	GameManager.interactor = self
-
 func _input(_event):
 	if (Input.is_action_just_pressed("interact") and _is_collider_interactable(_collision)):
-			on_interact.emit(_collision as Node)
+			(_collision.owner as Interactable).on_interact()
 
 func _process(_delta):
 	_collision = get_collider()
@@ -30,6 +25,7 @@ func _process(_delta):
 
 func _is_collider_interactable(collider: Node) -> bool:
 	if collider != null:
-			if (collider as Node).is_in_group("Interactable"):
-				return true
+		var o := collider.owner
+		if o is Interactable:
+			return true
 	return false

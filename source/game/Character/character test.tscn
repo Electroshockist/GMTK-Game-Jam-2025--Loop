@@ -90,6 +90,15 @@ shadow_enabled = true
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_os8ji")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9.04483)
 
+[node name="Camera" parent="CharacterBody3D/Camera3D/Arms_skeleton_v001/Skeleton3D" index="0"]
+transform = Transform3D(-1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 0, 1.8001, 0)
+
+[node name="BoneAttachment3D_handL" parent="CharacterBody3D/Camera3D/Arms_skeleton_v001/Skeleton3D" index="2"]
+transform = Transform3D(-0.182373, -0.143728, -0.972667, -0.267786, -0.9446, 0.18979, -0.94606, 0.295079, 0.133782, 0.338304, 1.18998, -0.19132)
+
+[node name="BoneAttachment3D_handR" parent="CharacterBody3D/Camera3D/Arms_skeleton_v001/Skeleton3D" index="3"]
+transform = Transform3D(-0.458482, 0.036542, 0.887952, 0.639164, 0.707764, 0.300898, -0.617465, 0.705503, -0.347854, -0.240156, 1.59757, 0.265874)
+
 [node name="Floor" type="MeshInstance3D" parent="."]
 mesh = SubResource("PlaneMesh_7slvv")
 
@@ -119,3 +128,6 @@ camera = NodePath("../CharacterBody3D/Camera3D")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 1, 8)
 
 [editable path="CharacterBody3D"]
+[editable path="CharacterBody3D/Camera3D/Arms_skeleton_v001"]
+[editable path="CharacterBody3D/Camera3D/Arms_skeleton_v001/Skeleton3D/BoneAttachment3D_handL/Clipboard_skeleton_v001"]
+[editable path="CharacterBody3D/Camera3D/Arms_skeleton_v001/Skeleton3D/BoneAttachment3D_handR/Pencil_skeleton_v001"]

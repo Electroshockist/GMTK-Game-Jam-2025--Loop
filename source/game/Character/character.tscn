@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://olxebp8opmt8"]
 
-[ext_resource type="Script" uid="uid://kr5yhfbwvjje" path="res://source/game/Character/character.gd" id="1_hhptx"]
-[ext_resource type="Script" uid="uid://chrffhy8fd76o" path="res://source/game/Character/interactor.gd" id="2_7d3ex"]
+[ext_resource type="Script" uid="uid://kr5yhfbwvjje" path="res://source/game/character/character.gd" id="1_hhptx"]
+[ext_resource type="Script" uid="uid://chrffhy8fd76o" path="res://source/game/character/interactor.gd" id="2_7d3ex"]
 [ext_resource type="PackedScene" uid="uid://h6lpl62rmcj6" path="res://assets/Skeletons/Arms_skeleton_v001.blend" id="3_eg3st"]
 [ext_resource type="PackedScene" uid="uid://fcjbyn6fp4bu" path="res://assets/Skeletons/Pencil_skeleton_v001.blend" id="4_07k64"]
 [ext_resource type="PackedScene" uid="uid://byex2md5xqhvc" path="res://assets/Skeletons/Clipboard_skeleton_v001.blend" id="5_fkp72"]
@@ -105,7 +105,7 @@ bones/50/rotation = Quaternion(0.364888, 0.00610534, -0.027651, 0.930621)
 transform = Transform3D(-1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 0, 1.8001, 0)
 
 [node name="BoneAttachment3D_handL" type="BoneAttachment3D" parent="Camera3D/Arms_skeleton_v001/Skeleton3D" index="2"]
-transform = Transform3D(-0.182373, -0.143727, -0.972668, -0.267785, -0.944601, 0.189789, -0.946061, 0.295078, 0.133782, 0.338304, 1.18998, -0.19132)
+transform = Transform3D(-0.182373, -0.143728, -0.972667, -0.267786, -0.9446, 0.18979, -0.94606, 0.295079, 0.133782, 0.338304, 1.18998, -0.19132)
 visible = false
 bone_name = "hand.L"
 bone_idx = 10
@@ -120,7 +120,7 @@ bones/2/rotation = Quaternion(0.829962, 0.408649, -0.276228, 0.260514)
 autoplay = "clipboard_pose_hold"
 
 [node name="BoneAttachment3D_handR" type="BoneAttachment3D" parent="Camera3D/Arms_skeleton_v001/Skeleton3D" index="3"]
-transform = Transform3D(-0.458483, 0.0365417, 0.887952, 0.639164, 0.707764, 0.300898, -0.617465, 0.705503, -0.347853, -0.240156, 1.59757, 0.265874)
+transform = Transform3D(-0.458482, 0.036542, 0.887952, 0.639164, 0.707764, 0.300898, -0.617465, 0.705503, -0.347854, -0.240156, 1.59757, 0.265874)
 visible = false
 bone_name = "hand.R"
 bone_idx = 31

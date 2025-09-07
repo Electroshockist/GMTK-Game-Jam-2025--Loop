@@ -1,9 +1,9 @@
-[gd_scene load_steps=146 format=4 uid="uid://upfh8uyt1rip"]
+[gd_scene load_steps=149 format=4 uid="uid://upfh8uyt1rip"]
 
-[ext_resource type="Environment" uid="uid://pq7vqvfywr8t" path="res://source/game/levels/level_env.tres" id="1_48wgg"]
-[ext_resource type="Script" uid="uid://bs56ayrlo47wf" path="res://source/game/levels/level.gd" id="1_xh5w2"]
-[ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/character/character.tscn" id="2_xh5w2"]
+[ext_resource type="Script" uid="uid://bs56ayrlo47wf" path="res://source/game/levels/level.gd" id="1_pktld"]
+[ext_resource type="Environment" uid="uid://pq7vqvfywr8t" path="res://source/game/levels/level_env.tres" id="2_pktld"]
 [ext_resource type="PackedScene" uid="uid://cvy0ew3tgc55k" path="res://assets/model/models/Sewer/Sewer_split/serwers_012.tscn" id="3_nk765"]
+[ext_resource type="Script" uid="uid://cts7ja6veofqq" path="res://source/game/levels/level_stitching/level_trigger.gd" id="3_pktld"]
 [ext_resource type="PackedScene" uid="uid://daantvv3eeq2c" path="res://assets/model/models/Sewer/Sewer_split/serwers_p_1_010.tscn" id="4_kflkk"]
 [ext_resource type="PackedScene" uid="uid://cx6xdhceq0q7x" path="res://assets/model/models/Sewer/Sewer_split/serwers_013.tscn" id="5_udoio"]
 [ext_resource type="PackedScene" uid="uid://mekhtpuqcaok" path="res://assets/model/models/Sewer/Sewer_split/serwers_007.tscn" id="6_q5lju"]
@@ -11,11 +11,11 @@
 [ext_resource type="PackedScene" uid="uid://gwlueupaotra" path="res://assets/model/models/Sewer/Sewer_split/serwers.tscn" id="8_e5ibc"]
 [ext_resource type="PackedScene" uid="uid://cl2wj13fhfm3g" path="res://assets/model/models/Sewer/Sewer_split/serwers_001.tscn" id="9_aob5m"]
 [ext_resource type="Texture2D" uid="uid://c68emgpql6b4o" path="res://assets/model/models/textures/Metro_PSX/Tiles.png" id="10_ftakg"]
-[ext_resource type="Texture2D" uid="uid://d08b4ik4fuuqy" path="res://assets/model/models/textures/Metro_PSX/TactilePaving.png" id="11_pjb77"]
+[ext_resource type="Texture2D" uid="uid://d08b4ik4fuuqy" path="res://assets/model/models/textures/Metro_PSX/TactilePaving.png" id="12_8u6pu"]
 [ext_resource type="Texture2D" uid="uid://dyyk4ga8smi7m" path="res://assets/model/models/textures/Metro_PSX/road_rails.jpg" id="12_wdlmb"]
 [ext_resource type="Texture2D" uid="uid://uov44fo4jrrd" path="res://assets/model/models/textures/Metro_PSX/tile_tile.jpg" id="13_djmia"]
-[ext_resource type="Texture2D" uid="uid://li3nxaeyh055" path="res://assets/model/models/textures/Metro_PSX/metal_02.png" id="14_qnr6q"]
 [ext_resource type="Texture2D" uid="uid://dkp3ibarnnqp0" path="res://assets/model/models/textures/Metro_PSX/ConcreteBare.png" id="15_bmq2h"]
+[ext_resource type="Texture2D" uid="uid://li3nxaeyh055" path="res://assets/model/models/textures/Metro_PSX/metal_02.png" id="15_pktld"]
 [ext_resource type="Texture2D" uid="uid://c4khg3vwvpg4d" path="res://assets/model/models/modified/sewer connection_Tiles.png" id="16_nunmy"]
 [ext_resource type="Texture2D" uid="uid://djpttai8mjmf6" path="res://assets/model/models/modified/sewer connection_TactilePaving.png" id="17_44jwh"]
 [ext_resource type="Texture2D" uid="uid://b6ykbv7rmh5yc" path="res://assets/model/models/modified/sewer connection_road_rails.jpg" id="18_g7ymx"]
@@ -56,7 +56,7 @@
 [ext_resource type="PackedScene" uid="uid://bayjcxtfwaphs" path="res://assets/model/models/Sewer/Sewer_split/debris_03.tscn" id="53_jhfv4"]
 [ext_resource type="PackedScene" uid="uid://dotut1d78ligr" path="res://assets/model/models/Sewer/Sewer_split/debris_04.tscn" id="54_b7vxu"]
 [ext_resource type="PackedScene" uid="uid://cnop7bbq2fabs" path="res://assets/model/models/Sewer/Sewer_split/debris_05.tscn" id="55_wrc8c"]
-[ext_resource type="PackedScene" uid="uid://bo16sqwgdwk6o" path="res://source/game/levels/Props/door_metal.tscn" id="57_8u6pu"]
+[ext_resource type="Script" uid="uid://b5hjojq8wyiqd" path="res://source/game/levels/level_stitching/out_node.gd" id="57_vf1by"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8u6pu"]
 size = Vector3(5.35913, 0.258789, 4.64832)
@@ -124,7 +124,7 @@ emission_energy_multiplier = 0.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tjf7m"]
 resource_name = "TactilePaving"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("11_pjb77")
+albedo_texture = ExtResource("12_8u6pu")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -148,7 +148,7 @@ emission_energy_multiplier = 0.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xgbg4"]
 resource_name = "metal_02"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("14_qnr6q")
+albedo_texture = ExtResource("15_pktld")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -226,7 +226,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_g37ec"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_likke"]
 resource_name = "St_01"
 _surfaces = [{
 "aabb": AABB(-0.0827685, -0.0228463, -0.0492593, 0.165537, 0.114298, 0.0186231),
@@ -305,6 +305,22 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_8u6pu")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t8c41"]
+resource_name = "tile_tile"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("13_djmia")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lq56n"]
+resource_name = "ConcreteBare"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("15_bmq2h")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+
 [sub_resource type="ArrayMesh" id="ArrayMesh_pktld"]
 _surfaces = [{
 "aabb": AABB(-0.00620202, -0.00581218, -0.032786, 0.012404, 0.0116244, 0.0622524),
@@ -338,7 +354,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 24,
 "index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwA"),
-"material": SubResource("StandardMaterial3D_5hjm2"),
+"material": SubResource("StandardMaterial3D_t8c41"),
 "name": "tile_tile",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -351,7 +367,7 @@ _surfaces = [{
 "index_count": 120,
 "index_data": PackedByteArray("MAABAAIAAgAxADAAAQAyADMAMwA0AAEANQACAAcABwA2ADUADAA3ADgACgA3AAwADAANAAoAOAALAAwADgALADgAOAAPAA4AEAARABIAEgATABAAFAAVABYAFgAXABQAAwAFAAQABAA5AAMAGAAaADoAGAAZABoAGAA6ADsAGAA7ABsAHwA8AB4AHwAcADwAHAA9ADwAHAAdAD0APgA/AEAAQAAAAD4AIAAhACIAIgAjACAAJAAlACYAJgAnACQAKAApACoAKgArACgAQQBCAAgACAAJAEEABgBDAEQARABFAAYALAAtAC4ALgAvACwA"),
 "lods": [2.98157e-06, PackedByteArray("AAABAAIAAQAAAAMAAwAEAAEAAwAFAAQABgAAAAIABgACAAcABgAHAAgACAAJAAYACgALAAwADAANAAoADgALAAoACgAPAA4AEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGAAaABsAHAAdAB4AHwAcAB4AIAAhACIAIgAjACAAJAAlACYAJgAnACQAKAApACoAKgArACgALAAtAC4ALgAvACwA")],
-"material": SubResource("StandardMaterial3D_yunpr"),
+"material": SubResource("StandardMaterial3D_lq56n"),
 "name": "ConcreteBare",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -1303,11 +1319,14 @@ size = Vector3(0.365479, 4.61795, 10.9743)
 [sub_resource type="BoxShape3D" id="BoxShape3D_j3brg"]
 size = Vector3(1.16327, 8.91364, 19.543)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_0nr7a"]
-size = Vector3(1.81947, 4.51358, 0.393127)
+[sub_resource type="BoxShape3D" id="BoxShape3D_pktld"]
+size = Vector3(2.06582, 4.51358, 0.393127)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_lkjo7"]
-size = Vector3(1.19053, 2.09153, 0.393127)
+[sub_resource type="BoxShape3D" id="BoxShape3D_vf1by"]
+size = Vector3(2.28141, 4.51358, 0.393127)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w6x52"]
+size = Vector3(1.10112, 2.1483, 0.393127)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_nqmpd"]
 size = Vector3(0.78064, 4.85638, 0.83461)
@@ -1320,20 +1339,18 @@ backface_collision = true
 size = Vector3(7.10437, 4.69043, 5.98651)
 
 [node name="base_level" type="Node3D"]
-script = ExtResource("1_xh5w2")
+script = ExtResource("1_pktld")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = ExtResource("1_48wgg")
+environment = ExtResource("2_pktld")
 
-[node name="Level trigger" type="Area3D" parent="." groups=["Level Trigger"]]
+[node name="Level trigger" type="Area3D" parent="." groups=["Unload"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5487, 7.77593, -76.2571)
+script = ExtResource("3_pktld")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Level trigger"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
 shape = SubResource("BoxShape3D_8u6pu")
-
-[node name="CharacterBody3D" parent="." instance=ExtResource("2_xh5w2")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 22.0838, 5.78721, -77.7478)
 
 [node name="Enviroment" type="Node3D" parent="."]
 
@@ -1459,7 +1476,7 @@ transform = Transform3D(-7.63245e-06, 2.08477e-08, 174.59, 0.45713, 182.177, 2.3
 
 [node name="St_01" type="MeshInstance3D" parent="Enviroment/StaticBody3D"]
 transform = Transform3D(0, 75.6441, -2.25437e-06, 2.25437e-06, 0, 75.6441, -75.6441, 2.25437e-06, 0, 18.439, 3.71425, -23.4875)
-mesh = SubResource("ArrayMesh_g37ec")
+mesh = SubResource("ArrayMesh_likke")
 skeleton = NodePath("")
 
 [node name="Column" type="MeshInstance3D" parent="Enviroment/StaticBody3D"]
@@ -1641,10 +1658,6 @@ shape = SubResource("BoxShape3D_r64ux")
 transform = Transform3D(-8.74228e-08, 1, -7.57103e-08, 0.866025, 3.78552e-08, -0.5, 0.5, 1.09278e-07, 0.866025, 21.8452, 8.00739, -59.9625)
 shape = SubResource("BoxShape3D_r64ux")
 
-[node name="Stairs3" type="CollisionShape3D" parent="Enviroment/Subway"]
-transform = Transform3D(-8.74228e-08, 1, -7.57103e-08, 0.866025, 3.78552e-08, -0.5, 0.5, 1.09278e-07, 0.866025, 21.8452, 8.00739, -59.9625)
-shape = SubResource("BoxShape3D_r64ux")
-
 [node name="Upper Left Wall" type="CollisionShape3D" parent="Enviroment/Subway"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.7906, 5.60832, -67.3135)
 shape = SubResource("BoxShape3D_6w72y")
@@ -1670,16 +1683,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0597, 5.60832, -64.5753)
 shape = SubResource("BoxShape3D_j3brg")
 
 [node name="Back Wall" type="CollisionShape3D" parent="Enviroment/Subway"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.2603, 7.79383, -80.031)
-shape = SubResource("BoxShape3D_0nr7a")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.3681, 7.79383, -80.031)
+shape = SubResource("BoxShape3D_pktld")
 
 [node name="Back Wall2" type="CollisionShape3D" parent="Enviroment/Subway"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.2634, 7.79383, -80.031)
-shape = SubResource("BoxShape3D_0nr7a")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.1334, 7.79383, -80.031)
+shape = SubResource("BoxShape3D_vf1by")
 
 [node name="Back Wall3" type="CollisionShape3D" parent="Enviroment/Subway"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.7686, 9.00486, -80.031)
-shape = SubResource("BoxShape3D_lkjo7")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8133, 8.97647, -80.031)
+shape = SubResource("BoxShape3D_w6x52")
 
 [node name="Pillar" type="CollisionShape3D" parent="Enviroment/Subway"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.7675, 3.8362, -36.0135)
@@ -1764,10 +1777,8 @@ light_color = Color(0.636089, 0.118183, 0.0751494, 1)
 light_energy = 2.263
 
 [node name="InNode" type="Node3D" parent="." groups=["InNode"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.822, 6.74, -79.89)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.3184, 5.58435, -79.8745)
 
 [node name="OutNode" type="Node3D" parent="." groups=["OutNode"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.796, 0, 31.1603)
-
-[node name="Door" parent="." instance=ExtResource("57_8u6pu")]
-transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 31.7929, 0.28048, 30.6734)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 32.1036, -0.998675, 30.6512)
+script = ExtResource("57_vf1by")
