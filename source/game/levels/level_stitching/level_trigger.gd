@@ -7,5 +7,5 @@ func _ready():
 		func(body: Node3D):
 			if body is Character:
 				set_deferred("monitoring", false)
-				GameManager.game.close_door()
+				GameManager.game.close_prev_door()
 			)

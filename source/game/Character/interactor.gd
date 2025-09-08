@@ -27,5 +27,6 @@ func _is_collider_interactable(collider: Node) -> bool:
 	if collider != null:
 		var o := collider.owner
 		if o is Interactable:
-			return true
+			if (o as Interactable).is_monitorable:
+				return true
 	return false

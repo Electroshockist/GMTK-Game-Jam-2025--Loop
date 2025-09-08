@@ -11,13 +11,6 @@ var _input_enabled: bool = true
 
 func _ready():
 	GameManager.character = self
-	
-	GameManager.set_mouse_lock(true)
-	
-	GameManager.menu_toggled.connect(
-		func():
-			_input_enabled = !_input_enabled
-	)
 
 func _input(event):
 	if _input_enabled:
@@ -33,7 +26,7 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 
 	# Handle jump.
-	if Input.is_action_just_pressed("jump") and is_on_floor():
+	if Input.is_action_just_pressed("jump") and is_on_floor() and _input_enabled:
 		velocity.y = JUMP_VELOCITY
 
 	var direction = _get_direction()

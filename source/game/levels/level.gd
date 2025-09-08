@@ -19,6 +19,3 @@ func _set_nodes():
 
 func transform_level(level: Level) -> Level:
 	return out_node.transform_level(level, in_node)
-
-func on_door_anim_finish():
-	GameManager.game.on_enter_next_level()

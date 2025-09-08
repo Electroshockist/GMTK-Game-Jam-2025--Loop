@@ -39,16 +39,18 @@ func _ready() -> void:
 	_load_init_level()
 	create_door()
 	_spawn_next_level()
+	
+	(current_level.find_child("Level trigger") as LevelTrigger).monitoring = false
 
 ## loads the initial level
 func _load_init_level():
-	current_level = load("res://source/game/levels/initial_level.tscn").instantiate()
-	get_tree().current_scene.add_child(current_level)
+	current_level = levels[0].instantiate()
+	add_child(current_level)
 
 func _spawn_next_level():
 	next_level = levels[next_level_id].instantiate()
 	
-	get_tree().current_scene.add_child(next_level)
+	add_child(next_level)
 
 	current_level.transform_level(next_level)
 
@@ -68,14 +70,15 @@ func increment_next_level():
 func create_door():
 	var door: Door = door_scene.instantiate()
 
+	add_child(door)
+
 	door.global_rotation = current_level.out_node.global_rotation
 	door.global_position = current_level.out_node.global_position
 
 	nextdoor = door
-	get_tree().current_scene.add_child(nextdoor)
 
 func close_prev_door():
-	prevdoor.queue_free()
+	if (prevdoor != null):
+		prevdoor.queue_free()
+	nextdoor.anim_player.play("Door_Close")
 	prevdoor = nextdoor
-
-	prevdoor.anim_p.play("Door_Close")

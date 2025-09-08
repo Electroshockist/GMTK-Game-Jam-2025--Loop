@@ -9,7 +9,7 @@ enum SCENES {
 
 @onready var packed_scenes := {
 	SCENES.MAIN_MENU: preload("res://source/UI/main_menu.tscn"),
-	SCENES.GAME: preload("res://source/game/levels/game.tscn"),
+	SCENES.GAME: preload("res://source/game/game.tscn"),
 	SCENES.OPTIONS: preload("res://source/UI/options.tscn"),
 	SCENES.CREDITS: preload("res://source/UI/credits.tscn"),
 }

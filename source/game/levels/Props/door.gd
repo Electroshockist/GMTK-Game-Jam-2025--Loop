@@ -2,16 +2,16 @@ extends Interactable
 
 class_name Door
 
-@onready var anim_p: AnimationPlayer = $AnimationPlayer
+@export var anim_player: AnimationPlayer
 
 func _ready() -> void:
 	super._ready()
-	anim_p.animation_finished.connect(
+	anim_player.animation_finished.connect(
 		func(anim_name: String):
 			if (anim_name == "Door_Close"):
-				var o: Level = owner
-				o.on_door_anim_finish()
+				GameManager.game.on_enter_next_level()
+				is_monitorable = false
 	)
 
 func on_interact():
-	anim_p.play("Door_Open")
+	anim_player.play("Door_Open")

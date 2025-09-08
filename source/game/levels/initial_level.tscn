@@ -1,17 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://pryt70n2x2h3"]
+[gd_scene load_steps=5 format=3 uid="uid://pryt70n2x2h3"]
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/base_level.tscn" id="1_f3ag4"]
 [ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/model/model_scenes/Metro_PSX_split/poster_01.tscn" id="2_hmi2t"]
-[ext_resource type="PackedScene" uid="uid://0oitx7uc3blr" path="res://assets/Skeletons/metal_door_2/scene.gltf" id="3_pvsyy"]
+[ext_resource type="PackedScene" uid="uid://bqruam7l5fjtn" path="res://source/game/levels/first_level_back.tscn" id="3_f3ag4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_387bw"]
 size = Vector3(1.19053, 4.20093, 0.393127)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_10vm2"]
-size = Vector3(1, 6.5849, 6.42096)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_f3ag4"]
-size = Vector3(131.279, 201.394, 54.8302)
 
 [node name="initial_level" instance=ExtResource("1_f3ag4")]
 
@@ -27,24 +21,10 @@ visible = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.7686, 7.77335, -80.031)
 shape = SubResource("BoxShape3D_387bw")
 
-[node name="Poster_01_frame" parent="." index="6" instance=ExtResource("2_hmi2t")]
+[node name="Poster_01_frame" parent="." index="5" instance=ExtResource("2_hmi2t")]
 transform = Transform3D(1.13113e-05, -101.294, -5.64598e-06, 0, -4.4277e-06, 129.165, -149.823, -7.64748e-06, -4.2626e-13, 25.2956, 3.691, -51.3162)
 
-[node name="Poster_01_ground" parent="." index="7" instance=ExtResource("2_hmi2t")]
+[node name="Poster_01_ground" parent="." index="6" instance=ExtResource("2_hmi2t")]
 transform = Transform3D(-33.9067, -1.20871e-05, 125.814, 2.26226e-05, -101.294, -1.1292e-05, 145.936, 1.28941e-05, 29.2315, 23.4379, 1.3926, -52.0017)
 
-[node name="entry_StaticBody3D" type="StaticBody3D" parent="." index="8"]
-transform = Transform3D(0.00418071, 0.9997, -0.024126, 0.0186431, 0.0240441, 0.999537, 0.999817, -0.00462855, -0.018537, 21.5224, 5.48947, -80.3046)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="entry_StaticBody3D" index="0"]
-transform = Transform3D(1, 1.07916e-07, -2.55401e-07, -1.07916e-07, 1, 2.24429e-07, 2.55401e-07, -2.24429e-07, 1, 0.0501328, 0.21841, 1.26821)
-shape = SubResource("BoxShape3D_10vm2")
-
-[node name="Entry_Door" parent="." index="9" instance=ExtResource("3_pvsyy")]
-transform = Transform3D(0.00921591, 0, 0, 0, 0.0120422, 0, 0, 0, 0.00921591, 20.1099, 5.47563, -80.2735)
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Entry_Door" index="1"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Entry_Door/StaticBody3D" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 190.344, 106.968, 18.874)
-shape = SubResource("BoxShape3D_f3ag4")
+[node name="First level back" parent="." index="7" instance=ExtResource("3_f3ag4")]

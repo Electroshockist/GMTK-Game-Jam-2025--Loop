@@ -2,8 +2,8 @@ extends Node
 
 class_name Interactable
 
-@onready var collider := $Collider
-@onready var label := $Collider/CollisionShape3D/Sprite3D
+@export var collider: CollisionShape3D
+@export var label: Sprite3D
 
 var is_monitorable := true
 

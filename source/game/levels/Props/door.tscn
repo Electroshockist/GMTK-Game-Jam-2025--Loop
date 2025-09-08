@@ -4,10 +4,10 @@
 [ext_resource type="Script" uid="uid://oyhg5k6bwfnj" path="res://source/game/levels/Props/door.gd" id="1_d357e"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_d357e"]
-size = Vector3(0.2, 2.01855, 0.9)
+size = Vector3(0.0769165, 1.66174, 0.723218)
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_d357e"]
-viewport_path = NodePath("Collider/CollisionShape3D/Sprite3D/SubViewport")
+viewport_path = NodePath("Root/Collider/Collision/Sprite3D/SubViewport")
 
 [sub_resource type="Animation" id="Animation_6vvvs"]
 resource_name = "Door_Close"
@@ -22,7 +22,7 @@ tracks/0/keys = PackedFloat32Array(0, 1, 0, 0.676, 0, 0.737, 0.233333, 1, 0, 0, 
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Collider/CollisionShape3D:disabled")
+tracks/1/path = NodePath("Root/Collider/Collision:disabled")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -38,7 +38,7 @@ length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Collider/CollisionShape3D:disabled")
+tracks/0/path = NodePath("Root/Collider/Collision:disabled")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -60,7 +60,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Collider/CollisionShape3D:disabled")
+tracks/0/path = NodePath("Root/Collider/Collision:disabled")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -84,18 +84,22 @@ _data = {
 &"RESET": SubResource("Animation_vjd6b")
 }
 
-[node name="Door" instance=ExtResource("1_11vvi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.01, 0)
+[node name="Door" node_paths=PackedStringArray("anim_player") instance=ExtResource("1_11vvi")]
 script = ExtResource("1_d357e")
+anim_player = NodePath("Root/AnimationPlayer")
 
-[node name="CollisionShape3D" parent="Collider" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.491895)
+[node name="Root" parent="." index="0"]
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, -0.13, 1.16477, 0)
+
+[node name="Collision" parent="Root/Collider" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0769165, -0.0567017, 0.362195)
 shape = SubResource("BoxShape3D_d357e")
 
-[node name="Sprite3D" parent="Collider/CollisionShape3D" index="0"]
+[node name="Sprite3D" parent="Root/Collider/Collision" index="0"]
 texture = SubResource("ViewportTexture_d357e")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Root" index="1"]
+root_node = NodePath("../..")
 libraries = {
 &"": SubResource("AnimationLibrary_vjd6b")
 }
