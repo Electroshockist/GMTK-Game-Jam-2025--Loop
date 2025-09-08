@@ -75,6 +75,8 @@ func create_door():
 	door.global_rotation = current_level.out_node.global_rotation
 	door.global_position = current_level.out_node.global_position
 
+	door.anim_player.play("RESET")
+
 	nextdoor = door
 
 func close_prev_door():

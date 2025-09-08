@@ -1347,75 +1347,75 @@ material = SubResource("FogMaterial_r64ux")
 [node name="StaticBody3D" type="StaticBody3D" parent="Enviroment"]
 
 [node name="Serwers_012" parent="Enviroment/StaticBody3D" instance=ExtResource("3_nk765")]
-transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, -21.5891, 1.09977, -45.0656)
+transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, -21.546, 1.09977, -45.0656)
 
 [node name="SerwersP1_012" parent="Enviroment/StaticBody3D" instance=ExtResource("4_kflkk")]
-transform = Transform3D(-7.44711e-06, 7.97051e-06, 170.37, 0, 182.344, -7.44711e-06, -170.37, 9.47229e-13, -7.44711e-06, 0.342798, 1.06077, 20.2344)
+transform = Transform3D(-7.44711e-06, 7.97051e-06, 170.37, 0, 182.344, -7.44711e-06, -170.37, 9.47229e-13, -7.44711e-06, 0.385892, 1.06077, 20.2344)
 
 [node name="Serwers_021" parent="Enviroment/StaticBody3D" instance=ExtResource("5_udoio")]
-transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, 0.322896, 1.09991, 10.6442)
+transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, 0.36599, 1.09991, 10.6442)
 
 [node name="CollisionShape3D4" type="CollisionShape3D" parent="Enviroment/StaticBody3D"]
-transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, 0.322896, 1.09991, 10.6442)
+transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, 0.36599, 1.09991, 10.6442)
 shape = SubResource("ConcavePolygonShape3D_1eq5v")
 
 [node name="Serwers_023" parent="Enviroment/StaticBody3D" instance=ExtResource("5_udoio")]
-transform = Transform3D(-1.48047e-05, -1.48047e-05, -338.693, 0, 338.693, -1.48047e-05, 338.693, -6.47134e-13, -1.48047e-05, -4.7547, 1.09983, 29.5984)
+transform = Transform3D(-1.48047e-05, -1.48047e-05, -338.693, 0, 338.693, -1.48047e-05, 338.693, -6.47134e-13, -1.48047e-05, -4.71161, 1.09983, 29.5984)
 
 [node name="Serwers_022" parent="Enviroment/StaticBody3D" instance=ExtResource("6_q5lju")]
-transform = Transform3D(-338.693, -1.29427e-12, -2.96095e-05, 0, 338.693, -1.48047e-05, 2.96095e-05, -1.48047e-05, -338.693, 0.322797, 1.10003, 17.4181)
+transform = Transform3D(-338.693, -1.29427e-12, -2.96095e-05, 0, 338.693, -1.48047e-05, 2.96095e-05, -1.48047e-05, -338.693, 0.365891, 1.10003, 17.4181)
 
 [node name="CollisionShape3D6" type="CollisionShape3D" parent="Enviroment/StaticBody3D"]
-transform = Transform3D(-338.693, -1.29427e-12, -2.96095e-05, 0, 338.693, -1.48047e-05, 2.96095e-05, -1.48047e-05, -338.693, 0.322797, 1.10003, 17.4181)
+transform = Transform3D(-338.693, -1.29427e-12, -2.96095e-05, 0, 338.693, -1.48047e-05, 2.96095e-05, -1.48047e-05, -338.693, 0.365891, 1.10003, 17.4181)
 shape = SubResource("ConcavePolygonShape3D_hs1po")
 
 [node name="Serwers_003" parent="Enviroment/StaticBody3D" instance=ExtResource("7_s7o62")]
-transform = Transform3D(-1.48047e-05, 0, -338.693, 0, 338.693, 0, 338.693, 0, -1.48047e-05, -5.04294, 1.09947, -3.20124)
+transform = Transform3D(-1.48047e-05, 0, -338.693, 0, 338.693, 0, 338.693, 0, -1.48047e-05, -4.99985, 1.09947, -3.20124)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Enviroment/StaticBody3D"]
-transform = Transform3D(-1.48047e-05, 0, -338.693, 0, 338.693, 0, 338.693, 0, -1.48047e-05, -5.04294, 1.09947, -3.20124)
+transform = Transform3D(-1.48047e-05, 0, -338.693, 0, 338.693, 0, 338.693, 0, -1.48047e-05, -4.99985, 1.09947, -3.20124)
 shape = SubResource("ConcavePolygonShape3D_8u6pu")
 
 [node name="Serwers2" parent="Enviroment/StaticBody3D" instance=ExtResource("8_e5ibc")]
-transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -12.817, 1.09982, 5.56753)
+transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -12.7739, 1.09982, 5.56753)
 
 [node name="CollisionShape3D9" type="CollisionShape3D" parent="Enviroment/StaticBody3D"]
-transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -12.817, 1.09982, 5.56753)
+transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -12.7739, 1.09982, 5.56753)
 shape = SubResource("ConcavePolygonShape3D_8xhuy")
 
 [node name="Serwers_007" parent="Enviroment/StaticBody3D" instance=ExtResource("7_s7o62")]
-transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.24638e-05, 0, 1.48047e-05, 285.139, -12.8166, 1.0999, -10.4395)
+transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.24638e-05, 0, 1.48047e-05, 285.139, -12.7735, 1.0999, -10.4395)
 
 [node name="Serwers_009" parent="Enviroment/StaticBody3D" instance=ExtResource("7_s7o62")]
-transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, -12.8184, 1.0999, -22.5178)
+transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, -12.7753, 1.0999, -22.5178)
 
 [node name="Serwers3" parent="Enviroment/StaticBody3D" instance=ExtResource("8_e5ibc")]
-transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -21.5903, 1.09987, -37.292)
+transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -21.5472, 1.09987, -37.292)
 
 [node name="Serwers_008" parent="Enviroment/StaticBody3D" instance=ExtResource("7_s7o62")]
-transform = Transform3D(-1.48047e-05, 0, 338.693, 0, 338.693, 0, -338.693, 0, -1.48047e-05, 1.95666, 1.09979, -37.2888)
+transform = Transform3D(-1.48047e-05, 0, 338.693, 0, 338.693, 0, -338.693, 0, -1.48047e-05, 1.99975, 1.09979, -37.2888)
 
 [node name="Serwers_013" parent="Enviroment/StaticBody3D" instance=ExtResource("7_s7o62")]
-transform = Transform3D(-1.48048e-05, 0, -338.693, 0, 338.693, 0, 338.693, 0, -1.48048e-05, -26.576, 1.0999, 38.3627)
+transform = Transform3D(-1.48048e-05, 0, -338.693, 0, 338.693, 0, 338.693, 0, -1.48048e-05, -26.5329, 1.0999, 38.3627)
 
 [node name="Serwers_001" parent="Enviroment/StaticBody3D" instance=ExtResource("9_aob5m")]
-transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -12.8167, 1.09963, -3.20123)
+transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -12.7736, 1.09963, -3.20123)
 
 [node name="CollisionShape3D17" type="CollisionShape3D" parent="Enviroment/StaticBody3D"]
-transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -12.8167, 1.09963, -3.20123)
+transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -12.7736, 1.09963, -3.20123)
 shape = SubResource("ConcavePolygonShape3D_c5p3b")
 
 [node name="Serwers_002" parent="Enviroment/StaticBody3D" instance=ExtResource("9_aob5m")]
-transform = Transform3D(100, 0, -0.0366449, 0, 100, 0, 0.0366449, 0, 100, -12.8166, 1.09989, -37.2904)
+transform = Transform3D(100, 0, -0.0366449, 0, 100, 0, 0.0366449, 0, 100, -12.7735, 1.09989, -37.2904)
 
 [node name="Serwers_010" parent="Enviroment/StaticBody3D" instance=ExtResource("9_aob5m")]
-transform = Transform3D(0.0366405, 0, 100, 0, 100, 0, -100, 0, 0.0366405, -12.5277, 1.09959, 29.5969)
+transform = Transform3D(0.0366405, 0, 100, 0, 100, 0, -100, 0, 0.0366405, -12.4846, 1.09959, 29.5969)
 
 [node name="Serwers_011" parent="Enviroment/StaticBody3D" instance=ExtResource("9_aob5m")]
-transform = Transform3D(-100, 0, 0.0366362, 0, 100, 0, -0.0366362, 0, -100, -12.5324, 1.09959, 38.3643)
+transform = Transform3D(-100, 0, 0.0366362, 0, 100, 0, -0.0366362, 0, -100, -12.4893, 1.09959, 38.3643)
 
 [node name="SerwersP1_010" parent="Enviroment/StaticBody3D" instance=ExtResource("4_kflkk")]
-transform = Transform3D(-7.63245e-06, 2.08477e-08, 174.59, 0.45713, 182.177, 2.32188e-14, -174.61, 0.47694, -7.63157e-06, -12.6365, 1.04028, -6.65139)
+transform = Transform3D(-7.63245e-06, 2.08477e-08, 174.59, 0.45713, 182.177, 2.32188e-14, -174.61, 0.47694, -7.63157e-06, -12.5934, 1.04028, -6.65139)
 
 [node name="St_01" type="MeshInstance3D" parent="Enviroment/StaticBody3D"]
 transform = Transform3D(0, 75.6441, -2.25437e-06, 2.25437e-06, 0, 75.6441, -75.6441, 2.25437e-06, 0, 18.439, 3.71425, -23.4875)
@@ -1675,27 +1675,27 @@ transform = Transform3D(67.0404, 20.2976, 31.4588, -16.6377, 73.8217, -12.1744, 
 transform = Transform3D(42.2199, 15.2784, 36.3962, -9.59254, 55.5669, -12.1984, -32.3043, 2.42605, 36.4549, 0.230875, -0.373746, -0.328737)
 
 [node name="debris_19" parent="Enviroment/debris" instance=ExtResource("52_3gssm")]
-transform = Transform3D(-11.4132, -20.4177, 15.5382, 26.9599, -12.3484, -2.62783, 7.92556, 9.08168, 22.3181, -2.78983, 0.152224, 1.24019)
+transform = Transform3D(-11.4132, -20.4177, 15.5382, 26.9599, -12.3484, -2.62783, 7.92556, 9.08168, 22.3181, -2.77164, 0.14809, 1.22627)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Enviroment/debris"]
-transform = Transform3D(-11.4132, -20.4177, 15.5382, 26.9599, -12.3484, -2.62783, 7.92556, 9.08168, 22.3181, -2.78983, 0.152224, 1.24019)
+transform = Transform3D(-11.4132, -20.4177, 15.5382, 26.9599, -12.3484, -2.62783, 7.92556, 9.08168, 22.3181, -2.77164, 0.14809, 1.22627)
 shape = SubResource("ConcavePolygonShape3D_pktld")
 
 [node name="debris_12" parent="Enviroment/debris" instance=ExtResource("53_jhfv4")]
-transform = Transform3D(43.303, 13.5644, 23.9582, -10.5525, 49.3331, -8.85779, -21.4497, 2.15388, 37.5496, -2.04589, -0.0195166, 0.853047)
+transform = Transform3D(43.303, 13.5644, 23.9582, -10.5525, 49.3331, -8.85779, -21.4497, 2.15388, 37.5496, -2.0277, -0.0236503, 0.839126)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Enviroment/debris"]
-transform = Transform3D(43.303, 13.5644, 23.9582, -10.5525, 49.3331, -8.85779, -21.4497, 2.15388, 37.5496, -2.04589, -0.0195166, 0.853047)
+transform = Transform3D(43.303, 13.5644, 23.9582, -10.5525, 49.3331, -8.85779, -21.4497, 2.15388, 37.5496, -2.0277, -0.0236503, 0.839126)
 shape = SubResource("ConcavePolygonShape3D_vf1by")
 
 [node name="debris_11" parent="Enviroment/debris" instance=ExtResource("53_jhfv4")]
 transform = Transform3D(-75.8587, -42.7642, 59.36, 39.0957, -95.7881, -19.0455, 52.1394, 7.02592, 71.6928, -1.53114, 1.09245, 0.776671)
 
 [node name="debris_09" parent="Enviroment/debris" instance=ExtResource("53_jhfv4")]
-transform = Transform3D(82.1209, 27.8586, 59.891, -19.2402, 101.321, -20.7479, -53.3085, 4.42365, 71.0375, -2.28039, 1.11882, 1.11232)
+transform = Transform3D(82.1209, 27.8586, 59.891, -19.2402, 101.321, -20.7479, -53.3085, 4.42365, 71.0375, -2.2622, 1.11469, 1.0984)
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="Enviroment/debris"]
-transform = Transform3D(82.1209, 27.8586, 59.891, -19.2402, 101.321, -20.7479, -53.3085, 4.42365, 71.0375, -2.28039, 1.11882, 1.11232)
+transform = Transform3D(82.1209, 27.8586, 59.891, -19.2402, 101.321, -20.7479, -53.3085, 4.42365, 71.0375, -2.2622, 1.11469, 1.0984)
 shape = SubResource("ConcavePolygonShape3D_w6x52")
 
 [node name="debris_10" parent="Enviroment/debris" instance=ExtResource("53_jhfv4")]
@@ -1732,10 +1732,11 @@ light_color = Color(0.636089, 0.118183, 0.0751494, 1)
 light_energy = 2.263
 
 [node name="InNode" type="Node3D" parent="." groups=["InNode"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.3184, 5.58435, -79.8745)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.2498, 5.53115, -80.1987)
 
 [node name="OutNode" type="Node3D" parent="." groups=["OutNode"]]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.48021, -0.994344, 16.8693)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.445, -0.994, 16.869)
 script = ExtResource("57_vf1by")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0430942, 0, 0)

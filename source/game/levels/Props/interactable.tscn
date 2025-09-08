@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://d4at0b5ikgnwi"]
+[gd_scene load_steps=5 format=3 uid="uid://d4at0b5ikgnwi"]
 
 [ext_resource type="Script" uid="uid://dht8mbnpa5y0y" path="res://source/game/levels/Props/interactable.gd" id="1_gu4vg"]
 [ext_resource type="Script" uid="uid://cyab4uhau6m5k" path="res://source/game/levels/Props/interactable_display.gd" id="2_7htdd"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_7htdd"]
 viewport_path = NodePath("Root/Collider/Collision/Sprite3D/SubViewport")
+
+[sub_resource type="LabelSettings" id="LabelSettings_7htdd"]
+font_size = 256
 
 [node name="Interactable" type="Node3D" node_paths=PackedStringArray("collider", "label")]
 script = ExtResource("1_gu4vg")
@@ -18,19 +21,27 @@ label = NodePath("Root/Collider/Collision/Sprite3D")
 [node name="Collision" type="CollisionShape3D" parent="Root/Collider"]
 
 [node name="Sprite3D" type="Sprite3D" parent="Root/Collider/Collision"]
+transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0, 0, 0)
 sorting_offset = 30.0
 billboard = 1
+double_sided = false
 no_depth_test = true
 texture = SubResource("ViewportTexture_7htdd")
 
 [node name="SubViewport" type="SubViewport" parent="Root/Collider/Collision/Sprite3D" node_paths=PackedStringArray("label")]
-transparent_bg = true
 handle_input_locally = false
-size = Vector2i(40, 23)
+size = Vector2i(642, 287)
 script = ExtResource("2_7htdd")
 label = NodePath("Label")
 
 [node name="Label" type="Label" parent="Root/Collider/Collision/Sprite3D/SubViewport"]
-offset_right = 40.0
-offset_bottom = 23.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
 text = "Test"
+label_settings = SubResource("LabelSettings_7htdd")
+horizontal_alignment = 1
+vertical_alignment = 1

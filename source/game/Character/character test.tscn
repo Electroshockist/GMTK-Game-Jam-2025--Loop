@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://cych0u7ljeb2n"]
+[gd_scene load_steps=15 format=3 uid="uid://cych0u7ljeb2n"]
 
 [ext_resource type="Environment" uid="uid://cms3emih1j6kt" path="res://source/game/world.tres" id="1_2e1t2"]
 [ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/character/character.tscn" id="1_os8ji"]
 [ext_resource type="PackedScene" uid="uid://daq2ktcnqj41c" path="res://assets/model/model_scenes/Metro_PSX_split/chair.tscn" id="4_b6cy3"]
 [ext_resource type="Texture2D" uid="uid://8qoflni6nisf" path="res://assets/model/models/textures/Metro_PSX/Chair.png" id="5_jf753"]
 [ext_resource type="PackedScene" uid="uid://blk6m1hhnnjq8" path="res://source/portal renderer/render_viewport.tscn" id="6_0sa0k"]
+[ext_resource type="Script" uid="uid://dtv0orvfcyjjl" path="res://source/game/menu_manager.gd" id="8_8j1rh"]
 [ext_resource type="PackedScene" uid="uid://bo16sqwgdwk6o" path="res://source/game/levels/Props/door_metal.tscn" id="8_e5tia"]
 [ext_resource type="PackedScene" uid="uid://dy6kocd8kf1dp" path="res://assets/model/model_scenes/Metro_PSX_split/st_02.tscn" id="8_yhrcq"]
 
@@ -90,15 +91,6 @@ shadow_enabled = true
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_os8ji")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9.04483)
 
-[node name="Camera" parent="CharacterBody3D/Camera3D/Arms_skeleton_v001/Skeleton3D" index="0"]
-transform = Transform3D(-1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 0, 1.8001, 0)
-
-[node name="BoneAttachment3D_handL" parent="CharacterBody3D/Camera3D/Arms_skeleton_v001/Skeleton3D" index="2"]
-transform = Transform3D(-0.182373, -0.143728, -0.972667, -0.267786, -0.9446, 0.18979, -0.94606, 0.295079, 0.133782, 0.338304, 1.18998, -0.19132)
-
-[node name="BoneAttachment3D_handR" parent="CharacterBody3D/Camera3D/Arms_skeleton_v001/Skeleton3D" index="3"]
-transform = Transform3D(-0.458482, 0.036542, 0.887952, 0.639164, 0.707764, 0.300898, -0.617465, 0.705503, -0.347854, -0.240156, 1.59757, 0.265874)
-
 [node name="Floor" type="MeshInstance3D" parent="."]
 mesh = SubResource("PlaneMesh_7slvv")
 
@@ -126,6 +118,9 @@ camera = NodePath("../CharacterBody3D/Camera3D")
 
 [node name="Door2" parent="." instance=ExtResource("8_e5tia")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 1, 8)
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("8_8j1rh")
 
 [editable path="CharacterBody3D"]
 [editable path="CharacterBody3D/Camera3D/Arms_skeleton_v001"]
