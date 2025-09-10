@@ -3,6 +3,8 @@ class_name Character
 
 @export var camera: Camera3D
 
+signal ready_signal
+
 const SPEED = 5.0
 const JUMP_VELOCITY = 6.5
 const LOOK_SENSITIVITY = 0.5
@@ -11,6 +13,7 @@ var _input_enabled: bool = true
 
 func _ready():
 	GameManager.character = self
+	print("char ready")
 
 func _input(event):
 	if _input_enabled:
