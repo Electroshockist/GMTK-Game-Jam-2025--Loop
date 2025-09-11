@@ -4,8 +4,15 @@ extends Node3D
 
 func _process(delta: float) -> void:
 	print(GameManager.character.get_real_velocity().length())
-	animation_tree.set("parameters/conditions/Walking", GameManager.character.get_real_velocity().length() > 0)
+	print(GameManager.character.is_on_floor())
+	animation_tree.set("parameters/conditions/Walking", GameManager.character.get_real_velocity().length() > 0 and GameManager.character.is_on_floor() == true)
+	animation_tree.set("parameters/conditions/Idle", GameManager.character.get_real_velocity().length() <= 0.0 and GameManager.character.is_on_floor() == true)
+	animation_tree.set("parameters/conditions/Jumping", GameManager.character.is_on_floor() == false)
+	'''
 	print(animation_tree.get("parameters/playback").get_current_node())
+	print(animation_tree.get("parameters/conditions/Walking"))
+	print(GameManager.character.get_real_velocity().length())
+	print(GameManager.character.get_real_velocity())'''
 
 func _on_character_ready() -> void:
 	animations()
