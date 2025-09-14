@@ -1,7 +1,6 @@
-[gd_scene load_steps=145 format=4 uid="uid://upfh8uyt1rip"]
+[gd_scene load_steps=144 format=4 uid="uid://upfh8uyt1rip"]
 
 [ext_resource type="Script" uid="uid://bs56ayrlo47wf" path="res://source/game/levels/level.gd" id="1_pktld"]
-[ext_resource type="Environment" uid="uid://pq7vqvfywr8t" path="res://source/game/levels/level_env.tres" id="2_pktld"]
 [ext_resource type="PackedScene" uid="uid://cvy0ew3tgc55k" path="res://assets/model/models/Sewer/Sewer_split/serwers_012.tscn" id="3_nk765"]
 [ext_resource type="Script" uid="uid://cts7ja6veofqq" path="res://source/game/levels/level_stitching/level_trigger.gd" id="3_pktld"]
 [ext_resource type="PackedScene" uid="uid://daantvv3eeq2c" path="res://assets/model/models/Sewer/Sewer_split/serwers_p_1_010.tscn" id="4_kflkk"]
@@ -1322,7 +1321,6 @@ data = PackedVector3Array(0.0007, -0.0048, -0.0002, 0.0005, -0.0041, 0, 0.0043, 
 script = ExtResource("1_pktld")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = ExtResource("2_pktld")
 
 [node name="Level trigger" type="Area3D" parent="." groups=["Unload"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5487, 7.77593, -76.2571)

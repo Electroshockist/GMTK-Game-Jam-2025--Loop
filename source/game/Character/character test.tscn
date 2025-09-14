@@ -1,7 +1,7 @@
 [gd_scene load_steps=15 format=3 uid="uid://cych0u7ljeb2n"]
 
 [ext_resource type="Environment" uid="uid://cms3emih1j6kt" path="res://source/game/world.tres" id="1_2e1t2"]
-[ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/Character/character.tscn" id="1_os8ji"]
+[ext_resource type="PackedScene" uid="uid://olxebp8opmt8" path="res://source/game/character/character.tscn" id="1_os8ji"]
 [ext_resource type="PackedScene" uid="uid://daq2ktcnqj41c" path="res://assets/model/model_scenes/Metro_PSX_split/chair.tscn" id="4_b6cy3"]
 [ext_resource type="Texture2D" uid="uid://8qoflni6nisf" path="res://assets/model/models/textures/Metro_PSX/Chair.png" id="5_jf753"]
 [ext_resource type="PackedScene" uid="uid://blk6m1hhnnjq8" path="res://source/portal renderer/render_viewport.tscn" id="6_0sa0k"]
@@ -91,74 +91,6 @@ shadow_enabled = true
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_os8ji")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9.04483)
 
-[node name="Camera" parent="CharacterBody3D/Camera3D/Arms_skeleton_v001/Skeleton3D" index="0"]
-transform = Transform3D(-1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 0, 1.8001, 0)
-
-[node name="BoneAttachment3D_handL" parent="CharacterBody3D/Camera3D/Arms_skeleton_v001/Skeleton3D" index="2"]
-transform = Transform3D(-0.589083, 0.803702, -0.0839291, -0.808061, -0.586443, 0.0558698, -0.00431697, 0.100732, 0.994904, 0.659571, 1.30507, -0.0492)
-
-[node name="BoneAttachment3D_handR" parent="CharacterBody3D/Camera3D/Arms_skeleton_v001/Skeleton3D" index="3"]
-transform = Transform3D(-0.589083, -0.803702, 0.0839291, 0.808061, -0.586443, 0.0558698, 0.00431697, 0.100732, 0.994904, -0.659571, 1.30507, -0.0492)
-
-[node name="Skeleton3D" parent="CharacterBody3D/Camera3D/Arms_skeleton_v002/arms_armature" index="0"]
-bones/3/rotation = Quaternion(0.227322, 0.666673, -0.536118, 0.46524)
-bones/4/rotation = Quaternion(0.78047, -0.072542, 0.287232, 0.550548)
-bones/6/rotation = Quaternion(0.255451, -0.633615, 0.476757, 0.553154)
-bones/7/rotation = Quaternion(0.835798, 0.106366, -0.146467, 0.518339)
-bones/8/position = Vector3(0.235321, 1.59232, 0.277768)
-bones/8/rotation = Quaternion(-0.202668, -0.875021, 0.204319, 0.389252)
-bones/9/rotation = Quaternion(-0.119606, 0.0152779, -0.702251, 0.701644)
-bones/10/rotation = Quaternion(0.0820982, 0.777711, -0.00183577, 0.623235)
-bones/11/rotation = Quaternion(0.264851, -0.0194618, -0.0413091, 0.963208)
-bones/12/rotation = Quaternion(0.414592, -0.00987965, 0.0316618, 0.909403)
-bones/13/rotation = Quaternion(0.413393, 0.028903, -0.00268128, 0.91009)
-bones/14/rotation = Quaternion(-0.0243942, 0.553143, 0.37845, 0.741764)
-bones/15/rotation = Quaternion(0.184552, -0.0140731, -0.0154496, 0.982601)
-bones/16/rotation = Quaternion(0.217602, -0.0209104, -0.00158638, 0.975812)
-bones/17/rotation = Quaternion(-0.00208296, 0.703562, -0.0632238, 0.707813)
-bones/18/rotation = Quaternion(0.381795, 0.0114454, -0.0316209, 0.923635)
-bones/19/rotation = Quaternion(0.347735, -0.0171161, 0.0109241, 0.937373)
-bones/20/rotation = Quaternion(0.4091, -0.0182088, 0.0106193, 0.912246)
-bones/21/rotation = Quaternion(-0.0140802, 0.685934, -0.0687661, 0.72427)
-bones/22/rotation = Quaternion(0.42569, 0.019055, -0.0108389, 0.904604)
-bones/23/rotation = Quaternion(0.297118, -0.00308691, 0.0224134, 0.954573)
-bones/24/rotation = Quaternion(0.385612, -0.000324929, 0.000115935, 0.922661)
-bones/25/rotation = Quaternion(0.00547886, 0.651093, -0.148517, 0.744305)
-bones/26/rotation = Quaternion(0.270658, -0.0379998, 0.00543278, 0.96191)
-bones/27/rotation = Quaternion(0.448083, -0.00973764, -0.00920016, 0.893892)
-bones/28/rotation = Quaternion(0.325178, -0.00727005, 0.0273679, 0.945229)
-bones/29/position = Vector3(-0.237354, 1.62788, 0.259795)
-bones/29/rotation = Quaternion(-0.153015, 0.963233, -0.0281145, 0.21904)
-bones/30/rotation = Quaternion(-0.119606, -0.0152779, 0.702251, 0.701644)
-bones/31/rotation = Quaternion(0.0779888, -0.777708, -0.00327408, 0.623761)
-bones/32/rotation = Quaternion(0.420044, -0.000565008, -0.0172296, 0.90734)
-bones/33/rotation = Quaternion(0.464532, 0.00810326, -0.0321623, 0.884935)
-bones/34/rotation = Quaternion(0.308009, -0.0290209, -0.000598786, 0.950941)
-bones/35/rotation = Quaternion(0.0037869, -0.603723, -0.355313, 0.713622)
-bones/36/rotation = Quaternion(0.0671133, 0.154949, 0.0288282, 0.985219)
-bones/37/rotation = Quaternion(0.44546, 0.0242305, 0.0301483, 0.894466)
-bones/38/rotation = Quaternion(0.00568489, -0.669066, 0.0866388, 0.738114)
-bones/39/rotation = Quaternion(0.551025, -0.00754902, 0.0186322, 0.834247)
-bones/40/rotation = Quaternion(0.456667, 0.0156966, -0.0128808, 0.889406)
-bones/41/rotation = Quaternion(0.393279, 0.0183895, -0.0103031, 0.919177)
-bones/42/rotation = Quaternion(-0.0318751, -0.648621, 0.102365, 0.753523)
-bones/43/rotation = Quaternion(0.59861, -0.0244017, -0.00233031, 0.800665)
-bones/44/rotation = Quaternion(0.45062, -0.000655387, -0.0226155, 0.892429)
-bones/45/rotation = Quaternion(0.415092, 0.000321033, -0.000126338, 0.909779)
-bones/46/rotation = Quaternion(-0.0232075, -0.595311, 0.16166, 0.786723)
-bones/47/rotation = Quaternion(0.473596, 0.0359053, -0.013576, 0.879905)
-bones/48/rotation = Quaternion(0.379709, 0.00901939, 0.00990521, 0.925009)
-bones/49/rotation = Quaternion(0.250911, 0.00937009, -0.0267218, 0.967596)
-
-[node name="BoneAttachment3D_handL" parent="CharacterBody3D/Camera3D/Arms_skeleton_v002/arms_armature/Skeleton3D" index="1"]
-transform = Transform3D(-0.313579, -0.461921, -0.829637, -0.847764, 0.529762, 0.0254726, 0.427744, 0.711323, -0.557722, 0.23726, 1.58847, 0.273112)
-
-[node name="BoneAttachment3D_handR" parent="CharacterBody3D/Camera3D/Arms_skeleton_v002/arms_armature/Skeleton3D" index="2"]
-transform = Transform3D(-0.35382, 0.764327, 0.539087, 0.935288, 0.28487, 0.209966, 0.00691292, 0.578492, -0.815658, -0.241414, 1.62566, 0.255449)
-
-[node name="AnimationPlayer" parent="CharacterBody3D/Camera3D/Arms_skeleton_v002" index="2"]
-speed_scale = 1.0
-
 [node name="Floor" type="MeshInstance3D" parent="."]
 mesh = SubResource("PlaneMesh_7slvv")
 
@@ -190,10 +122,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 1, 8)
 [node name="Node" type="Node" parent="."]
 script = ExtResource("8_8j1rh")
 
-[connection signal="animation_finished" from="CharacterBody3D/Camera3D/Arms_skeleton_v002/AnimationPlayer" to="CharacterBody3D/Node3D" method="_on_animation_player_animation_finished"]
-
 [editable path="CharacterBody3D"]
-[editable path="CharacterBody3D/Camera3D/Arms_skeleton_v001"]
-[editable path="CharacterBody3D/Camera3D/Arms_skeleton_v002"]
-[editable path="CharacterBody3D/Camera3D/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handL/Clipboard_skeleton_v001"]
-[editable path="CharacterBody3D/Camera3D/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handR/Pencil_skeleton_v001"]
+[editable path="CharacterBody3D/SubViewportContainer/SubViewport/Camera3D/Arms_skeleton_v002"]
+[editable path="CharacterBody3D/SubViewportContainer/SubViewport/Camera3D/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handL/Clipboard_skeleton_v001"]
+[editable path="CharacterBody3D/SubViewportContainer/SubViewport/Camera3D/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handR/Pencil_skeleton_v001"]

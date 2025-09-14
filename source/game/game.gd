@@ -7,6 +7,8 @@ const door_scene := preload("res://source/game/levels/Props/door_metal.tscn")
 var prevdoor: Door
 var nextdoor: Door
 
+signal on_load_new_door(door: Door)
+
 var levels = [
 	load("res://source/game/levels/level_01.tscn"),
 	load("res://source/game/levels/level_02.tscn"),
@@ -32,31 +34,35 @@ var current_level: Level
 ## the next level in the loop
 var next_level: Level
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
+func _init():
 	GameManager.game = self
 
-	_load_init_level()
-	create_door()
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	current_level = _spawn_level(0)
+	current_level.name = "Current Level"
+
 	_spawn_next_level()
+	create_door()
 	
 	(current_level.find_child("Level trigger") as LevelTrigger).monitoring = false
 
 ## loads the initial level
-func _load_init_level():
-	current_level = levels[0].instantiate()
-	add_child(current_level)
+func _spawn_level(id: int) -> Level:
+	var l = levels[id].instantiate()
+	add_child(l)
+
+	return l
 
 func _spawn_next_level():
-	next_level = levels[next_level_id].instantiate()
-	
-	add_child(next_level)
-
+	next_level = _spawn_level(next_level_id)
+	next_level.name = "Next Level"
 	current_level.transform_level(next_level)
 
 func on_enter_next_level():
 	current_level.queue_free()
 	current_level = next_level
+	current_level.name = "Next Level"
 	_spawn_next_level()
 	create_door()
 
@@ -72,15 +78,40 @@ func create_door():
 
 	add_child(door)
 
-	door.global_rotation = current_level.out_node.global_rotation
+	door.global_rotation = next_level.global_rotation
 	door.global_position = current_level.out_node.global_position
 
 	door.anim_player.play("RESET")
 
 	nextdoor = door
+	on_load_new_door.emit(door)
 
 func close_prev_door():
 	if (prevdoor != null):
 		prevdoor.queue_free()
 	nextdoor.anim_player.play("Door_Close")
 	prevdoor = nextdoor
+
+
+var sum = 0
+
+func _process(delta):
+	sum += delta
+	if (sum > 1):
+		sum = 0
+		current_level.transform_level(next_level)
+
+
+var is_debug_cam_on = false
+func _input(event):
+	if !OS.has_feature("standalone"):
+		if (Input.is_action_just_pressed("DebugCamToggle")):
+			is_debug_cam_on = !is_debug_cam_on
+			var charcam := (GameManager.character.find_child("MainCamera3D") as Camera3D)
+			var debugcam := find_child("DebugCamera3D") as Camera3D
+
+			if (is_debug_cam_on):
+				debugcam.make_current()
+			else:
+				charcam.make_current()
+			print(get_viewport().get_camera_3d().name)
