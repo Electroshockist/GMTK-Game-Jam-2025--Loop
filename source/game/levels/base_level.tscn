@@ -1,6 +1,7 @@
-[gd_scene load_steps=144 format=4 uid="uid://upfh8uyt1rip"]
+[gd_scene load_steps=146 format=4 uid="uid://upfh8uyt1rip"]
 
 [ext_resource type="Script" uid="uid://bs56ayrlo47wf" path="res://source/game/levels/level.gd" id="1_pktld"]
+[ext_resource type="Environment" uid="uid://pq7vqvfywr8t" path="res://source/game/levels/level_env.tres" id="2_pktld"]
 [ext_resource type="PackedScene" uid="uid://cvy0ew3tgc55k" path="res://assets/model/models/Sewer/Sewer_split/serwers_012.tscn" id="3_nk765"]
 [ext_resource type="Script" uid="uid://cts7ja6veofqq" path="res://source/game/levels/level_stitching/level_trigger.gd" id="3_pktld"]
 [ext_resource type="PackedScene" uid="uid://daantvv3eeq2c" path="res://assets/model/models/Sewer/Sewer_split/serwers_p_1_010.tscn" id="4_kflkk"]
@@ -55,6 +56,7 @@
 [ext_resource type="PackedScene" uid="uid://bayjcxtfwaphs" path="res://assets/model/models/Sewer/Sewer_split/debris_03.tscn" id="53_jhfv4"]
 [ext_resource type="PackedScene" uid="uid://dotut1d78ligr" path="res://assets/model/models/Sewer/Sewer_split/debris_04.tscn" id="54_b7vxu"]
 [ext_resource type="PackedScene" uid="uid://cnop7bbq2fabs" path="res://assets/model/models/Sewer/Sewer_split/debris_05.tscn" id="55_wrc8c"]
+[ext_resource type="PackedScene" uid="uid://bo16sqwgdwk6o" path="res://source/game/levels/Props/door_metal.tscn" id="57_8u6pu"]
 [ext_resource type="Script" uid="uid://b5hjojq8wyiqd" path="res://source/game/levels/level_stitching/out_node.gd" id="57_vf1by"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8u6pu"]
@@ -1321,6 +1323,7 @@ data = PackedVector3Array(0.0007, -0.0048, -0.0002, 0.0005, -0.0041, 0, 0.0043, 
 script = ExtResource("1_pktld")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("2_pktld")
 
 [node name="Level trigger" type="Area3D" parent="." groups=["Unload"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5487, 7.77593, -76.2571)
@@ -1733,8 +1736,11 @@ light_energy = 2.263
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.2498, 5.53115, -80.1987)
 
 [node name="OutNode" type="Node3D" parent="." groups=["OutNode"]]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.445, -0.994, 16.869)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.445, -1.036, 16.974)
 script = ExtResource("57_vf1by")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0430942, 0, 0)
+
+[node name="Door" parent="." instance=ExtResource("57_8u6pu")]
+transform = Transform3D(1.13, 0, 0, 0, 1.13, 0, 0, 0, 1.13, 4.71484, -0.997533, 16.8795)

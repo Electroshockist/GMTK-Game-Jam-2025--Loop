@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpbmx2qytb21k"
 path.s3tc="res://.godot/imported/tunnel end_road_rails.jpg-c55c96ab1f03d7e81eb57893e40d141a.s3tc.ctex"
+path.etc2="res://.godot/imported/tunnel end_road_rails.jpg-c55c96ab1f03d7e81eb57893e40d141a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/model/models/modified/tunnel end_road_rails.jpg"
-dest_files=["res://.godot/imported/tunnel end_road_rails.jpg-c55c96ab1f03d7e81eb57893e40d141a.s3tc.ctex"]
+dest_files=["res://.godot/imported/tunnel end_road_rails.jpg-c55c96ab1f03d7e81eb57893e40d141a.s3tc.ctex", "res://.godot/imported/tunnel end_road_rails.jpg-c55c96ab1f03d7e81eb57893e40d141a.etc2.ctex"]
 
 [params]
 

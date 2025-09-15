@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dg4hm1mf5vp5i"
 path.s3tc="res://.godot/imported/Clownfish_Clownfish.png-5675db66e8541d58e42464fd7dd06d29.s3tc.ctex"
+path.etc2="res://.godot/imported/Clownfish_Clownfish.png-5675db66e8541d58e42464fd7dd06d29.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/model/models/Low-Poly_Fish/GLB/Clownfish_Clownfish.png"
-dest_files=["res://.godot/imported/Clownfish_Clownfish.png-5675db66e8541d58e42464fd7dd06d29.s3tc.ctex"]
+dest_files=["res://.godot/imported/Clownfish_Clownfish.png-5675db66e8541d58e42464fd7dd06d29.s3tc.ctex", "res://.godot/imported/Clownfish_Clownfish.png-5675db66e8541d58e42464fd7dd06d29.etc2.ctex"]
 
 [params]
 

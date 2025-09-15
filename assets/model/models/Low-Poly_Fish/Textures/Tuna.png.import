@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgvke7oukuihf"
 path.s3tc="res://.godot/imported/Tuna.png-5b5f5491231fee605750c22942d9546e.s3tc.ctex"
+path.etc2="res://.godot/imported/Tuna.png-5b5f5491231fee605750c22942d9546e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/model/models/Low-Poly_Fish/Textures/Tuna.png"
-dest_files=["res://.godot/imported/Tuna.png-5b5f5491231fee605750c22942d9546e.s3tc.ctex"]
+dest_files=["res://.godot/imported/Tuna.png-5b5f5491231fee605750c22942d9546e.s3tc.ctex", "res://.godot/imported/Tuna.png-5b5f5491231fee605750c22942d9546e.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cc4ghklm4ahi1"
 path.s3tc="res://.godot/imported/metro stairs_road_rails.jpg-f6a3b48673828bb372e44d403f762c87.s3tc.ctex"
+path.etc2="res://.godot/imported/metro stairs_road_rails.jpg-f6a3b48673828bb372e44d403f762c87.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/model/models/modified/metro stairs_road_rails.jpg"
-dest_files=["res://.godot/imported/metro stairs_road_rails.jpg-f6a3b48673828bb372e44d403f762c87.s3tc.ctex"]
+dest_files=["res://.godot/imported/metro stairs_road_rails.jpg-f6a3b48673828bb372e44d403f762c87.s3tc.ctex", "res://.godot/imported/metro stairs_road_rails.jpg-f6a3b48673828bb372e44d403f762c87.etc2.ctex"]
 
 [params]
 

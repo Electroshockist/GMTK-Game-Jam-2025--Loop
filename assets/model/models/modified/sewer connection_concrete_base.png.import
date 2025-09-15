@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c674kybia1pgu"
 path.s3tc="res://.godot/imported/sewer connection_concrete_base.png-d8bf00236962d6af217a442ccb40070a.s3tc.ctex"
+path.etc2="res://.godot/imported/sewer connection_concrete_base.png-d8bf00236962d6af217a442ccb40070a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/model/models/modified/sewer connection_concrete_base.png"
-dest_files=["res://.godot/imported/sewer connection_concrete_base.png-d8bf00236962d6af217a442ccb40070a.s3tc.ctex"]
+dest_files=["res://.godot/imported/sewer connection_concrete_base.png-d8bf00236962d6af217a442ccb40070a.s3tc.ctex", "res://.godot/imported/sewer connection_concrete_base.png-d8bf00236962d6af217a442ccb40070a.etc2.ctex"]
 
 [params]
 

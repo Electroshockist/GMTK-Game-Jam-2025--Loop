@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwhmd2oh0jtls"
 path.s3tc="res://.godot/imported/concrete_base.png-2631f25d647220ab5abb2eeafc618446.s3tc.ctex"
+path.etc2="res://.godot/imported/concrete_base.png-2631f25d647220ab5abb2eeafc618446.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/model/models/textures/Sewer/concrete_base.png"
-dest_files=["res://.godot/imported/concrete_base.png-2631f25d647220ab5abb2eeafc618446.s3tc.ctex"]
+dest_files=["res://.godot/imported/concrete_base.png-2631f25d647220ab5abb2eeafc618446.s3tc.ctex", "res://.godot/imported/concrete_base.png-2631f25d647220ab5abb2eeafc618446.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://p5wudeieam5a"
 path.s3tc="res://.godot/imported/metro_map.png-e45d096abc8d1a2d8ddc4b9c6975e5ab.s3tc.ctex"
+path.etc2="res://.godot/imported/metro_map.png-e45d096abc8d1a2d8ddc4b9c6975e5ab.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/model/models/textures/metro_map.png"
-dest_files=["res://.godot/imported/metro_map.png-e45d096abc8d1a2d8ddc4b9c6975e5ab.s3tc.ctex"]
+dest_files=["res://.godot/imported/metro_map.png-e45d096abc8d1a2d8ddc4b9c6975e5ab.s3tc.ctex", "res://.godot/imported/metro_map.png-e45d096abc8d1a2d8ddc4b9c6975e5ab.etc2.ctex"]
 
 [params]
 

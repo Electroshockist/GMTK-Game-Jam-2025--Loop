@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://carvk56doqfb"
 path.s3tc="res://.godot/imported/Barracuda_Barracuda.png-f924961a66918f901a096e16151e5825.s3tc.ctex"
+path.etc2="res://.godot/imported/Barracuda_Barracuda.png-f924961a66918f901a096e16151e5825.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/model/models/Low-Poly_Fish/GLB/Barracuda_Barracuda.png"
-dest_files=["res://.godot/imported/Barracuda_Barracuda.png-f924961a66918f901a096e16151e5825.s3tc.ctex"]
+dest_files=["res://.godot/imported/Barracuda_Barracuda.png-f924961a66918f901a096e16151e5825.s3tc.ctex", "res://.godot/imported/Barracuda_Barracuda.png-f924961a66918f901a096e16151e5825.etc2.ctex"]
 
 [params]
 

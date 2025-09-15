@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ds3bky18k8gdd"
 path.s3tc="res://.godot/imported/clipboard2_metal_Diffuse.png-8a71dc111bc5847e4e32cbe6482f54dc.s3tc.ctex"
+path.etc2="res://.godot/imported/clipboard2_metal_Diffuse.png-8a71dc111bc5847e4e32cbe6482f54dc.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/Skeletons/textures/clipboard_textures/clipboard2_metal_Diffuse.png"
-dest_files=["res://.godot/imported/clipboard2_metal_Diffuse.png-8a71dc111bc5847e4e32cbe6482f54dc.s3tc.ctex"]
+dest_files=["res://.godot/imported/clipboard2_metal_Diffuse.png-8a71dc111bc5847e4e32cbe6482f54dc.s3tc.ctex", "res://.godot/imported/clipboard2_metal_Diffuse.png-8a71dc111bc5847e4e32cbe6482f54dc.etc2.ctex"]
 
 [params]
 

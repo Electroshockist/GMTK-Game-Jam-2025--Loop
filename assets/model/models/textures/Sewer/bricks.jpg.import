@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dk7of3kkxho4o"
 path.s3tc="res://.godot/imported/bricks.jpg-962fcfc7e1f6e90cb8e10b457834980c.s3tc.ctex"
+path.etc2="res://.godot/imported/bricks.jpg-962fcfc7e1f6e90cb8e10b457834980c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/model/models/textures/Sewer/bricks.jpg"
-dest_files=["res://.godot/imported/bricks.jpg-962fcfc7e1f6e90cb8e10b457834980c.s3tc.ctex"]
+dest_files=["res://.godot/imported/bricks.jpg-962fcfc7e1f6e90cb8e10b457834980c.s3tc.ctex", "res://.godot/imported/bricks.jpg-962fcfc7e1f6e90cb8e10b457834980c.etc2.ctex"]
 
 [params]
 

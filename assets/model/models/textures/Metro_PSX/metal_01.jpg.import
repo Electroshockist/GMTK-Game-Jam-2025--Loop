@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnm8pv4sanu1r"
 path.s3tc="res://.godot/imported/metal_01.jpg-07664d466b81f65c799daf8b877fd000.s3tc.ctex"
+path.etc2="res://.godot/imported/metal_01.jpg-07664d466b81f65c799daf8b877fd000.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/model/models/textures/Metro_PSX/metal_01.jpg"
-dest_files=["res://.godot/imported/metal_01.jpg-07664d466b81f65c799daf8b877fd000.s3tc.ctex"]
+dest_files=["res://.godot/imported/metal_01.jpg-07664d466b81f65c799daf8b877fd000.s3tc.ctex", "res://.godot/imported/metal_01.jpg-07664d466b81f65c799daf8b877fd000.etc2.ctex"]
 
 [params]
 

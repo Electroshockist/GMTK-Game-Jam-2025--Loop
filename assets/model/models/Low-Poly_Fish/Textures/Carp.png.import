@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://2xjrgeumtq7x"
 path.s3tc="res://.godot/imported/Carp.png-3803da70771ecac9d8496b2cded47197.s3tc.ctex"
+path.etc2="res://.godot/imported/Carp.png-3803da70771ecac9d8496b2cded47197.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/model/models/Low-Poly_Fish/Textures/Carp.png"
-dest_files=["res://.godot/imported/Carp.png-3803da70771ecac9d8496b2cded47197.s3tc.ctex"]
+dest_files=["res://.godot/imported/Carp.png-3803da70771ecac9d8496b2cded47197.s3tc.ctex", "res://.godot/imported/Carp.png-3803da70771ecac9d8496b2cded47197.etc2.ctex"]
 
 [params]
 

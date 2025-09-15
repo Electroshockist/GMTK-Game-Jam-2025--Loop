@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://r2hvupv40dka"
 path.s3tc="res://.godot/imported/clownfish_skeleton_0.png-601c6bc307c6871d14595ee7b70b5483.s3tc.ctex"
+path.etc2="res://.godot/imported/clownfish_skeleton_0.png-601c6bc307c6871d14595ee7b70b5483.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/Skeletons/clownfish_skeleton_0.png"
-dest_files=["res://.godot/imported/clownfish_skeleton_0.png-601c6bc307c6871d14595ee7b70b5483.s3tc.ctex"]
+dest_files=["res://.godot/imported/clownfish_skeleton_0.png-601c6bc307c6871d14595ee7b70b5483.s3tc.ctex", "res://.godot/imported/clownfish_skeleton_0.png-601c6bc307c6871d14595ee7b70b5483.etc2.ctex"]
 
 [params]
 

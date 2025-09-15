@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://dkxkutb664173"]
+
+[ext_resource type="PackedScene" uid="uid://40jd1ww81xp5" path="res://source/game/levels/Props/door.tscn" id="1_mcokt"]
+[ext_resource type="PackedScene" uid="uid://bk14jls1n1hox" path="res://assets/model/model_scenes/Metro_PSX_split/door_a.tscn" id="2_12m82"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_jtq2a"]
+viewport_path = NodePath("Root/Collider/Collision/Sprite3D/SubViewport")
+
+[node name="Door" instance=ExtResource("1_mcokt")]
+
+[node name="Door_A" parent="Root" index="0" instance=ExtResource("2_12m82")]
+transform = Transform3D(-1.59407e-06, 36.468, 1.59407e-06, 0, -1.59407e-06, 36.468, 36.468, 1.59407e-06, 6.96789e-14, 0.0715231, 0, 0)
+
+[node name="Sprite3D" parent="Root/Collider/Collision" index="0"]
+texture = SubResource("ViewportTexture_jtq2a")

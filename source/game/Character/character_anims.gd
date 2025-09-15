@@ -1,22 +1,20 @@
 extends Node3D
 
 @onready var animation_tree: AnimationTree = $"../AnimationTree"
-@onready var animation_player: AnimationPlayer = $"../SubViewportContainer/SubViewport/Camera3D/Arms_skeleton_v002/AnimationPlayer"
-@onready var clipboard: BoneAttachment3D = $"../SubViewportContainer/SubViewport/Camera3D/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handL"
-@onready var pencil: BoneAttachment3D = $"../SubViewportContainer/SubViewport/Camera3D/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handR"
+@export var animation_player: AnimationPlayer
+@export var clipboard: BoneAttachment3D
+@export var pencil: BoneAttachment3D
 
 var active_animation
 
 func _process(delta: float) -> void:
-	print(GameManager.character.get_real_velocity().length())
-	print(GameManager.character.is_on_floor())
-	
-		
+	# print(GameManager.character.get_real_velocity().length())
+	# print(GameManager.character.is_on_floor())
 	animation_tree.set("parameters/conditions/Idle", GameManager.character.is_on_floor() == true and GameManager.character.get_real_velocity().length() <= 1.0)
 	animation_tree.set("parameters/conditions/Walking", GameManager.character.is_on_floor() == true and GameManager.character.get_real_velocity().length() > 1.0)
 	animation_tree.set("parameters/conditions/Jumping", GameManager.character.is_on_floor() == !true)
 	
-	print(animation_tree.get("parameters/playback").get_current_node())
+	# print(animation_tree.get("parameters/playback").get_current_node())
 
 	# print(animation_tree.get("parameters/conditions/Walking"))
 	# print(GameManager.character.get_real_velocity().length())
@@ -40,7 +38,7 @@ func _ready():
 	
 func _on_character_ready() -> void:
 	animations()
-	print('starting animations')
+	# print('starting animations')
 
 func animations():
 	print(GameManager.character)
@@ -48,7 +46,7 @@ func animations():
 func anim_door_open():
 	var state_machine: AnimationNodeStateMachinePlayback = animation_tree["parameters/playback"]
 	state_machine.travel("arms_anim_doorpush")
-	await get_tree().create_timer(animation_tree.get_animation("arms_anim_doorpush").length).timeout
+	await get_tree().create_timer(0.7).timeout
 	state_machine.travel('arms_anim_loop_idle')
 	
 func anim_dot():

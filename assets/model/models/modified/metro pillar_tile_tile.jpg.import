@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://1rn2884sybr"
 path.s3tc="res://.godot/imported/metro pillar_tile_tile.jpg-b54d0b01d790554125987ba9c7813c70.s3tc.ctex"
+path.etc2="res://.godot/imported/metro pillar_tile_tile.jpg-b54d0b01d790554125987ba9c7813c70.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/model/models/modified/metro pillar_tile_tile.jpg"
-dest_files=["res://.godot/imported/metro pillar_tile_tile.jpg-b54d0b01d790554125987ba9c7813c70.s3tc.ctex"]
+dest_files=["res://.godot/imported/metro pillar_tile_tile.jpg-b54d0b01d790554125987ba9c7813c70.s3tc.ctex", "res://.godot/imported/metro pillar_tile_tile.jpg-b54d0b01d790554125987ba9c7813c70.etc2.ctex"]
 
 [params]
 

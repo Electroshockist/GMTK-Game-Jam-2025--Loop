@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dsm7t4shxpuqc"
 path.s3tc="res://.godot/imported/tunnel end_Tiles.png-01ea404513f514f8e2b1b91ff47b4b4a.s3tc.ctex"
+path.etc2="res://.godot/imported/tunnel end_Tiles.png-01ea404513f514f8e2b1b91ff47b4b4a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/model/models/modified/tunnel end_Tiles.png"
-dest_files=["res://.godot/imported/tunnel end_Tiles.png-01ea404513f514f8e2b1b91ff47b4b4a.s3tc.ctex"]
+dest_files=["res://.godot/imported/tunnel end_Tiles.png-01ea404513f514f8e2b1b91ff47b4b4a.s3tc.ctex", "res://.godot/imported/tunnel end_Tiles.png-01ea404513f514f8e2b1b91ff47b4b4a.etc2.ctex"]
 
 [params]
 

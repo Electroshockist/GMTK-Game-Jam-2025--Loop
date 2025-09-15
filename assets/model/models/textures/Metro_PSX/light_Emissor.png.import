@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbfxtvb82we4w"
 path.s3tc="res://.godot/imported/light_Emissor.png-a7882272308fa2deb0bc6955ed85a76f.s3tc.ctex"
+path.etc2="res://.godot/imported/light_Emissor.png-a7882272308fa2deb0bc6955ed85a76f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/model/models/textures/Metro_PSX/light_Emissor.png"
-dest_files=["res://.godot/imported/light_Emissor.png-a7882272308fa2deb0bc6955ed85a76f.s3tc.ctex"]
+dest_files=["res://.godot/imported/light_Emissor.png-a7882272308fa2deb0bc6955ed85a76f.s3tc.ctex", "res://.godot/imported/light_Emissor.png-a7882272308fa2deb0bc6955ed85a76f.etc2.ctex"]
 
 [params]
 

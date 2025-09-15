@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://vm2iqc1p7sef"
 path.s3tc="res://.godot/imported/metro stairs_Door_01.jpg-28e76cd69529e1f2c4f1e9592c945752.s3tc.ctex"
+path.etc2="res://.godot/imported/metro stairs_Door_01.jpg-28e76cd69529e1f2c4f1e9592c945752.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/model/models/modified/metro stairs_Door_01.jpg"
-dest_files=["res://.godot/imported/metro stairs_Door_01.jpg-28e76cd69529e1f2c4f1e9592c945752.s3tc.ctex"]
+dest_files=["res://.godot/imported/metro stairs_Door_01.jpg-28e76cd69529e1f2c4f1e9592c945752.s3tc.ctex", "res://.godot/imported/metro stairs_Door_01.jpg-28e76cd69529e1f2c4f1e9592c945752.etc2.ctex"]
 
 [params]
 

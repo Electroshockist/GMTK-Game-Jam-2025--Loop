@@ -77,7 +77,7 @@ states/arms_anim_loop_idle_twitch/position = Vector2(153, 401)
 states/arms_anim_loop_walk/node = SubResource("AnimationNodeAnimation_w8udb")
 states/arms_anim_loop_walk/position = Vector2(500, 59)
 transitions = ["Start", "arms_anim_loop_idle", SubResource("AnimationNodeStateMachineTransition_bhr3m"), "arms_anim_loop_idle", "arms_anim_loop_walk", SubResource("AnimationNodeStateMachineTransition_li5aq"), "arms_anim_loop_walk", "arms_anim_loop_idle", SubResource("AnimationNodeStateMachineTransition_fkp72"), "arms_anim_loop_idle", "arms_anim_jump", SubResource("AnimationNodeStateMachineTransition_w8udb"), "arms_anim_jump", "arms_anim_loop_idle", SubResource("AnimationNodeStateMachineTransition_2yuae"), "arms_anim_jump", "arms_anim_loop_walk", SubResource("AnimationNodeStateMachineTransition_htiyu"), "arms_anim_loop_walk", "arms_anim_jump", SubResource("AnimationNodeStateMachineTransition_0pdst")]
-graph_offset = Vector2(16, -3)
+graph_offset = Vector2(-248, -42)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3fkvc"]
 radius = 0.3
@@ -87,16 +87,7 @@ height = 1.75
 
 [node name="CharacterBody3D" type="CharacterBody3D" node_paths=PackedStringArray("camera")]
 script = ExtResource("1_hhptx")
-camera = NodePath("Camera3D")
-
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
-cull_mask = 1048573
-
-[node name="RayCast3D" type="RayCast3D" parent="Camera3D"]
-target_position = Vector3(0, 0, -5)
-collide_with_areas = true
-script = ExtResource("2_7d3ex")
+camera = NodePath("Camera3D2")
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
 root_node = NodePath("../../../../../../../../../../../../../../../../../../../../../../SubViewport/Camera3D/Arms_skeleton_v002")
@@ -106,8 +97,11 @@ parameters/conditions/Idle = false
 parameters/conditions/Jumping = false
 parameters/conditions/Walking = false
 
-[node name="Node3D" type="Node3D" parent="."]
+[node name="Node3D" type="Node3D" parent="." node_paths=PackedStringArray("animation_player", "clipboard", "pencil")]
 script = ExtResource("7_fkp72")
+animation_player = NodePath("../Camera3D2/Arms_skeleton_v002/AnimationPlayer")
+clipboard = NodePath("../Camera3D2/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handL")
+pencil = NodePath("../Camera3D2/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handR")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.875, 0)
@@ -118,27 +112,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.875, 0)
 visible = false
 mesh = SubResource("CapsuleMesh_odid6")
 
-[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-stretch = true
-
-[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
-transparent_bg = true
-handle_input_locally = false
-size = Vector2i(640, 480)
-render_target_update_mode = 4
-
-[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport"]
+[node name="Camera3D2" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
-cull_mask = 1048574
 
-[node name="Arms_skeleton_v002" parent="SubViewportContainer/SubViewport/Camera3D" instance=ExtResource("6_07k64")]
+[node name="RayCast3D" type="RayCast3D" parent="Camera3D2"]
+target_position = Vector3(0, 0, -5)
+collide_with_areas = true
+script = ExtResource("2_7d3ex")
 
-[node name="Skeleton3D" parent="SubViewportContainer/SubViewport/Camera3D/Arms_skeleton_v002/arms_armature" index="0"]
+[node name="Arms_skeleton_v002" parent="Camera3D2" instance=ExtResource("6_07k64")]
+
+[node name="Skeleton3D" parent="Camera3D2/Arms_skeleton_v002/arms_armature" index="0"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, -1.79371, 0)
 bones/2/rotation = Quaternion(-0.605155, -0.345862, -0.356134, 0.622363)
 bones/3/rotation = Quaternion(0.227752, 0.666535, -0.535905, 0.465473)
@@ -204,43 +188,46 @@ bones/47/rotation = Quaternion(0.47935, 0.0358156, -0.0138109, 0.876784)
 bones/48/rotation = Quaternion(0.381848, 0.00904232, 0.00988431, 0.924128)
 bones/49/rotation = Quaternion(0.253141, 0.00930845, -0.0267433, 0.967015)
 
-[node name="arms" parent="SubViewportContainer/SubViewport/Camera3D/Arms_skeleton_v002/arms_armature/Skeleton3D" index="0"]
+[node name="arms" parent="Camera3D2/Arms_skeleton_v002/arms_armature/Skeleton3D" index="0"]
 layers = 2
 
-[node name="BoneAttachment3D_handL" type="BoneAttachment3D" parent="SubViewportContainer/SubViewport/Camera3D/Arms_skeleton_v002/arms_armature/Skeleton3D" index="1"]
+[node name="BoneAttachment3D_handL" type="BoneAttachment3D" parent="Camera3D2/Arms_skeleton_v002/arms_armature/Skeleton3D" index="1"]
 transform = Transform3D(-0.313247, -0.464939, -0.828075, -0.849502, 0.526969, 0.0254749, 0.424526, 0.711431, -0.560039, 0.237255, 1.5889, 0.273094)
 visible = false
 bone_name = "hand.L"
 bone_idx = 9
 
-[node name="Clipboard_skeleton_v001" parent="SubViewportContainer/SubViewport/Camera3D/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handL" instance=ExtResource("5_fkp72")]
+[node name="Clipboard_skeleton_v001" parent="Camera3D2/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handL" instance=ExtResource("5_fkp72")]
 transform = Transform3D(1, -6.31553e-09, 3.25963e-09, 2.47092e-08, 1, 0, -4.65661e-10, 0, 1, 0, 0, 0)
 
-[node name="Skeleton3D" parent="SubViewportContainer/SubViewport/Camera3D/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handL/Clipboard_skeleton_v001" index="0"]
+[node name="Skeleton3D" parent="Camera3D2/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handL/Clipboard_skeleton_v001" index="0"]
 bones/2/position = Vector3(5.1219, 0.184293, -18.5182)
 bones/2/rotation = Quaternion(0.829962, 0.408649, -0.276228, 0.260514)
 
-[node name="BoneAttachment3D_handR" type="BoneAttachment3D" parent="SubViewportContainer/SubViewport/Camera3D/Arms_skeleton_v002/arms_armature/Skeleton3D" index="2"]
+[node name="BoneAttachment3D_handR" type="BoneAttachment3D" parent="Camera3D2/Arms_skeleton_v002/arms_armature/Skeleton3D" index="2"]
 transform = Transform3D(-0.352545, 0.766822, 0.536373, 0.935745, 0.282935, 0.210545, 0.00969166, 0.576135, -0.817297, -0.241414, 1.62609, 0.25544)
 visible = false
 bone_name = "hand.R"
 bone_idx = 30
 
-[node name="Pencil_skeleton_v001" parent="SubViewportContainer/SubViewport/Camera3D/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handR" instance=ExtResource("4_07k64")]
+[node name="Pencil_skeleton_v001" parent="Camera3D2/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handR" instance=ExtResource("4_07k64")]
 transform = Transform3D(1, 1.74041e-08, -3.72529e-09, -7.33125e-08, 1, 0, -9.31323e-10, 0, 1, 0, 0, 0)
 
-[node name="Skeleton3D" parent="SubViewportContainer/SubViewport/Camera3D/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handR/Pencil_skeleton_v001" index="0"]
+[node name="Skeleton3D" parent="Camera3D2/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handR/Pencil_skeleton_v001" index="0"]
 bones/2/position = Vector3(-2.37091, 8.32323, 4.0378)
 bones/2/rotation = Quaternion(0.0276958, -0.178193, -0.0109385, 0.983545)
 
-[node name="AnimationPlayer" parent="SubViewportContainer/SubViewport/Camera3D/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handR/Pencil_skeleton_v001" index="1"]
+[node name="AnimationPlayer" parent="Camera3D2/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handR/Pencil_skeleton_v001" index="1"]
 autoplay = "pencil_pose_hold"
 
-[node name="AnimationPlayer" parent="SubViewportContainer/SubViewport/Camera3D/Arms_skeleton_v002" index="2"]
+[node name="Camera" parent="Camera3D2/Arms_skeleton_v002" index="1"]
+visible = false
+
+[node name="AnimationPlayer" parent="Camera3D2/Arms_skeleton_v002" index="2"]
 speed_scale = 0.75
 
 [connection signal="ready_signal" from="." to="Node3D" method="_on_character_ready"]
 
-[editable path="SubViewportContainer/SubViewport/Camera3D/Arms_skeleton_v002"]
-[editable path="SubViewportContainer/SubViewport/Camera3D/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handL/Clipboard_skeleton_v001"]
-[editable path="SubViewportContainer/SubViewport/Camera3D/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handR/Pencil_skeleton_v001"]
+[editable path="Camera3D2/Arms_skeleton_v002"]
+[editable path="Camera3D2/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handL/Clipboard_skeleton_v001"]
+[editable path="Camera3D2/Arms_skeleton_v002/arms_armature/Skeleton3D/BoneAttachment3D_handR/Pencil_skeleton_v001"]

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://clc7a6hh1841l"
 path.s3tc="res://.godot/imported/metro pillar_road_rails.jpg-765fa8b284dd8e820fb1fe2e12321e1a.s3tc.ctex"
+path.etc2="res://.godot/imported/metro pillar_road_rails.jpg-765fa8b284dd8e820fb1fe2e12321e1a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/model/models/modified/metro pillar_road_rails.jpg"
-dest_files=["res://.godot/imported/metro pillar_road_rails.jpg-765fa8b284dd8e820fb1fe2e12321e1a.s3tc.ctex"]
+dest_files=["res://.godot/imported/metro pillar_road_rails.jpg-765fa8b284dd8e820fb1fe2e12321e1a.s3tc.ctex", "res://.godot/imported/metro pillar_road_rails.jpg-765fa8b284dd8e820fb1fe2e12321e1a.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4hsi3qvrv6yp"
 path.s3tc="res://.godot/imported/Metro_trash_can.png-bef24b50024bd2d4773c76b797e9a9f1.s3tc.ctex"
+path.etc2="res://.godot/imported/Metro_trash_can.png-bef24b50024bd2d4773c76b797e9a9f1.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/model/models/Metro_PSX/Metro_trash_can.png"
-dest_files=["res://.godot/imported/Metro_trash_can.png-bef24b50024bd2d4773c76b797e9a9f1.s3tc.ctex"]
+dest_files=["res://.godot/imported/Metro_trash_can.png-bef24b50024bd2d4773c76b797e9a9f1.s3tc.ctex", "res://.godot/imported/Metro_trash_can.png-bef24b50024bd2d4773c76b797e9a9f1.etc2.ctex"]
 
 [params]
 
