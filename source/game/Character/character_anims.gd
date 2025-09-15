@@ -21,8 +21,8 @@ func _process(delta: float) -> void:
 	# print(GameManager.character.get_real_velocity())
 	
 func _ready():
-	print(clipboard)
-	print(pencil)
+	print('clipboard: ', clipboard)
+	print('pencil: ', pencil)
 	clipboard.hide()
 	pencil.hide()
 
@@ -32,8 +32,16 @@ func _ready():
 		func(interactable: Interactable):
 			if (interactable is Door):
 				anim_door_open()
-			else:
+				print('door interacted, played player anim')
+			#if (interactable is Anomaly):
+				#anim_jot()
+				#print('anomaly interacted, player anim')
+			elif (interactable == null):
 				anim_dot()
+				print('nothing interacted, played player anim')
+				await get_tree().create_timer(1).timeout # needed 4 sum reason ?
+				anim_jot()
+				print('*test* interacted, played player anim')
 	)
 	
 func _on_character_ready() -> void:
@@ -66,7 +74,19 @@ func anim_dot():
 	
 	
 func anim_jot():
-	animation_tree.travel("arms_anim_jot")
+	clipboard.show()
+	pencil.show()
+	var state_machine = animation_tree["parameters/playback"]
+	active_animation = state_machine
+	state_machine.travel("arms_anim_jot")
+	print('jot anim?')
+	await get_tree().create_timer(1).timeout
+	clipboard.hide()
+	pencil.hide()
+	state_machine.travel('arms_anim_loop_idle')
+	# '''
+	# _on_AnimationPlayer_animation_finished()
+	# print('animation finished signal')'''
 	
 func _on_AnimationPlayer_animation_finished(anim_name = "arms_anim_dot") -> void:
 	if anim_name == "arms_anim_dot":

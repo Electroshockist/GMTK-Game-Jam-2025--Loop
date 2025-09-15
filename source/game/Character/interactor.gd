@@ -9,11 +9,13 @@ var _hovered_interactable: Node
 signal on_interact(interactable: Interactable)
 
 func _input(_event):
-	if (Input.is_action_just_pressed("interact") and _is_collider_interactable(_collision)):
+	if (Input.is_action_just_pressed("interact")):
+		if (_is_collider_interactable(_collision)):
 			var i: Interactable = _collision.owner
 			i.on_interact()
 			on_interact.emit(i)
-
+		else:
+			on_interact.emit(null)
 func _process(_delta):
 	_collision = get_collider()
 
