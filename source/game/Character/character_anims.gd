@@ -8,11 +8,18 @@ extends Node3D
 var active_animation
 
 func _process(delta: float) -> void:
+	
+	if Input.is_action_just_pressed('test_input'):
+		anim_dot()
+		print('nothing interacted, played player dot anim')
+		await get_tree().create_timer(1).timeout # needed 4 sum reason ?
+		
 	# print(GameManager.character.get_real_velocity().length())
 	# print(GameManager.character.is_on_floor())
-	animation_tree.set("parameters/conditions/Idle", GameManager.character.is_on_floor() == true and GameManager.character.get_real_velocity().length() <= 1.0)
-	animation_tree.set("parameters/conditions/Walking", GameManager.character.is_on_floor() == true and GameManager.character.get_real_velocity().length() > 1.0)
-	animation_tree.set("parameters/conditions/Jumping", GameManager.character.is_on_floor() == !true)
+	else:
+		animation_tree.set("parameters/conditions/Idle", GameManager.character.is_on_floor() == true and GameManager.character.get_real_velocity().length() <= 1.0)
+		animation_tree.set("parameters/conditions/Walking", GameManager.character.is_on_floor() == true and GameManager.character.get_real_velocity().length() > 1.0)
+		animation_tree.set("parameters/conditions/Jumping", GameManager.character.is_on_floor() == !true)
 	
 	# print(animation_tree.get("parameters/playback").get_current_node())
 
@@ -37,11 +44,8 @@ func _ready():
 				#anim_jot()
 				#print('anomaly interacted, player anim')
 			elif (interactable == null):
-				anim_dot()
-				print('nothing interacted, played player anim')
-				await get_tree().create_timer(1).timeout # needed 4 sum reason ?
 				anim_jot()
-				print('*test* interacted, played player anim')
+				print('*test* interacted, played player jot anim')
 	)
 	
 func _on_character_ready() -> void:
@@ -58,12 +62,13 @@ func anim_door_open():
 	state_machine.travel('arms_anim_loop_idle')
 	
 func anim_dot():
-	clipboard.show()
-	pencil.show()
 	var state_machine = animation_tree["parameters/playback"]
 	active_animation = state_machine
 	state_machine.travel("arms_anim_dot")
 	print('dot anim?')
+	await get_tree().create_timer(.1).timeout
+	clipboard.show()
+	pencil.show()
 	await get_tree().create_timer(1).timeout
 	clipboard.hide()
 	pencil.hide()
@@ -74,11 +79,11 @@ func anim_dot():
 	
 	
 func anim_jot():
-	clipboard.show()
-	pencil.show()
 	var state_machine = animation_tree["parameters/playback"]
 	active_animation = state_machine
 	state_machine.travel("arms_anim_jot")
+	clipboard.show()
+	pencil.show()
 	print('jot anim?')
 	await get_tree().create_timer(1).timeout
 	clipboard.hide()
