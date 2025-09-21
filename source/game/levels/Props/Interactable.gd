@@ -11,22 +11,18 @@ signal on_interacted
 
 var is_monitorable := true
 
-@export var interact_text: String = "Interact"
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	label_sprite.visible = false
 
 func _process(_delta: float) -> void:
-	subviewport.size = label_sprite.size
+	subviewport.size = label.size
 
-	label_sprite.text = "%s: [%s]" % [interact_text, (
-		OS.get_keycode_string(
-			DisplayServer.keyboard_get_keycode_from_physical(
-				InputMap.action_get_events("interact")[0].physical_keycode
-			)
+	label.text = OS.get_keycode_string(
+		DisplayServer.keyboard_get_keycode_from_physical(
+			InputMap.action_get_events("interact")[0].physical_keycode
 		)
-	)]
+	)
 
 func set_hovered_state(is_hovering: bool):
 	label_sprite.visible = is_hovering

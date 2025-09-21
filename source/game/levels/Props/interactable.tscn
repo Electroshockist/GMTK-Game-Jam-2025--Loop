@@ -1,7 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://d4at0b5ikgnwi"]
+[gd_scene load_steps=4 format=3 uid="uid://d4at0b5ikgnwi"]
 
 [ext_resource type="Script" uid="uid://dht8mbnpa5y0y" path="res://source/game/levels/Props/Interactable.gd" id="1_gu4vg"]
-[ext_resource type="Script" uid="uid://cyab4uhau6m5k" path="res://source/game/levels/Props/interactable_display.gd" id="2_7htdd"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_7htdd"]
 viewport_path = NodePath("Root/Collider/Collision/Sprite3D/SubViewport")
@@ -33,7 +32,6 @@ texture = SubResource("ViewportTexture_7htdd")
 [node name="SubViewport" type="SubViewport" parent="Root/Collider/Collision/Sprite3D"]
 handle_input_locally = false
 size = Vector2i(642, 287)
-script = ExtResource("2_7htdd")
 
 [node name="Label" type="Label" parent="Root/Collider/Collision/Sprite3D/SubViewport"]
 anchors_preset = 15
