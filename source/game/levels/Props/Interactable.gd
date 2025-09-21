@@ -5,16 +5,31 @@ class_name Interactable
 signal on_interacted
 
 @export var collider: CollisionShape3D
-@export var label: Sprite3D
+@export var label_sprite: Sprite3D
+@export var subviewport: SubViewport
+@export var label: Label
 
 var is_monitorable := true
 
+@export var interact_text: String = "Interact"
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	label.visible = false
+	label_sprite.visible = false
+
+func _process(_delta: float) -> void:
+	subviewport.size = label_sprite.size
+
+	label_sprite.text = "%s: [%s]" % [interact_text, (
+		OS.get_keycode_string(
+			DisplayServer.keyboard_get_keycode_from_physical(
+				InputMap.action_get_events("interact")[0].physical_keycode
+			)
+		)
+	)]
 
 func set_hovered_state(is_hovering: bool):
-	label.visible = is_hovering
+	label_sprite.visible = is_hovering
 
 func on_interact():
 	_on_interact_action()

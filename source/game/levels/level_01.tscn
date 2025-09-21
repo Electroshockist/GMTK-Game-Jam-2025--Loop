@@ -1,9 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://5tr5x1rg1h0g"]
+[gd_scene load_steps=5 format=3 uid="uid://5tr5x1rg1h0g"]
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/base_level.tscn" id="1_gc4bu"]
+[ext_resource type="PackedScene" uid="uid://l108uni2ht8d" path="res://source/game/levels/Props/Differences/Anomalies/anomaly.tscn" id="2_387bw"]
 [ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/model/model_scenes/Metro_PSX_split/poster_01.tscn" id="2_svq3v"]
+[ext_resource type="Script" uid="uid://jk6usq21nc2v" path="res://source/game/levels/Props/Differences/poster.gd" id="2_tofe2"]
 
 [node name="level_01" instance=ExtResource("1_gc4bu")]
+
+[node name="Poster_01" parent="Enviroment" index="3"]
+script = ExtResource("2_tofe2")
+
+[node name="Anomaly" parent="Enviroment" index="4" instance=ExtResource("2_387bw")]
+
+[node name="Poster_01_ground" parent="Enviroment/Anomaly" index="1" instance=ExtResource("2_svq3v")]
+transform = Transform3D(-33.9067, -1.20871e-05, 125.814, 2.26226e-05, -101.294, -1.1292e-05, 145.936, 1.28941e-05, 29.2315, 23.4379, 1.3926, -52.0017)
 
 [node name="Back Wall" parent="Enviroment/Subway" index="14"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.3503, 7.79383, -80.031)
@@ -14,8 +24,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.1258, 7.79383, -80.031)
 [node name="Back Wall3" parent="Enviroment/Subway" index="16"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8284, 8.87299, -80.031)
 
-[node name="Poster_01_frame" parent="." index="5" instance=ExtResource("2_svq3v")]
-transform = Transform3D(1.13113e-05, -101.294, -5.64598e-06, 0, -4.4277e-06, 129.165, -149.823, -7.64748e-06, -4.2626e-13, 25.2956, 3.691, -51.3162)
-
-[node name="Poster_01_ground" parent="." index="6" instance=ExtResource("2_svq3v")]
-transform = Transform3D(-33.9067, -1.20871e-05, 125.814, 2.26226e-05, -101.294, -1.1292e-05, 145.936, 1.28941e-05, 29.2315, 23.4379, 1.3926, -52.0017)
+[node name="Posters" type="Node3D" parent="Enviroment" index="33"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3037, 1.57215, -17.2162)

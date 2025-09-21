@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://l108uni2ht8d"]
+
+[ext_resource type="PackedScene" uid="uid://d4at0b5ikgnwi" path="res://source/game/levels/Props/interactable.tscn" id="1_jtgr3"]
+[ext_resource type="Script" uid="uid://dp6ov6sut21io" path="res://source/game/levels/Props/Differences/Anomalies/anomaly.gd" id="2_82p5g"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_nlgpy"]
+viewport_path = NodePath("Root/Collider/Collision/Sprite3D/SubViewport")
+
+[node name="Anomaly" instance=ExtResource("1_jtgr3")]
+script = ExtResource("2_82p5g")
+
+[node name="Sprite3D" parent="Root/Collider/Collision" index="0"]
+texture = SubResource("ViewportTexture_nlgpy")

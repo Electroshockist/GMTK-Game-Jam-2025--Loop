@@ -15,3 +15,6 @@ func _ready() -> void:
 
 func _on_interact_action():
 	anim_player.play("Door_Open")
+
+func get_interact_text() -> String:
+	return ""
