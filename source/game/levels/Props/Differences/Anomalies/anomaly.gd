@@ -3,13 +3,14 @@ class_name Anomaly
 
 @export var fixed: Node3D
 
-@export var anomaly: Interactable
+@export var anomalous_interactable: Interactable
 
 func _ready():
-    fixed.visible = false
+	fixed.visible = false
 
-    anomaly.on_interacted.connect(on_interact)
+	anomalous_interactable.on_interacted.connect(on_interact)
 
 func on_interact():
-    anomaly.queue_free()
-    fixed.visible = true
+	GameManager.game.increment_next_level()
+
+	fixed.visible = true

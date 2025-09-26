@@ -8,6 +8,9 @@ signal on_interacted
 @export var label_sprite: Sprite3D
 @export var subviewport: SubViewport
 @export var label: Label
+@export var on_interact_audio: AudioStream
+
+@onready var _audio_stream_player: AudioStreamPlayer3D = $Root/AudioStreamPlayer3D
 
 var is_monitorable := true
 
@@ -29,6 +32,9 @@ func set_hovered_state(is_hovering: bool):
 
 func on_interact():
 	_on_interact_action()
+	if on_interact_audio:
+		_audio_stream_player.stream = on_interact_audio
+		_audio_stream_player.play()
 	on_interacted.emit()
 
 # abstract function to override
