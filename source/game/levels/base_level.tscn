@@ -1743,6 +1743,7 @@ on_interact_audio = null
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("59_vf1by")
+attenuation_model = 3
 
 [node name="PlayerSpawn" type="Node3D" parent="." groups=["PlayerSpawn"]]
 transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 21.8599, 5.80914, -77.1457)

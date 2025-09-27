@@ -1,7 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://d4at0b5ikgnwi"]
+[gd_scene load_steps=4 format=3 uid="uid://d4at0b5ikgnwi"]
 
 [ext_resource type="Script" uid="uid://dht8mbnpa5y0y" path="res://source/game/levels/Props/Interactable.gd" id="1_gu4vg"]
-[ext_resource type="Script" uid="uid://b8a0fsdtiv7mw" path="res://source/game/levels/Props/interactable_helper.gd" id="2_7htdd"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_gu4vg"]
 viewport_path = NodePath("Root/Collider/Collision/Sprite3D/SubViewport")
@@ -11,22 +10,15 @@ font_size = 512
 
 [node name="Interactable" type="Node3D"]
 script = ExtResource("1_gu4vg")
-is_area3D = true
 
-[node name="Root" type="Node3D" parent="." node_paths=PackedStringArray("collider", "label_sprite", "subviewport", "label", "audio_stream_player")]
-script = ExtResource("2_7htdd")
-collider = NodePath("Collider/Collision")
-label_sprite = NodePath("Collider/Collision/Sprite3D")
-subviewport = NodePath("Collider/Collision/Sprite3D/SubViewport")
-label = NodePath("Collider/Collision/Sprite3D/SubViewport/Label")
-audio_stream_player = NodePath("AudioStreamPlayer3D")
+[node name="Root" type="Node3D" parent="."]
 
-[node name="Collider" type="Area3D" parent="Root"]
+[node name="Collider" type="StaticBody3D" parent="Root"]
 
 [node name="Collision" type="CollisionShape3D" parent="Root/Collider"]
 
 [node name="Sprite3D" type="Sprite3D" parent="Root/Collider/Collision"]
-transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0, 0.220208, 0)
+transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0, 0.26283, 0)
 sorting_offset = 30.0
 billboard = 1
 double_sided = false
@@ -34,8 +26,9 @@ no_depth_test = true
 texture = SubResource("ViewportTexture_gu4vg")
 
 [node name="SubViewport" type="SubViewport" parent="Root/Collider/Collision/Sprite3D"]
+transparent_bg = true
 handle_input_locally = false
-size = Vector2i(642, 287)
+size = Vector2i(1035, 698)
 
 [node name="Label" type="Label" parent="Root/Collider/Collision/Sprite3D/SubViewport"]
 anchors_preset = 15
@@ -50,3 +43,4 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Root"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0344489, 0)

@@ -1,12 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://40jd1ww81xp5"]
+[gd_scene load_steps=10 format=3 uid="uid://40jd1ww81xp5"]
 
 [ext_resource type="PackedScene" uid="uid://d4at0b5ikgnwi" path="res://source/game/levels/Props/interactable.tscn" id="1_11vvi"]
 [ext_resource type="Script" uid="uid://oyhg5k6bwfnj" path="res://source/game/levels/Props/door.gd" id="1_d357e"]
 [ext_resource type="AudioStream" uid="uid://cnvespui43nc4" path="res://assets/sounds/squeaky door.mp3" id="3_8wudx"]
 [ext_resource type="AudioStream" uid="uid://dhr3gqnh3f5ql" path="res://assets/sounds/door.mp3" id="3_oxef2"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_d357e"]
-size = Vector3(0.0769165, 1.66174, 0.723218)
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_d357e"]
 viewport_path = NodePath("Root/Collider/Collision/Sprite3D/SubViewport")
@@ -161,7 +158,6 @@ _data = {
 [node name="Door" node_paths=PackedStringArray("anim_player") instance=ExtResource("1_11vvi")]
 script = ExtResource("1_d357e")
 anim_player = NodePath("Root/AnimationPlayer")
-is_area3D = false
 on_interact_audio = ExtResource("3_oxef2")
 
 [node name="Root" parent="." index="0"]
@@ -169,7 +165,6 @@ transform = Transform3D(1.345, 0, 0, 0, 1.345, 0, 0, 0, 1.345, -0.13, 1.16477, 0
 
 [node name="Collision" parent="Root/Collider" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0769165, -0.0567017, 0.362195)
-shape = SubResource("BoxShape3D_d357e")
 
 [node name="Sprite3D" parent="Root/Collider/Collision" index="0"]
 texture = SubResource("ViewportTexture_d357e")

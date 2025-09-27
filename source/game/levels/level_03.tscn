@@ -1,8 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://buaorifx580r"]
+[gd_scene load_steps=7 format=3 uid="uid://buaorifx580r"]
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/base_level.tscn" id="1_6heeu"]
 [ext_resource type="PackedScene" uid="uid://bntsvoj2tf7wp" path="res://assets/model/models/Low-Poly_Fish/GLB/Tuna.glb" id="2_io4qo"]
-[ext_resource type="PackedScene" uid="uid://d1mfuanpcg0gy" path="res://source/game/levels/Props/Differences/Anomalies/fishflop.tscn" id="3_3wwlw"]
+[ext_resource type="Script" uid="uid://b0vjvwjdu4q8" path="res://source/game/levels/Props/Differences/Anomalies/animated_anomaly.gd" id="3_vivum"]
+[ext_resource type="PackedScene" uid="uid://d4at0b5ikgnwi" path="res://source/game/levels/Props/interactable.tscn" id="4_tqmjf"]
+[ext_resource type="PackedScene" uid="uid://cyrai5ger6j4j" path="res://assets/Skeletons/fishflop.blend" id="5_ic1wx"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_srtcm"]
+radius = 1.0
 
 [node name="level_03" instance=ExtResource("1_6heeu")]
 
@@ -126,6 +131,14 @@ transform = Transform3D(-0.0541611, 0.742119, 0.0209574, 0.039096, -0.0181329, 0
 [node name="Tuna41" parent="." index="42" instance=ExtResource("2_io4qo")]
 transform = Transform3D(-0.139725, -0.730465, 0.0318152, -0.0226062, 0.0366914, 0.74314, -0.730808, 0.138525, -0.0290706, 21.9711, 1.55761, -31.5573)
 
-[node name="Interactable" parent="." index="43" instance=ExtResource("3_3wwlw")]
+[node name="Clownfish" type="Node3D" parent="." index="43" node_paths=PackedStringArray("animation_player", "interactable")]
 transform = Transform3D(1.28931, 0, 0.0672993, 0, 1.29107, 0, -0.0672993, 0, 1.28931, 21.6496, 1.4615, -34.9245)
-is_area3D = false
+script = ExtResource("3_vivum")
+animation_player = NodePath("fishflop/AnimationPlayer")
+interactable = NodePath("Interactable")
+
+[node name="Interactable" parent="Clownfish" index="0" instance=ExtResource("4_tqmjf")]
+process_mode = 4
+shape = SubResource("SphereShape3D_srtcm")
+
+[node name="fishflop" parent="Clownfish" index="1" instance=ExtResource("5_ic1wx")]

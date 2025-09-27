@@ -1,5 +1,7 @@
 extends Anomaly
 
-func _on_interact_action():
-	$fishflop/AnimationPlayer.movie_quit_on_finish = true
-	super._on_interact_action()
+@export var animation: AnimationPlayer
+
+func _trigger_anomaly():
+	animation.movie_quit_on_finish = true
+	super._trigger_anomaly()
