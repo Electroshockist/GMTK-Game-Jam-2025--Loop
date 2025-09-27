@@ -1,12 +1,33 @@
-[gd_scene load_steps=3 format=3 uid="uid://22672eexnlx8"]
+[gd_scene load_steps=4 format=3 uid="uid://22672eexnlx8"]
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/base_level.tscn" id="1_ptg1y"]
-[ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/model/model_scenes/Metro_PSX_split/poster_01.tscn" id="2_6ri4p"]
+[ext_resource type="PackedScene" uid="uid://dbvi6c7cmxp2t" path="res://source/game/levels/Props/Differences/Anomalies/poster_anomaly.tscn" id="2_ltdug"]
+
+[sub_resource type="GDScript" id="GDScript_ltdug"]
+script/source = "extends MeshInstance3D
+
+class_name Poster
+"
 
 [node name="level_02" instance=ExtResource("1_ptg1y")]
 
-[node name="Poster_01_frame" parent="." index="3" instance=ExtResource("2_6ri4p")]
-transform = Transform3D(1.13113e-05, -101.294, -5.64598e-06, 0, -4.4277e-06, 129.165, -149.823, -7.64748e-06, -4.2626e-13, 25.3021, 3.691, -51.3128)
+[node name="Poster_01" parent="Enviroment" index="3" groups=["Evilable"]]
+script = SubResource("GDScript_ltdug")
 
-[node name="Poster_01_ground" parent="." index="4" instance=ExtResource("2_6ri4p")]
-transform = Transform3D(31.0323, -5.49537e-06, 126.364, 2.26226e-05, -101.294, -1.1292e-05, 146.574, 1.67975e-05, -26.7535, 24.0584, 1.3926, -50.2652)
+[node name="Poster Anomaly" parent="Enviroment" index="4" node_paths=PackedStringArray("fixed") instance=ExtResource("2_ltdug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.4379, 1.60537, -52.0017)
+fixed = NodePath("../Poster_01")
+
+[node name="Poster_02" parent="Enviroment" index="5" groups=["Evilable"]]
+
+[node name="Poster_03" parent="Enviroment" index="6" groups=["Evilable"]]
+
+[node name="Poster_04" parent="Enviroment" index="7" groups=["Evilable"]]
+
+[node name="Poster_05" parent="Enviroment" index="8" groups=["Evilable"]]
+
+[node name="Poster_06" parent="Enviroment" index="9" groups=["Evilable"]]
+
+[node name="Poster_07" parent="Enviroment" index="10" groups=["Evilable"]]
+
+[node name="Poster_08" parent="Enviroment" index="11" groups=["Evilable"]]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bhnam8ajx6n8o"
+path="res://.godot/imported/ding or dong.mp3-33a87e4ea3fdb9e3ebf3e670ba786223.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/ding or dong.mp3"
+dest_files=["res://.godot/imported/ding or dong.mp3-33a87e4ea3fdb9e3ebf3e670ba786223.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

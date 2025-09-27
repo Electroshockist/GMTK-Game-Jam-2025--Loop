@@ -13,6 +13,8 @@ var out_door_name: StringName = "Out Door"
 func _ready():
 	_set_nodes()
 
+	GameManager.level_loaded(self)
+
 func _set_nodes():
 	var children := get_children(true)
 
@@ -36,3 +38,6 @@ func set_door(door: Door, is_out_door := false):
 func close_door():
 	if (_out_door != null):
 		_out_door.anim_player.play("Door_Close")
+
+func on_anomaly_collected():
+	$AudioStreamPlayer3D.play()

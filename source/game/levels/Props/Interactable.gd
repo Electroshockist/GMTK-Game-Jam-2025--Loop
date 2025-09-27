@@ -4,18 +4,22 @@ class_name Interactable
 
 signal on_interacted
 
-@export var collider: CollisionShape3D
-@export var label_sprite: Sprite3D
-@export var subviewport: SubViewport
-@export var label: Label
+
+@export var is_area3D: bool = false
 @export var on_interact_audio: AudioStream
 
+@onready var collider: CollisionShape3D = $Root/Collider/Collision
+@onready var label_sprite: Sprite3D = $Root/Collider/Collision/Sprite3D
+@onready var subviewport: SubViewport = $Root/Collider/Collision/Sprite3D/SubViewport
+@onready var label: Label = $Root/Collider/Collision/Sprite3D/SubViewport/Label
 @onready var _audio_stream_player: AudioStreamPlayer3D = $Root/AudioStreamPlayer3D
 
 var is_monitorable := true
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	if (is_area3D):
+		$Root/Collider.replace_by(Area3D.new())
 	label_sprite.visible = false
 
 func _process(_delta: float) -> void:

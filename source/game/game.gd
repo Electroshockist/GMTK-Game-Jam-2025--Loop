@@ -74,10 +74,13 @@ func close_door():
 
 ## call when the conditions to set the next level are met
 ## sets the next loaded level to be the next level in the list
-func increment_next_level():
-	next_level_id += 1;
+func anomaly_collected():
+	current_level.on_anomaly_collected()
+
+	next_level_id = current_level_id + 1;
 	next_level.queue_free()
 	_spawn_next_level()
+	current_level.out_node.transform_level(next_level)
 
 var is_debug_cam_on = false
 func _input(_event):

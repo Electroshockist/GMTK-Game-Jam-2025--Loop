@@ -1,37 +1,23 @@
-[gd_scene load_steps=7 format=3 uid="uid://5tr5x1rg1h0g"]
+[gd_scene load_steps=4 format=3 uid="uid://5tr5x1rg1h0g"]
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/base_level.tscn" id="1_gc4bu"]
-[ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/model/model_scenes/Metro_PSX_split/poster_01.tscn" id="2_svq3v"]
-[ext_resource type="Script" uid="uid://dp6ov6sut21io" path="res://source/game/levels/Props/Differences/Anomalies/anomaly.gd" id="2_tofe2"]
-[ext_resource type="PackedScene" uid="uid://d4at0b5ikgnwi" path="res://source/game/levels/Props/interactable.tscn" id="3_tofe2"]
+[ext_resource type="PackedScene" uid="uid://dbvi6c7cmxp2t" path="res://source/game/levels/Props/Differences/Anomalies/poster_anomaly.tscn" id="2_t1v4y"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_tev7a"]
-radius = 0.8479
+[sub_resource type="GDScript" id="GDScript_ltdug"]
+script/source = "extends MeshInstance3D
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_3lksu"]
-viewport_path = NodePath("Root/Collider/Collision/Sprite3D/SubViewport")
+class_name Poster
+"
 
 [node name="level_01" instance=ExtResource("1_gc4bu")]
 
-[node name="Anomaly" type="Node3D" parent="Enviroment" index="4" node_paths=PackedStringArray("fixed", "anomalous_interactable")]
-script = ExtResource("2_tofe2")
-fixed = NodePath("../Poster_01")
-anomalous_interactable = NodePath("Anomalous Interactable")
+[node name="Poster_01" parent="Enviroment" index="3"]
+script = SubResource("GDScript_ltdug")
 
-[node name="Poster_01_ground" parent="Enviroment/Anomaly" index="0" instance=ExtResource("2_svq3v")]
-transform = Transform3D(-33.9067, -1.20871e-05, 125.814, 2.26226e-05, -101.294, -1.1292e-05, 145.936, 1.28941e-05, 29.2315, 23.4379, 1.3926, -52.0017)
-
-[node name="Poster_01_black" parent="Enviroment/Anomaly" index="1" instance=ExtResource("2_svq3v")]
-transform = Transform3D(-6.54897e-06, -101.294, -5.64598e-06, 0, -4.4277e-06, 129.165, -149.823, 4.4277e-06, 2.46794e-13, 25.321, 3.65871, -51.3293)
-
-[node name="Anomalous Interactable" parent="Enviroment/Anomaly" index="2" instance=ExtResource("3_tofe2")]
+[node name="Poster Anomaly" parent="Enviroment" index="4" node_paths=PackedStringArray("fixed") instance=ExtResource("2_t1v4y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.4379, 1.60537, -52.0017)
-
-[node name="Collision" parent="Enviroment/Anomaly/Anomalous Interactable/Root/Collider" index="0"]
-shape = SubResource("SphereShape3D_tev7a")
-
-[node name="Sprite3D" parent="Enviroment/Anomaly/Anomalous Interactable/Root/Collider/Collision" index="0"]
-texture = SubResource("ViewportTexture_3lksu")
+are_posters_evil_on_interact = false
+fixed = NodePath("../Poster_01")
 
 [node name="Back Wall" parent="Enviroment/Subway" index="14"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.3503, 7.79383, -80.031)
@@ -44,10 +30,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8284, 8.87299, -80.031)
 
 [node name="Posters" type="Node3D" parent="Enviroment" index="33"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3037, 1.57215, -17.2162)
-
-[node name="Door" parent="." index="6"]
-on_interact_audio = null
-
-[connection signal="finished" from="Enviroment/Anomaly/Anomalous Interactable/Root/AudioStreamPlayer3D" to="Enviroment/Anomaly" method="queue_free"]
-
-[editable path="Enviroment/Anomaly/Anomalous Interactable"]

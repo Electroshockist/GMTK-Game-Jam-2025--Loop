@@ -1,8 +1,7 @@
-[gd_scene load_steps=8 format=4 uid="uid://c2prm0sxpm4dx"]
+[gd_scene load_steps=7 format=4 uid="uid://c2prm0sxpm4dx"]
 
 [ext_resource type="Shader" uid="uid://h8trqbl805pv" path="res://assets/shaders/psx_shader.gdshader" id="1_bla5l"]
 [ext_resource type="Texture2D" uid="uid://ct828uirteev6" path="res://assets/model/models/textures/Metro_PSX/Posters.png" id="1_lpnrh"]
-[ext_resource type="Script" uid="uid://jk6usq21nc2v" path="res://source/game/levels/Props/Differences/poster.gd" id="3_vs0e2"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_4weto"]
 render_priority = 0
@@ -61,4 +60,3 @@ transform = Transform3D(-101.294, 3.94455e-05, -2.87896e-12, 0, 6.03762e-06, 101
 material_override = SubResource("ShaderMaterial_4weto")
 mesh = SubResource("ArrayMesh_1ydaq")
 skeleton = NodePath("")
-script = ExtResource("3_vs0e2")

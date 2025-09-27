@@ -1,19 +1,16 @@
 [gd_scene load_steps=4 format=3 uid="uid://d4at0b5ikgnwi"]
 
-[ext_resource type="Script" uid="uid://dht8mbnpa5y0y" path="res://source/game/levels/Props/interactable.gd" id="1_gu4vg"]
+[ext_resource type="Script" uid="uid://dht8mbnpa5y0y" path="res://source/game/levels/Props/Interactable.gd" id="1_gu4vg"]
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_7htdd"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_gu4vg"]
 viewport_path = NodePath("Root/Collider/Collision/Sprite3D/SubViewport")
 
 [sub_resource type="LabelSettings" id="LabelSettings_7htdd"]
 font_size = 256
 
-[node name="Interactable" type="Node3D" node_paths=PackedStringArray("collider", "label_sprite", "subviewport", "label")]
+[node name="Interactable" type="Node3D"]
 script = ExtResource("1_gu4vg")
-collider = NodePath("Root/Collider/Collision")
-label_sprite = NodePath("Root/Collider/Collision/Sprite3D")
-subviewport = NodePath("Root/Collider/Collision/Sprite3D/SubViewport")
-label = NodePath("Root/Collider/Collision/Sprite3D/SubViewport/Label")
+is_area3D = true
 
 [node name="Root" type="Node3D" parent="."]
 
@@ -27,7 +24,7 @@ sorting_offset = 30.0
 billboard = 1
 double_sided = false
 no_depth_test = true
-texture = SubResource("ViewportTexture_7htdd")
+texture = SubResource("ViewportTexture_gu4vg")
 
 [node name="SubViewport" type="SubViewport" parent="Root/Collider/Collision/Sprite3D"]
 handle_input_locally = false

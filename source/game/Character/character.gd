@@ -11,10 +11,6 @@ const LOOK_SENSITIVITY = 0.5
 
 var _input_enabled: bool = true
 
-func _ready():
-	GameManager.character = self
-	print("char ready")
-
 func _input(event):
 	if _input_enabled:
 		if event is InputEventMouseMotion:

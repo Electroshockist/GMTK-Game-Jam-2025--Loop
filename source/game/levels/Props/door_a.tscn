@@ -7,9 +7,13 @@
 viewport_path = NodePath("Root/Collider/Collision/Sprite3D/SubViewport")
 
 [node name="Door" instance=ExtResource("1_mcokt")]
+is_area3D = false
 
 [node name="Door_A" parent="Root" index="0" instance=ExtResource("2_12m82")]
 transform = Transform3D(-1.59407e-06, 36.468, 1.59407e-06, 0, -1.59407e-06, 36.468, 36.468, 1.59407e-06, 6.96789e-14, 0.0715231, 0, 0)
 
 [node name="Sprite3D" parent="Root/Collider/Collision" index="0"]
 texture = SubResource("ViewportTexture_jtq2a")
+
+[node name="SubViewport" parent="Root/Collider/Collision/Sprite3D" index="0"]
+transparent_bg = true

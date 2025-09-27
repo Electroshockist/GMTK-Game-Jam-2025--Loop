@@ -7,19 +7,19 @@ extends Node3D
 
 var active_animation
 
-func _process(delta: float) -> void:
+# func _process(delta: float) -> void:
 	
-	if Input.is_action_just_pressed('test_input'):
-		anim_dot()
-		print('nothing interacted, played player dot anim')
-		await get_tree().create_timer(1).timeout # needed 4 sum reason ?
+# 	if Input.is_action_just_pressed('test_input'):
+# 		anim_dot()
+# 		print('nothing interacted, played player dot anim')
+# 		await get_tree().create_timer(1).timeout # needed 4 sum reason ?
 		
-	# print(GameManager.character.get_real_velocity().length())
-	# print(GameManager.character.is_on_floor())
-	else:
-		animation_tree.set("parameters/conditions/Idle", GameManager.character.is_on_floor() == true and GameManager.character.get_real_velocity().length() <= 1.0)
-		animation_tree.set("parameters/conditions/Walking", GameManager.character.is_on_floor() == true and GameManager.character.get_real_velocity().length() > 1.0)
-		animation_tree.set("parameters/conditions/Jumping", GameManager.character.is_on_floor() == !true)
+# 	# print(GameManager.character.get_real_velocity().length())
+# 	# print(GameManager.character.is_on_floor())
+# 	else:
+# 		animation_tree.set("parameters/conditions/Idle", GameManager.character.is_on_floor() == true and GameManager.character.get_real_velocity().length() <= 1.0)
+# 		animation_tree.set("parameters/conditions/Walking", GameManager.character.is_on_floor() == true and GameManager.character.get_real_velocity().length() > 1.0)
+# 		animation_tree.set("parameters/conditions/Jumping", GameManager.character.is_on_floor() == !true)
 	
 	# print(animation_tree.get("parameters/playback").get_current_node())
 
