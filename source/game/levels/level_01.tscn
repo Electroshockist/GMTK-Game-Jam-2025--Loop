@@ -46,3 +46,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8284, 8.87299, -80.031)
 
 [node name="Posters" type="Node3D" parent="Enviroment" index="33"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3037, 1.57215, -17.2162)
+
+[node name="Door" parent="." index="7"]
+shape = null

@@ -1739,9 +1739,9 @@ surface_material_override/0 = SubResource("StandardMaterial3D_vf1by")
 
 [node name="Door" parent="." instance=ExtResource("57_8u6pu")]
 transform = Transform3D(1.13, 0, 0, 0, 1.13, 0, 0, 0, 1.13, 4.71484, -0.997533, 16.8795)
-on_interact_audio = null
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.59753, 0.319362, 17.4403)
 stream = ExtResource("59_vf1by")
 attenuation_model = 3
 

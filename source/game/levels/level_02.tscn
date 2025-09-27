@@ -49,3 +49,6 @@ transform = Transform3D(-6.54897e-06, -101.294, -5.64598e-06, 0, -4.4277e-06, 12
 [node name="Poster_07" parent="Enviroment" index="10" groups=["Evilable"]]
 
 [node name="Poster_08" parent="Enviroment" index="11" groups=["Evilable"]]
+
+[node name="Door" parent="." index="7"]
+shape = null
