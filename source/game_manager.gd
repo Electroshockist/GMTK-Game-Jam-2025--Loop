@@ -9,7 +9,9 @@ var game: Game
 var menu_manager
 
 func level_loaded(level: Node3D) -> void:
-	var spawn: Node3D
+	call_deferred("_create_character", level)
+		
+func _create_character(level: Node3D):
 	if (character == null):
 		for child in level.get_children(true):
 			if child.is_in_group("PlayerSpawn"):
@@ -21,8 +23,6 @@ func level_loaded(level: Node3D) -> void:
 
 				character.camera.current = true
 				break
-		
-
 # const psx_shader_applicator := preload("res://assets/shaders/psx_shader_applicator.gd")
 # func _ready():
 	# _apply_shader_to_all(get_tree().root)

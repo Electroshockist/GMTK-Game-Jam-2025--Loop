@@ -8,44 +8,39 @@ signal on_interacted
 @export var is_area3D: bool = false
 @export var on_interact_audio: AudioStream
 
-
-@onready var collider: CollisionShape3D = $Root/Collider/Collision
-@onready var label_sprite: Sprite3D = $Root/Collider/Collision/Sprite3D
-@onready var subviewport: SubViewport = $Root/Collider/Collision/Sprite3D/SubViewport
-@onready var label: Label = $Root/Collider/Collision/Sprite3D/SubViewport/Label
-@onready var _audio_stream_player: AudioStreamPlayer3D = $Root/AudioStreamPlayer3D
+@onready var h: InteractableHelper = $Root
 
 var is_monitorable := true
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	if (is_area3D):
-		var coll = $Root/Collider
-		var area = Area3D.new()
-		area.name = coll.name
+	if (!is_area3D):
+		var area = $Root/Collider
+		var coll = StaticBody3D.new()
+		coll.name = area.name
 
-		coll.replace_by(area)
+		area.replace_by(coll)
 	
-	(label_sprite.texture as ViewportTexture).viewport_path = subviewport.get_path()
-	label_sprite.visible = false
+	(h.label_sprite.texture as ViewportTexture).viewport_path = h.subviewport.get_path()
+	h.label_sprite.visible = false
 
 func _process(_delta: float) -> void:
-	subviewport.size = label.size
+	h.subviewport.size = h.label.size
 
-	label.text = OS.get_keycode_string(
+	h.label.text = "[%s]" % OS.get_keycode_string(
 		DisplayServer.keyboard_get_keycode_from_physical(
 			InputMap.action_get_events("interact")[0].physical_keycode
 		)
 	)
 
 func set_hovered_state(is_hovering: bool):
-	label_sprite.visible = is_hovering
+	h.label_sprite.visible = is_hovering
 
 func on_interact():
 	_on_interact_action()
 	if on_interact_audio:
-		_audio_stream_player.stream = on_interact_audio
-		_audio_stream_player.play()
+		h.audio_stream_player.stream = on_interact_audio
+		h.audio_stream_player.play()
 	on_interacted.emit()
 
 # abstract function to override

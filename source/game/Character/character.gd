@@ -3,8 +3,6 @@ class_name Character
 
 @export var camera: Camera3D
 
-signal ready_signal
-
 const SPEED = 5.0
 const JUMP_VELOCITY = 6.5
 const LOOK_SENSITIVITY = 0.5

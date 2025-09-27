@@ -66,6 +66,8 @@ func on_enter_next_level():
 func _swap_level():
 	next_level.set_door(current_level._out_door)
 	current_level.queue_free()
+
+	current_level_id = next_level_id
 	current_level = next_level
 	current_level.name = "Current Level"
 
