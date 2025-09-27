@@ -25,11 +25,9 @@ texture = SubResource("ViewportTexture_r1cdy")
 
 [node name="Poster_01_ground" parent="Anomalous Interactable" instance=ExtResource("3_wdm0e")]
 transform = Transform3D(-33.9067, -1.20871e-05, 125.814, 2.26226e-05, -101.294, -1.1292e-05, 145.936, 1.28941e-05, 29.2315, 0, -0.21277, 0)
-script = null
 
 [node name="Poster_01_black" parent="Anomalous Interactable" instance=ExtResource("3_wdm0e")]
 transform = Transform3D(-6.54897e-06, -101.294, -5.64598e-06, 0, -4.4277e-06, 129.165, -149.823, 4.4277e-06, 2.46794e-13, 1.8831, 2.05334, 0.672401)
-script = null
 
 [connection signal="finished" from="Anomalous Interactable/Root/AudioStreamPlayer3D" to="." method="queue_free"]
 

@@ -8,6 +8,7 @@ signal on_interacted
 @export var is_area3D: bool = false
 @export var on_interact_audio: AudioStream
 
+
 @onready var collider: CollisionShape3D = $Root/Collider/Collision
 @onready var label_sprite: Sprite3D = $Root/Collider/Collision/Sprite3D
 @onready var subviewport: SubViewport = $Root/Collider/Collision/Sprite3D/SubViewport
@@ -19,7 +20,13 @@ var is_monitorable := true
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	if (is_area3D):
-		$Root/Collider.replace_by(Area3D.new())
+		var coll = $Root/Collider
+		var area = Area3D.new()
+		area.name = coll.name
+
+		coll.replace_by(area)
+	
+	(label_sprite.texture as ViewportTexture).viewport_path = subviewport.get_path()
 	label_sprite.visible = false
 
 func _process(_delta: float) -> void:

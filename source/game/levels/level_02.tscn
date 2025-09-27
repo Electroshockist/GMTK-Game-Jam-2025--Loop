@@ -31,3 +31,9 @@ fixed = NodePath("../Poster_01")
 [node name="Poster_07" parent="Enviroment" index="10" groups=["Evilable"]]
 
 [node name="Poster_08" parent="Enviroment" index="11" groups=["Evilable"]]
+
+[node name="FarTunnelBlackout" parent="." index="5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14.6508, 2.82225, 12.4852)
+
+[node name="NearTunnelBlackout" parent="." index="6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6508, 2.82225, -71.1201)

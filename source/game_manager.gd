@@ -8,22 +8,21 @@ var game: Game
 
 var menu_manager
 
-func level_loaded(level: Level) -> void:
+func level_loaded(level: Node3D) -> void:
 	var spawn: Node3D
 	if (character == null):
 		for child in level.get_children(true):
 			if child.is_in_group("PlayerSpawn"):
 				character = char_scene.instantiate() as Character
+
 				get_tree().root.add_child(character)
 				character.global_transform = child.global_transform
 				character.global_rotation = child.global_rotation
 
-				character.name = "Player"
-
-
+				character.camera.current = true
 				break
+		
 
-			
 # const psx_shader_applicator := preload("res://assets/shaders/psx_shader_applicator.gd")
 # func _ready():
 	# _apply_shader_to_all(get_tree().root)

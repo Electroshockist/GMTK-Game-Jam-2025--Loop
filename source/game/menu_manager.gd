@@ -6,9 +6,10 @@ func _ready():
 	
 	menu_toggled.connect(
 		func():
-			toggle_mouse_lock()
+			if (GameManager.character != null):
+				toggle_mouse_lock()
 
-			GameManager.character._input_enabled = !get_is_mouse_visible()
+				GameManager.character._input_enabled = !get_is_mouse_visible()
 	)
 
 func _input(_event):
