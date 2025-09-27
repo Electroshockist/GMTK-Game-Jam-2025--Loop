@@ -9,6 +9,7 @@ viewport_path = NodePath("Root/Collider/Collision/Sprite3D/SubViewport")
 font_size = 512
 
 [node name="Interactable" type="Node3D"]
+process_mode = 4
 script = ExtResource("1_gu4vg")
 
 [node name="Root" type="Node3D" parent="."]

@@ -37,7 +37,7 @@ func _ready():
 
 	interactor.on_interact.connect(
 		func(interactable: Interactable):
-			if (interactable is Door):
+			if (interactable.get_parent() is Door):
 				anim_door_open()
 				print('door interacted, played player anim')
 			#if (interactable is Anomaly):

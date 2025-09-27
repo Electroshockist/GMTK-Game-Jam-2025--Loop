@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjw0ehsvtney3"]
+
+[ext_resource type="PackedScene" uid="uid://7r8cxvnokr8c" path="res://source/game/levels/Props/door.tscn" id="1_c3rbd"]
+[ext_resource type="PackedScene" uid="uid://di4tygw2fhbwb" path="res://assets/model/models/Sewer/Sewer_split/door_metal.tscn" id="2_hrqal"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_c3rbd"]
+viewport_path = NodePath("Root/Collider/Collision/Sprite3D/SubViewport")
+
+[node name="Door" instance=ExtResource("1_c3rbd")]
+
+[node name="Interactable" parent="." index="0"]
+process_mode = 4
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.521, 0.03)
+
+[node name="Collision" parent="Interactable/Root/Collider" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.621303, -0.0463607, -0.122491)
+
+[node name="Sprite3D" parent="Interactable/Root/Collider/Collision" index="0"]
+visible = true
+texture = SubResource("ViewportTexture_c3rbd")
+
+[node name="DoorSoundPlayer" parent="Interactable" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.615821, 0, 0)
+
+[node name="door_metal" parent="Interactable" index="3" instance=ExtResource("2_hrqal")]
+transform = Transform3D(-122.28, 0, -1.06901e-05, 0, 122.28, 0, 1.06901e-05, 0, -122.28, 0, 0, 0)
+
+[editable path="Interactable"]

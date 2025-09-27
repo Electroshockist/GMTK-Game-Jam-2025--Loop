@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/base_level.tscn" id="1_gc4bu"]
 [ext_resource type="PackedScene" uid="uid://d4at0b5ikgnwi" path="res://source/game/levels/Props/interactable.tscn" id="2_387bw"]
-[ext_resource type="Script" uid="uid://dxqmu7xwdp2e" path="res://source/game/levels/Props/Differences/Anomalies/poster_anomaly.gd" id="2_tofe2"]
+[ext_resource type="Script" uid="uid://dxqmu7xwdp2e" path="res://source/game/levels/Props/Anomalies/poster_anomaly.gd" id="2_tofe2"]
 [ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/model/model_scenes/Metro_PSX_split/poster_01.tscn" id="3_tofe2"]
 
 [sub_resource type="GDScript" id="GDScript_ltdug"]
@@ -46,6 +46,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8284, 8.87299, -80.031)
 
 [node name="Posters" type="Node3D" parent="Enviroment" index="33"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3037, 1.57215, -17.2162)
-
-[node name="Door" parent="." index="7"]
-shape = null
