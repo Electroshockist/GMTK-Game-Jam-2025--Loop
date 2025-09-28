@@ -25,7 +25,6 @@ fixed = NodePath("../Poster_01")
 interactable = NodePath("Anomalous Interactable")
 
 [node name="Anomalous Interactable" parent="Enviroment/Anomaly" index="0" instance=ExtResource("2_387bw")]
-process_mode = 4
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.4379, 1.60537, -52.0017)
 shape = SubResource("SphereShape3D_tev7a")
 

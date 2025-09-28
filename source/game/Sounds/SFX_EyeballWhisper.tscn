@@ -6,4 +6,9 @@
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("1_xai2b")
+attenuation_model = 2
+unit_size = 2.72
+max_db = -11.345
+autoplay = true
+stream_paused = true
 max_distance = 20.0

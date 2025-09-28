@@ -1,8 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://b22103bljmid4"]
+[gd_scene load_steps=8 format=3 uid="uid://b22103bljmid4"]
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/base_level.tscn" id="1_ce4r4"]
 [ext_resource type="PackedScene" uid="uid://2gyp74jynwr2" path="res://source/game/effects/eyeballs.tscn" id="2_pssjk"]
 [ext_resource type="PackedScene" uid="uid://cvs2yxfndn70u" path="res://source/game/Sounds/SFX_EyeballWhisper.tscn" id="3_ufmmj"]
+[ext_resource type="Script" uid="uid://dkq8ymgw7hva0" path="res://source/game/levels/Props/Anomalies/eyeball_anomaly.gd" id="4_ufmmj"]
+[ext_resource type="PackedScene" uid="uid://d4at0b5ikgnwi" path="res://source/game/levels/Props/interactable.tscn" id="5_hpkmr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ufmmj"]
+size = Vector3(7.08447, 6.9967, 3.13538)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_ce4r4"]
+viewport_path = NodePath("/root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/level_04/Door/Interactable/Root/Collider/Collision/Sprite3D/SubViewport")
 
 [node name="level_04" instance=ExtResource("1_ce4r4")]
 
@@ -12,3 +20,23 @@ amount = 5
 
 [node name="EyeballWhisper" parent="." index="4" instance=ExtResource("3_ufmmj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.7469, 3.45949, -60.3306)
+
+[node name="AudioStreamPlayer3D" parent="EyeballWhisper" index="0"]
+max_db = 1.311
+
+[node name="Eyeball Anomaly" type="Node3D" parent="." index="5" node_paths=PackedStringArray("eyeball", "sound", "interactable")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9472, 3.07186, -59.4228)
+script = ExtResource("4_ufmmj")
+eyeball = NodePath("../Eyeballs")
+sound = NodePath("../EyeballWhisper/AudioStreamPlayer3D")
+interactable = NodePath("Interactable")
+
+[node name="Interactable" parent="Eyeball Anomaly" index="0" instance=ExtResource("5_hpkmr")]
+shape = SubResource("BoxShape3D_ufmmj")
+
+[node name="Sprite3D" parent="Door/Interactable/Root/Collider/Collision" index="0"]
+texture = SubResource("ViewportTexture_ce4r4")
+
+[editable path="EyeballWhisper"]
+[editable path="Door"]
+[editable path="Door/Interactable"]

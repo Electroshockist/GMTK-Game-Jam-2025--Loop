@@ -37,15 +37,16 @@ func _ready():
 
 	interactor.on_interact.connect(
 		func(interactable: Interactable):
-			if (interactable.get_parent() is Door):
-				anim_door_open()
-				print('door interacted, played player anim')
-			#if (interactable is Anomaly):
-				#anim_jot()
-				#print('anomaly interacted, player anim')
-			elif (interactable == null):
-				anim_jot()
-				print('*test* interacted, played player jot anim')
+				print('interacted with: ', interactable)
+				if (interactable == null):
+					anim_jot()
+					print('*test* interacted, played player jot anim')
+				elif (interactable.get_parent() is Door):
+					anim_door_open()
+					print('door interacted, played player anim')
+				#if (interactable is Anomaly):
+					#anim_jot()
+					#print('anomaly interacted, player anim')
 	)
 	
 func _on_character_ready() -> void:

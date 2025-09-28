@@ -1,4 +1,4 @@
-[gd_scene load_steps=146 format=4 uid="uid://upfh8uyt1rip"]
+[gd_scene load_steps=148 format=4 uid="uid://upfh8uyt1rip"]
 
 [ext_resource type="Script" uid="uid://bs56ayrlo47wf" path="res://source/game/levels/level.gd" id="1_pktld"]
 [ext_resource type="Environment" uid="uid://pq7vqvfywr8t" path="res://source/game/levels/level_env.tres" id="2_pktld"]
@@ -1317,6 +1317,12 @@ size = Vector2(5, 7)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vf1by"]
 albedo_color = Color(0, 0, 0, 1)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_vrhd2"]
+size = Vector3(0.118175, 2.833, 1.25711)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_vf1by"]
+viewport_path = NodePath("Root/Collider/Collision/Sprite3D/SubViewport")
+
 [node name="base_level" type="Node3D"]
 script = ExtResource("1_pktld")
 
@@ -1712,12 +1718,6 @@ transform = Transform3D(-63.9097, -118.424, 81.8334, 126.219, -88.6789, -29.1952
 [node name="debris_07" parent="Enviroment/debris" instance=ExtResource("55_wrc8c")]
 transform = Transform3D(72.4902, 23.5796, 46.3262, -17.333, 85.758, -16.5275, -41.3416, 3.7442, 62.7847, -1.62158, 0.260966, 0.688102)
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Enviroment"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.4213, 1.61393, -3.42675)
-visible = false
-light_color = Color(0.636089, 0.118183, 0.0751494, 1)
-light_energy = 2.263
-
 [node name="InNode" type="Node3D" parent="." groups=["InNode"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.2498, 5.53115, -80.1987)
 
@@ -1740,6 +1740,13 @@ surface_material_override/0 = SubResource("StandardMaterial3D_vf1by")
 [node name="Door" parent="." instance=ExtResource("58_w6x52")]
 transform = Transform3D(1.075, 0, 0, 0, 1.075, 0, 0, 0, 1.075, 4.71484, -0.957562, 16.8889)
 
+[node name="Collision" parent="Door/Interactable/Root/Collider" index="0"]
+shape = SubResource("BoxShape3D_vrhd2")
+
+[node name="Sprite3D" parent="Door/Interactable/Root/Collider/Collision" index="0"]
+visible = false
+texture = SubResource("ViewportTexture_vf1by")
+
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.59753, 0.319362, 17.4403)
 stream = ExtResource("59_vf1by")
@@ -1747,3 +1754,6 @@ attenuation_model = 3
 
 [node name="PlayerSpawn" type="Node3D" parent="." groups=["PlayerSpawn"]]
 transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 21.8599, 5.80914, -77.1457)
+
+[editable path="Door"]
+[editable path="Door/Interactable"]

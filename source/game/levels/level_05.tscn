@@ -1,12 +1,23 @@
-[gd_scene load_steps=6 format=3 uid="uid://pime6tmmcgr8"]
+[gd_scene load_steps=10 format=3 uid="uid://pime6tmmcgr8"]
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/base_level.tscn" id="1_na2kr"]
 [ext_resource type="PackedScene" uid="uid://c5ouyrekxlh6e" path="res://assets/model/models/Sewer/Sewer_split/debris_01.tscn" id="2_30bkp"]
 [ext_resource type="PackedScene" uid="uid://bayjcxtfwaphs" path="res://assets/model/models/Sewer/Sewer_split/debris_03.tscn" id="3_g4p8p"]
 [ext_resource type="PackedScene" uid="uid://dotut1d78ligr" path="res://assets/model/models/Sewer/Sewer_split/debris_04.tscn" id="4_e5kjo"]
+[ext_resource type="Script" uid="uid://dcquwsbgmwllq" path="res://source/game/levels/demoend.gd" id="5_30bkp"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_v1ct6"]
 size = Vector3(1, 7.65601, 6.42096)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vrhd2"]
+size = Vector3(0.118175, 2.833, 1.25711)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_g4p8p"]
+viewport_path = NodePath("/root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/level_05/Door/Interactable/Root/Collider/Collision/Sprite3D/SubViewport")
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_e5kjo"]
+height = 0.23
+radius = 3.366
 
 [node name="level_05" instance=ExtResource("1_na2kr")]
 
@@ -40,3 +51,21 @@ transform = Transform3D(-1.94404e-06, -639.745, 148.302, -1.90659e-05, 65.2311, 
 
 [node name="debris_10" parent="." index="14" instance=ExtResource("4_e5kjo")]
 transform = Transform3D(-1.94404e-06, -639.745, 148.302, -1.90659e-05, 65.2311, 1454.45, -643.062, 1.91648e-05, 3.09589e-19, 4.68011, 0.227509, -8.03112)
+
+[node name="Collision" parent="Door/Interactable/Root/Collider" index="0"]
+shape = SubResource("BoxShape3D_vrhd2")
+
+[node name="Sprite3D" parent="Door/Interactable/Root/Collider/Collision" index="0"]
+visible = false
+texture = SubResource("ViewportTexture_g4p8p")
+
+[node name="Area3D" type="Area3D" parent="." index="19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8926, 8.14397, -70.9377)
+script = ExtResource("5_30bkp")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+shape = SubResource("CylinderShape3D_e5kjo")
+
+[editable path="Door"]
+[editable path="Door/Interactable"]

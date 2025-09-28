@@ -4,7 +4,8 @@ enum SCENES {
 	MAIN_MENU,
 	GAME,
 	OPTIONS,
-	CREDITS
+	CREDITS,
+	DEMO_END
 }
 
 @onready var packed_scenes := {
@@ -12,6 +13,7 @@ enum SCENES {
 	SCENES.GAME: preload("res://source/game/game.tscn"),
 	SCENES.OPTIONS: preload("res://source/UI/options.tscn"),
 	SCENES.CREDITS: preload("res://source/UI/credits.tscn"),
+	SCENES.DEMO_END: preload("res://source/UI/demo_end.tscn")
 }
 
 func change_scene(scene: SCENES):
