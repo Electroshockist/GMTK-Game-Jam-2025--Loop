@@ -23,6 +23,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.7469, 3.45949, -60.3306)
 
 [node name="AudioStreamPlayer3D" parent="EyeballWhisper" index="0"]
 max_db = 1.311
+stream_paused = false
 
 [node name="Eyeball Anomaly" type="Node3D" parent="." index="5" node_paths=PackedStringArray("eyeball", "sound", "interactable")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9472, 3.07186, -59.4228)

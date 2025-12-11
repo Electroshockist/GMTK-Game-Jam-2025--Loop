@@ -24,42 +24,45 @@ stretch_mode = 6
 
 [node name="Label2" type="RichTextLabel" parent="."]
 layout_mode = 2
-offset_left = 147.0
-offset_top = 155.0
-offset_right = 511.0
-offset_bottom = 361.0
+anchor_left = 0.229687
+anchor_top = 0.322917
+anchor_right = 0.798437
+anchor_bottom = 0.752083
 size_flags_vertical = 3
-text = "Adrian -Modeling/Tech Art/
-Programming
+theme_override_font_sizes/normal_font_size = 11
+text = "Adrian - Modeling/Tech Art/Programming
 
-Barry-2D Art/Art Direction/Set Dressing
+Barry - 2D Art/Art Direction/Set Dressing
 
-Ege-2D Art
-Eric-Design & Development/Programming
+Ege - 2D Art
 
-Giga-Audio Design
+Eric - Design & Development/Programming
 
-Jen-Animation/Rigging/Set Dressing
+Giga - Audio Design
 
-Sahej-Level Design/Programming
+Jen - Animation/Rigging/Set Dressing
 
-Sam-Animation/Rigging
-"
+Sahej - Level Design/Programming
+
+Sam - Animation/Rigging"
+shortcut_keys_enabled = false
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="BackButton" parent="." instance=ExtResource("1_v75xs")]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 238.0
-offset_top = 363.0
-offset_right = -238.0
-offset_bottom = -51.0
+anchors_preset = -1
+anchor_left = 0.371875
+anchor_top = 0.75625
+anchor_right = 0.628125
+anchor_bottom = 0.89375
+offset_right = 0.0
+offset_bottom = 0.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 3
 ignore_texture_size = true
 stretch_mode = 5
 prev_scene = 0
+metadata/_edit_use_anchors_ = true

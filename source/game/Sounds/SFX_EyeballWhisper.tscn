@@ -10,5 +10,4 @@ attenuation_model = 2
 unit_size = 2.72
 max_db = -11.345
 autoplay = true
-stream_paused = true
 max_distance = 20.0
