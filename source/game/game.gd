@@ -5,6 +5,7 @@ class_name Game
 @export var delete_on_load: Array[Node3D]
 
 var levels = [
+	load("res://source/game/levels/level_00.tscn"),
 	load("res://source/game/levels/level_01.tscn"),
 	load("res://source/game/levels/level_02.tscn"),
 	load("res://source/game/levels/level_03.tscn"),

@@ -1,47 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://d4at0b5ikgnwi"]
+[gd_scene load_steps=2 format=3 uid="uid://d4at0b5ikgnwi"]
 
-[ext_resource type="Script" uid="uid://dht8mbnpa5y0y" path="res://source/game/levels/Props/Interactable.gd" id="1_gu4vg"]
-
-[sub_resource type="ViewportTexture" id="ViewportTexture_gu4vg"]
-viewport_path = NodePath("Root/Collider/Collision/Sprite3D/SubViewport")
-
-[sub_resource type="LabelSettings" id="LabelSettings_7htdd"]
-font_size = 512
+[ext_resource type="Script" uid="uid://dht8mbnpa5y0y" path="res://source/game/levels/Props/interactable.gd" id="1_gu4vg"]
 
 [node name="Interactable" type="Node3D"]
-process_mode = 4
 script = ExtResource("1_gu4vg")
 
-[node name="Root" type="Node3D" parent="."]
-
-[node name="Collider" type="StaticBody3D" parent="Root"]
-
-[node name="Collision" type="CollisionShape3D" parent="Root/Collider"]
-
-[node name="Sprite3D" type="Sprite3D" parent="Root/Collider/Collision"]
-transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0, 0.26283, 0)
-sorting_offset = 30.0
-billboard = 1
-double_sided = false
-no_depth_test = true
-texture = SubResource("ViewportTexture_gu4vg")
-
-[node name="SubViewport" type="SubViewport" parent="Root/Collider/Collision/Sprite3D"]
-transparent_bg = true
-handle_input_locally = false
-size = Vector2i(1035, 698)
-
-[node name="Label" type="Label" parent="Root/Collider/Collision/Sprite3D/SubViewport"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 4
-text = "Test"
-label_settings = SubResource("LabelSettings_7htdd")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Root"]
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0344489, 0)

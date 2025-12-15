@@ -5,7 +5,7 @@ var in_node: Node3D
 var out_node: OutNode
 
 var _in_door: Door
-var _out_door: Door
+@export var _out_door: Door
 
 var in_door_name: StringName = "In Door"
 var out_door_name: StringName = "Out Door"
@@ -22,8 +22,6 @@ func _set_nodes():
 		for child in children:
 			if (child.is_in_group("InNode")):
 				in_node = child
-			if (child is Door):
-				_out_door = child
 
 func set_door(door: Door, is_out_door := false):
 	door.reparent(self)

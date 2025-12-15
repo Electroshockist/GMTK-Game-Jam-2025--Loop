@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwoxfa1buwbuf"]
+
+[ext_resource type="Script" uid="uid://m7x3vyq7ypw4" path="res://source/game/levels/Props/interactable_input_display.gd" id="1_kkn6i"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_m5j5x"]
+viewport_path = NodePath("Sprite3D/SubViewport")
+
+[sub_resource type="LabelSettings" id="LabelSettings_kkn6i"]
+font_size = 512
+
+[node name="InteractableInputDisplay" type="Node3D"]
+script = ExtResource("1_kkn6i")
+interact_action = &"interact"
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0, 0.26283, 0)
+visible = false
+sorting_offset = 30.0
+billboard = 1
+double_sided = false
+no_depth_test = true
+texture = SubResource("ViewportTexture_m5j5x")
+
+[node name="SubViewport" type="SubViewport" parent="Sprite3D"]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1035, 698)
+
+[node name="Label" type="Label" parent="Sprite3D/SubViewport"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "Test"
+label_settings = SubResource("LabelSettings_kkn6i")
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,14 +1,24 @@
 [gd_scene load_steps=3 format=3 uid="uid://cpvnq534q85v3"]
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/base_level.tscn" id="1_yh1l0"]
-
-[sub_resource type="ViewportTexture" id="ViewportTexture_iv3h4"]
-viewport_path = NodePath("/root/@EditorNode@21272/@Panel@14/@VBoxContainer@15/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@26/DockVSplitCenter/@VSplitContainer@54/@VBoxContainer@55/@EditorMainScreen@102/MainScreen/@CanvasItemEditor@11482/@VSplitContainer@11134/@HSplitContainer@11136/@HSplitContainer@11138/@Control@11139/@SubViewportContainer@11140/@SubViewport@11141/base_level/Door/Interactable/Root/Collider/Collision/Sprite3D/SubViewport")
+[ext_resource type="Script" uid="uid://dp6ov6sut21io" path="res://source/game/levels/Props/Anomalies/anomaly.gd" id="2_iv3h4"]
 
 [node name="base_level" instance=ExtResource("1_yh1l0")]
 
-[node name="Sprite3D" parent="Door/Interactable/Root/Collider/Collision" index="0"]
-texture = SubResource("ViewportTexture_iv3h4")
+[node name="Barred Door" parent="Enviroment/Sewers/Sewer Gate Doorway" index="2"]
+visible = true
 
+[node name="SerwersP1_015" parent="Enviroment/Sewers/Sewer Gate Doorway" index="3"]
+visible = false
+
+[node name="Anomaly" type="Node3D" parent="Enviroment/Sewers/Sewer Gate Doorway" index="4" node_paths=PackedStringArray("interactable")]
+script = ExtResource("2_iv3h4")
+is_deleted_on_interact = false
+interactable = NodePath("../Barred Door")
+metadata/_custom_type_script = "uid://dp6ov6sut21io"
+
+[node name="AudioStreamPlayer3D" parent="Door" index="1"]
+stream = null
+
+[editable path="Enviroment/Sewers/Sewer Gate Doorway"]
 [editable path="Door"]
-[editable path="Door/Interactable"]

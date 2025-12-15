@@ -1,11 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://7r8cxvnokr8c"]
+[gd_scene load_steps=10 format=3 uid="uid://7r8cxvnokr8c"]
 
-[ext_resource type="PackedScene" uid="uid://d4at0b5ikgnwi" path="res://source/game/levels/Props/interactable.tscn" id="1_11vvi"]
 [ext_resource type="Script" uid="uid://oyhg5k6bwfnj" path="res://source/game/levels/Props/door.gd" id="1_d357e"]
+[ext_resource type="PackedScene" uid="uid://d4at0b5ikgnwi" path="res://source/game/levels/Props/interactable.tscn" id="1_nm0fj"]
 [ext_resource type="AudioStream" uid="uid://cnvespui43nc4" path="res://assets/sounds/squeaky door.mp3" id="3_8wudx"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_vrhd2"]
-size = Vector3(0.118175, 2.833, 1.25711)
+[ext_resource type="PackedScene" uid="uid://cwoxfa1buwbuf" path="res://source/game/levels/Props/interactable_input_display.tscn" id="3_oxef2"]
 
 [sub_resource type="Animation" id="Animation_6vvvs"]
 resource_name = "Door_Close"
@@ -13,7 +11,7 @@ length = 0.3
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Interactable/Root/Collider/Collision:disabled")
+tracks/0/path = NodePath("Collider/CollisionShape3D:disabled")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -22,37 +20,13 @@ tracks/0/keys = {
 "update": 1,
 "values": [false, false]
 }
-tracks/1/type = "value"
+tracks/1/type = "rotation_3d"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Interactable/DoorSoundPlayer:stream")
+tracks/1/path = NodePath(".")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("3_8wudx")]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Interactable/DoorSoundPlayer:playing")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/3/type = "rotation_3d"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Interactable/ModelRoot")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = PackedFloat32Array(0, 1, 0, 0.707, 0, 0.707, 0.233333, 1, 0, 0, 0, 1, 0.266667, 1, 0, 0.022, 0, 1, 0.3, 1, 0, 0, 0, 1)
+tracks/1/keys = PackedFloat32Array(0, 1, 0, 0.707, 0, 0.707, 0.233333, 1, 0, 0, 0, 1, 0.266667, 1, 0, 0.022, 0, 1, 0.3, 1, 0, 0, 0, 1)
 
 [sub_resource type="Animation" id="Animation_v587y"]
 resource_name = "Door_Open"
@@ -60,7 +34,7 @@ length = 0.8
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Interactable/Root/Collider/Collision:disabled")
+tracks/0/path = NodePath("Collider/CollisionShape3D:disabled")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -69,44 +43,20 @@ tracks/0/keys = {
 "update": 1,
 "values": [false, true, true]
 }
-tracks/1/type = "value"
+tracks/1/type = "rotation_3d"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Interactable/DoorSoundPlayer:stream")
+tracks/1/path = NodePath(".")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("3_8wudx")]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Interactable/DoorSoundPlayer:playing")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/3/type = "rotation_3d"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Interactable/ModelRoot")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.633333, 1, 0, 0.777, 0, 0.629, 0.8, 1, 0, 0.707, 0, 0.707)
+tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.633333, 1, 0, 0.777, 0, 0.629, 0.8, 1, 0, 0.707, 0, 0.707)
 
 [sub_resource type="Animation" id="Animation_vjd6b"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = false
-tracks/0/path = NodePath("Interactable/Root/Collider/Collision:disabled")
+tracks/0/path = NodePath("Collider/CollisionShape3D:disabled")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -115,37 +65,13 @@ tracks/0/keys = {
 "update": 1,
 "values": [false]
 }
-tracks/1/type = "value"
+tracks/1/type = "rotation_3d"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Interactable/DoorSoundPlayer:stream")
+tracks/1/path = NodePath(".")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [null]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Interactable/DoorSoundPlayer:playing")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/3/type = "rotation_3d"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Interactable/ModelRoot")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vjd6b"]
 _data = {
@@ -154,24 +80,33 @@ _data = {
 &"RESET": SubResource("Animation_vjd6b")
 }
 
-[node name="Door" type="Node3D" node_paths=PackedStringArray("interactable", "anim_player")]
+[sub_resource type="BoxShape3D" id="BoxShape3D_8wudx"]
+size = Vector3(0.0966796, 2.43799, 1.07426)
+
+[node name="Door" node_paths=PackedStringArray("anim_player", "collision_object") instance=ExtResource("1_nm0fj")]
 script = ExtResource("1_d357e")
-interactable = NodePath("Interactable")
-anim_player = NodePath("Interactable/AnimationPlayer")
+anim_player = NodePath("AnimationPlayer")
+collision_object = NodePath("Collider")
+metadata/_custom_type_script = "uid://oyhg5k6bwfnj"
 
-[node name="Interactable" parent="." instance=ExtResource("1_11vvi")]
-transform = Transform3D(1.345, 0, 0, 0, 1.345, 0, 0, 0, 1.345, -0.223826, 1.96491, 0)
-shape = SubResource("BoxShape3D_vrhd2")
+[node name="AudioStreamPlayer3D" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.37427, 0)
+stream = ExtResource("3_8wudx")
 
-[node name="ModelRoot" type="Node3D" parent="Interactable"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Interactable"]
-root_node = NodePath("../..")
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1"]
 libraries = {
 &"": SubResource("AnimationLibrary_vjd6b")
 }
 
-[node name="DoorSoundPlayer" type="AudioStreamPlayer3D" parent="Interactable"]
+[node name="Collider" type="StaticBody3D" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.219, 0)
 
-[connection signal="on_interacted" from="Interactable" to="." method="_on_interact_action"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Collider" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.537)
+shape = SubResource("BoxShape3D_8wudx")
+
+[node name="InteractableInputDisplay" parent="Collider/CollisionShape3D" index="0" node_paths=PackedStringArray("interactable") instance=ExtResource("3_oxef2")]
+interactable = NodePath("../../..")
+interact_action = &"interact"
+
+[connection signal="on_interacted" from="." to="." method="_on_interact_action"]

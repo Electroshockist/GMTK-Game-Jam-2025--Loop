@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/base_level.tscn" id="1_ptg1y"]
 [ext_resource type="Script" uid="uid://dxqmu7xwdp2e" path="res://source/game/levels/Props/Anomalies/poster_anomaly.gd" id="2_8cd2r"]
 [ext_resource type="PackedScene" uid="uid://d4at0b5ikgnwi" path="res://source/game/levels/Props/interactable.tscn" id="2_slwco"]
-[ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/model/model_scenes/Metro_PSX_split/poster_01.tscn" id="3_8cd2r"]
+[ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_01.tscn" id="3_8cd2r"]
 
 [sub_resource type="GDScript" id="GDScript_ltdug"]
 script/source = "extends MeshInstance3D

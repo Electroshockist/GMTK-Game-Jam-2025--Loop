@@ -37,7 +37,7 @@ func _ready():
 
 	interactor.on_interact.connect(
 		func(interactable: Interactable):
-				print('interacted with: ', interactable)
+				# print('interacted with: ', interactable)
 				if (interactable == null):
 					anim_jot()
 					print('*test* interacted, played player jot anim')
@@ -49,12 +49,12 @@ func _ready():
 					#print('anomaly interacted, player anim')
 	)
 	
-func _on_character_ready() -> void:
-	animations()
+# func _on_character_ready() -> void:
+# 	animations()
 	# print('starting animations')
 
-func animations():
-	print(GameManager.character)
+# func animations():
+# 	print(GameManager.character)
 	
 func anim_door_open():
 	var state_machine: AnimationNodeStateMachinePlayback = animation_tree["parameters/playback"]
@@ -66,7 +66,7 @@ func anim_dot():
 	var state_machine = animation_tree["parameters/playback"]
 	active_animation = state_machine
 	state_machine.travel("arms_anim_dot")
-	print('dot anim?')
+	# print('dot anim?')
 	await get_tree().create_timer(.1).timeout
 	clipboard.show()
 	pencil.show()
@@ -85,7 +85,7 @@ func anim_jot():
 	state_machine.travel("arms_anim_jot")
 	clipboard.show()
 	pencil.show()
-	print('jot anim?')
+	# print('jot anim?')
 	await get_tree().create_timer(1).timeout
 	clipboard.hide()
 	pencil.hide()

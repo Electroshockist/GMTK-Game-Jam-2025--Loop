@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://buaorifx580r"]
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/base_level.tscn" id="1_6heeu"]
-[ext_resource type="PackedScene" uid="uid://bntsvoj2tf7wp" path="res://assets/model/models/Low-Poly_Fish/GLB/Tuna.glb" id="2_io4qo"]
+[ext_resource type="PackedScene" uid="uid://bntsvoj2tf7wp" path="res://assets/model/models/Anomalies/Low-Poly_Fish/GLB/Tuna.glb" id="2_io4qo"]
 [ext_resource type="Script" uid="uid://b0vjvwjdu4q8" path="res://source/game/levels/Props/Anomalies/animated_anomaly.gd" id="3_vivum"]
 [ext_resource type="PackedScene" uid="uid://d4at0b5ikgnwi" path="res://source/game/levels/Props/interactable.tscn" id="4_tqmjf"]
 [ext_resource type="PackedScene" uid="uid://cyrai5ger6j4j" path="res://assets/Skeletons/fishflop.blend" id="5_ic1wx"]

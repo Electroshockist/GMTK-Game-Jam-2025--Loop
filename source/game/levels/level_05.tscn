@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://pime6tmmcgr8"]
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/base_level.tscn" id="1_na2kr"]
-[ext_resource type="PackedScene" uid="uid://c5ouyrekxlh6e" path="res://assets/model/models/Sewer/Sewer_split/debris_01.tscn" id="2_30bkp"]
-[ext_resource type="PackedScene" uid="uid://bayjcxtfwaphs" path="res://assets/model/models/Sewer/Sewer_split/debris_03.tscn" id="3_g4p8p"]
-[ext_resource type="PackedScene" uid="uid://dotut1d78ligr" path="res://assets/model/models/Sewer/Sewer_split/debris_04.tscn" id="4_e5kjo"]
+[ext_resource type="PackedScene" uid="uid://c5ouyrekxlh6e" path="res://assets/model/models/Environment/Sewer/Sewer_split/debris_01.tscn" id="2_30bkp"]
+[ext_resource type="PackedScene" uid="uid://bayjcxtfwaphs" path="res://assets/model/models/Environment/Sewer/Sewer_split/debris_03.tscn" id="3_g4p8p"]
+[ext_resource type="PackedScene" uid="uid://dotut1d78ligr" path="res://assets/model/models/Environment/Sewer/Sewer_split/debris_04.tscn" id="4_e5kjo"]
 [ext_resource type="Script" uid="uid://dcquwsbgmwllq" path="res://source/game/levels/demoend.gd" id="5_30bkp"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_v1ct6"]
