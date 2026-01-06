@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://dtlfi8x26iwqy"]
+
+[ext_resource type="Script" uid="uid://dxqmu7xwdp2e" path="res://source/game/levels/Props/Anomalies/poster_anomaly.gd" id="1_jbuau"]
+[ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_01.tscn" id="3_fr4vs"]
+[ext_resource type="Script" uid="uid://dht8mbnpa5y0y" path="res://source/game/levels/Props/interactable.gd" id="3_jbuau"]
+[ext_resource type="PackedScene" uid="uid://cwoxfa1buwbuf" path="res://source/game/levels/Props/interactable_input_display.tscn" id="4_o2p8b"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_tofe2"]
+radius = 0.595857
+
+[node name="Poster Anomaly" type="Node3D" node_paths=PackedStringArray("interactable")]
+script = ExtResource("1_jbuau")
+interactable = NodePath("Interactable")
+
+[node name="Poster_01_ground" parent="." instance=ExtResource("3_fr4vs")]
+transform = Transform3D(-33.9067, -1.20871e-05, 125.814, 2.26227e-05, -101.294, -1.1292e-05, 145.936, 1.28941e-05, 29.2316, 0, -0.21277, 0)
+
+[node name="Poster_01_black" parent="." instance=ExtResource("3_fr4vs")]
+transform = Transform3D(-6.54897e-06, -101.294, -5.64598e-06, 0, -4.4277e-06, 129.165, -149.823, 4.4277e-06, 2.46794e-13, 1.8831, 2.05334, 0.672401)
+
+[node name="Interactable" type="Area3D" parent="."]
+script = ExtResource("3_jbuau")
+metadata/_custom_type_script = "uid://dht8mbnpa5y0y"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.152799, 0)
+shape = SubResource("SphereShape3D_tofe2")
+
+[node name="InteractableInputDisplay" parent="Interactable/CollisionShape3D" instance=ExtResource("4_o2p8b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.334856, 0)
+
+[connection signal="on_hover_state_set" from="Interactable" to="Interactable/CollisionShape3D/InteractableInputDisplay" method="set_hovered_state"]

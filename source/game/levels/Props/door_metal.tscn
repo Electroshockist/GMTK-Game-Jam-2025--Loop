@@ -3,10 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://7r8cxvnokr8c" path="res://source/game/levels/Props/door.tscn" id="1_c3rbd"]
 [ext_resource type="PackedScene" uid="uid://di4tygw2fhbwb" path="res://assets/model/models/Environment/Sewer/Sewer_split/door_metal.tscn" id="2_hrqal"]
 
-[node name="Door" instance=ExtResource("1_c3rbd")]
+[node name="Metal Door" instance=ExtResource("1_c3rbd")]
 
-[node name="door_metal" parent="." index="0" instance=ExtResource("2_hrqal")]
+[node name="door_metal" parent="Root" index="0" instance=ExtResource("2_hrqal")]
 transform = Transform3D(-106.254, 0, -1.60438e-05, 0, 106.254, 0, 1.60438e-05, 0, -106.254, 0.0130796, 1.3102, 0)
-
-[node name="CollisionShape3D" parent="Collider" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.537235)

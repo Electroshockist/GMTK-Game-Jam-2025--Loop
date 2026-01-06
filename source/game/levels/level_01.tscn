@@ -1,13 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://5tr5x1rg1h0g"]
+[gd_scene load_steps=3 format=3 uid="uid://5tr5x1rg1h0g"]
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/base_level.tscn" id="1_gc4bu"]
-[ext_resource type="PackedScene" uid="uid://d4at0b5ikgnwi" path="res://source/game/levels/Props/interactable.tscn" id="2_387bw"]
-[ext_resource type="Script" uid="uid://dxqmu7xwdp2e" path="res://source/game/levels/Props/Anomalies/poster_anomaly.gd" id="2_tofe2"]
-[ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_01.tscn" id="3_tofe2"]
-[ext_resource type="PackedScene" uid="uid://cwoxfa1buwbuf" path="res://source/game/levels/Props/interactable_input_display.tscn" id="5_tev7a"]
-
-[sub_resource type="SphereShape3D" id="SphereShape3D_tofe2"]
-radius = 0.595857
+[ext_resource type="PackedScene" uid="uid://dtlfi8x26iwqy" path="res://source/game/levels/Props/Anomalies/poster_anomaly.tscn" id="2_t1v4y"]
 
 [node name="level_01" instance=ExtResource("1_gc4bu")]
 
@@ -20,53 +14,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.1258, 7.79383, -80.031)
 [node name="Back Wall3" parent="Enviroment/Subway" index="16"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8284, 8.87299, -80.031)
 
-[node name="Poster_01" parent="Enviroment/Subway" index="39"]
-material_override = null
-
-[node name="Poster_02" parent="Enviroment/Subway" index="40"]
-material_override = null
-
-[node name="Poster_03" parent="Enviroment/Subway" index="41"]
-material_override = null
-
-[node name="Poster_04" parent="Enviroment/Subway" index="42"]
-material_override = null
-
-[node name="Poster_05" parent="Enviroment/Subway" index="43"]
-material_override = null
-
-[node name="Poster_06" parent="Enviroment/Subway" index="44"]
-material_override = null
-
-[node name="Poster_07" parent="Enviroment/Subway" index="45"]
-material_override = null
-
-[node name="Poster_08" parent="Enviroment/Subway" index="46"]
-material_override = null
-
-[node name="Poster Anomaly" type="Node3D" parent="Enviroment" index="4" node_paths=PackedStringArray("fixed", "interactable")]
-script = ExtResource("2_tofe2")
-fixed = NodePath("../Subway/Poster_01")
-interactable = NodePath("Anomalous Interactable")
-
-[node name="Anomalous Interactable" parent="Enviroment/Poster Anomaly" index="0" node_paths=PackedStringArray("collision_object") instance=ExtResource("2_387bw")]
+[node name="Poster Anomaly" parent="Enviroment" index="4" instance=ExtResource("2_t1v4y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.4379, 1.60537, -52.0017)
-collision_object = NodePath("Area3D")
 
-[node name="Poster_01_ground" parent="Enviroment/Poster Anomaly/Anomalous Interactable" index="1" instance=ExtResource("3_tofe2")]
-transform = Transform3D(-33.9067, -1.20871e-05, 125.814, 2.26227e-05, -101.294, -1.1292e-05, 145.936, 1.28941e-05, 29.2316, 0, -0.21277, 0)
-
-[node name="Poster_01_black" parent="Enviroment/Poster Anomaly/Anomalous Interactable" index="2" instance=ExtResource("3_tofe2")]
-transform = Transform3D(-6.54897e-06, -101.294, -5.64598e-06, 0, -4.4277e-06, 129.165, -149.823, 4.4277e-06, 2.46794e-13, 1.8831, 2.05334, 0.672401)
-
-[node name="Area3D" type="Area3D" parent="Enviroment/Poster Anomaly/Anomalous Interactable" index="3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.152799, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Enviroment/Poster Anomaly/Anomalous Interactable/Area3D" index="0"]
-shape = SubResource("SphereShape3D_tofe2")
-
-[node name="InteractableInputDisplay" parent="Enviroment/Poster Anomaly/Anomalous Interactable/Area3D/CollisionShape3D" index="0" node_paths=PackedStringArray("interactable") instance=ExtResource("5_tev7a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.182057, 0)
-interactable = NodePath("../../..")
+[connection signal="on_interacted" from="Enviroment/Sewers/Sewer Gate Doorway/Barred Door/Root/Interactable" to="Enviroment/Sewers/Sewer Gate Doorway/Barred Door" method="interact_action"]
 
 [editable path="Enviroment/Sewers/Sewer Gate Doorway"]
+[editable path="Enviroment/Sewers/Sewer Gate Doorway/Barred Door"]

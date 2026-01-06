@@ -11,12 +11,12 @@ delete_on_load = [NodePath("First level back")]
 
 [node name="First level back" parent="." instance=ExtResource("4_t0hvf")]
 
-[node name="Menu Manager" type="Node" parent="."]
-script = ExtResource("3_6k3hf")
-
 [node name="DebugCamera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 200, 0)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_qpkag")
 autoplay = true
+
+[node name="MenuManager" type="Node" parent="."]
+script = ExtResource("3_6k3hf")

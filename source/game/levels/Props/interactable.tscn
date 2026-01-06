@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://d4at0b5ikgnwi"]
-
-[ext_resource type="Script" uid="uid://dht8mbnpa5y0y" path="res://source/game/levels/Props/interactable.gd" id="1_gu4vg"]
-
-[node name="Interactable" type="Node3D"]
-script = ExtResource("1_gu4vg")
-
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0344489, 0)

@@ -20,9 +20,9 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-GameManager="*res://source/game_manager.gd"
-SceneManager="*res://source/scene_manager.gd"
-InputHelper="res://source/input_helper.gd"
+GameManager="*res://source/globals/game_manager.gd"
+SceneManager="*res://source/globals/scene_manager.gd"
+InputHelper="res://source/globals/input_helper.gd"
 
 [display]
 

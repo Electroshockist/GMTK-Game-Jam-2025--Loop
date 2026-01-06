@@ -4,8 +4,6 @@ extends Node3D
 
 class_name InteractableInputDisplay
 
-@export var interactable: Interactable
-
 @export var interact_action: StringName
 
 @onready var label_sprite: Sprite3D = $Sprite3D
@@ -16,8 +14,6 @@ class_name InteractableInputDisplay
 func _ready() -> void:
 	(label_sprite.texture as ViewportTexture).viewport_path = subviewport.get_path()
 	label_sprite.visible = false
-
-	interactable.on_hover_state_set.connect(set_hovered_state)
 	
 func _process(_delta):
 	# # disable processing in editor

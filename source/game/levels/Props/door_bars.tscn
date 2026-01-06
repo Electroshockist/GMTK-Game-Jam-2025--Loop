@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=4 uid="uid://4c7pisxpwufs"]
+[gd_scene load_steps=6 format=4 uid="uid://4c7pisxpwufs"]
 
 [ext_resource type="PackedScene" uid="uid://7r8cxvnokr8c" path="res://source/game/levels/Props/door.tscn" id="1_nqlpg"]
 [ext_resource type="Texture2D" uid="uid://dg6a22ion61lg" path="res://assets/model/models/Environment/textures/Sewer/Metal.jpg" id="4_jou7u"]
@@ -43,16 +43,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_u61k3")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_tjuc6"]
-size = Vector3(0.244, 2.289, 0.943)
-
 [node name="Bar Door" instance=ExtResource("1_nqlpg")]
 
-[node name="SerwersP1_014" type="MeshInstance3D" parent="." index="0"]
+[node name="SerwersP1_014" type="MeshInstance3D" parent="Root" index="0"]
 transform = Transform3D(100, 0, 0, 0, 100, -4.37114e-06, 0, 4.37114e-06, 100, 0.0179008, 1.30348, -0.0219716)
 mesh = SubResource("ArrayMesh_ypj02")
 skeleton = NodePath("")
-
-[node name="CollisionShape3D" parent="Collider" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0202636, -0.0742801, 0.471316)
-shape = SubResource("BoxShape3D_tjuc6")

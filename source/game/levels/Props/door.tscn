@@ -1,7 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://7r8cxvnokr8c"]
+[gd_scene load_steps=11 format=3 uid="uid://7r8cxvnokr8c"]
 
-[ext_resource type="Script" uid="uid://oyhg5k6bwfnj" path="res://source/game/levels/Props/door.gd" id="1_d357e"]
-[ext_resource type="PackedScene" uid="uid://d4at0b5ikgnwi" path="res://source/game/levels/Props/interactable.tscn" id="1_nm0fj"]
+[ext_resource type="Script" uid="uid://dht8mbnpa5y0y" path="res://source/game/levels/Props/interactable.gd" id="1_8wudx"]
+[ext_resource type="Script" uid="uid://oyhg5k6bwfnj" path="res://source/game/levels/Props/door.gd" id="1_oxef2"]
 [ext_resource type="AudioStream" uid="uid://cnvespui43nc4" path="res://assets/sounds/squeaky door.mp3" id="3_8wudx"]
 [ext_resource type="PackedScene" uid="uid://cwoxfa1buwbuf" path="res://source/game/levels/Props/interactable_input_display.tscn" id="3_oxef2"]
 
@@ -11,7 +11,7 @@ length = 0.3
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Collider/CollisionShape3D:disabled")
+tracks/0/path = NodePath("CollisionShape3D:disabled")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -23,10 +23,22 @@ tracks/0/keys = {
 tracks/1/type = "rotation_3d"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath(".")
+tracks/1/path = NodePath("..")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = PackedFloat32Array(0, 1, 0, 0.707, 0, 0.707, 0.233333, 1, 0, 0, 0, 1, 0.266667, 1, 0, 0.022, 0, 1, 0.3, 1, 0, 0, 0, 1)
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../AudioStreamPlayer3D:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_v587y"]
 resource_name = "Door_Open"
@@ -34,7 +46,7 @@ length = 0.8
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Collider/CollisionShape3D:disabled")
+tracks/0/path = NodePath("CollisionShape3D:disabled")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -46,32 +58,44 @@ tracks/0/keys = {
 tracks/1/type = "rotation_3d"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath(".")
+tracks/1/path = NodePath("..")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.633333, 1, 0, 0.777, 0, 0.629, 0.8, 1, 0, 0.707, 0, 0.707)
 
 [sub_resource type="Animation" id="Animation_vjd6b"]
 length = 0.001
-tracks/0/type = "value"
+tracks/0/type = "rotation_3d"
 tracks/0/imported = false
-tracks/0/enabled = false
-tracks/0/path = NodePath("Collider/CollisionShape3D:disabled")
+tracks/0/enabled = true
+tracks/0/path = NodePath("..")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/keys = {
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape3D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [false]
 }
-tracks/1/type = "rotation_3d"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../AudioStreamPlayer3D:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vjd6b"]
 _data = {
@@ -81,32 +105,44 @@ _data = {
 }
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8wudx"]
-size = Vector3(0.0966796, 2.43799, 1.07426)
+size = Vector3(1.074, 2.438, 0.097)
 
-[node name="Door" node_paths=PackedStringArray("anim_player", "collision_object") instance=ExtResource("1_nm0fj")]
-script = ExtResource("1_d357e")
+[sub_resource type="BoxShape3D" id="BoxShape3D_oxef2"]
+size = Vector3(1.074, 2.438, 0.165039)
+
+[node name="Door" type="Node3D" node_paths=PackedStringArray("interactable", "anim_player")]
+script = ExtResource("1_oxef2")
+interactable = NodePath("Root/Interactable")
 anim_player = NodePath("AnimationPlayer")
-collision_object = NodePath("Collider")
-metadata/_custom_type_script = "uid://oyhg5k6bwfnj"
 
-[node name="AudioStreamPlayer3D" parent="." index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.37427, 0)
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.37427, 0)
 stream = ExtResource("3_8wudx")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Root/Collider")
 libraries = {
 &"": SubResource("AnimationLibrary_vjd6b")
 }
 
-[node name="Collider" type="StaticBody3D" parent="." index="2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.219, 0)
+[node name="Root" type="Node3D" parent="."]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Collider" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.537)
+[node name="Collider" type="StaticBody3D" parent="Root"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Root/Collider"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.219, 0.537)
 shape = SubResource("BoxShape3D_8wudx")
 
-[node name="InteractableInputDisplay" parent="Collider/CollisionShape3D" index="0" node_paths=PackedStringArray("interactable") instance=ExtResource("3_oxef2")]
-interactable = NodePath("../../..")
-interact_action = &"interact"
+[node name="Interactable" type="Area3D" parent="Root" node_paths=PackedStringArray("interact_audio_player")]
+script = ExtResource("1_8wudx")
+interact_audio_player = NodePath("../../AudioStreamPlayer3D")
+metadata/_custom_type_script = "uid://dht8mbnpa5y0y"
 
-[connection signal="on_interacted" from="." to="." method="_on_interact_action"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Root/Interactable"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1.219, 0.537)
+shape = SubResource("BoxShape3D_oxef2")
+
+[node name="InteractableInputDisplay" parent="Root/Interactable/CollisionShape3D" instance=ExtResource("3_oxef2")]
+
+[connection signal="on_hover_state_set" from="Root/Interactable" to="Root/Interactable/CollisionShape3D/InteractableInputDisplay" method="set_hovered_state"]
+[connection signal="on_interacted" from="Root/Interactable" to="." method="open"]

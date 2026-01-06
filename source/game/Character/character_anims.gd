@@ -33,21 +33,21 @@ func _ready():
 	clipboard.hide()
 	pencil.hide()
 
-	var interactor: Interactor = owner.find_child("RayCast3D")
+	# var interactor: Interactor = owner.find_child("RayCast3D")
 
-	interactor.on_interact.connect(
-		func(interactable: Interactable):
-				# print('interacted with: ', interactable)
-				if (interactable == null):
-					anim_jot()
-					print('*test* interacted, played player jot anim')
-				elif (interactable.get_parent() is Door):
-					anim_door_open()
-					print('door interacted, played player anim')
-				#if (interactable is Anomaly):
-					#anim_jot()
-					#print('anomaly interacted, player anim')
-	)
+	# interactor.on_interact.connect(
+	# 	func(interactable: Interactable):
+	# 			# print('interacted with: ', interactable)
+	# 			if (interactable == null):
+	# 				anim_jot()
+	# 				print('*test* interacted, played player jot anim')
+	# 			elif (interactable.get_parent() is Door):
+	# 				anim_door_open()
+	# 				print('door interacted, played player anim')
+	# 			#if (interactable is Anomaly):
+	# 				#anim_jot()
+	# 				#print('anomaly interacted, player anim')
+	# )
 	
 # func _on_character_ready() -> void:
 # 	animations()

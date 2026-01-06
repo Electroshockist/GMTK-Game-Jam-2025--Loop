@@ -1,4 +1,4 @@
-extends Node3D
+extends Area3D
 
 class_name Interactable
 
@@ -6,25 +6,19 @@ signal on_interacted
 
 signal on_hover_state_set(state: bool)
 
-@export var collision_object: CollisionObject3D
+@export var interact_audio_player: AudioStreamPlayer3D
 
-@onready var audio_stream_player: AudioStreamPlayer3D = $AudioStreamPlayer3D
+var is_hovered: bool = false:
+	get:
+		return is_hovered
+	set(value):
+		is_hovered = value
+		on_hover_state_set.emit(value)
 
-var is_monitorable := true
-
-func set_hovered_state(is_hovering: bool):
-	on_hover_state_set.emit(is_hovering)
-
-func on_interact():
-	_on_interact_action()
-
-	print(audio_stream_player.stream)
-
-	if audio_stream_player.stream != null:
-		audio_stream_player.play()
+func interact():
+	monitorable = false
+	
+	if interact_audio_player != null && interact_audio_player.stream != null:
+		interact_audio_player.play()
 
 	on_interacted.emit()
-
-# abstract function to override
-func _on_interact_action():
-	pass

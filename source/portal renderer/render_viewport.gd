@@ -27,12 +27,12 @@ func _ready():
 	# material.set_shader_parameter("texture_albedo", _viewport_texture)
 	# render_texture.material_override = material
 
-func _process(_delta: float) -> void:
-	## external camera
-	var cam: Camera3D = camera
-	if Engine.is_editor_hint():
-		cam = EditorInterface.get_editor_viewport_3d().get_camera_3d()
+# func _process(_delta: float) -> void:
+# 	## external camera
+# 	var cam: Camera3D = camera
+# 	if Engine.is_editor_hint():
+# 		cam = EditorInterface.get_editor_viewport_3d().get_camera_3d()
 
-	var trans := internal_camera.global_transform * cam.global_transform
+# 	var trans := internal_camera.global_transform * cam.global_transform
 	# internal_camera.global_position = camera.global_position - render_texture.global_position
 	# internal_camera.rotation = camera.rotation

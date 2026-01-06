@@ -8,6 +8,9 @@
 [node name="Barred Door" parent="Enviroment/Sewers/Sewer Gate Doorway" index="2"]
 visible = true
 
+[node name="CollisionShape3D" parent="Enviroment/Sewers/Sewer Gate Doorway/Barred Door/Collider" index="0"]
+disabled = false
+
 [node name="SerwersP1_015" parent="Enviroment/Sewers/Sewer Gate Doorway" index="3"]
 visible = false
 
@@ -17,8 +20,5 @@ is_deleted_on_interact = false
 interactable = NodePath("../Barred Door")
 metadata/_custom_type_script = "uid://dp6ov6sut21io"
 
-[node name="AudioStreamPlayer3D" parent="Door" index="1"]
-stream = null
-
 [editable path="Enviroment/Sewers/Sewer Gate Doorway"]
-[editable path="Door"]
+[editable path="Enviroment/Sewers/Sewer Gate Doorway/Barred Door"]
