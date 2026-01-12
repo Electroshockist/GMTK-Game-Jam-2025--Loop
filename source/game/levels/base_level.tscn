@@ -1359,7 +1359,7 @@ size = Vector2(5, 7)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vf1by"]
 albedo_color = Color(0, 0, 0, 1)
 
-[node name="base_level" type="Node3D" node_paths=PackedStringArray("_out_door")]
+[node name="base_level" type="Node3D" node_paths=PackedStringArray("_out_door") groups=["Level"]]
 script = ExtResource("1_pktld")
 _out_door = NodePath("Door")
 
@@ -1530,20 +1530,10 @@ mesh = SubResource("ArrayMesh_7nbq8")
 skeleton = NodePath("")
 
 [node name="Sewer Gate Doorway" parent="Enviroment/Sewers" instance=ExtResource("60_w6x52")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.35702, -1.73843, -2.38934)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.34501, -1.71582, -2.40534)
 
-[node name="Barred Door" parent="Enviroment/Sewers/Sewer Gate Doorway" index="2"]
-visible = false
-
-[node name="AudioStreamPlayer3D" parent="Enviroment/Sewers/Sewer Gate Doorway/Barred Door" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.37427, 0)
-stream = null
-
-[node name="AnimationPlayer" parent="Enviroment/Sewers/Sewer Gate Doorway/Barred Door" index="1"]
-root_node = NodePath("..")
-
-[node name="SerwersP1_015" type="MeshInstance3D" parent="Enviroment/Sewers/Sewer Gate Doorway"]
-transform = Transform3D(-14.2152, 8.61869e-06, 172.865, -12.1127, 173.023, -0.996064, -172.441, -12.1535, -14.1802, 0.0310488, 2.26087, -0.222671)
+[node name="SerwersP1_015" type="MeshInstance3D" parent="Enviroment/Sewers"]
+transform = Transform3D(14.2152, -6.78356e-06, -172.865, -12.1127, 173.023, -0.996064, 172.441, 12.1535, 14.1802, 5.32597, 0.52244, -2.14936)
 mesh = SubResource("ArrayMesh_ypj02")
 skeleton = NodePath("")
 
@@ -1803,7 +1793,4 @@ attenuation_model = 3
 [node name="PlayerSpawn" type="Node3D" parent="." groups=["PlayerSpawn"]]
 transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 21.8599, 5.80914, -77.1457)
 
-[connection signal="on_interacted" from="Enviroment/Sewers/Sewer Gate Doorway/Barred Door/Root/Interactable" to="Enviroment/Sewers/Sewer Gate Doorway/Barred Door" method="interact_action"]
-
 [editable path="Enviroment/Sewers/Sewer Gate Doorway"]
-[editable path="Enviroment/Sewers/Sewer Gate Doorway/Barred Door"]

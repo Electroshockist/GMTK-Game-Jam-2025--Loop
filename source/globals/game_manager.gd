@@ -1,5 +1,7 @@
 extends Node
 
+const game_scene := preload("res://source/game/game.tscn")
+
 const char_scene := preload("res://source/game/character/character.tscn")
 
 var character: Character
@@ -8,9 +10,20 @@ var game: Game
 
 var menu_manager
 
-func level_loaded(level: Node3D) -> void:
-	call_deferred("_create_character", level)
+func on_level_loaded(level: Level) -> void:
+	# load game if none exist
+	if game == null:
+		_create_game.call_deferred(level)
+
+	# load char if none exist
+	if character == null:
+		_create_character.call_deferred(level)
 		
+func _create_game(level: Level):
+	game = game_scene.instantiate()
+	game.current_level = level
+	get_tree().root.add_child(game)
+
 func _create_character(level: Node3D):
 	if (character == null):
 		for child in level.get_children(true):
@@ -23,6 +36,9 @@ func _create_character(level: Node3D):
 
 				character.camera.current = true
 				break
+
+# func on_level_loaded(anomaly: Anomaly):
+
 # const psx_shader_applicator := preload("res://assets/shaders/psx_shader_applicator.gd")
 # func _ready():
 	# _apply_shader_to_all(get_tree().root)

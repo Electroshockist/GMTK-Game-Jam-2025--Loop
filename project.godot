@@ -36,6 +36,7 @@ window/stretch/scale=1.5
 
 InNode="The node that the previous level's \"OutNode\"should be attached to."
 OutNode="The node that the next level's \"InNode\"should be attached to."
+Level="Root note of a level"
 
 [input]
 

@@ -2,7 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/base_level.tscn" id="1_ptg1y"]
 [ext_resource type="Script" uid="uid://dxqmu7xwdp2e" path="res://source/game/levels/Props/Anomalies/poster_anomaly.gd" id="2_8cd2r"]
-[ext_resource type="PackedScene" uid="uid://d4at0b5ikgnwi" path="res://source/game/levels/Props/interactable.tscn" id="2_slwco"]
 [ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_01.tscn" id="3_8cd2r"]
 
 [sub_resource type="GDScript" id="GDScript_ltdug"]
@@ -11,8 +10,6 @@ script/source = "extends MeshInstance3D
 class_name Poster
 "
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_6bas8"]
-radius = 1.0
 
 [node name="level_02" instance=ExtResource("1_ptg1y")]
 
@@ -24,10 +21,6 @@ script = ExtResource("2_8cd2r")
 are_posters_evil_on_interact = true
 fixed = NodePath("../Poster_01")
 interactable = NodePath("Anomalous Interactable")
-
-[node name="Anomalous Interactable" parent="Enviroment/Anomaly" index="0" instance=ExtResource("2_slwco")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.4379, 1.60537, -52.0017)
-shape = SubResource("SphereShape3D_6bas8")
 
 [node name="Poster_01_ground" parent="Enviroment/Anomaly/Anomalous Interactable" index="1" instance=ExtResource("3_8cd2r")]
 transform = Transform3D(-33.9067, -1.20871e-05, 125.814, 2.26226e-05, -101.294, -1.1292e-05, 145.936, 1.28941e-05, 29.2315, 0, -0.21277, 0)

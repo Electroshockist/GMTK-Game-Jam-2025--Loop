@@ -30,3 +30,4 @@ shape = SubResource("SphereShape3D_tofe2")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.334856, 0)
 
 [connection signal="on_hover_state_set" from="Interactable" to="Interactable/CollisionShape3D/InteractableInputDisplay" method="set_hovered_state"]
+[connection signal="on_interacted" from="Interactable" to="." method="collect_anomaly"]

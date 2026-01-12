@@ -1,7 +1,6 @@
-[gd_scene load_steps=8 format=4 uid="uid://cu7tt3umyehqm"]
+[gd_scene load_steps=7 format=4 uid="uid://cu7tt3umyehqm"]
 
 [ext_resource type="Texture2D" uid="uid://dg6a22ion61lg" path="res://assets/model/models/Environment/textures/Sewer/Metal.jpg" id="1_m8kev"]
-[ext_resource type="PackedScene" uid="uid://4c7pisxpwufs" path="res://source/game/levels/Props/door_bars.tscn" id="2_0mr64"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kgflb"]
 size = Vector3(0.244141, 6.14453, 2.37506)
@@ -70,6 +69,3 @@ shape = SubResource("BoxShape3D_kgflb")
 transform = Transform3D(171.02, 0, 0, 0, 171.02, -7.47554e-06, 0, 7.47554e-06, 171.02, 0, 2.90027, 0.786058)
 mesh = SubResource("ArrayMesh_li7yx")
 skeleton = NodePath("")
-
-[node name="Barred Door" parent="." instance=ExtResource("2_0mr64")]
-transform = Transform3D(1.73449, 0, 0, 0, 1.73449, 0, 0, 0, 1.73449, -0.0256939, 0, -0.00546198)

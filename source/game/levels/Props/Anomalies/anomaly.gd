@@ -6,16 +6,16 @@ class_name Anomaly
 
 @export var interactable: Interactable
 
-func _ready():
-	interactable.on_interacted.connect(
-		func():
-			_trigger_anomaly()
-		
-			GameManager.game.anomaly_collected()
-			
-			if (is_deleted_on_interact):
-				interactable.queue_free()
-	)
+
+func collect_anomaly():
+	_trigger_anomaly()
+	
+
+	# anomaly_collected.emit(self)
+	GameManager.game.anomaly_collected()
+
+	if (is_deleted_on_interact):
+		queue_free()
 
 func _trigger_anomaly():
 	pass

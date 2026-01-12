@@ -1,24 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://cpvnq534q85v3"]
+[gd_scene load_steps=4 format=3 uid="uid://cpvnq534q85v3"]
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/base_level.tscn" id="1_yh1l0"]
 [ext_resource type="Script" uid="uid://dp6ov6sut21io" path="res://source/game/levels/Props/Anomalies/anomaly.gd" id="2_iv3h4"]
+[ext_resource type="PackedScene" uid="uid://4c7pisxpwufs" path="res://source/game/levels/Props/door_bars.tscn" id="3_1ax5f"]
 
 [node name="base_level" instance=ExtResource("1_yh1l0")]
 
-[node name="Barred Door" parent="Enviroment/Sewers/Sewer Gate Doorway" index="2"]
-visible = true
-
-[node name="CollisionShape3D" parent="Enviroment/Sewers/Sewer Gate Doorway/Barred Door/Collider" index="0"]
-disabled = false
-
-[node name="SerwersP1_015" parent="Enviroment/Sewers/Sewer Gate Doorway" index="3"]
-visible = false
-
-[node name="Anomaly" type="Node3D" parent="Enviroment/Sewers/Sewer Gate Doorway" index="4" node_paths=PackedStringArray("interactable")]
+[node name="Anomaly" type="Node3D" parent="Enviroment/Sewers/Sewer Gate Doorway" index="2" node_paths=PackedStringArray("interactable")]
 script = ExtResource("2_iv3h4")
 is_deleted_on_interact = false
-interactable = NodePath("../Barred Door")
+interactable = NodePath("../Barred Door/Root/Interactable")
 metadata/_custom_type_script = "uid://dp6ov6sut21io"
+
+[node name="Barred Door" parent="Enviroment/Sewers/Sewer Gate Doorway" index="3" instance=ExtResource("3_1ax5f")]
+transform = Transform3D(1.73449, 0, 0, 0, 1.73449, 0, 0, 0, 1.73449, -0.0256939, 0, -0.00546198)
+load_area_on_close = false
+
+[node name="SerwersP1_015" parent="Enviroment/Sewers" index="37"]
+visible = false
+
+[connection signal="on_interacted" from="Enviroment/Sewers/Sewer Gate Doorway/Barred Door/Root/Interactable" to="Enviroment/Sewers/Sewer Gate Doorway/Anomaly" method="collect_anomaly"]
 
 [editable path="Enviroment/Sewers/Sewer Gate Doorway"]
 [editable path="Enviroment/Sewers/Sewer Gate Doorway/Barred Door"]

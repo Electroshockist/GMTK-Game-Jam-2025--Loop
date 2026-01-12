@@ -13,7 +13,7 @@ var out_door_name: StringName = "Out Door"
 func _ready():
 	_set_nodes()
 
-	GameManager.level_loaded(self)
+	GameManager.on_level_loaded(self)
 
 func _set_nodes():
 	var children := get_children(true)

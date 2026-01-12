@@ -14,10 +14,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.1258, 7.79383, -80.031)
 [node name="Back Wall3" parent="Enviroment/Subway" index="16"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8284, 8.87299, -80.031)
 
-[node name="Poster Anomaly" parent="Enviroment" index="4" instance=ExtResource("2_t1v4y")]
+[node name="Poster Anomaly" parent="Enviroment/Subway" index="39" node_paths=PackedStringArray("fixed") instance=ExtResource("2_t1v4y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.4379, 1.60537, -52.0017)
+fixed = NodePath("../Poster_01")
 
-[connection signal="on_interacted" from="Enviroment/Sewers/Sewer Gate Doorway/Barred Door/Root/Interactable" to="Enviroment/Sewers/Sewer Gate Doorway/Barred Door" method="interact_action"]
+[node name="Poster_01" parent="Enviroment/Subway" index="40"]
+visible = false
 
 [editable path="Enviroment/Sewers/Sewer Gate Doorway"]
-[editable path="Enviroment/Sewers/Sewer Gate Doorway/Barred Door"]
+[editable path="Enviroment/Subway/Poster Anomaly"]

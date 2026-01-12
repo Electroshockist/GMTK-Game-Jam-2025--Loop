@@ -13,5 +13,3 @@ func _trigger_anomaly():
 			make_posters_evil(p as MeshInstance3D)
 
 	super._trigger_anomaly()
-	
-	remove_anomaly()

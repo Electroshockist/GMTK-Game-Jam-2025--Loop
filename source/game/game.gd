@@ -4,6 +4,7 @@ class_name Game
 
 @export var delete_on_load: Array[Node3D]
 
+
 var levels = [
 	load("res://source/game/levels/level_00.tscn"),
 	load("res://source/game/levels/level_01.tscn"),
@@ -17,6 +18,9 @@ var levels = [
 	load("res://source/game/levels/level_09.tscn"),
 	load("res://source/game/levels/level_10.tscn")
 ]
+const current_level_name: String = "Current Level: Level %s"
+
+const next_level_name: String = "Current Level: Level %s"
 
 ## the id of the level that the player is currently in
 var current_level_id: int = 0
@@ -35,8 +39,9 @@ func _init():
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	current_level = _spawn_level(0)
-	current_level.name = "Current Level"
+	if (current_level == null):
+		current_level = _spawn_level(0)
+	current_level.name = current_level_name % current_level_id
 
 	_spawn_next_level()
 	current_level.out_node.transform_level(next_level)
