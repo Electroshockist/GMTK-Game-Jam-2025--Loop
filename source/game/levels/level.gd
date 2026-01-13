@@ -34,7 +34,6 @@ func set_door(door: Door, is_out_door := false):
 		_out_door.name = out_door_name
 
 func close_door():
-	# if (_out_door != null):
 	_out_door.anim_player.play("Door_Close")
 
 func on_anomaly_collected():

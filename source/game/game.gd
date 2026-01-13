@@ -18,9 +18,9 @@ var levels = [
 	load("res://source/game/levels/level_09.tscn"),
 	load("res://source/game/levels/level_10.tscn")
 ]
-const current_level_name: String = "Current Level: Level %s"
+const current_level_name: String = "Current Level - Level %s"
 
-const next_level_name: String = "Current Level: Level %s"
+const next_level_name: String = "Next Level - Level %s"
 
 ## the id of the level that the player is currently in
 var current_level_id: int = 0
@@ -57,27 +57,29 @@ func _spawn_level(id: int) -> Level:
 
 func _spawn_next_level():
 	next_level = _spawn_level(next_level_id)
-	next_level.name = "Next Level"
+	next_level.name = next_level_name % next_level_id
 
-func on_enter_next_level():
+func on_next_level_entered():
 	if !delete_on_load.is_empty():
 		for i in delete_on_load:
 			i.queue_free()
 			delete_on_load.erase(i)
 
+	_close_door()
 	_swap_level()
 	_spawn_next_level()
 	current_level.out_node.transform_level(next_level)
 
+## sets the next level to be the current level
 func _swap_level():
 	next_level.set_door(current_level._out_door)
 	current_level.queue_free()
 
 	current_level_id = next_level_id
 	current_level = next_level
-	current_level.name = "Current Level"
+	current_level.name = current_level_name % current_level_id
 
-func close_door():
+func _close_door():
 	current_level.close_door()
 
 ## call when the conditions to set the next level are met

@@ -8,5 +8,5 @@ func _ready():
 			if body is Character:
 				set_deferred("monitoring", false)
 				if (GameManager.game != null):
-					GameManager.game.close_door()
-			)
+					GameManager.game.on_next_level_entered()
+	)

@@ -6,10 +6,9 @@
 
 [node name="base_level" instance=ExtResource("1_yh1l0")]
 
-[node name="Anomaly" type="Node3D" parent="Enviroment/Sewers/Sewer Gate Doorway" index="2" node_paths=PackedStringArray("interactable")]
+[node name="Anomaly" type="Node3D" parent="Enviroment/Sewers/Sewer Gate Doorway" index="2"]
 script = ExtResource("2_iv3h4")
 is_deleted_on_interact = false
-interactable = NodePath("../Barred Door/Root/Interactable")
 metadata/_custom_type_script = "uid://dp6ov6sut21io"
 
 [node name="Barred Door" parent="Enviroment/Sewers/Sewer Gate Doorway" index="3" instance=ExtResource("3_1ax5f")]

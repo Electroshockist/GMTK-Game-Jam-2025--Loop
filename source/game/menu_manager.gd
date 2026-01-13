@@ -3,7 +3,6 @@ signal menu_toggled
 
 func _ready():
 	set_mouse_lock(true)
-	print("test1")
 	
 	menu_toggled.connect(
 		func():

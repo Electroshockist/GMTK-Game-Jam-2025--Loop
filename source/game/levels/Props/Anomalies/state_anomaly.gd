@@ -13,6 +13,6 @@ func _trigger_anomaly():
 func remove_anomaly():
 	queue_free()
 
-func queue_free_after(delay: float) -> void:
-	await get_tree().create_timer(delay).timeout
-	remove_anomaly()
+# func queue_free_after(delay: float) -> void:
+# 	await get_tree().create_timer(delay).timeout
+# 	remove_anomaly()

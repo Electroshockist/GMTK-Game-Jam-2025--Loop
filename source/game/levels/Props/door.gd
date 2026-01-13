@@ -26,4 +26,4 @@ func close():
 
 func _load_next_level(anim_name: String):
 	if (anim_name == "Door_Close"):
-		GameManager.game.on_enter_next_level()
+		GameManager.game.on_next_level_entered()

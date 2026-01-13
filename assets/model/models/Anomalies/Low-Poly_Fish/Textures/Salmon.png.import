@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://1srm7renbp8f"
-path.s3tc="res://.godot/imported/Salmon.png-0141d97419d2c7292a0ca5dbff6d6424.s3tc.ctex"
-path.etc2="res://.godot/imported/Salmon.png-0141d97419d2c7292a0ca5dbff6d6424.etc2.ctex"
+path.s3tc="res://.godot/imported/Salmon.png-d92994a90081c515eb3c52494a33bff9.s3tc.ctex"
+path.etc2="res://.godot/imported/Salmon.png-d92994a90081c515eb3c52494a33bff9.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/model/models/Anomalies/Low-Poly_Fish/textures/Salmon.png"
-dest_files=["res://.godot/imported/Salmon.png-0141d97419d2c7292a0ca5dbff6d6424.s3tc.ctex", "res://.godot/imported/Salmon.png-0141d97419d2c7292a0ca5dbff6d6424.etc2.ctex"]
+source_file="res://assets/model/models/Anomalies/Low-Poly_Fish/Textures/Salmon.png"
+dest_files=["res://.godot/imported/Salmon.png-d92994a90081c515eb3c52494a33bff9.s3tc.ctex", "res://.godot/imported/Salmon.png-d92994a90081c515eb3c52494a33bff9.etc2.ctex"]
 
 [params]
 

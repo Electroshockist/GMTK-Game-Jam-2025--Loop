@@ -22,6 +22,7 @@ func on_level_loaded(level: Level) -> void:
 func _create_game(level: Level):
 	game = game_scene.instantiate()
 	game.current_level = level
+	level.reparent(game)
 	get_tree().root.add_child(game)
 
 func _create_character(level: Node3D):
