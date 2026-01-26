@@ -8,5 +8,8 @@ func _ready():
 			if body is Character:
 				set_deferred("monitoring", false)
 				if (GameManager.game != null):
-					GameManager.game.on_next_level_entered()
+					# close the level's door, 
+					# then allow the door to notify the game that it has finished closing
+					# this makes it so that the level doesn't unload before it is no longer visible
+					GameManager.game.close_door()
 	)

@@ -1362,6 +1362,7 @@ albedo_color = Color(0, 0, 0, 1)
 [node name="base_level" type="Node3D" node_paths=PackedStringArray("_out_door") groups=["Level"]]
 script = ExtResource("1_pktld")
 _out_door = NodePath("Door")
+metadata/level_id = -1
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource("2_pktld")

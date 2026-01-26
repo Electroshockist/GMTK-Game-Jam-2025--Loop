@@ -1,5 +1,7 @@
 extends Node
 
+signal game_created()
+
 const game_scene := preload("res://source/game/game.tscn")
 
 const char_scene := preload("res://source/game/character/character.tscn")
@@ -21,9 +23,10 @@ func on_level_loaded(level: Level) -> void:
 		
 func _create_game(level: Level):
 	game = game_scene.instantiate()
-	game.current_level = level
+	game.current_level_property = level
 	level.reparent(game)
 	get_tree().root.add_child(game)
+	game_created.emit()
 
 func _create_character(level: Node3D):
 	if (character == null):

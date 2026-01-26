@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cyrai5ger6j4j" path="res://assets/Skeletons/fishflop.blend" id="5_ic1wx"]
 
 [node name="level_03" instance=ExtResource("1_6heeu")]
+metadata/level_id = 3
 
 [node name="Tuna2" parent="." index="3" instance=ExtResource("2_io4qo")]
 transform = Transform3D(0.702395, 0.246485, -1.07742e-08, -3.0763e-16, -3.25382e-08, -0.744388, -0.246485, 0.702395, -3.07027e-08, 23.0845, 1.55761, -40.9333)

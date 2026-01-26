@@ -3,3 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/base_level.tscn" id="1_kldym"]
 
 [node name="level_10" instance=ExtResource("1_kldym")]
+metadata/level_id = 10
+
+[editable path="Enviroment/Sewers/Sewer Gate Doorway"]

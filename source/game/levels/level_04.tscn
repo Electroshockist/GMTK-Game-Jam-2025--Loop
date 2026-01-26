@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://dkq8ymgw7hva0" path="res://source/game/levels/Props/Anomalies/eyeball_anomaly.gd" id="4_ufmmj"]
 
 [node name="level_04" instance=ExtResource("1_ce4r4")]
+metadata/level_id = 4
 
 [node name="Eyeballs" parent="." index="3" instance=ExtResource("2_pssjk")]
 transform = Transform3D(0.397558, 0, 0, 0, 0.370243, 0, 0, 0, 0.745621, 15.0003, 4.19282, -61.4822)

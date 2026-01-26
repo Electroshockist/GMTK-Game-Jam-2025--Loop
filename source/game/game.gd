@@ -2,8 +2,13 @@ extends Node3D
 
 class_name Game
 
-@export var delete_on_load: Array[Node3D]
+## fired when the next level is entered, but before any of the next level logic is done
+## useful for cleaning up previous scenes
+signal level_exited(exited_level: Level, entered_level: Level)
 
+signal next_level_changed(new_level: Level)
+
+@export var delete_on_load: Array[Node3D]
 
 var levels = [
 	load("res://source/game/levels/level_00.tscn"),
@@ -22,6 +27,13 @@ const current_level_name: String = "Current Level - Level %s"
 
 const next_level_name: String = "Next Level - Level %s"
 
+var current_level_property: Level:
+	get:
+		return current_level
+	set(value):
+		current_level = value
+		current_level_id = current_level.get_meta("level_id")
+
 ## the id of the level that the player is currently in
 var current_level_id: int = 0
 
@@ -39,10 +51,15 @@ func _init():
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	if (current_level == null):
-		current_level = _spawn_level(0)
-	current_level.name = current_level_name % current_level_id
+	# sets ids correctly, if not staring from level 0
+	if (current_level != null and current_level.has_meta("level_id")):
+			var id: int = current_level.get_meta("level_id")
 
+			current_level_id = id
+			next_level_id = id
+
+	current_level.name = current_level_name % current_level_id
+	
 	_spawn_next_level()
 	current_level.out_node.transform_level(next_level)
 	
@@ -59,17 +76,24 @@ func _spawn_next_level():
 	next_level = _spawn_level(next_level_id)
 	next_level.name = next_level_name % next_level_id
 
-func on_next_level_entered():
+func on_previous_door_closed():
+	level_exited.emit(current_level, next_level)
+	var s := ""
+	for c in level_exited.get_connections():
+		s += c.callable
+
+	print("%s -> %s: %s" % [current_level.name, next_level.name, s])
 	if !delete_on_load.is_empty():
 		for i in delete_on_load:
 			i.queue_free()
 			delete_on_load.erase(i)
 
-	_close_door()
 	_swap_level()
 	_spawn_next_level()
 	current_level.out_node.transform_level(next_level)
 
+func close_door():
+	current_level.close_door()
 ## sets the next level to be the current level
 func _swap_level():
 	next_level.set_door(current_level._out_door)
@@ -78,9 +102,7 @@ func _swap_level():
 	current_level_id = next_level_id
 	current_level = next_level
 	current_level.name = current_level_name % current_level_id
-
-func _close_door():
-	current_level.close_door()
+	
 
 ## call when the conditions to set the next level are met
 ## sets the next loaded level to be the next level in the list
@@ -91,6 +113,7 @@ func anomaly_collected():
 	next_level.queue_free()
 	_spawn_next_level()
 	current_level.out_node.transform_level(next_level)
+	next_level_changed.emit(next_level)
 
 var is_debug_cam_on = false
 func _input(_event):

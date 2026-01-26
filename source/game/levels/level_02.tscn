@@ -2,7 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://5tr5x1rg1h0g" path="res://source/game/levels/level_01.tscn" id="1_4pmup"]
 
-[node name="level_01" instance=ExtResource("1_4pmup")]
+[node name="level_02" instance=ExtResource("1_4pmup")]
+metadata/level_id = 2
 
 [node name="Poster Anomaly" parent="Enviroment" index="4"]
 are_posters_evil_on_interact = true

@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dtlfi8x26iwqy" path="res://source/game/levels/Props/Anomalies/poster_anomaly.tscn" id="2_t1v4y"]
 
 [node name="level_01" instance=ExtResource("1_gc4bu")]
+metadata/level_id = 1
 
 [node name="Back Wall" parent="Enviroment/Subway" index="14"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.3503, 7.79383, -80.031)
@@ -13,6 +14,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.1258, 7.79383, -80.031)
 
 [node name="Back Wall3" parent="Enviroment/Subway" index="16"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8284, 8.87299, -80.031)
+
+[node name="Poster_01" parent="Enviroment/Subway" index="39" groups=["Evilable"]]
+
+[node name="Poster_02" parent="Enviroment/Subway" index="40" groups=["Evilable"]]
+
+[node name="Poster_03" parent="Enviroment/Subway" index="41" groups=["Evilable"]]
+
+[node name="Poster_04" parent="Enviroment/Subway" index="42" groups=["Evilable"]]
+
+[node name="Poster_05" parent="Enviroment/Subway" index="43" groups=["Evilable"]]
+
+[node name="Poster_06" parent="Enviroment/Subway" index="44" groups=["Evilable"]]
+
+[node name="Poster_07" parent="Enviroment/Subway" index="45" groups=["Evilable"]]
+
+[node name="Poster_08" parent="Enviroment/Subway" index="46" groups=["Evilable"]]
 
 [node name="Poster Anomaly" parent="Enviroment" index="4" node_paths=PackedStringArray("fixed") instance=ExtResource("2_t1v4y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.4379, 1.60537, -52.0017)
