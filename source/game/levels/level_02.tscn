@@ -5,7 +5,8 @@
 [node name="level_02" instance=ExtResource("1_4pmup")]
 metadata/level_id = 2
 
-[node name="Poster Anomaly" parent="Enviroment" index="4"]
+[node name="Poster Handler" parent="Enviroment" index="5"]
 are_posters_evil_on_interact = true
 
 [editable path="Enviroment/Sewers/Sewer Gate Doorway"]
+[editable path="Enviroment/Poster Anomaly"]

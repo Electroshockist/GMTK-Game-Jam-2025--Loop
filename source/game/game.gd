@@ -80,7 +80,7 @@ func on_previous_door_closed():
 	level_exited.emit(current_level, next_level)
 	var s := ""
 	for c in level_exited.get_connections():
-		s += c.callable
+		s += str(c.callable)
 
 	print("%s -> %s: %s" % [current_level.name, next_level.name, s])
 	if !delete_on_load.is_empty():

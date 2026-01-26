@@ -5,7 +5,7 @@ extends Control
 @onready var anim: AnimationPlayer = $AnimationPlayer
 
 func _unhandled_key_input(event):
-	if event.is_pressed() and anim.current_animation_length >= min_skippable_time:
+	if event.is_pressed() and anim.current_animation_position >= min_skippable_time:
 		SceneManager.change_scene(SceneManager.SCENES.MAIN_MENU)
 
 

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://5tr5x1rg1h0g"]
+[gd_scene load_steps=4 format=3 uid="uid://5tr5x1rg1h0g"]
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/base_level.tscn" id="1_gc4bu"]
-[ext_resource type="PackedScene" uid="uid://dtlfi8x26iwqy" path="res://source/game/levels/Props/Anomalies/poster_anomaly.tscn" id="2_t1v4y"]
+[ext_resource type="PackedScene" uid="uid://dtlfi8x26iwqy" path="res://source/game/levels/Props/Anomalies/posters/poster_anomaly.tscn" id="2_t1v4y"]
+[ext_resource type="Script" uid="uid://dxqmu7xwdp2e" path="res://source/game/levels/Props/Anomalies/posters/poster_handler.gd" id="3_387bw"]
 
 [node name="level_01" instance=ExtResource("1_gc4bu")]
 metadata/level_id = 1
@@ -35,4 +36,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8284, 8.87299, -80.031)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.4379, 1.60537, -52.0017)
 fixed = NodePath("../Subway/Poster_01")
 
+[node name="Poster Handler" type="Node" parent="Enviroment" index="5"]
+script = ExtResource("3_387bw")
+
+[connection signal="on_interacted" from="Enviroment/Poster Anomaly/Interactable" to="Enviroment/Poster Handler" method="_on_anomaly_triggered"]
+
 [editable path="Enviroment/Sewers/Sewer Gate Doorway"]
+[editable path="Enviroment/Poster Anomaly"]
