@@ -34,6 +34,14 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "meshes": {
+"Metro_SerwersP1_008": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"save_to_file/enabled": true,
+"save_to_file/path": "res://assets/model/models/Environment/modified/Metro_Pit/Metro_Pit_Stairs.res"
+},
 "Metro_St": {
 "generate/lightmap_uv": 0,
 "generate/lods": 0,
@@ -41,14 +49,6 @@ _subresources={
 "lods/normal_merge_angle": 60.0,
 "save_to_file/enabled": true,
 "save_to_file/path": "res://assets/model/models/Environment/modified/Metro_Pit/Metro_Pit_Close.res"
-},
-"Metro_St_001": {
-"generate/lightmap_uv": 0,
-"generate/lods": 0,
-"generate/shadow_meshes": 0,
-"lods/normal_merge_angle": 60.0,
-"save_to_file/enabled": true,
-"save_to_file/path": "res://assets/model/models/Environment/modified/Metro_Pit/Metro_Pit_Outer.res"
 },
 "Metro_St_01": {
 "generate/lightmap_uv": 0,
