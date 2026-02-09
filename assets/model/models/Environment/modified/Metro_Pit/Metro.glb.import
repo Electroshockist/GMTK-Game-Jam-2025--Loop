@@ -15,9 +15,11 @@ dest_files=["res://.godot/imported/Metro.glb-c8caca3a5c4e37eaba86f24a846cf066.sc
 
 nodes/root_type=""
 nodes/root_name=""
+nodes/root_script=null
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
 meshes/generate_lods=true
@@ -32,6 +34,9 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
 _subresources={
 "meshes": {
 "Metro_SerwersP1_008": {
@@ -40,7 +45,8 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 60.0,
 "save_to_file/enabled": true,
-"save_to_file/path": "res://assets/model/models/Environment/modified/Metro_Pit/Metro_Pit_Stairs.res"
+"save_to_file/fallback_path": "res://assets/model/models/Environment/modified/Metro_Pit/Metro_Pit_Stairs.res",
+"save_to_file/path": "uid://bht7u2pm7un25"
 },
 "Metro_St": {
 "generate/lightmap_uv": 0,
@@ -48,7 +54,8 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 60.0,
 "save_to_file/enabled": true,
-"save_to_file/path": "res://assets/model/models/Environment/modified/Metro_Pit/Metro_Pit_Close.res"
+"save_to_file/fallback_path": "res://assets/model/models/Environment/modified/Metro_Pit/Metro_Pit_Close.res",
+"save_to_file/path": "uid://ppgr5j1tfsiq"
 },
 "Metro_St_01": {
 "generate/lightmap_uv": 0,
@@ -56,7 +63,8 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 60.0,
 "save_to_file/enabled": true,
-"save_to_file/path": "res://assets/model/models/Environment/modified/Metro_Pit/Metro_Pit_Centre.res"
+"save_to_file/fallback_path": "res://assets/model/models/Environment/modified/Metro_Pit/Metro_Pit_Centre.res",
+"save_to_file/path": "uid://qjmvp12gw20d"
 },
 "Metro_St_02": {
 "generate/lightmap_uv": 0,
@@ -64,7 +72,8 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 60.0,
 "save_to_file/enabled": true,
-"save_to_file/path": "res://assets/model/models/Environment/modified/Metro_Pit/Metro_Pit_Far.res"
+"save_to_file/fallback_path": "res://assets/model/models/Environment/modified/Metro_Pit/Metro_Pit_Far.res",
+"save_to_file/path": "uid://ddvxuse5s8fib"
 }
 }
 }

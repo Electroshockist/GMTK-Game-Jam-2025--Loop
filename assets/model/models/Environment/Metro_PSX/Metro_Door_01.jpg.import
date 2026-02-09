@@ -3,26 +3,27 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://do68f18w6jm3c"
-path.s3tc="res://.godot/imported/Metro_Door_01.jpg-0c58624572721d6f4ab37d1da7bd3114.s3tc.ctex"
 path.etc2="res://.godot/imported/Metro_Door_01.jpg-0c58624572721d6f4ab37d1da7bd3114.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "cb530f884dad615241ad03b16462cef2"
+"md5": "e592b1d23040e5247cf36224c0482bf9"
 }
 
 [deps]
 
 source_file="res://assets/model/models/Environment/Metro_PSX/Metro_Door_01.jpg"
-dest_files=["res://.godot/imported/Metro_Door_01.jpg-0c58624572721d6f4ab37d1da7bd3114.s3tc.ctex", "res://.godot/imported/Metro_Door_01.jpg-0c58624572721d6f4ab37d1da7bd3114.etc2.ctex"]
+dest_files=["res://.godot/imported/Metro_Door_01.jpg-0c58624572721d6f4ab37d1da7bd3114.etc2.ctex"]
 
 [params]
 
 compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
@@ -30,6 +31,10 @@ mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

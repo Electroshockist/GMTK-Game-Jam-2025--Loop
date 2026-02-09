@@ -3,26 +3,27 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcsly7da1hyih"
-path.s3tc="res://.godot/imported/metro stairs_concrete_bare_01.jpg-de24120f3e0fb9ef8312d72110ffafa7.s3tc.ctex"
 path.etc2="res://.godot/imported/metro stairs_concrete_bare_01.jpg-de24120f3e0fb9ef8312d72110ffafa7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "b81d2497ab91f56de8b6b70364a20abd"
+"md5": "115527e0e9e6214fb6ed27833d478f66"
 }
 
 [deps]
 
 source_file="res://assets/model/models/Environment/modified/metro stairs_concrete_bare_01.jpg"
-dest_files=["res://.godot/imported/metro stairs_concrete_bare_01.jpg-de24120f3e0fb9ef8312d72110ffafa7.s3tc.ctex", "res://.godot/imported/metro stairs_concrete_bare_01.jpg-de24120f3e0fb9ef8312d72110ffafa7.etc2.ctex"]
+dest_files=["res://.godot/imported/metro stairs_concrete_bare_01.jpg-de24120f3e0fb9ef8312d72110ffafa7.etc2.ctex"]
 
 [params]
 
 compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
@@ -30,6 +31,10 @@ mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

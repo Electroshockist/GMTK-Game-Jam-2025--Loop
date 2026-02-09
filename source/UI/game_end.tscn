@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://cy26ipm0l6uvg"]
+
+[ext_resource type="Texture2D" uid="uid://ds5xsm2ohwsdk" path="res://assets/sprites/Buttons/QUIT BASE.png" id="1_t0hlh"]
+[ext_resource type="Texture2D" uid="uid://ctmj738hcym7t" path="res://assets/sprites/Buttons/QUIT PRESSED.png" id="2_cmcn8"]
+[ext_resource type="Texture2D" uid="uid://b0nofbx6tdwwy" path="res://assets/sprites/Buttons/QUIT SELECTED.png" id="3_arrpp"]
+[ext_resource type="Script" uid="uid://ctinufrqglijo" path="res://source/UI/quit_button.gd" id="4_bxyxw"]
+
+[sub_resource type="Gradient" id="Gradient_m3o8s"]
+colors = PackedColorArray(0, 0, 0, 1, 0.23921569, 0.23921569, 0.23921569, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_kqyt1"]
+gradient = SubResource("Gradient_m3o8s")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[node name="GameEnd" type="Control" unique_id=1092609119]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1444160557]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_kqyt1")
+
+[node name="Quit Button" type="TextureButton" parent="." unique_id=1505547005]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.712
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 0.23999
+offset_bottom = -56.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 3
+texture_normal = ExtResource("1_t0hlh")
+texture_pressed = ExtResource("2_cmcn8")
+texture_hover = ExtResource("3_arrpp")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("4_bxyxw")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1416285182]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -64.0
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_right = 20
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer" unique_id=1816732021]
+layout_mode = 2
+bbcode_enabled = true
+text = "[font_size=12][b]You beat the Game![/b][/font_size]
+[font_size=10]
+Thank you so much for playing our No Service!
+As a small team, we really appreciate you checking out our game. If you are interested in our other games, make sure to follow us on social media and Steam!
+
+- The Moose Kanoes Team 
+[/font_size]"
+horizontal_alignment = 1
