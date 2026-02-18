@@ -1,24 +1,23 @@
-[gd_scene load_steps=79 format=4 uid="uid://c0o17r85gxfui"]
+[gd_scene load_steps=73 format=4 uid="uid://c0o17r85gxfui"]
 
 [ext_resource type="Script" uid="uid://bs56ayrlo47wf" path="res://source/game/levels/level.gd" id="1_ouvpk"]
 [ext_resource type="Environment" uid="uid://pq7vqvfywr8t" path="res://source/game/levels/level_env.tres" id="2_p56g6"]
 [ext_resource type="Script" uid="uid://cts7ja6veofqq" path="res://source/game/levels/level_stitching/level_trigger.gd" id="3_1ti2n"]
-[ext_resource type="PackedScene" uid="uid://yx5g6gub48g" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/light.tscn" id="4_on3kf"]
-[ext_resource type="PackedScene" uid="uid://d26nnggxojrx4" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/trash_can.tscn" id="5_44wqk"]
-[ext_resource type="PackedScene" uid="uid://3g4l8qqfd515" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/vending_machine.tscn" id="6_wdgyb"]
-[ext_resource type="PackedScene" uid="uid://daq2ktcnqj41c" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/chair.tscn" id="7_o1d6k"]
-[ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_01.tscn" id="8_3n0v3"]
-[ext_resource type="PackedScene" uid="uid://dit2phk8j4yj8" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_02.tscn" id="9_htuts"]
-[ext_resource type="PackedScene" uid="uid://c4pjrhejiegb6" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_03.tscn" id="10_7f2uo"]
-[ext_resource type="PackedScene" uid="uid://dxgqniedvllnp" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_04.tscn" id="11_8pv1n"]
-[ext_resource type="PackedScene" uid="uid://db1w44w0gdaly" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_05.tscn" id="12_wvew7"]
-[ext_resource type="PackedScene" uid="uid://dl0itebvpe5fy" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_06.tscn" id="13_qjdf2"]
-[ext_resource type="PackedScene" uid="uid://c2prm0sxpm4dx" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_07.tscn" id="14_x0oog"]
-[ext_resource type="PackedScene" uid="uid://c2qvfmytwf71t" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_08.tscn" id="15_adqkr"]
-[ext_resource type="Texture2D" uid="uid://buqdidu8ydldf" path="res://assets/models/Environment/Metro_PSX/materials/textures/tile_tile.jpg" id="19_il81c"]
+[ext_resource type="PackedScene" uid="uid://yx5g6gub48g" path="res://assets/models/Environment/Metro_PSX_split/light.tscn" id="4_on3kf"]
+[ext_resource type="PackedScene" uid="uid://d26nnggxojrx4" path="res://assets/models/Environment/Metro_PSX_split/trash_can.tscn" id="5_44wqk"]
+[ext_resource type="PackedScene" uid="uid://3g4l8qqfd515" path="res://assets/models/Environment/Metro_PSX_split/vending_machine.tscn" id="6_wdgyb"]
+[ext_resource type="PackedScene" uid="uid://daq2ktcnqj41c" path="res://assets/models/Environment/Metro_PSX_split/chair.tscn" id="7_o1d6k"]
+[ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/models/Environment/Metro_PSX_split/poster_01.tscn" id="8_3n0v3"]
+[ext_resource type="PackedScene" uid="uid://dit2phk8j4yj8" path="res://assets/models/Environment/Metro_PSX_split/poster_02.tscn" id="9_htuts"]
+[ext_resource type="PackedScene" uid="uid://c4pjrhejiegb6" path="res://assets/models/Environment/Metro_PSX_split/poster_03.tscn" id="10_7f2uo"]
+[ext_resource type="PackedScene" uid="uid://dxgqniedvllnp" path="res://assets/models/Environment/Metro_PSX_split/poster_04.tscn" id="11_8pv1n"]
+[ext_resource type="PackedScene" uid="uid://db1w44w0gdaly" path="res://assets/models/Environment/Metro_PSX_split/poster_05.tscn" id="12_wvew7"]
+[ext_resource type="PackedScene" uid="uid://dl0itebvpe5fy" path="res://assets/models/Environment/Metro_PSX_split/poster_06.tscn" id="13_qjdf2"]
+[ext_resource type="PackedScene" uid="uid://c2prm0sxpm4dx" path="res://assets/models/Environment/Metro_PSX_split/poster_07.tscn" id="14_x0oog"]
+[ext_resource type="PackedScene" uid="uid://c2qvfmytwf71t" path="res://assets/models/Environment/Metro_PSX_split/poster_08.tscn" id="15_adqkr"]
+[ext_resource type="Material" uid="uid://bswqapa42tbt" path="res://assets/models/Environment/Metro_PSX/materials/ConcreteBare.tres" id="18_sj0p0"]
 [ext_resource type="ArrayMesh" uid="uid://8ybcpe16qgyn" path="res://assets/models/Environment/modified/Metro_Pit/tunnel_end.res" id="19_xlege"]
 [ext_resource type="Material" uid="uid://b0r4bnveh2c12" path="res://assets/models/Environment/Metro_PSX/materials/tile_tile.tres" id="21_1bnys"]
-[ext_resource type="Texture2D" uid="uid://l31fxq55vfko" path="res://assets/models/Environment/Metro_PSX/materials/textures/ConcreteBare.png" id="21_4dnxo"]
 [ext_resource type="Material" uid="uid://df8gefbdmblpw" path="res://assets/models/Environment/Metro_PSX/materials/Door_01.tres" id="21_r7iov"]
 [ext_resource type="ArrayMesh" uid="uid://ddvxuse5s8fib" path="res://assets/models/Environment/modified/Metro_Pit/Metro_Pit_Far.res" id="22_q62um"]
 [ext_resource type="Material" uid="uid://c07hlj0bxt8e4" path="res://assets/models/Environment/Metro_PSX/materials/metal_02.tres" id="23_bn6st"]
@@ -27,12 +26,11 @@
 [ext_resource type="Material" uid="uid://d73eycybvdkj" path="res://assets/models/Environment/Metro_PSX/materials/brick_modern.tres" id="26_bn6st"]
 [ext_resource type="Script" uid="uid://e60yvnf7q1n4" path="res://source/game/levels/level_06_pit.gd" id="28_r7iov"]
 [ext_resource type="AudioStream" uid="uid://1dvf7q3s0sh8" path="res://assets/sounds/pretty long fall.mp3" id="30_sj0p0"]
+[ext_resource type="Script" uid="uid://b7q02nmtmt4nv" path="res://source/game/levels/Props/hover_display.gd" id="31_2s68e"]
 [ext_resource type="Script" uid="uid://dp6ov6sut21io" path="res://source/game/levels/Props/Anomalies/anomaly.gd" id="31_q62um"]
 [ext_resource type="Script" uid="uid://dht8mbnpa5y0y" path="res://source/game/levels/Props/Interactable.gd" id="32_nivj7"]
 [ext_resource type="PackedScene" uid="uid://cwoxfa1buwbuf" path="res://source/game/levels/Props/interactable_input_display.tscn" id="33_xt5gq"]
 [ext_resource type="ArrayMesh" uid="uid://b8s47vfi4f5pa" path="res://assets/models/Environment/modified/Metro_Pit/St_01.res" id="38_ouvpk"]
-[ext_resource type="Texture2D" uid="uid://dsmb2gvvusgx0" path="res://assets/models/Environment/modified/metro pillar_tile_tile.jpg" id="39_yngx8"]
-[ext_resource type="Texture2D" uid="uid://037axmwocwrw" path="res://assets/models/Environment/modified/metro pillar_ConcreteBare.png" id="40_jtgml"]
 [ext_resource type="Script" uid="uid://b5hjojq8wyiqd" path="res://source/game/levels/level_stitching/out_node.gd" id="47_e3pow"]
 [ext_resource type="PackedScene" uid="uid://bjw0ehsvtney3" path="res://source/game/levels/Props/door_metal.tscn" id="48_20doo"]
 [ext_resource type="AudioStream" uid="uid://bhnam8ajx6n8o" path="res://assets/sounds/ding or dong.mp3" id="49_soibn"]
@@ -92,22 +90,6 @@ size = Vector3(0.78064, 4.85638, 0.83461)
 [sub_resource type="BoxShape3D" id="BoxShape3D_mp6dy"]
 size = Vector3(7.10437, 4.69043, 5.98651)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t8c41"]
-resource_name = "tile_tile"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("19_il81c")
-emission_enabled = true
-emission = Color(1, 1, 1, 1)
-emission_energy_multiplier = 0.0
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lq56n"]
-resource_name = "ConcreteBare"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("21_4dnxo")
-emission_enabled = true
-emission = Color(1, 1, 1, 1)
-emission_energy_multiplier = 0.0
-
 [sub_resource type="ArrayMesh" id="ArrayMesh_pktld"]
 _surfaces = [{
 "aabb": AABB(-0.00620202, -0.00581218, -0.032786, 0.012404, 0.0116244, 0.0622524),
@@ -141,7 +123,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 24,
 "index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwA"),
-"material": SubResource("StandardMaterial3D_t8c41"),
+"material": ExtResource("21_1bnys"),
 "name": "tile_tile",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -154,7 +136,7 @@ _surfaces = [{
 "index_count": 120,
 "index_data": PackedByteArray("MAABAAIAAgAxADAAAQAyADMAMwA0AAEANQACAAcABwA2ADUADAA3ADgACgA3AAwADAANAAoAOAALAAwADgALADgAOAAPAA4AEAARABIAEgATABAAFAAVABYAFgAXABQAAwAFAAQABAA5AAMAGAAaADoAGAAZABoAGAA6ADsAGAA7ABsAHwA8AB4AHwAcADwAHAA9ADwAHAAdAD0APgA/AEAAQAAAAD4AIAAhACIAIgAjACAAJAAlACYAJgAnACQAKAApACoAKgArACgAQQBCAAgACAAJAEEABgBDAEQARABFAAYALAAtAC4ALgAvACwA"),
 "lods": [2.98157e-06, PackedByteArray("AAABAAIAAQAAAAMAAwAEAAEAAwAFAAQABgAAAAIABgACAAcABgAHAAgACAAJAAYACgALAAwADAANAAoADgALAAoACgAPAA4AEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGAAaABsAHAAdAB4AHwAcAB4AIAAhACIAIgAjACAAJAAlACYAJgAnACQAKAApACoAKgArACgALAAtAC4ALgAvACwA")],
-"material": SubResource("StandardMaterial3D_lq56n"),
+"material": ExtResource("18_sj0p0"),
 "name": "ConcreteBare",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -325,16 +307,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_s3dwq")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7htrj"]
-resource_name = "tile_tile"
-albedo_texture = ExtResource("39_yngx8")
-texture_filter = 2
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qq8jf"]
-resource_name = "ConcreteBare"
-albedo_texture = ExtResource("40_jtgml")
-texture_filter = 2
-
 [sub_resource type="ArrayMesh" id="ArrayMesh_2chxd"]
 _surfaces = [{
 "aabb": AABB(-0.620202, -3.2786, -0.581218, 1.2404, 6.22524, 1.16244),
@@ -368,7 +340,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 24,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0A"),
-"material": SubResource("StandardMaterial3D_7htrj"),
+"material": ExtResource("21_1bnys"),
 "name": "tile_tile",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -381,7 +353,7 @@ _surfaces = [{
 "index_count": 120,
 "index_data": PackedByteArray("AAACACQAAAAlAAIAAwAlAAAABAAAACQAAwAmACUABAAkACcAKAAmAAMAKAABACYABQAoAAMABQApACgABQAHACkABQAqAAcABAAqAAUABAArACoAJwArAAQAJwAGACsACAAKACwACAAJAAoALQAIACwALQAMAAgALQANAAwALQALAA0ALgAPABAALgAOAA8ALwAuABAALwAQABEAEQASAC8AEQATABIAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AMAAdABwAHQAwADEAHQAxAB8AMgAhACIAMwAhADIAIQAzACAAIQAgACMA"),
 "lods": [0.000334361, PackedByteArray("AAABAAIAAwABAAAABAAAAAIABQABAAMAAgAGAAQABQAHAAEABAAGAAcABAAHAAUACAAJAAoACwAIAAoACwAMAAgACwANAAwADgAPABAADgAQABEAEQASAA4AEQATABIAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHQAcAB8AIAAhACIAIQAgACMA")],
-"material": SubResource("StandardMaterial3D_qq8jf"),
+"material": ExtResource("18_sj0p0"),
 "name": "ConcreteBare",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -396,6 +368,7 @@ size = Vector3(6.57971, 152.032, 75.4922)
 
 [sub_resource type="Animation" id="Animation_q62um"]
 resource_name = "Fall"
+length = 30.0
 tracks/0/type = "method"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -403,10 +376,28 @@ tracks/0/path = NodePath(".")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
-"values": []
+"times": PackedFloat32Array(22.3),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"trigger_scene_change"
+}]
 }
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AudioStreamPlayer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("30_sj0p0")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nivj7"]
 _data = {
@@ -553,11 +544,9 @@ transform = Transform3D(-3.83986e-06, 87.8458, -5.23602e-06, 0, 5.23602e-06, 87.
 
 [node name="Vending_machine" parent="Enviroment/Subway" instance=ExtResource("6_wdgyb")]
 transform = Transform3D(-4.94953e-06, -113.232, -1.34983e-05, 0, -1.34983e-05, 113.232, -113.232, 4.94953e-06, 5.90029e-13, 25.0011, 2.66998, -30.0201)
-material_override = null
 
 [node name="Vending_machine2" parent="Enviroment/Subway" instance=ExtResource("6_wdgyb")]
 transform = Transform3D(113.232, -2.72848e-12, 3.79471e-19, -3.51685e-20, -1.34983e-05, 113.232, -2.72848e-12, -113.232, -1.34983e-05, 21.432, 2.66998, -5.13632)
-material_override = null
 
 [node name="Chair" parent="Enviroment/Subway" instance=ExtResource("7_o1d6k")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -51.6062)
@@ -682,7 +671,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0504074, -77.1048, -8.80203
 shape = SubResource("BoxShape3D_2s68e")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Enviroment/Pit/Pit"]
-stream = ExtResource("30_sj0p0")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Enviroment/Pit/Pit"]
 libraries = {
@@ -693,6 +681,9 @@ libraries = {
 script = ExtResource("31_q62um")
 metadata/_custom_type_script = "uid://dp6ov6sut21io"
 
+[node name="InteractableInputDisplay" parent="Enviroment/Pit" instance=ExtResource("33_xt5gq")]
+transform = Transform3D(2.46363, 0, 0, 0, 2.46363, 0, 0, 0, 2.46363, 1.23468, 2.36864, -24.4729)
+
 [node name="Interactable" type="Area3D" parent="Enviroment/Pit" node_paths=PackedStringArray("interact_audio_player")]
 script = ExtResource("32_nivj7")
 interact_audio_player = NodePath("../../../AudioStreamPlayer3D")
@@ -702,8 +693,15 @@ metadata/_custom_type_script = "uid://dht8mbnpa5y0y"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.778687, 1.08301, -12.4053)
 shape = SubResource("BoxShape3D_8ou78")
 
-[node name="InteractableInputDisplay" parent="Enviroment/Pit/Interactable/CollisionShape3D" instance=ExtResource("33_xt5gq")]
-transform = Transform3D(2.46363, 0, 0, 0, 2.46363, 0, 0, 0, 2.46363, 2.01337, 1.28563, -12.0676)
+[node name="FogVolume" type="FogVolume" parent="Enviroment/Pit"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0902224, -82.0205, -10.9777)
+size = Vector3(7.09984, 161.013, 61.2904)
+material = SubResource("FogMaterial_r64ux")
+
+[node name="HoverDisplay" type="Node" parent="Enviroment/Pit" node_paths=PackedStringArray("interactable", "interactable_display")]
+script = ExtResource("31_2s68e")
+interactable = NodePath("../Interactable")
+interactable_display = NodePath("../InteractableInputDisplay")
 
 [node name="InNode" type="Node3D" parent="." groups=["InNode"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.2498, 5.53115, -80.1987)
@@ -736,5 +734,5 @@ attenuation_model = 3
 [node name="PlayerSpawn" type="Node3D" parent="." groups=["PlayerSpawn"]]
 transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 21.8599, 5.80914, -77.1457)
 
-[connection signal="on_hover_state_set" from="Enviroment/Pit/Interactable" to="Enviroment/Pit/Interactable/CollisionShape3D/InteractableInputDisplay" method="set_hovered_state"]
+[connection signal="on_hover_state_set" from="Enviroment/Pit/Interactable" to="Enviroment/Pit/InteractableInputDisplay" method="set_hovered_state"]
 [connection signal="on_interacted" from="Enviroment/Pit/Interactable" to="Enviroment/Pit/Anomaly" method="collect_anomaly"]

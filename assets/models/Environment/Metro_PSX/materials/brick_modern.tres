@@ -4,6 +4,5 @@
 
 [resource]
 resource_name = "brick_modern"
-cull_mode = 2
 albedo_texture = ExtResource("1_g5omi")
 texture_filter = 2

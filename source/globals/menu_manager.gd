@@ -19,6 +19,13 @@ func _input(_event):
 	if Input.is_action_just_pressed("Fullscreen Toggle"):
 		is_fullscreen = !is_fullscreen
 
+
+# var is_paused: bool:
+# 	get:
+# 		return is_paused
+# 	set(value):
+# 		is_paused = value
+
 var is_fullscreen: bool = false:
 	get:
 		return is_fullscreen
