@@ -26,6 +26,7 @@ config/icon="res://icon.svg"
 
 GameManager="*res://source/globals/game_manager.gd"
 SceneManager="*res://source/globals/scene_manager.gd"
+MenuManager="*res://source/globals/menu_manager.gd"
 InputHelper="res://source/globals/input_helper.gd"
 
 [display]

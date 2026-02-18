@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=4 uid="uid://c0o17r85gxfui"]
+[gd_scene load_steps=79 format=4 uid="uid://c0o17r85gxfui"]
 
 [ext_resource type="Script" uid="uid://bs56ayrlo47wf" path="res://source/game/levels/level.gd" id="1_ouvpk"]
 [ext_resource type="Environment" uid="uid://pq7vqvfywr8t" path="res://source/game/levels/level_env.tres" id="2_p56g6"]
@@ -26,6 +26,10 @@
 [ext_resource type="Material" uid="uid://1e6dbgomjyqt" path="res://assets/models/Environment/Metro_PSX/materials/Glass.tres" id="24_sj0p0"]
 [ext_resource type="Material" uid="uid://d73eycybvdkj" path="res://assets/models/Environment/Metro_PSX/materials/brick_modern.tres" id="26_bn6st"]
 [ext_resource type="Script" uid="uid://e60yvnf7q1n4" path="res://source/game/levels/level_06_pit.gd" id="28_r7iov"]
+[ext_resource type="AudioStream" uid="uid://1dvf7q3s0sh8" path="res://assets/sounds/pretty long fall.mp3" id="30_sj0p0"]
+[ext_resource type="Script" uid="uid://dp6ov6sut21io" path="res://source/game/levels/Props/Anomalies/anomaly.gd" id="31_q62um"]
+[ext_resource type="Script" uid="uid://dht8mbnpa5y0y" path="res://source/game/levels/Props/Interactable.gd" id="32_nivj7"]
+[ext_resource type="PackedScene" uid="uid://cwoxfa1buwbuf" path="res://source/game/levels/Props/interactable_input_display.tscn" id="33_xt5gq"]
 [ext_resource type="ArrayMesh" uid="uid://b8s47vfi4f5pa" path="res://assets/models/Environment/modified/Metro_Pit/St_01.res" id="38_ouvpk"]
 [ext_resource type="Texture2D" uid="uid://dsmb2gvvusgx0" path="res://assets/models/Environment/modified/metro pillar_tile_tile.jpg" id="39_yngx8"]
 [ext_resource type="Texture2D" uid="uid://037axmwocwrw" path="res://assets/models/Environment/modified/metro pillar_ConcreteBare.png" id="40_jtgml"]
@@ -390,6 +394,28 @@ shadow_mesh = SubResource("ArrayMesh_2chxd")
 [sub_resource type="BoxShape3D" id="BoxShape3D_2s68e"]
 size = Vector3(6.57971, 152.032, 75.4922)
 
+[sub_resource type="Animation" id="Animation_q62um"]
+resource_name = "Fall"
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"values": []
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nivj7"]
+_data = {
+&"Fall": SubResource("Animation_q62um")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8ou78"]
+size = Vector3(5.09839, 3.16602, 67.4854)
+
 [sub_resource type="QuadMesh" id="QuadMesh_pktld"]
 size = Vector2(5, 7)
 
@@ -645,15 +671,39 @@ transform = Transform3D(0, 0, -0.666506, 0, 0.756441, 0, -0.664227, 0, 0, 18.768
 mesh = SubResource("ArrayMesh_7nbq8")
 skeleton = NodePath("")
 
-[node name="Pit" type="Area3D" parent="Enviroment"]
+[node name="Pit" type="Node3D" parent="Enviroment"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.2191, 0, -18.5101)
+
+[node name="Pit" type="Area3D" parent="Enviroment/Pit"]
 script = ExtResource("28_r7iov")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Enviroment/Pit"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Enviroment/Pit/Pit"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0504074, -77.1048, -8.80203)
 shape = SubResource("BoxShape3D_2s68e")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Enviroment/Pit"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Enviroment/Pit/Pit"]
+stream = ExtResource("30_sj0p0")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Enviroment/Pit/Pit"]
+libraries = {
+&"": SubResource("AnimationLibrary_nivj7")
+}
+
+[node name="Anomaly" type="Node3D" parent="Enviroment/Pit"]
+script = ExtResource("31_q62um")
+metadata/_custom_type_script = "uid://dp6ov6sut21io"
+
+[node name="Interactable" type="Area3D" parent="Enviroment/Pit" node_paths=PackedStringArray("interact_audio_player")]
+script = ExtResource("32_nivj7")
+interact_audio_player = NodePath("../../../AudioStreamPlayer3D")
+metadata/_custom_type_script = "uid://dht8mbnpa5y0y"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Enviroment/Pit/Interactable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.778687, 1.08301, -12.4053)
+shape = SubResource("BoxShape3D_8ou78")
+
+[node name="InteractableInputDisplay" parent="Enviroment/Pit/Interactable/CollisionShape3D" instance=ExtResource("33_xt5gq")]
+transform = Transform3D(2.46363, 0, 0, 0, 2.46363, 0, 0, 0, 2.46363, 2.01337, 1.28563, -12.0676)
 
 [node name="InNode" type="Node3D" parent="." groups=["InNode"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.2498, 5.53115, -80.1987)
@@ -677,11 +727,14 @@ surface_material_override/0 = SubResource("StandardMaterial3D_vf1by")
 [node name="Door" parent="." instance=ExtResource("48_20doo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.71484, -0.957562, 16.8889)
 
-[node name="Anomaly Get Audio Player" type="AudioStreamPlayer3D" parent="."]
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6784, -151.215, -30.4214)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6784, -151.215, -48.332)
 stream = ExtResource("49_soibn")
 attenuation_model = 3
 
 [node name="PlayerSpawn" type="Node3D" parent="." groups=["PlayerSpawn"]]
 transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 21.8599, 5.80914, -77.1457)
+
+[connection signal="on_hover_state_set" from="Enviroment/Pit/Interactable" to="Enviroment/Pit/Interactable/CollisionShape3D/InteractableInputDisplay" method="set_hovered_state"]
+[connection signal="on_interacted" from="Enviroment/Pit/Interactable" to="Enviroment/Pit/Anomaly" method="collect_anomaly"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dtlfi8x26iwqy"]
 
 [ext_resource type="Script" uid="uid://br3gwm2auh34e" path="res://source/game/levels/Props/Anomalies/state_anomaly.gd" id="1_wyoao"]
-[ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/models/Environment/model_scenes/Metro_PSX_split/poster_01.tscn" id="3_fr4vs"]
+[ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_01.tscn" id="3_fr4vs"]
 [ext_resource type="Script" uid="uid://dht8mbnpa5y0y" path="res://source/game/levels/Props/Interactable.gd" id="3_jbuau"]
 [ext_resource type="PackedScene" uid="uid://cwoxfa1buwbuf" path="res://source/game/levels/Props/interactable_input_display.tscn" id="4_o2p8b"]
 

@@ -2,7 +2,7 @@ extends Node
 signal menu_toggled
 
 func _ready():
-	set_mouse_lock(true)
+	set_mouse_lock(false)
 	
 	menu_toggled.connect(
 		func():
