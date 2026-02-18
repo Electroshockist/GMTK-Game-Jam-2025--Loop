@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bjw0ehsvtney3"]
 
 [ext_resource type="PackedScene" uid="uid://7r8cxvnokr8c" path="res://source/game/levels/Props/door.tscn" id="1_c3rbd"]
-[ext_resource type="PackedScene" uid="uid://di4tygw2fhbwb" path="res://assets/model/models/Environment/Sewer/Sewer_split/door_metal.tscn" id="2_hrqal"]
+[ext_resource type="PackedScene" uid="uid://di4tygw2fhbwb" path="res://assets/models/Environment/Sewer/Sewer_split/door_metal.tscn" id="2_hrqal"]
 
 [node name="Metal Door" instance=ExtResource("1_c3rbd")]
 

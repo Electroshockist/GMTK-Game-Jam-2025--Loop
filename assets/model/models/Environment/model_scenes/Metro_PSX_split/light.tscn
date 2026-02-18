@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=4 uid="uid://yx5g6gub48g"]
 
-[ext_resource type="Texture2D" uid="uid://c04ly7byc7sd8" path="res://assets/model/models/Environment/textures/Metro_PSX/light.png" id="1_3d2xf"]
+[ext_resource type="Texture2D" uid="uid://c04ly7byc7sd8" path="res://assets/models/Environment/Metro_PSX/materials/textures/light.png" id="1_3d2xf"]
 [ext_resource type="Shader" uid="uid://h8trqbl805pv" path="res://assets/shaders/psx_shader.gdshader" id="1_a53ik"]
-[ext_resource type="Texture2D" uid="uid://cbfxtvb82we4w" path="res://assets/model/models/Environment/textures/Metro_PSX/light_Emissor.png" id="2_4183m"]
+[ext_resource type="Texture2D" uid="uid://cbfxtvb82we4w" path="res://assets/models/Environment/Metro_PSX/materials/textures/light_Emissor.png" id="2_4183m"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_a53ik"]
 render_priority = 0

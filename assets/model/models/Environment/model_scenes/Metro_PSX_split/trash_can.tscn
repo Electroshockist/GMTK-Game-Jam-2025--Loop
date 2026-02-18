@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=4 uid="uid://d26nnggxojrx4"]
 
 [ext_resource type="Shader" uid="uid://h8trqbl805pv" path="res://assets/shaders/psx_shader.gdshader" id="1_ja3ny"]
-[ext_resource type="Texture2D" uid="uid://cwhobp0uopy4s" path="res://assets/model/models/Environment/textures/Metro_PSX/trash_can.png" id="1_s0s2u"]
+[ext_resource type="Texture2D" uid="uid://cwhobp0uopy4s" path="res://assets/models/Environment/Metro_PSX/materials/textures/trash_can.png" id="1_s0s2u"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_r8u0w"]
 render_priority = 0

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=4 uid="uid://cfhx033y1bq1n"]
 
-[ext_resource type="Texture2D" uid="uid://ct828uirteev6" path="res://assets/model/models/Environment/textures/Metro_PSX/Posters.png" id="1_k3ls3"]
+[ext_resource type="Texture2D" uid="uid://ct828uirteev6" path="res://assets/models/Environment/Metro_PSX/materials/textures/Posters.png" id="1_k3ls3"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3cyf1"]
 resource_name = "Posters"

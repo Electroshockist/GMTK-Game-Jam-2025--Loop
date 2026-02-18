@@ -1,47 +1,40 @@
-[gd_scene load_steps=151 format=4 uid="uid://upfh8uyt1rip"]
+[gd_scene load_steps=131 format=4 uid="uid://upfh8uyt1rip"]
 
 [ext_resource type="Script" uid="uid://bs56ayrlo47wf" path="res://source/game/levels/level.gd" id="1_pktld"]
 [ext_resource type="Environment" uid="uid://pq7vqvfywr8t" path="res://source/game/levels/level_env.tres" id="2_pktld"]
-[ext_resource type="PackedScene" uid="uid://cvy0ew3tgc55k" path="res://assets/model/models/Environment/Sewer/Sewer_split/serwers_012.tscn" id="3_nk765"]
+[ext_resource type="PackedScene" uid="uid://cvy0ew3tgc55k" path="res://assets/models/Environment/Sewer/Sewer_split/serwers_012.tscn" id="3_nk765"]
 [ext_resource type="Script" uid="uid://cts7ja6veofqq" path="res://source/game/levels/level_stitching/level_trigger.gd" id="3_pktld"]
-[ext_resource type="PackedScene" uid="uid://daantvv3eeq2c" path="res://assets/model/models/Environment/Sewer/Sewer_split/serwers_p_1_010.tscn" id="4_kflkk"]
-[ext_resource type="PackedScene" uid="uid://cx6xdhceq0q7x" path="res://assets/model/models/Environment/Sewer/Sewer_split/serwers_013.tscn" id="5_udoio"]
-[ext_resource type="PackedScene" uid="uid://mekhtpuqcaok" path="res://assets/model/models/Environment/Sewer/Sewer_split/serwers_007.tscn" id="6_q5lju"]
-[ext_resource type="PackedScene" uid="uid://b6n28aiqja6it" path="res://assets/model/models/Environment/Sewer/Sewer_split/serwers_003.tscn" id="7_s7o62"]
-[ext_resource type="PackedScene" uid="uid://gwlueupaotra" path="res://assets/model/models/Environment/Sewer/Sewer_split/serwers.tscn" id="8_e5ibc"]
-[ext_resource type="PackedScene" uid="uid://cl2wj13fhfm3g" path="res://assets/model/models/Environment/Sewer/Sewer_split/serwers_001.tscn" id="9_aob5m"]
-[ext_resource type="Texture2D" uid="uid://c68emgpql6b4o" path="res://assets/model/models/Environment/textures/Metro_PSX/Tiles.png" id="10_ftakg"]
-[ext_resource type="Texture2D" uid="uid://d08b4ik4fuuqy" path="res://assets/model/models/Environment/textures/Metro_PSX/TactilePaving.png" id="12_8u6pu"]
-[ext_resource type="Texture2D" uid="uid://dyyk4ga8smi7m" path="res://assets/model/models/Environment/textures/Metro_PSX/road_rails.jpg" id="12_wdlmb"]
-[ext_resource type="Texture2D" uid="uid://uov44fo4jrrd" path="res://assets/model/models/Environment/textures/Metro_PSX/tile_tile.jpg" id="13_djmia"]
-[ext_resource type="Texture2D" uid="uid://dkp3ibarnnqp0" path="res://assets/model/models/Environment/textures/Metro_PSX/ConcreteBare.png" id="15_bmq2h"]
-[ext_resource type="Texture2D" uid="uid://li3nxaeyh055" path="res://assets/model/models/Environment/textures/Metro_PSX/metal_02.png" id="15_pktld"]
-[ext_resource type="Texture2D" uid="uid://ces8lxljktdjt" path="res://assets/model/models/Environment/modified/sewer connection_Tiles.png" id="16_nunmy"]
-[ext_resource type="Texture2D" uid="uid://46e77brrbvo7" path="res://assets/model/models/Environment/modified/sewer connection_TactilePaving.png" id="17_44jwh"]
-[ext_resource type="Texture2D" uid="uid://b8om40wnddghr" path="res://assets/model/models/Environment/modified/sewer connection_road_rails.jpg" id="18_g7ymx"]
-[ext_resource type="Texture2D" uid="uid://k1v4cpf6we0l" path="res://assets/model/models/Environment/modified/sewer connection_tile_tile.jpg" id="19_v132w"]
-[ext_resource type="Texture2D" uid="uid://b3y1bufxoejim" path="res://assets/model/models/Environment/modified/sewer connection_metal_02.png" id="20_tblkg"]
-[ext_resource type="Texture2D" uid="uid://c4apqkh4bwmgy" path="res://assets/model/models/Environment/modified/sewer connection_ConcreteBare.png" id="21_0wlvc"]
-[ext_resource type="Texture2D" uid="uid://c674kybia1pgu" path="res://assets/model/models/Environment/modified/sewer connection_concrete_base.png" id="22_4ggto"]
-[ext_resource type="Texture2D" uid="uid://d1n556ab3t4xc" path="res://assets/model/models/Environment/modified/sewer connection_brick_modern_01.jpg" id="23_6e2pw"]
-[ext_resource type="Texture2D" uid="uid://vm2iqc1p7sef" path="res://assets/model/models/Environment/modified/metro stairs_Door_01.jpg" id="24_b6ei0"]
-[ext_resource type="Texture2D" uid="uid://b2ixijxkbntd2" path="res://assets/model/models/Environment/modified/metro stairs_tile_tile.jpg" id="25_1i31a"]
-[ext_resource type="Texture2D" uid="uid://cdlkvhw8clr1w" path="res://assets/model/models/Environment/modified/metro stairs_metal_02.png" id="26_qyblk"]
-[ext_resource type="Texture2D" uid="uid://blg0u1yu78vq2" path="res://assets/model/models/Environment/modified/metro stairs_Tiles.png" id="27_mfbnl"]
-[ext_resource type="Texture2D" uid="uid://bo0s0kulhkqva" path="res://assets/model/models/Environment/modified/metro stairs_TactilePaving.png" id="28_vxhpt"]
-[ext_resource type="Texture2D" uid="uid://cc4ghklm4ahi1" path="res://assets/model/models/Environment/modified/metro stairs_road_rails.jpg" id="29_psgvm"]
-[ext_resource type="Texture2D" uid="uid://bjbr6yk33ru5q" path="res://assets/model/models/Environment/modified/metro stairs_ConcreteBare.png" id="30_fg8sy"]
-[ext_resource type="Texture2D" uid="uid://q3cqbfgf5stx" path="res://assets/model/models/Environment/modified/metro stairs_brick_modern.jpg" id="31_7vb0q"]
-[ext_resource type="Texture2D" uid="uid://bo5ua055cb1rk" path="res://assets/model/models/Environment/modified/metro pillar_Tiles.png" id="32_lrjd1"]
-[ext_resource type="Texture2D" uid="uid://bx4iuh5ho6wd3" path="res://assets/model/models/Environment/modified/metro pillar_TactilePaving.png" id="33_3hg3w"]
-[ext_resource type="Texture2D" uid="uid://clc7a6hh1841l" path="res://assets/model/models/Environment/modified/metro pillar_road_rails.jpg" id="34_vtyrq"]
-[ext_resource type="Texture2D" uid="uid://1rn2884sybr" path="res://assets/model/models/Environment/modified/metro pillar_tile_tile.jpg" id="35_lgm8i"]
-[ext_resource type="Texture2D" uid="uid://c5du3namakr54" path="res://assets/model/models/Environment/modified/metro pillar_metal_02.png" id="36_0ymnq"]
-[ext_resource type="Texture2D" uid="uid://peheuq4363q6" path="res://assets/model/models/Environment/modified/metro pillar_ConcreteBare.png" id="37_l3eb6"]
+[ext_resource type="PackedScene" uid="uid://daantvv3eeq2c" path="res://assets/models/Environment/Sewer/Sewer_split/serwers_p_1_010.tscn" id="4_kflkk"]
+[ext_resource type="PackedScene" uid="uid://cx6xdhceq0q7x" path="res://assets/models/Environment/Sewer/Sewer_split/serwers_013.tscn" id="5_udoio"]
+[ext_resource type="PackedScene" uid="uid://mekhtpuqcaok" path="res://assets/models/Environment/Sewer/Sewer_split/serwers_007.tscn" id="6_q5lju"]
+[ext_resource type="PackedScene" uid="uid://b6n28aiqja6it" path="res://assets/models/Environment/Sewer/Sewer_split/serwers_003.tscn" id="7_s7o62"]
+[ext_resource type="PackedScene" uid="uid://gwlueupaotra" path="res://assets/models/Environment/Sewer/Sewer_split/serwers.tscn" id="8_e5ibc"]
+[ext_resource type="PackedScene" uid="uid://cl2wj13fhfm3g" path="res://assets/models/Environment/Sewer/Sewer_split/serwers_001.tscn" id="9_aob5m"]
+[ext_resource type="Texture2D" uid="uid://l31fxq55vfko" path="res://assets/models/Environment/Metro_PSX/materials/textures/ConcreteBare.png" id="15_bmq2h"]
+[ext_resource type="Texture2D" uid="uid://bh4xgswc5pelg" path="res://assets/models/Environment/Metro_PSX/materials/textures/metal_02.png" id="15_pktld"]
+[ext_resource type="Texture2D" uid="uid://fcj2tvwxwh70" path="res://assets/models/Environment/modified/sewer connection_TactilePaving.png" id="17_44jwh"]
+[ext_resource type="Texture2D" uid="uid://q2uep751lt5k" path="res://assets/models/Environment/modified/sewer connection_road_rails.jpg" id="18_g7ymx"]
+[ext_resource type="Texture2D" uid="uid://36b4xv4ecbpn" path="res://assets/models/Environment/modified/sewer connection_metal_02.png" id="20_tblkg"]
+[ext_resource type="Texture2D" uid="uid://b8jy2yamotscm" path="res://assets/models/Environment/modified/sewer connection_ConcreteBare.png" id="21_0wlvc"]
+[ext_resource type="Texture2D" uid="uid://dmgjhftuh3yyy" path="res://assets/models/Environment/modified/sewer connection_concrete_base.png" id="22_4ggto"]
+[ext_resource type="Texture2D" uid="uid://4sm6g2ka4o6j" path="res://assets/models/Environment/modified/sewer connection_brick_modern_01.jpg" id="23_6e2pw"]
+[ext_resource type="Material" uid="uid://dvx4cl62uwtvp" path="res://assets/models/Environment/Metro_PSX/materials/Tiles.tres" id="23_bau3y"]
+[ext_resource type="Material" uid="uid://df8gefbdmblpw" path="res://assets/models/Environment/Metro_PSX/materials/Door_01.tres" id="23_x6vlt"]
+[ext_resource type="Material" uid="uid://caaryh10tskl1" path="res://assets/models/Environment/Metro_PSX/materials/TactilePaving.tres" id="24_a81kf"]
+[ext_resource type="Texture2D" uid="uid://buqdidu8ydldf" path="res://assets/models/Environment/Metro_PSX/materials/textures/tile_tile.jpg" id="25_1i31a"]
+[ext_resource type="Material" uid="uid://1e6dbgomjyqt" path="res://assets/models/Environment/Metro_PSX/materials/Glass.tres" id="25_ti8gl"]
+[ext_resource type="Material" uid="uid://c6n3wqbj8nlqj" path="res://assets/models/Environment/Metro_PSX/materials/road_rails.tres" id="25_x6vlt"]
+[ext_resource type="Material" uid="uid://b0r4bnveh2c12" path="res://assets/models/Environment/Metro_PSX/materials/tile_tile.tres" id="26_ti8gl"]
+[ext_resource type="Material" uid="uid://c07hlj0bxt8e4" path="res://assets/models/Environment/Metro_PSX/materials/metal_02.tres" id="27_g4jf1"]
+[ext_resource type="Material" uid="uid://bswqapa42tbt" path="res://assets/models/Environment/Metro_PSX/materials/ConcreteBare.tres" id="28_kihn2"]
+[ext_resource type="Texture2D" uid="uid://ctt1m0v4de5vk" path="res://assets/models/Environment/Metro_PSX/materials/textures/road_rails.jpg" id="29_psgvm"]
+[ext_resource type="Material" uid="uid://d73eycybvdkj" path="res://assets/models/Environment/Metro_PSX/materials/brick_modern.tres" id="31_ti8gl"]
+[ext_resource type="Texture2D" uid="uid://dfobm3yf6f3w" path="res://assets/models/Environment/Metro_PSX/materials/textures/Tiles.png" id="32_lrjd1"]
+[ext_resource type="Texture2D" uid="uid://5jtrt4q6img5" path="res://assets/models/Environment/Metro_PSX/materials/textures/TactilePaving.png" id="33_3hg3w"]
 [ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_01.tscn" id="38_krytd"]
 [ext_resource type="PackedScene" uid="uid://dit2phk8j4yj8" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_02.tscn" id="39_t64nj"]
 [ext_resource type="PackedScene" uid="uid://c4pjrhejiegb6" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_03.tscn" id="40_5mv4a"]
-[ext_resource type="Texture2D" uid="uid://dg6a22ion61lg" path="res://assets/model/models/Environment/textures/Sewer/Metal.jpg" id="40_k4xuy"]
+[ext_resource type="Texture2D" uid="uid://dg6a22ion61lg" path="res://assets/models/Environment/textures/Sewer/Metal.jpg" id="40_k4xuy"]
 [ext_resource type="PackedScene" uid="uid://dxgqniedvllnp" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_04.tscn" id="41_7sbmd"]
 [ext_resource type="PackedScene" uid="uid://db1w44w0gdaly" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_05.tscn" id="42_d2t6b"]
 [ext_resource type="PackedScene" uid="uid://dl0itebvpe5fy" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_06.tscn" id="43_oapd1"]
@@ -51,12 +44,12 @@
 [ext_resource type="PackedScene" uid="uid://3g4l8qqfd515" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/vending_machine.tscn" id="47_o4e1k"]
 [ext_resource type="PackedScene" uid="uid://daq2ktcnqj41c" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/chair.tscn" id="48_qy58j"]
 [ext_resource type="PackedScene" uid="uid://yx5g6gub48g" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/light.tscn" id="49_1ofoh"]
-[ext_resource type="PackedScene" uid="uid://di7pqbr2tlfqr" path="res://assets/model/models/Environment/Sewer/Sewer_split/debris.tscn" id="50_0ttal"]
-[ext_resource type="PackedScene" uid="uid://c5ouyrekxlh6e" path="res://assets/model/models/Environment/Sewer/Sewer_split/debris_01.tscn" id="51_u0jr1"]
-[ext_resource type="PackedScene" uid="uid://b6bwj6e06h10p" path="res://assets/model/models/Environment/Sewer/Sewer_split/debris_02.tscn" id="52_3gssm"]
-[ext_resource type="PackedScene" uid="uid://bayjcxtfwaphs" path="res://assets/model/models/Environment/Sewer/Sewer_split/debris_03.tscn" id="53_jhfv4"]
-[ext_resource type="PackedScene" uid="uid://dotut1d78ligr" path="res://assets/model/models/Environment/Sewer/Sewer_split/debris_04.tscn" id="54_b7vxu"]
-[ext_resource type="PackedScene" uid="uid://cnop7bbq2fabs" path="res://assets/model/models/Environment/Sewer/Sewer_split/debris_05.tscn" id="55_wrc8c"]
+[ext_resource type="PackedScene" uid="uid://di7pqbr2tlfqr" path="res://assets/models/Environment/Sewer/Sewer_split/debris.tscn" id="50_0ttal"]
+[ext_resource type="PackedScene" uid="uid://c5ouyrekxlh6e" path="res://assets/models/Environment/Sewer/Sewer_split/debris_01.tscn" id="51_u0jr1"]
+[ext_resource type="PackedScene" uid="uid://b6bwj6e06h10p" path="res://assets/models/Environment/Sewer/Sewer_split/debris_02.tscn" id="52_3gssm"]
+[ext_resource type="PackedScene" uid="uid://bayjcxtfwaphs" path="res://assets/models/Environment/Sewer/Sewer_split/debris_03.tscn" id="53_jhfv4"]
+[ext_resource type="PackedScene" uid="uid://dotut1d78ligr" path="res://assets/models/Environment/Sewer/Sewer_split/debris_04.tscn" id="54_b7vxu"]
+[ext_resource type="PackedScene" uid="uid://cnop7bbq2fabs" path="res://assets/models/Environment/Sewer/Sewer_split/debris_05.tscn" id="55_wrc8c"]
 [ext_resource type="Script" uid="uid://b5hjojq8wyiqd" path="res://source/game/levels/level_stitching/out_node.gd" id="57_vf1by"]
 [ext_resource type="PackedScene" uid="uid://bjw0ehsvtney3" path="res://source/game/levels/Props/door_metal.tscn" id="58_w6x52"]
 [ext_resource type="AudioStream" uid="uid://bhnam8ajx6n8o" path="res://assets/sounds/ding or dong.mp3" id="59_vf1by"]
@@ -91,7 +84,7 @@ backface_collision = true
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bpmie"]
 resource_name = "Tiles"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("10_ftakg")
+albedo_texture = ExtResource("32_lrjd1")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -99,7 +92,7 @@ emission_energy_multiplier = 0.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tjf7m"]
 resource_name = "TactilePaving"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("12_8u6pu")
+albedo_texture = ExtResource("33_3hg3w")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -107,7 +100,7 @@ emission_energy_multiplier = 0.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hxnjd"]
 resource_name = "road_rails"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("12_wdlmb")
+albedo_texture = ExtResource("29_psgvm")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -115,7 +108,7 @@ emission_energy_multiplier = 0.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5hjm2"]
 resource_name = "tile_tile"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("13_djmia")
+albedo_texture = ExtResource("25_1i31a")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -283,7 +276,7 @@ shadow_mesh = SubResource("ArrayMesh_8u6pu")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t8c41"]
 resource_name = "tile_tile"
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("13_djmia")
+albedo_texture = ExtResource("25_1i31a")
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.0
@@ -354,12 +347,12 @@ shadow_mesh = SubResource("ArrayMesh_pktld")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hxjrm"]
 resource_name = "Tiles"
-albedo_texture = ExtResource("10_ftakg")
+albedo_texture = ExtResource("32_lrjd1")
 texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_abu2g"]
 resource_name = "road_rails"
-albedo_texture = ExtResource("12_wdlmb")
+albedo_texture = ExtResource("29_psgvm")
 texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wjlas"]
@@ -449,7 +442,7 @@ shadow_mesh = SubResource("ArrayMesh_vf1by")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mj3kx"]
 resource_name = "Tiles"
-albedo_texture = ExtResource("16_nunmy")
+albedo_texture = ExtResource("32_lrjd1")
 texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pmptu"]
@@ -464,7 +457,7 @@ texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bvnm7"]
 resource_name = "tile_tile"
-albedo_texture = ExtResource("19_v132w")
+albedo_texture = ExtResource("25_1i31a")
 texture_filter = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2jcme"]
@@ -673,12 +666,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_w6x52")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3dfwu"]
-resource_name = "Door_01"
-cull_mode = 2
-albedo_texture = ExtResource("24_b6ei0")
-texture_filter = 2
-
 [sub_resource type="ArrayMesh" id="ArrayMesh_k4xuy"]
 _surfaces = [{
 "aabb": AABB(6.48499e-05, -2.35267, -0.208138, 2, 4.71081, 0.418409),
@@ -701,7 +688,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 144,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAaABsAGgAcABsAGgAdABwAGQAdABoAGQAeAB0AHwAgACEAIAAiACEAIAAjACIAJAAlACYAJQAnACYAJQAoACcAKQAqACsAKgAsACsAKgAtACwALgAvADAALwAuADEALwAxADIAMwA0ADUANAA2ADUANAA3ADYANQA2ADgANQA4ADkAMwA1ADkAMwA6ADsAOgA8ADsAOgA9ADwAMwA+AD8APgBAAD8APgBBAEAAMwBCAEMAQgBEAEMAQgBFAEQARgBHAEgARwBGAEkARwBJAEoA"),
-"material": SubResource("StandardMaterial3D_3dfwu"),
+"material": ExtResource("23_x6vlt"),
 "name": "Door_01",
 "primitive": 3,
 "uv_scale": Vector4(2, 1.98788, 0, 0),
@@ -749,11 +736,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_4cvhl")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k4a2c"]
-resource_name = "metal_02"
-albedo_texture = ExtResource("26_qyblk")
-texture_filter = 2
-
 [sub_resource type="ArrayMesh" id="ArrayMesh_ltqh3"]
 _surfaces = [{
 "aabb": AABB(-0.162649, -1.79187, -2.83625, 0.330667, 2.73449, 5.57911),
@@ -776,7 +758,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 348,
 "index_data": PackedByteArray("AAABAAIAAAADAAEAAgAEAAAAAgAFAAQABQAGAAQABQAHAAYACAAJAAoACAALAAkACgAMAAgACgANAAwADQAOAAwADQAPAA4AEAARABIAEAATABEAEgAUABAAEwAVABEAEgAWABQAEwAXABUAFgAVABcAFgAXABQAGAAZABoAGAAbABkAGgAcABgAGwAdABkAGgAeABwAGwAfAB0AHwAeAB0AHwAcAB4AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUAOAA5ADoAOAA7ADkAPAA9AD4APAA/AD0AQABBAEIAQABDAEEARABFAEYARABHAEUASABJAEoASABLAEkATABNAE4ATABPAE0AUABRAFIAUABTAFEAVABVAFYAVABXAFUAWABZAFoAWABbAFkAXABdAF4AXABfAF0AYABhAGIAYABjAGEAZABlAGYAZABnAGUAaABpAGoAaABrAGkAbABtAG4AbABvAG0AcABxAHIAcABzAHEAdAB1AHYAdAB3AHUAeAB5AHoAeAB7AHkAfAB9AH4AfAB/AH0AgACBAIIAgACDAIEAhACFAIYAhACHAIUAiACJAIoAiACLAIkAjACNAI4AjACPAI0AkACRAJIAkACTAJEAlACVAJYAlACXAJUAmACZAJoAmACbAJkAnACdAJ4AnACfAJ0AoAChAKIAoACjAKEApAClAKYApACnAKUAqACpAKoAqACrAKkArACtAK4ArACvAK0AsACxALIAsACzALEAtAC1ALYAtAC3ALUAuAC5ALoAuAC7ALkAvAC9AL4AvAC/AL0AwADBAMIAwADDAMEAxADFAMYAxADHAMUAyADJAMoAyADLAMkAzADNAM4AzADPAM0A"),
-"material": SubResource("StandardMaterial3D_k4a2c"),
+"material": ExtResource("27_g4jf1"),
 "name": "metal_02",
 "primitive": 3,
 "uv_scale": Vector4(3.31591, 3.08729, 0, 0),
@@ -785,12 +767,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ltqh3")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_22ols"]
-resource_name = "Glass"
-cull_mode = 2
-albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
-roughness = 0.015625
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_6qtdd"]
 _surfaces = [{
@@ -814,7 +790,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 168,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABwAFAAQABQAHAAgABQAIAAkACQAIAAoABQAJAAsADAANAA4ADAAPAA0AEAARABIAEwARABAAEQATABQAEQAUABUAFQAUABYAEQAVABcAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANwA1ADQANQA3ADgANQA4ADkAOQA4ADoANQA5ADsAPAA9AD4APAA/AD0AQABBAEIAQwBBAEAAQQBDAEQAQQBEAEUARQBEAEYAQQBFAEcASABJAEoASABLAEkATABNAE4ATABPAE0AUABRAFIAUABTAFEAVABVAFYAVABXAFUAWABZAFoAWABbAFkAXABdAF4AXABfAF0A"),
-"material": SubResource("StandardMaterial3D_22ols"),
+"material": ExtResource("25_ti8gl"),
 "name": "Glass",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -823,26 +799,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_6qtdd")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v4h8e"]
-resource_name = "Tiles"
-albedo_texture = ExtResource("27_mfbnl")
-texture_filter = 2
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ji16"]
-resource_name = "TactilePaving"
-albedo_texture = ExtResource("28_vxhpt")
-texture_filter = 2
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i5iqm"]
-resource_name = "road_rails"
-albedo_texture = ExtResource("29_psgvm")
-texture_filter = 2
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_63ydh"]
-resource_name = "ConcreteBare"
-albedo_texture = ExtResource("30_fg8sy")
-texture_filter = 2
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_3fvpl"]
 _surfaces = [{
@@ -917,7 +873,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 606,
 "index_data": PackedByteArray("AAABAAIAAgABAAMAAAACAAQAAgADAAUABQADAAYABQAGAAcACAAAAAQACAAEAAkACgAIAAkACgAJAAsADAAKAAsADAALAA0ADgAMAA0ADgANAA8AEAARABIAEAASABMAFAAQABMAFAATABUAFgAUABUAFgAVABcAGAAWABcAGAAXABkAGgAYABkAGgAZABsAGgAbABwAGgAcAB0AHQAcAB4AHQAeAB8AIAAhACIAIwAkACUAIwAmACQAJwAoACkAKgAnACkAKgArACcALAAnACsALAArAC0ALgAsAC0ALgAtAC8AMAAuAC8AMAAvADEAMgAwADEAMgAxADMAKgA0ADUAKgA1ADYANgA1ADcANgA3ADgAOQA6ADsAPAA6ADkAPAA9ADoAOQA7AD4APgA7AD8APgA/AEAAQAA/AEEAQABBAEIAQwBEADwAQwBFAEQARgBFAEMARgBHAEUASABHAEYASABJAEcASgBLAEwATQBLAEoASgBMAE4ATQBPAEsATgBMAFAAUQBPAE0ATgBQAFIAUgBQAFMAUgBTAFQAUQBVAE8AVgBVAFEAVgBXAFUAWABXAFYAWABZAFcAWgBbAFwAWgBcAF0AXgBfAGAAXgBgAGEAYgBjAGQAYgBkAGUAZgBnAGgAZgBoAGkAagBrAGwAagBsAG0AbgBvAHAAbgBwAHEAcgBzAHQAcgB0AHUAdgB3AHgAdgB4AHkAegB7AHwAegB8AH0AfgB/AIAAfgCAAIEAggCDAIQAggCEAIUAhgCHAIgAhgCIAIkAigCLAIwAigCMAI0AjgCPAJAAjgCQAJEAkgCTAJQAkgCUAJUAlgCXAJgAlgCYAJkAmgCbAJwAmgCcAJ0AngCfAKAAngCgAKEAogCjAKQAogCkAKUApgCnAKgApgCoAKkAqgCrAKwAqgCsAK0ArgCvALAArgCwALEAsgCzALQAsgC0ALUAtgC3ALgAtgC4ALkAugC7ALwAugC8AL0AvgC/AMAAvgDAAMEAwgDDAMQAwgDEAMUAxgDHAMgAxgDIAMkAygDLAMwAygDMAM0AzgDPANAAzgDQANEA0gDTANQA0gDUANUA1gDXANgA1gDYANkA2gDbANwA2gDcAN0A3gDfAOAA3gDgAOEA4gDjAOQA4gDkAOUA5gDnAOgA5gDoAOkA6gDrAOwA6gDsAO0A7gDvAPAA7gDwAPEA8gDzAPQA8gD0APUA9gD3APgA9gD4APkA+gD7APwA+gD8AP0A/gD/AAAB/gAAAQEBAgEDAQQBAgEEAQUBBgEHAQgBBgEIAQkBCgELAQwBCgEMAQ0BDgEPARABDgEQAREBEgETARQBEgEUARUBFgEXARgBFgEYARkBGgEbARwBGgEcAR0BHgEfASABHgEgASEBIgEjASQBIgEkASUBJgEnASgBJgEoASkBKgErASwBKgEsAS0BLgEvATABLgEwATEBMgEzATQBMgE0ATUBNgE3ATgBNgE4ATkBOgE7ATwBOgE8AT0BPgE/AUABPgFAAUEBQgFDAUQBQgFEAUUBRgFHAUgBRgFIAUkBRgFJAUoBRgFKAUsBTAFNAU4BTAFPAU0BUAFRAVIBUAFTAVEBUAFUAVMBUAFVAVQB"),
-"material": SubResource("StandardMaterial3D_v4h8e"),
+"material": ExtResource("23_bau3y"),
 "name": "Tiles",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -929,7 +885,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 42,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAABAAAABAAFAAEABgAFAAQABgAHAAUACAAHAAYACAAJAAcACgAJAAgACgALAAkACwAKAAwACwAMAA0ADQAMAA4ADQAOAA8A"),
-"material": SubResource("StandardMaterial3D_1ji16"),
+"material": ExtResource("24_a81kf"),
 "name": "TactilePaving",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -941,7 +897,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 42,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAABAAAABAAFAAEABgAFAAQABgAHAAUACAAHAAYACAAJAAcACgALAAgACgAMAAsADAAKAA0ADAANAA4ADgANAA8ADgAPABAA"),
-"material": SubResource("StandardMaterial3D_i5iqm"),
+"material": ExtResource("25_x6vlt"),
 "name": "road_rails",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -953,7 +909,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 237,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAGAAcACAAFAAQACAAJAAUACgAIAAQACgAEAAsACwAEAAcACwAHAAwADQAOAAsADQALAA8ADwALAAwADwAMABAAEQAPABAAEQAQABIAEwAPABEAEwAUAA8AFQATABEAFQARABYAFgARABIAFgASABcAGAAZABoAGAAaABsAHAAdAB4AHAAeAB8AIAAhACIAIAAiACMAJAAgACMAJAAjACUAIgAmACMAIgAnACYAJgAnACgAJgAoACkAKgAmACkAKgApACsALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA2ADcAOAA5ADoAOAA6ADsAPAA9AD4APAA/AD0AQAA8AD4AQAA+AEEAQgBDAEQAQgBFAEMARgBCAEQARgBEAEcASABJAEoASABKAEsATABIAEsATABLAE0ATgBPAFAATgBQAFEAUgBTAFQAUgBVAFMAVgBXAFgAVgBZAFcAWgBbAFwAWgBdAFsAWgBeAF0AXwBaAFwAXwBeAFoAXwBcAGAAXgBfAGEAYgBjAGQAYgBlAGMAZgBnAGgAZgBpAGcAagBrAGwAagBtAGsAbgBvAHAAbgBxAG8AcgBzAHQAcgB1AHMA"),
-"material": SubResource("StandardMaterial3D_y2qyd"),
+"material": ExtResource("26_ti8gl"),
 "name": "tile_tile",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -965,7 +921,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 108,
 "index_data": PackedByteArray("AAABAAIAAAACAAMABAAAAAMABAADAAUABgAHAAAABgAIAAcACQAKAAYACQALAAoADAAJAAYADAAGAA0ADgAMAA0ADgANAA8AEAARAAkAEAASABEAEwAQABQAEwAVABAAFQAWABAAFQAXABYAFwAVABgAFwAYABkAGQAYABoAGQAaABsAGAAcAB0AGAAdAB4AHwAgACEAHwAhACIAIwAkACUAIwAlACYAJwAoACkAJwApACoAKwAsAC0AKwAtAC4ALAArAC8ALAAvADAAMAAvADEAMAAxADIA"),
-"material": SubResource("StandardMaterial3D_k4a2c"),
+"material": ExtResource("27_g4jf1"),
 "name": "metal_02",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -977,7 +933,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 546,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUABwAIAAUABwAJAAgACgAJAAcACgAHAAsADAAJAAoADAANAAkADgAPABAADgARAA8AEgAOABAAEQATAA8AEgAQABQAEQAVABMAFgASABQAEwAVABcAFgAUABgAGQAWABgAGQAYABoAEwAXABsAGwAXABwAGwAcAB0AHgAfACAAHwAhACAAHgAgACIAIwAeACIAIwAiACQAHwAlACEAJQAmACEAJQAnACYAJwAoACYAJwApACgAKgArACwAKgAtACsALgAqACwALQAvACsALgAsADAALQAxAC8AMgAuADAALwAxADMAMgAwADQANQAyADQANQA0ADYALwAzADcANwAzADgANwA4ADkAOgA7ADwAOwA9ADwAOgA8AD4AOwA/AD0APwBAAD0APwBBAEAAQgA6AD4AQgA+AEMARABCAEMARABDAEUARgBHAEgARgBIAEkARwBKAEgARwBLAEoATABJAEgASwBNAEoASwBOAE0ATQBPAEoATgBQAE0ATQBRAE8ATgBSAFAAUgBTAFAAUgBUAFMAVQBQAFMAVQBTAFYAVQBWAFcAVQBXAFgAUQBVAFgAWABXAFkAUQBYAFoATwBRAFoAWABZAFsAXABbAFkAXABdAFsAXQBeAFsAXQBfAF4ATwBaAGAAXgBgAFoATABPAGAAXwBhAF4AXgBhAGAAXwBiAGEATABgAGMAYgBkAGEAYgBlAGQAZABmAGMAZwBMAGMAZwBjAGYATABnAEkAZwBmAGgAZwBoAGkAaQBoAGoAaQBqAGsAZABsAGYAZQBsAGQAZQBtAGwAbABtAG4AbABuAG8AbwBuAHAAbwBwAHEAcgBzAHQAcgB0AHUAdgB3AHgAdgB4AHkAegB7AHwAegB8AH0AfgB/AIAAfgCAAIEAggCDAIQAggCEAIUAhgCHAIgAhgCIAIkAigCLAIwAigCMAI0AjgCPAJAAjgCQAJEAkgCTAJQAkgCUAJUAlgCXAJgAlgCYAJkAmgCbAJwAmgCcAJ0AngCfAKAAngCgAKEAogCjAKQAogCkAKUApgCnAKgApgCoAKkAqgCrAKwAqgCsAK0ArgCvALAArgCwALEAsgCzALQAsgC0ALUAtgC3ALgAtgC4ALkAugC7ALwAugC8AL0AvgC/AMAAvgDAAMEAwgDDAMQAwgDEAMUAxgDHAMgAxgDIAMkAygDLAMwAygDMAM0AzgDPANAAzgDQANEA0gDTANQA0gDUANUA0wDWANQA0wDXANYA1wDYANYA1wDZANgA2gDbANwA2gDcAN0A3gDbANoA3gDfANsA4ADhAOIA4ADiAOMA5ADlAOYA5ADmAOcA6ADkAOcA6ADnAOkA6gDrAOwA6gDsAO0A7gDvAPAA7gDwAPEA8gDvAO4A8gDzAO8A9AD1APYA9AD2APcA+AD5APoA+AD7APkA"),
-"material": SubResource("StandardMaterial3D_63ydh"),
+"material": ExtResource("28_kihn2"),
 "name": "ConcreteBare",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -986,12 +942,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_3fvpl")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1hww6"]
-resource_name = "brick_modern"
-cull_mode = 2
-albedo_texture = ExtResource("31_7vb0q")
-texture_filter = 2
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_s3dwq"]
 _surfaces = [{
@@ -1015,7 +965,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 120,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUAOAA5ADoAOAA7ADkAPAA9AD4APAA/AD0AQABBAEIAQABDAEEARABFAEYARABHAEUASABJAEoASABLAEkATABNAE4ATABPAE0A"),
-"material": SubResource("StandardMaterial3D_1hww6"),
+"material": ExtResource("31_ti8gl"),
 "name": "brick_modern",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -1025,34 +975,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_s3dwq")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_trv1v"]
-resource_name = "Tiles"
-albedo_texture = ExtResource("32_lrjd1")
-texture_filter = 2
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rq8j5"]
 resource_name = "TactilePaving"
 albedo_texture = ExtResource("33_3hg3w")
-texture_filter = 2
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5jwqj"]
-resource_name = "road_rails"
-albedo_texture = ExtResource("34_vtyrq")
-texture_filter = 2
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7htrj"]
-resource_name = "tile_tile"
-albedo_texture = ExtResource("35_lgm8i")
-texture_filter = 2
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kagw3"]
-resource_name = "metal_02"
-albedo_texture = ExtResource("36_0ymnq")
-texture_filter = 2
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qq8jf"]
-resource_name = "ConcreteBare"
-albedo_texture = ExtResource("37_l3eb6")
 texture_filter = 2
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_knogf"]
@@ -1129,7 +1054,7 @@ _surfaces = [{
 "index_count": 150,
 "index_data": PackedByteArray("AAABAAIAAAAvAAEACAAJAAoACAALAAkAMAANAA4AMAAxAA0AMgAmADMAMgAnACYAGAAaADQAGAAZABoAHgAdAB8AHgAcAB0AHAA1AB0AHAA2ADUANwA4ADkANwA6ADgAIwA7ADgAIwA8ADsAPQA+ABIAPQAVAD4APwARAEAAPwATABEAQQBCAEMAQQBEAEIARQAqACsARQBGACoAKwAsAC0AKwAtAC4ARwBIAAUARwBJAEgASgBLAEwASgBNAEsABwBOAAYABwAEAE4AFgBPABQAFgAXAE8AJQBQACQAJQAiAFAAIABRACEAIABSAFEAKABTAFQAKAApAFMAGwBVAFYAGwBXAFUAWABZAFoAWABbAFkAEAAPAAwAEABcAA8AAwBdAF4AAwBfAF0A"),
 "lods": [0.0037278, PackedByteArray("AAABAAIAAwABAAAAAwAEAAEABQAEAAMABgAEAAUABwAEAAYACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAAPAAwAEAARAA8AEgARABAAEgATABEAFAATABIAFAAVABMAFgAVABQAFgAXABUAGAAZABoAGwAYABoAHAAbABoAHAAaAB0AHgAcAB0AHgAdAB8AIAAeAB8AIAAfACEAIgAjACQAJQAiACQAIwAmACQAIwAnACYAKAApACoAKAAqACsAKwAsAC0AKwAtAC4A")],
-"material": SubResource("StandardMaterial3D_trv1v"),
+"material": ExtResource("23_bau3y"),
 "name": "Tiles",
 "primitive": 3,
 "uv_scale": Vector4(6.33172, 4.13843, 0, 0),
@@ -1153,7 +1078,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 30,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEA"),
-"material": SubResource("StandardMaterial3D_5jwqj"),
+"material": ExtResource("25_x6vlt"),
 "name": "road_rails",
 "primitive": 3,
 "uv_scale": Vector4(2.90474, 1.98532, 0, 0),
@@ -1165,7 +1090,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 42,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAAABAAGAAUABwAIAAkABwAKAAgACwAMAAcACwANAAwADgAPABAADgARAA8AEgATABQAEgAVABMAFgAXABgAFgAZABcA"),
-"material": SubResource("StandardMaterial3D_7htrj"),
+"material": ExtResource("26_ti8gl"),
 "name": "tile_tile",
 "primitive": 3,
 "uv_scale": Vector4(2.96203, 1.99484, 0, 0),
@@ -1177,7 +1102,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 78,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAADAAAABAAFAAMABgAAAAcABgAHAAgACQAKAAYACQAGAAsACwAGAAwACwAMAA0ADgAKAA8ADgAQAAoAEQALABIAEQASABMAFAAVABEAFAARABYAFgARABcAFgAXABgAGQAaABsAGQAcABoAHQAeAB8AHQAgAB4AIQAiACMAIQAkACIAJQAmACcAJQAoACYA"),
-"material": SubResource("StandardMaterial3D_kagw3"),
+"material": ExtResource("27_g4jf1"),
 "name": "metal_02",
 "primitive": 3,
 "uv_scale": Vector4(2.96203, 2.44286, 0, 0),
@@ -1189,7 +1114,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 390,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAADAAAABAAFAAMABgAFAAQABgAHAAUACAAHAAYACAAJAAcACgAJAAgACgALAAkADAANAA4ADgANAA8ADAAQAA0AEQAQAAwAEQASABAADgAPABMAEwAPABQAEwAUABUAFQAUABYAFQAWABcAGAAZABoAGgAZABsAGAAcABkAGgAbAB0AHQAbAB4AHQAeAB8AIAAcABgAIAAhABwAIgAhACAAIgAjACEAJAAlACYAJgAlACcAJAAoACUAKQAoACQAKQAqACgAJgAnACsAKwAnACwAKwAsAC0ALQAsAC4ALQAuAC8AMAAxADIAMAAzADEAMgAxADQAMgA0ADUANgAxADMANgAzADcANwA4ADYANwA5ADgANgA4ADoAOwA4ADkAOwA5ADwAPQA7ADwAPQA8AD4APwA7AD0APwBAADsAQQBAAD8ANgA6AEIAQQBDAEAAQwA6AEAARABDAEEAQwBFADoAQgA6AEUARABGAEMARwBGAEQARwBIAEYASQBGAEgASQBIAEoAQgBFAEsASwBFAEkATABCAEsATAA0AEIANQA0AEwANQBMAE0ATQBMAE4ASwBJAE8ATwBJAEoATwBKAFAATwBQAFEATwBRAE4ATQBOAFIAUgBOAFEAUgBRAFMAVABVAFYAVABXAFUAWABZAFoAWABbAFkAXABdAF4AXABfAF0AYABhAGIAYABjAGEAZABlAGYAZABnAGUAaABpAGoAaABrAGkAbABtAG4AbABvAG0AcABxAHIAcABzAHEAdAB1AHYAdAB3AHUAeAB5AHoAeAB7AHkAfAB9AH4AfAB/AH0AgACBAIIAgACDAIEAhACFAIYAhACHAIUAiACJAIoAiACLAIkAjACNAI4AjACPAI0AkACRAJIAkACTAJEAlACVAJYAlACXAJUAmACZAJoAmACbAJkAnACdAJ4AnACfAJ0AoAChAKIAoACjAKEApAClAKYApACnAKUAqACpAKoAqACrAKkArACtAK4ArACvAK0AsACxALIAsACzALEA"),
-"material": SubResource("StandardMaterial3D_qq8jf"),
+"material": ExtResource("28_kihn2"),
 "name": "ConcreteBare",
 "primitive": 3,
 "uv_scale": Vector4(3.79244, 3.95141, 0, 0),
@@ -1232,7 +1157,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 24,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0A"),
-"material": SubResource("StandardMaterial3D_7htrj"),
+"material": ExtResource("26_ti8gl"),
 "name": "tile_tile",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -1245,7 +1170,7 @@ _surfaces = [{
 "index_count": 120,
 "index_data": PackedByteArray("AAACACQAAAAlAAIAAwAlAAAABAAAACQAAwAmACUABAAkACcAKAAmAAMAKAABACYABQAoAAMABQApACgABQAHACkABQAqAAcABAAqAAUABAArACoAJwArAAQAJwAGACsACAAKACwACAAJAAoALQAIACwALQAMAAgALQANAAwALQALAA0ALgAPABAALgAOAA8ALwAuABAALwAQABEAEQASAC8AEQATABIAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AMAAdABwAHQAwADEAHQAxAB8AMgAhACIAMwAhADIAIQAzACAAIQAgACMA"),
 "lods": [0.000334361, PackedByteArray("AAABAAIAAwABAAAABAAAAAIABQABAAMAAgAGAAQABQAHAAEABAAGAAcABAAHAAUACAAJAAoACwAIAAoACwAMAAgACwANAAwADgAPABAADgAQABEAEQASAA4AEQATABIAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHQAcAB8AIAAhACIAIQAgACMA")],
-"material": SubResource("StandardMaterial3D_qq8jf"),
+"material": ExtResource("28_kihn2"),
 "name": "ConcreteBare",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -1656,11 +1581,9 @@ transform = Transform3D(-3.83986e-06, 87.8458, -5.23602e-06, 0, 5.23602e-06, 87.
 
 [node name="Vending_machine" parent="Enviroment/Subway" instance=ExtResource("47_o4e1k")]
 transform = Transform3D(-4.94953e-06, -113.232, -1.34983e-05, 0, -1.34983e-05, 113.232, -113.232, 4.94953e-06, 5.90029e-13, 25.0011, 2.66998, -30.0201)
-material_override = null
 
 [node name="Vending_machine2" parent="Enviroment/Subway" instance=ExtResource("47_o4e1k")]
 transform = Transform3D(113.232, -2.72848e-12, 3.79471e-19, -3.51685e-20, -1.34983e-05, 113.232, -2.72848e-12, -113.232, -1.34983e-05, 21.432, 2.66998, -5.13632)
-material_override = null
 
 [node name="Chair" parent="Enviroment/Subway" instance=ExtResource("48_qy58j")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -51.6062)

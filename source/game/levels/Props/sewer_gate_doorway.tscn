@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=4 uid="uid://cu7tt3umyehqm"]
 
-[ext_resource type="Texture2D" uid="uid://dg6a22ion61lg" path="res://assets/model/models/Environment/textures/Sewer/Metal.jpg" id="1_m8kev"]
+[ext_resource type="Texture2D" uid="uid://dg6a22ion61lg" path="res://assets/models/Environment/Metro_PSX/materials/texturesSewer/Metal.jpg" id="1_m8kev"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kgflb"]
 size = Vector3(0.244141, 6.14453, 2.37506)

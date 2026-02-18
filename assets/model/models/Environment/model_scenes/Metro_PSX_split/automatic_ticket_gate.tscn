@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=4 uid="uid://c186wglas7s41"]
 
-[ext_resource type="Texture2D" uid="uid://dxocqht5cr5ic" path="res://assets/model/models/Environment/textures/Metro_PSX/automatic_ticket_gate.png" id="1_efqq7"]
+[ext_resource type="Texture2D" uid="uid://dxocqht5cr5ic" path="res://assets/models/Environment/Metro_PSX/materials/textures/automatic_ticket_gate.png" id="1_efqq7"]
 [ext_resource type="Shader" uid="uid://h8trqbl805pv" path="res://assets/shaders/psx_shader.gdshader" id="1_ya4hw"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_m8qcf"]

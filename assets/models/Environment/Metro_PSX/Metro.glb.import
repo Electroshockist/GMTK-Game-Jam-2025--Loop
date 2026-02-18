@@ -1,0 +1,144 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://ck7ufqnd7duvn"
+path="res://.godot/imported/Metro.glb-d8dc25cc1d24d2e23e46e096d8dc07b2.scn"
+
+[deps]
+
+source_file="res://assets/models/Environment/Metro_PSX/Metro.glb"
+dest_files=["res://.godot/imported/Metro.glb-d8dc25cc1d24d2e23e46e096d8dc07b2.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"materials": {
+"Chair": {
+"use_external/enabled": true,
+"use_external/path": "uid://c55mdu7gdko4t"
+},
+"ConcreteBare": {
+"use_external/enabled": true,
+"use_external/path": "uid://bswqapa42tbt"
+},
+"Door": {
+"use_external/enabled": true,
+"use_external/path": "uid://d0wi0efvui8fh"
+},
+"Door_01": {
+"use_external/enabled": true,
+"use_external/path": "uid://df8gefbdmblpw"
+},
+"Floor": {
+"use_external/enabled": true,
+"use_external/path": "uid://bp4f878mxkanu"
+},
+"Glass": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/models/Environment/Metro_PSX/materials/Glass.tres"
+},
+"Posters": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/models/Environment/Metro_PSX/materials/Posters.tres"
+},
+"TactilePaving": {
+"use_external/enabled": true,
+"use_external/path": "uid://caaryh10tskl1"
+},
+"Tiles": {
+"use_external/enabled": true,
+"use_external/path": "uid://dvx4cl62uwtvp"
+},
+"Trains": {
+"use_external/enabled": true,
+"use_external/path": "uid://b5tjnm2pdm0jt"
+},
+"Trains_01": {
+"use_external/enabled": true,
+"use_external/path": "uid://dbnb35ikhiehj"
+},
+"Vending_machine": {
+"use_external/enabled": true,
+"use_external/path": "uid://dfo1pmf6guv0h"
+},
+"automatic_ticket_gate": {
+"use_external/enabled": true,
+"use_external/path": "uid://bv0pfujjoa80s"
+},
+"light": {
+"use_external/enabled": true,
+"use_external/path": "uid://cx1wferju5v1s"
+},
+"metal": {
+"use_external/enabled": true,
+"use_external/path": "uid://e73owb2vx6k1"
+},
+"metal_01": {
+"use_external/enabled": true,
+"use_external/path": "uid://dwe2vw1ivoqnr"
+},
+"metal_02": {
+"use_external/enabled": true,
+"use_external/path": "uid://c07hlj0bxt8e4"
+},
+"metal_03": {
+"use_external/enabled": true,
+"use_external/path": "uid://c0082d8d1lqac"
+},
+"metal_04": {
+"use_external/enabled": true,
+"use_external/path": "uid://csylvul5lnaxv"
+},
+"metal_05": {
+"use_external/enabled": true,
+"use_external/path": "uid://curqcv6n84mhl"
+},
+"metro_map": {
+"use_external/enabled": true,
+"use_external/path": "uid://biabpm764xbjr"
+},
+"road_rails": {
+"use_external/enabled": true,
+"use_external/path": "uid://c6n3wqbj8nlqj"
+},
+"seats": {
+"use_external/enabled": true,
+"use_external/path": "uid://de2qv7avnwh4k"
+},
+"ticket_machine": {
+"use_external/enabled": true,
+"use_external/path": "uid://8iiwmreioghy"
+},
+"tile_tile": {
+"use_external/enabled": true,
+"use_external/path": "uid://b0r4bnveh2c12"
+},
+"trash_can": {
+"use_external/enabled": true,
+"use_external/path": "uid://vl6friorsqlh"
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1

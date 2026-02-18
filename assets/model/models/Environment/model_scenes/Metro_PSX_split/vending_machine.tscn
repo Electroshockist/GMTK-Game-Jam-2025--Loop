@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=4 uid="uid://3g4l8qqfd515"]
 
-[ext_resource type="Texture2D" uid="uid://bljqd004yxns6" path="res://assets/model/models/Environment/textures/Metro_PSX/Vending_machine.png" id="1_5k3r5"]
+[ext_resource type="Texture2D" uid="uid://bljqd004yxns6" path="res://assets/models/Environment/Metro_PSX/materials/textures/Vending_machine.png" id="1_5k3r5"]
 [ext_resource type="Shader" uid="uid://h8trqbl805pv" path="res://assets/shaders/psx_shader.gdshader" id="1_r0lwh"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lp73t"]

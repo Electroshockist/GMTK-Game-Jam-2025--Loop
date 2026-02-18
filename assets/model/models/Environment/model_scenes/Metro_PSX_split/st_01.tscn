@@ -1,13 +1,13 @@
 [gd_scene load_steps=28 format=4 uid="uid://bpo17x0lmjd2i"]
 
 [ext_resource type="Shader" uid="uid://h8trqbl805pv" path="res://assets/shaders/psx_shader.gdshader" id="1_pm7jj"]
-[ext_resource type="Texture2D" uid="uid://b1c772h2qeqog" path="res://assets/model/models/Environment/textures/Metro_PSX/Door_01.jpg" id="1_y61ko"]
-[ext_resource type="Texture2D" uid="uid://uov44fo4jrrd" path="res://assets/model/models/Environment/textures/Metro_PSX/tile_tile.jpg" id="2_sst2p"]
-[ext_resource type="Texture2D" uid="uid://li3nxaeyh055" path="res://assets/model/models/Environment/textures/Metro_PSX/metal_02.png" id="3_lg4ny"]
-[ext_resource type="Texture2D" uid="uid://c68emgpql6b4o" path="res://assets/model/models/Environment/textures/Metro_PSX/Tiles.png" id="4_cbtl7"]
-[ext_resource type="Texture2D" uid="uid://d08b4ik4fuuqy" path="res://assets/model/models/Environment/textures/Metro_PSX/TactilePaving.png" id="5_nfnse"]
-[ext_resource type="Texture2D" uid="uid://dyyk4ga8smi7m" path="res://assets/model/models/Environment/textures/Metro_PSX/road_rails.jpg" id="6_ki7xc"]
-[ext_resource type="Texture2D" uid="uid://dkp3ibarnnqp0" path="res://assets/model/models/Environment/textures/Metro_PSX/ConcreteBare.png" id="7_ihppg"]
+[ext_resource type="Texture2D" uid="uid://b1c772h2qeqog" path="res://assets/models/Environment/Metro_PSX/materials/textures/Door_01.jpg" id="1_y61ko"]
+[ext_resource type="Texture2D" uid="uid://uov44fo4jrrd" path="res://assets/models/Environment/Metro_PSX/materials/textures/tile_tile.jpg" id="2_sst2p"]
+[ext_resource type="Texture2D" uid="uid://li3nxaeyh055" path="res://assets/models/Environment/Metro_PSX/materials/textures/metal_02.png" id="3_lg4ny"]
+[ext_resource type="Texture2D" uid="uid://c68emgpql6b4o" path="res://assets/models/Environment/Metro_PSX/materials/textures/Tiles.png" id="4_cbtl7"]
+[ext_resource type="Texture2D" uid="uid://d08b4ik4fuuqy" path="res://assets/models/Environment/Metro_PSX/materials/textures/TactilePaving.png" id="5_nfnse"]
+[ext_resource type="Texture2D" uid="uid://dyyk4ga8smi7m" path="res://assets/models/Environment/Metro_PSX/materials/textures/road_rails.jpg" id="6_ki7xc"]
+[ext_resource type="Texture2D" uid="uid://dkp3ibarnnqp0" path="res://assets/models/Environment/Metro_PSX/materials/textures/ConcreteBare.png" id="7_ihppg"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_g4cwx"]
 render_priority = 0

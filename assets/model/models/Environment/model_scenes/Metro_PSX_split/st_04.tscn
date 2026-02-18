@@ -1,11 +1,11 @@
 [gd_scene load_steps=17 format=4 uid="uid://xp63vea7nc4c"]
 
-[ext_resource type="Texture2D" uid="uid://c68emgpql6b4o" path="res://assets/model/models/Environment/textures/Metro_PSX/Tiles.png" id="1_28nd3"]
-[ext_resource type="Texture2D" uid="uid://d08b4ik4fuuqy" path="res://assets/model/models/Environment/textures/Metro_PSX/TactilePaving.png" id="2_r6vs4"]
-[ext_resource type="Texture2D" uid="uid://dyyk4ga8smi7m" path="res://assets/model/models/Environment/textures/Metro_PSX/road_rails.jpg" id="3_hg4af"]
-[ext_resource type="Texture2D" uid="uid://uov44fo4jrrd" path="res://assets/model/models/Environment/textures/Metro_PSX/tile_tile.jpg" id="4_tg16x"]
-[ext_resource type="Texture2D" uid="uid://li3nxaeyh055" path="res://assets/model/models/Environment/textures/Metro_PSX/metal_02.png" id="5_eacv5"]
-[ext_resource type="Texture2D" uid="uid://dkp3ibarnnqp0" path="res://assets/model/models/Environment/textures/Metro_PSX/ConcreteBare.png" id="6_l0dkw"]
+[ext_resource type="Texture2D" uid="uid://c68emgpql6b4o" path="res://assets/models/Environment/Metro_PSX/materials/textures/Tiles.png" id="1_28nd3"]
+[ext_resource type="Texture2D" uid="uid://d08b4ik4fuuqy" path="res://assets/models/Environment/Metro_PSX/materials/textures/TactilePaving.png" id="2_r6vs4"]
+[ext_resource type="Texture2D" uid="uid://dyyk4ga8smi7m" path="res://assets/models/Environment/Metro_PSX/materials/textures/road_rails.jpg" id="3_hg4af"]
+[ext_resource type="Texture2D" uid="uid://uov44fo4jrrd" path="res://assets/models/Environment/Metro_PSX/materials/textures/tile_tile.jpg" id="4_tg16x"]
+[ext_resource type="Texture2D" uid="uid://li3nxaeyh055" path="res://assets/models/Environment/Metro_PSX/materials/textures/metal_02.png" id="5_eacv5"]
+[ext_resource type="Texture2D" uid="uid://dkp3ibarnnqp0" path="res://assets/models/Environment/Metro_PSX/materials/textures/ConcreteBare.png" id="6_l0dkw"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bpmie"]
 resource_name = "Tiles"

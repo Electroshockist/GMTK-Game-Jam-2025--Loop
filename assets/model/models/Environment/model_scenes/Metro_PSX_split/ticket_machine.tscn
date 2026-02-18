@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=4 uid="uid://d2saacevvgkdy"]
 
-[ext_resource type="Texture2D" uid="uid://bqb7fv1gb1iwj" path="res://assets/model/models/Environment/textures/Metro_PSX/ticket_machine.png" id="1_5pp3g"]
+[ext_resource type="Texture2D" uid="uid://bqb7fv1gb1iwj" path="res://assets/models/Environment/Metro_PSX/materials/textures/ticket_machine.png" id="1_5pp3g"]
 [ext_resource type="Shader" uid="uid://h8trqbl805pv" path="res://assets/shaders/psx_shader.gdshader" id="1_mx0mf"]
 [ext_resource type="Script" uid="uid://di1emexw4rps5" path="res://assets/shaders/psx_shader_applicator.gd" id="2_712ky"]
-[ext_resource type="Texture2D" uid="uid://bljqd004yxns6" path="res://assets/model/models/Environment/textures/Metro_PSX/Vending_machine.png" id="2_mx0mf"]
+[ext_resource type="Texture2D" uid="uid://bljqd004yxns6" path="res://assets/models/Environment/Metro_PSX/materials/textures/Vending_machine.png" id="2_mx0mf"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_gwsmp"]
 render_priority = 0

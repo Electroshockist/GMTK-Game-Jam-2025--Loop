@@ -1,12 +1,12 @@
 [gd_scene load_steps=21 format=4 uid="uid://dy6kocd8kf1dp"]
 
-[ext_resource type="Script" uid="uid://dcollmyhhi3a5" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/st_01.gd" id="1_mop8r"]
-[ext_resource type="Texture2D" uid="uid://c68emgpql6b4o" path="res://assets/model/models/Environment/textures/Metro_PSX/Tiles.png" id="1_on80u"]
-[ext_resource type="Texture2D" uid="uid://d08b4ik4fuuqy" path="res://assets/model/models/Environment/textures/Metro_PSX/TactilePaving.png" id="2_ul4rl"]
-[ext_resource type="Texture2D" uid="uid://dyyk4ga8smi7m" path="res://assets/model/models/Environment/textures/Metro_PSX/road_rails.jpg" id="3_i5n0j"]
-[ext_resource type="Texture2D" uid="uid://uov44fo4jrrd" path="res://assets/model/models/Environment/textures/Metro_PSX/tile_tile.jpg" id="4_jh4uq"]
-[ext_resource type="Texture2D" uid="uid://li3nxaeyh055" path="res://assets/model/models/Environment/textures/Metro_PSX/metal_02.png" id="5_yewr5"]
-[ext_resource type="Texture2D" uid="uid://dkp3ibarnnqp0" path="res://assets/model/models/Environment/textures/Metro_PSX/ConcreteBare.png" id="6_kdvpq"]
+[ext_resource type="Script" uid="uid://dcollmyhhi3a5" path="res://assets/models/Environment/model_scenes/Metro_PSX_split/st_01.gd" id="1_mop8r"]
+[ext_resource type="Texture2D" uid="uid://c68emgpql6b4o" path="res://assets/models/Environment/Metro_PSX/materials/textures/Tiles.png" id="1_on80u"]
+[ext_resource type="Texture2D" uid="uid://d08b4ik4fuuqy" path="res://assets/models/Environment/Metro_PSX/materials/textures/TactilePaving.png" id="2_ul4rl"]
+[ext_resource type="Texture2D" uid="uid://dyyk4ga8smi7m" path="res://assets/models/Environment/Metro_PSX/materials/textures/road_rails.jpg" id="3_i5n0j"]
+[ext_resource type="Texture2D" uid="uid://uov44fo4jrrd" path="res://assets/models/Environment/Metro_PSX/materials/textures/tile_tile.jpg" id="4_jh4uq"]
+[ext_resource type="Texture2D" uid="uid://li3nxaeyh055" path="res://assets/models/Environment/Metro_PSX/materials/textures/metal_02.png" id="5_yewr5"]
+[ext_resource type="Texture2D" uid="uid://dkp3ibarnnqp0" path="res://assets/models/Environment/Metro_PSX/materials/textures/ConcreteBare.png" id="6_kdvpq"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bpmie"]
 resource_name = "Tiles"

@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=4 uid="uid://daq2ktcnqj41c"]
 
 [ext_resource type="Shader" uid="uid://h8trqbl805pv" path="res://assets/shaders/psx_shader.gdshader" id="1_0qq1v"]
-[ext_resource type="Texture2D" uid="uid://8qoflni6nisf" path="res://assets/model/models/Environment/textures/Metro_PSX/Chair.png" id="1_kmoll"]
+[ext_resource type="Texture2D" uid="uid://8qoflni6nisf" path="res://assets/models/Environment/Metro_PSX/materials/textures/Chair.png" id="1_kmoll"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_0qq1v"]
 render_priority = 0

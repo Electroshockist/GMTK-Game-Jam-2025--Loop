@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=4 uid="uid://bk14jls1n1hox"]
 
-[ext_resource type="Texture2D" uid="uid://b1c772h2qeqog" path="res://assets/model/models/Environment/textures/Metro_PSX/Door_01.jpg" id="1_t1dd0"]
+[ext_resource type="Texture2D" uid="uid://b1c772h2qeqog" path="res://assets/models/Environment/Metro_PSX/materials/textures/Door_01.jpg" id="1_t1dd0"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jclx8"]
 resource_name = "Door_01"

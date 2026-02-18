@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=4 uid="uid://c0o17r85gxfui"]
+[gd_scene load_steps=72 format=4 uid="uid://c0o17r85gxfui"]
 
 [ext_resource type="Script" uid="uid://bs56ayrlo47wf" path="res://source/game/levels/level.gd" id="1_ouvpk"]
 [ext_resource type="Environment" uid="uid://pq7vqvfywr8t" path="res://source/game/levels/level_env.tres" id="2_p56g6"]
@@ -15,19 +15,20 @@
 [ext_resource type="PackedScene" uid="uid://dl0itebvpe5fy" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_06.tscn" id="13_qjdf2"]
 [ext_resource type="PackedScene" uid="uid://c2prm0sxpm4dx" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_07.tscn" id="14_x0oog"]
 [ext_resource type="PackedScene" uid="uid://c2qvfmytwf71t" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_08.tscn" id="15_adqkr"]
-[ext_resource type="Texture2D" uid="uid://uov44fo4jrrd" path="res://assets/model/models/Environment/textures/Metro_PSX/tile_tile.jpg" id="19_il81c"]
-[ext_resource type="ArrayMesh" uid="uid://8ybcpe16qgyn" path="res://assets/model/models/Environment/modified/Metro_Pit/tunnel_end.res" id="19_xlege"]
-[ext_resource type="Texture2D" uid="uid://dkp3ibarnnqp0" path="res://assets/model/models/Environment/textures/Metro_PSX/ConcreteBare.png" id="21_4dnxo"]
-[ext_resource type="ArrayMesh" uid="uid://ddvxuse5s8fib" path="res://assets/model/models/Environment/modified/Metro_Pit/Metro_Pit_Far.res" id="22_q62um"]
-[ext_resource type="ArrayMesh" uid="uid://bht7u2pm7un25" path="res://assets/model/models/Environment/modified/Metro_Pit/Metro_Pit_Stairs.res" id="24_r7iov"]
+[ext_resource type="Texture2D" uid="uid://buqdidu8ydldf" path="res://assets/models/Environment/Metro_PSX/materials/textures/tile_tile.jpg" id="19_il81c"]
+[ext_resource type="ArrayMesh" uid="uid://8ybcpe16qgyn" path="res://assets/models/Environment/modified/Metro_Pit/tunnel_end.res" id="19_xlege"]
+[ext_resource type="Material" uid="uid://b0r4bnveh2c12" path="res://assets/models/Environment/Metro_PSX/materials/tile_tile.tres" id="21_1bnys"]
+[ext_resource type="Texture2D" uid="uid://l31fxq55vfko" path="res://assets/models/Environment/Metro_PSX/materials/textures/ConcreteBare.png" id="21_4dnxo"]
+[ext_resource type="Material" uid="uid://df8gefbdmblpw" path="res://assets/models/Environment/Metro_PSX/materials/Door_01.tres" id="21_r7iov"]
+[ext_resource type="ArrayMesh" uid="uid://ddvxuse5s8fib" path="res://assets/models/Environment/modified/Metro_Pit/Metro_Pit_Far.res" id="22_q62um"]
+[ext_resource type="Material" uid="uid://c07hlj0bxt8e4" path="res://assets/models/Environment/Metro_PSX/materials/metal_02.tres" id="23_bn6st"]
+[ext_resource type="ArrayMesh" uid="uid://bht7u2pm7un25" path="res://assets/models/Environment/modified/Metro_Pit/Metro_Pit_Stairs.res" id="24_r7iov"]
+[ext_resource type="Material" uid="uid://1e6dbgomjyqt" path="res://assets/models/Environment/Metro_PSX/materials/Glass.tres" id="24_sj0p0"]
+[ext_resource type="Material" uid="uid://d73eycybvdkj" path="res://assets/models/Environment/Metro_PSX/materials/brick_modern.tres" id="26_bn6st"]
 [ext_resource type="Script" uid="uid://e60yvnf7q1n4" path="res://source/game/levels/level_06_pit.gd" id="28_r7iov"]
-[ext_resource type="Texture2D" uid="uid://vm2iqc1p7sef" path="res://assets/model/models/Environment/modified/metro stairs_Door_01.jpg" id="30_je0um"]
-[ext_resource type="Texture2D" uid="uid://b2ixijxkbntd2" path="res://assets/model/models/Environment/modified/metro stairs_tile_tile.jpg" id="31_cwie2"]
-[ext_resource type="Texture2D" uid="uid://cdlkvhw8clr1w" path="res://assets/model/models/Environment/modified/metro stairs_metal_02.png" id="32_iioe7"]
-[ext_resource type="Texture2D" uid="uid://q3cqbfgf5stx" path="res://assets/model/models/Environment/modified/metro stairs_brick_modern.jpg" id="37_00h8j"]
-[ext_resource type="ArrayMesh" uid="uid://b8s47vfi4f5pa" path="res://assets/model/models/Environment/modified/Metro_Pit/St_01.res" id="38_ouvpk"]
-[ext_resource type="Texture2D" uid="uid://1rn2884sybr" path="res://assets/model/models/Environment/modified/metro pillar_tile_tile.jpg" id="39_yngx8"]
-[ext_resource type="Texture2D" uid="uid://peheuq4363q6" path="res://assets/model/models/Environment/modified/metro pillar_ConcreteBare.png" id="40_jtgml"]
+[ext_resource type="ArrayMesh" uid="uid://b8s47vfi4f5pa" path="res://assets/models/Environment/modified/Metro_Pit/St_01.res" id="38_ouvpk"]
+[ext_resource type="Texture2D" uid="uid://dsmb2gvvusgx0" path="res://assets/models/Environment/modified/metro pillar_tile_tile.jpg" id="39_yngx8"]
+[ext_resource type="Texture2D" uid="uid://037axmwocwrw" path="res://assets/models/Environment/modified/metro pillar_ConcreteBare.png" id="40_jtgml"]
 [ext_resource type="Script" uid="uid://b5hjojq8wyiqd" path="res://source/game/levels/level_stitching/out_node.gd" id="47_e3pow"]
 [ext_resource type="PackedScene" uid="uid://bjw0ehsvtney3" path="res://source/game/levels/Props/door_metal.tscn" id="48_20doo"]
 [ext_resource type="AudioStream" uid="uid://bhnam8ajx6n8o" path="res://assets/sounds/ding or dong.mp3" id="49_soibn"]
@@ -40,16 +41,16 @@ albedo = Color(0.0962047, 0.0962048, 0.0962047, 1)
 height_falloff = 1.27456e-05
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xlege"]
-size = Vector3(5.31323, 40, 0.460815)
+size = Vector3(5.31323, 163, 0.460815)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_loslf"]
 size = Vector3(5.49353, 6.61052, 2.03558)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_r7iov"]
-size = Vector3(6.61896, 40, 0.460815)
+size = Vector3(6.61896, 163, 0.460815)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_bn6st"]
-size = Vector3(8.75932, 35, 63.4261)
+size = Vector3(8.75932, 158, 63.4261)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8ejdx"]
 size = Vector3(5.90845, 0.459824, 18.3373)
@@ -64,7 +65,7 @@ size = Vector3(1.21594, 8.91364, 25.0609)
 size = Vector3(0.208389, 5.30447, 50.6088)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_sj0p0"]
-size = Vector3(0.157776, 40, 65)
+size = Vector3(0.157776, 162, 65)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4oxtu"]
 size = Vector3(0.365479, 4.61795, 10.9743)
@@ -159,12 +160,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_pktld")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3dfwu"]
-resource_name = "Door_01"
-cull_mode = 2
-albedo_texture = ExtResource("30_je0um")
-texture_filter = 2
-
 [sub_resource type="ArrayMesh" id="ArrayMesh_k4xuy"]
 _surfaces = [{
 "aabb": AABB(6.48499e-05, -2.35267, -0.208138, 2, 4.71081, 0.418409),
@@ -187,7 +182,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 144,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAaABsAGgAcABsAGgAdABwAGQAdABoAGQAeAB0AHwAgACEAIAAiACEAIAAjACIAJAAlACYAJQAnACYAJQAoACcAKQAqACsAKgAsACsAKgAtACwALgAvADAALwAuADEALwAxADIAMwA0ADUANAA2ADUANAA3ADYANQA2ADgANQA4ADkAMwA1ADkAMwA6ADsAOgA8ADsAOgA9ADwAMwA+AD8APgBAAD8APgBBAEAAMwBCAEMAQgBEAEMAQgBFAEQARgBHAEgARwBGAEkARwBJAEoA"),
-"material": SubResource("StandardMaterial3D_3dfwu"),
+"material": ExtResource("21_r7iov"),
 "name": "Door_01",
 "primitive": 3,
 "uv_scale": Vector4(2, 1.98788, 0, 0),
@@ -196,11 +191,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_k4xuy")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y2qyd"]
-resource_name = "tile_tile"
-albedo_texture = ExtResource("31_cwie2")
-texture_filter = 2
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_4cvhl"]
 _surfaces = [{
@@ -225,7 +215,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 84,
 "index_data": PackedByteArray("AAABAAIAAwACAAEAAwAEAAIAAAAFAAEABAADAAYABgAFAAAABgADAAcABwAFAAYABQAHAAgABQAIAAkACQAIAAoACQAKAAsADAANAA4ADAAPAA0AEAARABIAEwAQABIAFAARABAAEwAVABAAFQATABYAFgATABcAGAARABQAGAAXABEAFwAYABYAFgAYABkAGQAYABoAGgAYABsAHAAdAB4AHAAfAB0A"),
-"material": SubResource("StandardMaterial3D_y2qyd"),
+"material": ExtResource("21_1bnys"),
 "name": "tile_tile",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -234,11 +224,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_4cvhl")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k4a2c"]
-resource_name = "metal_02"
-albedo_texture = ExtResource("32_iioe7")
-texture_filter = 2
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ltqh3"]
 _surfaces = [{
@@ -262,7 +247,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 348,
 "index_data": PackedByteArray("AAABAAIAAAADAAEAAgAEAAAAAgAFAAQABQAGAAQABQAHAAYACAAJAAoACAALAAkACgAMAAgACgANAAwADQAOAAwADQAPAA4AEAARABIAEAATABEAEgAUABAAEwAVABEAEgAWABQAEwAXABUAFgAVABcAFgAXABQAGAAZABoAGAAbABkAGgAcABgAGwAdABkAGgAeABwAGwAfAB0AHwAeAB0AHwAcAB4AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUAOAA5ADoAOAA7ADkAPAA9AD4APAA/AD0AQABBAEIAQABDAEEARABFAEYARABHAEUASABJAEoASABLAEkATABNAE4ATABPAE0AUABRAFIAUABTAFEAVABVAFYAVABXAFUAWABZAFoAWABbAFkAXABdAF4AXABfAF0AYABhAGIAYABjAGEAZABlAGYAZABnAGUAaABpAGoAaABrAGkAbABtAG4AbABvAG0AcABxAHIAcABzAHEAdAB1AHYAdAB3AHUAeAB5AHoAeAB7AHkAfAB9AH4AfAB/AH0AgACBAIIAgACDAIEAhACFAIYAhACHAIUAiACJAIoAiACLAIkAjACNAI4AjACPAI0AkACRAJIAkACTAJEAlACVAJYAlACXAJUAmACZAJoAmACbAJkAnACdAJ4AnACfAJ0AoAChAKIAoACjAKEApAClAKYApACnAKUAqACpAKoAqACrAKkArACtAK4ArACvAK0AsACxALIAsACzALEAtAC1ALYAtAC3ALUAuAC5ALoAuAC7ALkAvAC9AL4AvAC/AL0AwADBAMIAwADDAMEAxADFAMYAxADHAMUAyADJAMoAyADLAMkAzADNAM4AzADPAM0A"),
-"material": SubResource("StandardMaterial3D_k4a2c"),
+"material": ExtResource("23_bn6st"),
 "name": "metal_02",
 "primitive": 3,
 "uv_scale": Vector4(3.31591, 3.08729, 0, 0),
@@ -271,12 +256,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ltqh3")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_22ols"]
-resource_name = "Glass"
-cull_mode = 2
-albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
-roughness = 0.015625
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_6qtdd"]
 _surfaces = [{
@@ -300,7 +279,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 168,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABwAFAAQABQAHAAgABQAIAAkACQAIAAoABQAJAAsADAANAA4ADAAPAA0AEAARABIAEwARABAAEQATABQAEQAUABUAFQAUABYAEQAVABcAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANwA1ADQANQA3ADgANQA4ADkAOQA4ADoANQA5ADsAPAA9AD4APAA/AD0AQABBAEIAQwBBAEAAQQBDAEQAQQBEAEUARQBEAEYAQQBFAEcASABJAEoASABLAEkATABNAE4ATABPAE0AUABRAFIAUABTAFEAVABVAFYAVABXAFUAWABZAFoAWABbAFkAXABdAF4AXABfAF0A"),
-"material": SubResource("StandardMaterial3D_22ols"),
+"material": ExtResource("24_sj0p0"),
 "name": "Glass",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -309,12 +288,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_6qtdd")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1hww6"]
-resource_name = "brick_modern"
-cull_mode = 2
-albedo_texture = ExtResource("37_00h8j")
-texture_filter = 2
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_s3dwq"]
 _surfaces = [{
@@ -338,7 +311,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 120,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUAOAA5ADoAOAA7ADkAPAA9AD4APAA/AD0AQABBAEIAQABDAEEARABFAEYARABHAEUASABJAEoASABLAEkATABNAE4ATABPAE0A"),
-"material": SubResource("StandardMaterial3D_1hww6"),
+"material": ExtResource("26_bn6st"),
 "name": "brick_modern",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -415,7 +388,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_2chxd")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2s68e"]
-size = Vector3(9.98047, 26, 75.4922)
+size = Vector3(6.57971, 152.032, 75.4922)
 
 [sub_resource type="QuadMesh" id="QuadMesh_pktld"]
 size = Vector2(5, 7)
@@ -454,7 +427,7 @@ material = SubResource("FogMaterial_r64ux")
 [node name="Subway" type="StaticBody3D" parent="Enviroment"]
 
 [node name="Subway out far" type="CollisionShape3D" parent="Enviroment/Subway"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.5, -13.6383, 2.54126)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.5, -75.1384, 2.54126)
 shape = SubResource("BoxShape3D_xlege")
 
 [node name="Subway out far2" type="CollisionShape3D" parent="Enviroment/Subway"]
@@ -462,11 +435,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.5478, 3.05642, 1.84874)
 shape = SubResource("BoxShape3D_loslf")
 
 [node name="Subway out near" type="CollisionShape3D" parent="Enviroment/Subway"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1528, -13.6383, -60.6107)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1528, -75.1383, -60.6107)
 shape = SubResource("BoxShape3D_r7iov")
 
 [node name="Floor" type="CollisionShape3D" parent="Enviroment/Subway"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0744, -16.0592, -28.7957)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0744, -77.5592, -28.7957)
 shape = SubResource("BoxShape3D_bn6st")
 
 [node name="Upper Floor" type="CollisionShape3D" parent="Enviroment/Subway"]
@@ -490,7 +463,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3668, 3.20547, -29.6182)
 shape = SubResource("BoxShape3D_drwwt")
 
 [node name="Lower Right Wall" type="CollisionShape3D" parent="Enviroment/Subway"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.049, -14.1423, -29.3626)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.049, -75.1423, -29.3626)
 shape = SubResource("BoxShape3D_sj0p0")
 
 [node name="Upper Right Wall" type="CollisionShape3D" parent="Enviroment/Subway"]
@@ -672,13 +645,15 @@ transform = Transform3D(0, 0, -0.666506, 0, 0.756441, 0, -0.664227, 0, 0, 18.768
 mesh = SubResource("ArrayMesh_7nbq8")
 skeleton = NodePath("")
 
-[node name="Area3D" type="Area3D" parent="Enviroment"]
+[node name="Pit" type="Area3D" parent="Enviroment"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.2191, 0, -18.5101)
 script = ExtResource("28_r7iov")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Enviroment/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.884956, -14.0889, -8.80203)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Enviroment/Pit"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0504074, -77.1048, -8.80203)
 shape = SubResource("BoxShape3D_2s68e")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Enviroment/Pit"]
 
 [node name="InNode" type="Node3D" parent="." groups=["InNode"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.2498, 5.53115, -80.1987)
@@ -702,8 +677,9 @@ surface_material_override/0 = SubResource("StandardMaterial3D_vf1by")
 [node name="Door" parent="." instance=ExtResource("48_20doo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.71484, -0.957562, 16.8889)
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.59753, 0.319362, 17.4403)
+[node name="Anomaly Get Audio Player" type="AudioStreamPlayer3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6784, -151.215, -30.4214)
 stream = ExtResource("49_soibn")
 attenuation_model = 3
 

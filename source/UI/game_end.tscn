@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cy26ipm0l6uvg"]
+[gd_scene load_steps=7 format=3 uid="uid://cy26ipm0l6uvg"]
 
 [ext_resource type="Texture2D" uid="uid://ds5xsm2ohwsdk" path="res://assets/sprites/Buttons/QUIT BASE.png" id="1_t0hlh"]
 [ext_resource type="Texture2D" uid="uid://ctmj738hcym7t" path="res://assets/sprites/Buttons/QUIT PRESSED.png" id="2_cmcn8"]
@@ -6,14 +6,14 @@
 [ext_resource type="Script" uid="uid://ctinufrqglijo" path="res://source/UI/quit_button.gd" id="4_bxyxw"]
 
 [sub_resource type="Gradient" id="Gradient_m3o8s"]
-colors = PackedColorArray(0, 0, 0, 1, 0.23921569, 0.23921569, 0.23921569, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.239216, 0.239216, 0.239216, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_kqyt1"]
 gradient = SubResource("Gradient_m3o8s")
 fill = 1
 fill_from = Vector2(0.5, 0.5)
 
-[node name="GameEnd" type="Control" unique_id=1092609119]
+[node name="GameEnd" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -21,7 +21,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1444160557]
+[node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -30,7 +30,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("GradientTexture2D_kqyt1")
 
-[node name="Quit Button" type="TextureButton" parent="." unique_id=1505547005]
+[node name="Quit Button" type="TextureButton" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_top = 0.712
@@ -48,7 +48,7 @@ ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("4_bxyxw")
 
-[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1416285182]
+[node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 14
 anchor_top = 0.5
@@ -61,7 +61,7 @@ grow_vertical = 2
 theme_override_constants/margin_left = 20
 theme_override_constants/margin_right = 20
 
-[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer" unique_id=1816732021]
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer"]
 layout_mode = 2
 bbcode_enabled = true
 text = "[font_size=12][b]You beat the Game![/b][/font_size]
