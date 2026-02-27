@@ -1,8 +1,9 @@
-[gd_scene load_steps=73 format=4 uid="uid://c0o17r85gxfui"]
+[gd_scene format=4 uid="uid://c0o17r85gxfui"]
 
 [ext_resource type="Script" uid="uid://bs56ayrlo47wf" path="res://source/game/levels/level.gd" id="1_ouvpk"]
 [ext_resource type="Environment" uid="uid://pq7vqvfywr8t" path="res://source/game/levels/level_env.tres" id="2_p56g6"]
 [ext_resource type="Script" uid="uid://cts7ja6veofqq" path="res://source/game/levels/level_stitching/level_trigger.gd" id="3_1ti2n"]
+[ext_resource type="Texture2D" uid="uid://cctarfyjvdl26" path="res://assets/sprites/Black_bar.png" id="4_k5a5i"]
 [ext_resource type="PackedScene" uid="uid://yx5g6gub48g" path="res://assets/models/Environment/Metro_PSX_split/light.tscn" id="4_on3kf"]
 [ext_resource type="PackedScene" uid="uid://d26nnggxojrx4" path="res://assets/models/Environment/Metro_PSX_split/trash_can.tscn" id="5_44wqk"]
 [ext_resource type="PackedScene" uid="uid://3g4l8qqfd515" path="res://assets/models/Environment/Metro_PSX_split/vending_machine.tscn" id="6_wdgyb"]
@@ -405,7 +406,7 @@ _data = {
 }
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8ou78"]
-size = Vector3(5.09839, 3.16602, 67.4854)
+size = Vector3(5.09839, 7.180666, 67.4854)
 
 [sub_resource type="QuadMesh" id="QuadMesh_pktld"]
 size = Vector2(5, 7)
@@ -413,325 +414,327 @@ size = Vector2(5, 7)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vf1by"]
 albedo_color = Color(0, 0, 0, 1)
 
-[node name="level_06" type="Node3D" node_paths=PackedStringArray("_out_door") groups=["Level"]]
+[node name="level_06" type="Node3D" unique_id=112231481 node_paths=PackedStringArray("_out_door") groups=["Level"]]
 script = ExtResource("1_ouvpk")
 _out_door = NodePath("Door")
 metadata/level_id = 6
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1768744944]
 environment = ExtResource("2_p56g6")
 
-[node name="Level trigger" type="Area3D" parent="." groups=["Unload"]]
+[node name="Level trigger" type="Area3D" parent="." unique_id=79462335 groups=["Unload"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5487, 7.77593, -76.2571)
 script = ExtResource("3_1ti2n")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Level trigger"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Level trigger" unique_id=488284288]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
 shape = SubResource("BoxShape3D_8u6pu")
 
-[node name="Enviroment" type="Node3D" parent="."]
+[node name="Enviroment" type="Node3D" parent="." unique_id=263819686]
 
-[node name="FogVolume" type="FogVolume" parent="Enviroment"]
+[node name="FogVolume" type="FogVolume" parent="Enviroment" unique_id=1431850870]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6151, 3.01069, 7.60512)
 size = Vector3(7.09984, 7.48425, 12.1033)
 material = SubResource("FogMaterial_r64ux")
 
-[node name="FogVolume2" type="FogVolume" parent="Enviroment"]
+[node name="FogVolume2" type="FogVolume" parent="Enviroment" unique_id=2060535169]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.0263, 3.01069, -63.378)
 size = Vector3(7.92211, 7.48425, 12.1033)
 material = SubResource("FogMaterial_r64ux")
 
-[node name="Subway" type="StaticBody3D" parent="Enviroment"]
+[node name="Subway" type="StaticBody3D" parent="Enviroment" unique_id=1701468388]
 
-[node name="Subway out far" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Sprite3D" type="Sprite3D" parent="Enviroment/Subway" unique_id=1104087886]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 18.967302, 7.428812, -71.50498)
+texture = ExtResource("4_k5a5i")
+
+[node name="Subway out far" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=392891323]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.5, -75.1384, 2.54126)
 shape = SubResource("BoxShape3D_xlege")
 
-[node name="Subway out far2" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Subway out far2" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=122844451]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.5478, 3.05642, 1.84874)
 shape = SubResource("BoxShape3D_loslf")
 
-[node name="Subway out near" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Subway out near" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=218186234]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1528, -75.1383, -60.6107)
 shape = SubResource("BoxShape3D_r7iov")
 
-[node name="Floor" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Floor" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=428293851]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0744, -77.5592, -28.7957)
 shape = SubResource("BoxShape3D_bn6st")
 
-[node name="Upper Floor" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Upper Floor" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=1823283733]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.4498, 5.35758, -72.3856)
 shape = SubResource("BoxShape3D_8ejdx")
 
-[node name="Stairs" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Stairs" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=2060278268]
 transform = Transform3D(-8.74228e-08, 1, -7.57103e-08, 0.866025, 3.78552e-08, -0.5, 0.5, 1.09278e-07, 0.866025, 21.8452, 3.35305, -59.6367)
 shape = SubResource("BoxShape3D_r64ux")
 
-[node name="Stairs2" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Stairs2" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=913507808]
 transform = Transform3D(-8.74228e-08, 1, -7.57103e-08, 0.866025, 3.78552e-08, -0.5, 0.5, 1.09278e-07, 0.866025, 21.8452, 8.00739, -59.9625)
 shape = SubResource("BoxShape3D_r64ux")
 
-[node name="Upper Left Wall" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Upper Left Wall" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=2014276802]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.7906, 5.60832, -67.3135)
 shape = SubResource("BoxShape3D_6w72y")
 
-[node name="Lower Left Wall" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Lower Left Wall" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=266880847]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3668, 3.20547, -29.6182)
 shape = SubResource("BoxShape3D_drwwt")
 
-[node name="Lower Right Wall" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Lower Right Wall" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=367589492]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.049, -75.1423, -29.3626)
 shape = SubResource("BoxShape3D_sj0p0")
 
-[node name="Upper Right Wall" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Upper Right Wall" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=896047765]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.8055, 7.75616, -74.3568)
 shape = SubResource("BoxShape3D_4oxtu")
 
-[node name="Upper Right Wall2" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Upper Right Wall2" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=1322001704]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0597, 5.60832, -64.5753)
 shape = SubResource("BoxShape3D_j3brg")
 
-[node name="Back Wall" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Back Wall" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=1810961514]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.3681, 7.79383, -80.031)
 shape = SubResource("BoxShape3D_pktld")
 
-[node name="Back Wall2" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Back Wall2" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=417493376]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.1334, 7.79383, -80.031)
 shape = SubResource("BoxShape3D_vf1by")
 
-[node name="Back Wall3" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Back Wall3" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=738646778]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8133, 8.97647, -80.031)
 shape = SubResource("BoxShape3D_w6x52")
 
-[node name="Pillar" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Pillar" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=1984749929]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.7675, 3.8362, -36.0135)
 shape = SubResource("BoxShape3D_nqmpd")
 
-[node name="Pillar2" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Pillar2" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=214835281]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.7675, 3.83895, -23.498)
 shape = SubResource("BoxShape3D_nqmpd")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=848279332]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.9543, 3.80621, -1.80653)
 shape = SubResource("BoxShape3D_mp6dy")
 
-[node name="Subway light" parent="Enviroment/Subway" instance=ExtResource("4_on3kf")]
+[node name="Subway light" parent="Enviroment/Subway" unique_id=1100591500 instance=ExtResource("4_on3kf")]
 transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 100, 4.37114e-06, 5.21079e-13, 21.6309, 6.48184, -51.9358)
 
-[node name="Hallway Light1" parent="Enviroment/Subway" instance=ExtResource("4_on3kf")]
+[node name="Hallway Light1" parent="Enviroment/Subway" unique_id=536796530 instance=ExtResource("4_on3kf")]
 transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 100, 4.37114e-06, 5.21079e-13, 21.6309, 9.95316, -77.3057)
 
-[node name="Hallway Light2" parent="Enviroment/Subway" instance=ExtResource("4_on3kf")]
+[node name="Hallway Light2" parent="Enviroment/Subway" unique_id=1354677792 instance=ExtResource("4_on3kf")]
 transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 100, 4.37114e-06, 5.21079e-13, 21.6309, 9.95316, -71.7829)
 
-[node name="Hallway Light3" parent="Enviroment/Subway" instance=ExtResource("4_on3kf")]
+[node name="Hallway Light3" parent="Enviroment/Subway" unique_id=1009645356 instance=ExtResource("4_on3kf")]
 transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 100, 4.37114e-06, 5.21079e-13, 21.6309, 9.95316, -66.1583)
 
-[node name="Subway light2" parent="Enviroment/Subway" instance=ExtResource("4_on3kf")]
+[node name="Subway light2" parent="Enviroment/Subway" unique_id=421665705 instance=ExtResource("4_on3kf")]
 transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 100, 4.37114e-06, 5.21079e-13, 21.6309, 6.48184, -34.9694)
 
-[node name="Subway light3" parent="Enviroment/Subway" instance=ExtResource("4_on3kf")]
+[node name="Subway light3" parent="Enviroment/Subway" unique_id=548590439 instance=ExtResource("4_on3kf")]
 transform = Transform3D(-4.37114e-06, 100, 4.37114e-06, 0, -4.37114e-06, 100, 100, 4.37114e-06, 1.91069e-13, 21.6255, 6.48184, -18.7423)
 
-[node name="trash_can" parent="Enviroment/Subway" instance=ExtResource("5_44wqk")]
+[node name="trash_can" parent="Enviroment/Subway" unique_id=533489663 instance=ExtResource("5_44wqk")]
 transform = Transform3D(87.8458, 0, 0, 0, 5.23602e-06, 87.8458, 0, -87.8458, 5.23602e-06, 24.7417, 1.99133, -54.0719)
 
-[node name="trash_can2" parent="Enviroment/Subway" instance=ExtResource("5_44wqk")]
+[node name="trash_can2" parent="Enviroment/Subway" unique_id=1207590551 instance=ExtResource("5_44wqk")]
 transform = Transform3D(87.8458, 0, 0, 0, 5.23602e-06, 87.8458, 0, -87.8458, 5.23602e-06, 24.7417, 1.99133, -31.4567)
 
-[node name="trash_can3" parent="Enviroment/Subway" instance=ExtResource("5_44wqk")]
+[node name="trash_can3" parent="Enviroment/Subway" unique_id=1025724096 instance=ExtResource("5_44wqk")]
 transform = Transform3D(-3.83986e-06, 87.8458, -5.23602e-06, 0, 5.23602e-06, 87.8458, 87.8458, 3.83986e-06, -2.28874e-13, 22.6889, 1.99133, -5.39572)
 
-[node name="Vending_machine" parent="Enviroment/Subway" instance=ExtResource("6_wdgyb")]
+[node name="Vending_machine" parent="Enviroment/Subway" unique_id=1510014422 instance=ExtResource("6_wdgyb")]
 transform = Transform3D(-4.94953e-06, -113.232, -1.34983e-05, 0, -1.34983e-05, 113.232, -113.232, 4.94953e-06, 5.90029e-13, 25.0011, 2.66998, -30.0201)
 
-[node name="Vending_machine2" parent="Enviroment/Subway" instance=ExtResource("6_wdgyb")]
+[node name="Vending_machine2" parent="Enviroment/Subway" unique_id=1766355392 instance=ExtResource("6_wdgyb")]
 transform = Transform3D(113.232, -2.72848e-12, 3.79471e-19, -3.51685e-20, -1.34983e-05, 113.232, -2.72848e-12, -113.232, -1.34983e-05, 21.432, 2.66998, -5.13632)
 
-[node name="Chair" parent="Enviroment/Subway" instance=ExtResource("7_o1d6k")]
+[node name="Chair" parent="Enviroment/Subway" unique_id=443514994 instance=ExtResource("7_o1d6k")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -51.6062)
 
-[node name="Chair3" parent="Enviroment/Subway" instance=ExtResource("7_o1d6k")]
+[node name="Chair3" parent="Enviroment/Subway" unique_id=1534205045 instance=ExtResource("7_o1d6k")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -48.3957)
 
-[node name="Chair4" parent="Enviroment/Subway" instance=ExtResource("7_o1d6k")]
+[node name="Chair4" parent="Enviroment/Subway" unique_id=617056411 instance=ExtResource("7_o1d6k")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -39.6899)
 
-[node name="Chair5" parent="Enviroment/Subway" instance=ExtResource("7_o1d6k")]
+[node name="Chair5" parent="Enviroment/Subway" unique_id=513075800 instance=ExtResource("7_o1d6k")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -36.4772)
 
-[node name="Chair6" parent="Enviroment/Subway" instance=ExtResource("7_o1d6k")]
+[node name="Chair6" parent="Enviroment/Subway" unique_id=1172186724 instance=ExtResource("7_o1d6k")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -23.7472)
 
-[node name="Chair2" parent="Enviroment/Subway" instance=ExtResource("7_o1d6k")]
+[node name="Chair2" parent="Enviroment/Subway" unique_id=885675228 instance=ExtResource("7_o1d6k")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -20.772)
 
-[node name="Poster_01" parent="Enviroment/Subway" instance=ExtResource("8_3n0v3")]
+[node name="Poster_01" parent="Enviroment/Subway" unique_id=2065073973 instance=ExtResource("8_3n0v3")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.321, 3.65871, -51.3293)
 
-[node name="Poster_02" parent="Enviroment/Subway" instance=ExtResource("9_htuts")]
+[node name="Poster_02" parent="Enviroment/Subway" unique_id=54920150 instance=ExtResource("9_htuts")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.321, 3.60898, -46.1525)
 
-[node name="Poster_03" parent="Enviroment/Subway" instance=ExtResource("10_7f2uo")]
+[node name="Poster_03" parent="Enviroment/Subway" unique_id=1068139962 instance=ExtResource("10_7f2uo")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.3206, 3.86647, -40.9819)
 
-[node name="Poster_04" parent="Enviroment/Subway" instance=ExtResource("11_8pv1n")]
+[node name="Poster_04" parent="Enviroment/Subway" unique_id=916199661 instance=ExtResource("11_8pv1n")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.3206, 3.86647, -35.7989)
 
-[node name="Poster_05" parent="Enviroment/Subway" instance=ExtResource("12_wvew7")]
+[node name="Poster_05" parent="Enviroment/Subway" unique_id=1203926287 instance=ExtResource("12_wvew7")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.321, 3.86656, -23.8165)
 
-[node name="Poster_06" parent="Enviroment/Subway" instance=ExtResource("13_qjdf2")]
+[node name="Poster_06" parent="Enviroment/Subway" unique_id=563872855 instance=ExtResource("13_qjdf2")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.321, 3.86656, -18.6397)
 
-[node name="Poster_07" parent="Enviroment/Subway" instance=ExtResource("14_x0oog")]
+[node name="Poster_07" parent="Enviroment/Subway" unique_id=620205939 instance=ExtResource("14_x0oog")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.321, 3.86656, -13.4629)
 
-[node name="Poster_08" parent="Enviroment/Subway" instance=ExtResource("15_adqkr")]
+[node name="Poster_08" parent="Enviroment/Subway" unique_id=1772087751 instance=ExtResource("15_adqkr")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.321, 3.86656, -8.2861)
 
-[node name="St_01" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="St_01" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=1533623440]
 transform = Transform3D(-3.30651e-08, -4.99269e-15, -0.756441, -1.14219e-07, 0.756441, 3.81165e-21, -0.756441, -1.14219e-07, 3.30651e-08, 18.439, 3.71425, -23.4875)
 mesh = ExtResource("38_ouvpk")
 skeleton = NodePath("")
 
-[node name="Column" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="Column" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=1500828040]
 transform = Transform3D(0, 66.6506, -2.25437e-06, 1.97955e-06, 0, 75.6441, -66.4227, 1.98634e-06, 0, 18.7677, 3.86614, -23.4977)
 mesh = SubResource("ArrayMesh_qvhyj")
 skeleton = NodePath("")
 
-[node name="Column2" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="Column2" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=545164762]
 transform = Transform3D(1.38409, -66.6361, 2.25388e-06, 1.97955e-06, 8.26284e-14, 75.6441, 66.4083, 1.38884, -4.6976e-08, 18.7677, 3.86614, -23.4977)
 mesh = SubResource("ArrayMesh_qvhyj")
 skeleton = NodePath("")
 
-[node name="St_05" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="St_05" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=1204732493]
 transform = Transform3D(6.61302e-08, 0, -0.756441, 0, 0.756441, 0, 0.756441, 0, 6.61302e-08, 18.4347, 3.71432, -66.17)
 mesh = ExtResource("19_xlege")
 skeleton = NodePath("")
 
-[node name="St_06" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="St_06" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=685027101]
 transform = Transform3D(-3.30651e-08, -2.89064e-15, -0.756441, -6.61302e-08, 0.756441, 0, -0.756441, -6.61302e-08, 3.30651e-08, 18.439, 3.71432, 6.67275)
 mesh = ExtResource("19_xlege")
 skeleton = NodePath("")
 
-[node name="St_04" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="St_04" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=581926283]
 transform = Transform3D(0, 0, -0.756441, 0, 0.756441, 0, -0.756441, 0, 0, 18.4357, 3.70264, -10.9715)
 mesh = ExtResource("22_q62um")
 skeleton = NodePath("")
 
-[node name="Door_A_01" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="Door_A_01" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=1542349814]
 transform = Transform3D(-1.3668e-07, 0, 0.573277, 0, 0.573277, 0, 0.573277, 0, 1.3668e-07, 19.379, 6.91223, -69.4085)
 mesh = SubResource("ArrayMesh_6srnj")
 skeleton = NodePath("")
 
-[node name="Estruc_001" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="Estruc_001" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=2056959764]
 transform = Transform3D(-0.756441, 0, 0, 0, 0.756441, 0, 0, 0, -0.756441, 17.806, 7.92951, -71.7908)
 mesh = SubResource("ArrayMesh_wqu8r")
 skeleton = NodePath("")
 
-[node name="Frame" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="Frame" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=877283190]
 transform = Transform3D(-1, 0, -3.25841e-07, 0, 1, 0, -3.25841e-07, 0, 1, 19.3621, 7.36687, -71.0047)
 mesh = SubResource("ArrayMesh_je7gi")
 skeleton = NodePath("")
 
-[node name="Glass_01" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="Glass_01" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=1209964028]
 transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, 1, 0, 1.19209e-07, 19.3777, 7.47625, -70.9382)
 mesh = SubResource("ArrayMesh_2tsu6")
 skeleton = NodePath("")
 
-[node name="SerwersP1_008" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="SerwersP1_008" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=1771817281]
 transform = Transform3D(0, 1, 0, 0, 0, -1, 1, 0, 0, 21.789, 7.45413, -80.8252)
 mesh = ExtResource("24_r7iov")
 skeleton = NodePath("")
 
-[node name="SerwersP_009" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="SerwersP_009" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=707073729]
 transform = Transform3D(4.37114e-08, 1, 4.37114e-08, 0, 4.37114e-08, -1, 1, -4.37114e-08, -1.91069e-15, 21.8216, 6.73961, -79.8898)
 mesh = SubResource("ArrayMesh_mpyrv")
 skeleton = NodePath("")
 
-[node name="St_02" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="St_02" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=691666308]
 transform = Transform3D(-3.30651e-08, -2.89064e-15, -0.756441, -6.61302e-08, 0.756441, 0, -0.756441, -6.61302e-08, 3.30651e-08, 18.4396, 3.71422, -36.0095)
 mesh = ExtResource("38_ouvpk")
 skeleton = NodePath("")
 
-[node name="Column3" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="Column3" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=1213116148]
 transform = Transform3D(0, 0, -0.666506, 0, 0.756441, 0, -0.664227, 0, 0, 18.7681, 3.87509, -36.0099)
 mesh = SubResource("ArrayMesh_7nbq8")
 skeleton = NodePath("")
 
-[node name="Pit" type="Node3D" parent="Enviroment"]
+[node name="Pit" type="Node3D" parent="Enviroment" unique_id=230915993]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.2191, 0, -18.5101)
 
-[node name="Pit" type="Area3D" parent="Enviroment/Pit"]
+[node name="Pit" type="Area3D" parent="Enviroment/Pit" unique_id=2134721014]
 script = ExtResource("28_r7iov")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Enviroment/Pit/Pit"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Enviroment/Pit/Pit" unique_id=1631727862]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0504074, -77.1048, -8.80203)
 shape = SubResource("BoxShape3D_2s68e")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Enviroment/Pit/Pit"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Enviroment/Pit/Pit" unique_id=202265166]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Enviroment/Pit/Pit"]
-libraries = {
-&"": SubResource("AnimationLibrary_nivj7")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Enviroment/Pit/Pit" unique_id=570488760]
+libraries/ = SubResource("AnimationLibrary_nivj7")
 
-[node name="Anomaly" type="Node3D" parent="Enviroment/Pit"]
+[node name="Anomaly" type="Node3D" parent="Enviroment/Pit" unique_id=960821072]
 script = ExtResource("31_q62um")
 metadata/_custom_type_script = "uid://dp6ov6sut21io"
 
-[node name="InteractableInputDisplay" parent="Enviroment/Pit" instance=ExtResource("33_xt5gq")]
+[node name="InteractableInputDisplay" parent="Enviroment/Pit" unique_id=1877201737 instance=ExtResource("33_xt5gq")]
 transform = Transform3D(2.46363, 0, 0, 0, 2.46363, 0, 0, 0, 2.46363, 1.23468, 2.36864, -24.4729)
 
-[node name="Interactable" type="Area3D" parent="Enviroment/Pit" node_paths=PackedStringArray("interact_audio_player")]
+[node name="Interactable" type="Area3D" parent="Enviroment/Pit" unique_id=137565461 node_paths=PackedStringArray("interact_audio_player")]
 script = ExtResource("32_nivj7")
 interact_audio_player = NodePath("../../../AudioStreamPlayer3D")
 metadata/_custom_type_script = "uid://dht8mbnpa5y0y"
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Enviroment/Pit/Interactable"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.778687, 1.08301, -12.4053)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Enviroment/Pit/Interactable" unique_id=117989475]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7786875, 3.0903332, -12.4053)
 shape = SubResource("BoxShape3D_8ou78")
 
-[node name="FogVolume" type="FogVolume" parent="Enviroment/Pit"]
+[node name="FogVolume" type="FogVolume" parent="Enviroment/Pit" unique_id=1685038336]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0902224, -82.0205, -10.9777)
 size = Vector3(7.09984, 161.013, 61.2904)
 material = SubResource("FogMaterial_r64ux")
 
-[node name="HoverDisplay" type="Node" parent="Enviroment/Pit" node_paths=PackedStringArray("interactable", "interactable_display")]
+[node name="HoverDisplay" type="Node" parent="Enviroment/Pit" unique_id=1661988278 node_paths=PackedStringArray("interactable", "interactable_display")]
 script = ExtResource("31_2s68e")
 interactable = NodePath("../Interactable")
 interactable_display = NodePath("../InteractableInputDisplay")
 
-[node name="InNode" type="Node3D" parent="." groups=["InNode"]]
+[node name="InNode" type="Node3D" parent="." unique_id=1654800291 groups=["InNode"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.2498, 5.53115, -80.1987)
 
-[node name="OutNode" type="Node3D" parent="." groups=["OutNode"]]
+[node name="OutNode" type="Node3D" parent="." unique_id=1109684863 groups=["OutNode"]]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.445, -1.036, 16.974)
 script = ExtResource("47_e3pow")
 
-[node name="FarTunnelBlackout" type="MeshInstance3D" parent="."]
+[node name="FarTunnelBlackout" type="MeshInstance3D" parent="." unique_id=1473620094]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14.6508, 2.82225, 12.4852)
 mesh = SubResource("QuadMesh_pktld")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_vf1by")
 
-[node name="NearTunnelBlackout" type="MeshInstance3D" parent="."]
+[node name="NearTunnelBlackout" type="MeshInstance3D" parent="." unique_id=1856887172]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6508, 2.82225, -71.1201)
 mesh = SubResource("QuadMesh_pktld")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_vf1by")
 
-[node name="Door" parent="." instance=ExtResource("48_20doo")]
+[node name="Door" parent="." unique_id=1420272237 instance=ExtResource("48_20doo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.71484, -0.957562, 16.8889)
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1477600994]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6784, -151.215, -48.332)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6784, -151.215, -23.61981)
 stream = ExtResource("49_soibn")
 attenuation_model = 3
 
-[node name="PlayerSpawn" type="Node3D" parent="." groups=["PlayerSpawn"]]
+[node name="PlayerSpawn" type="Node3D" parent="." unique_id=790111263 groups=["PlayerSpawn"]]
 transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 21.8599, 5.80914, -77.1457)
 
 [connection signal="on_hover_state_set" from="Enviroment/Pit/Interactable" to="Enviroment/Pit/InteractableInputDisplay" method="set_hovered_state"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=99 format=4 uid="uid://upfh8uyt1rip"]
+[gd_scene format=4 uid="uid://upfh8uyt1rip"]
 
 [ext_resource type="Script" uid="uid://bs56ayrlo47wf" path="res://source/game/levels/level.gd" id="1_pktld"]
 [ext_resource type="Environment" uid="uid://pq7vqvfywr8t" path="res://source/game/levels/level_env.tres" id="2_pktld"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://b6n28aiqja6it" path="res://assets/models/Environment/Sewer/Sewer_split/serwers_003.tscn" id="7_s7o62"]
 [ext_resource type="PackedScene" uid="uid://gwlueupaotra" path="res://assets/models/Environment/Sewer/Sewer_split/serwers.tscn" id="8_e5ibc"]
 [ext_resource type="PackedScene" uid="uid://cl2wj13fhfm3g" path="res://assets/models/Environment/Sewer/Sewer_split/serwers_001.tscn" id="9_aob5m"]
+[ext_resource type="Texture2D" uid="uid://cctarfyjvdl26" path="res://assets/sprites/Black_bar.png" id="13_6rxox"]
 [ext_resource type="Material" uid="uid://dvx4cl62uwtvp" path="res://assets/models/Environment/Metro_PSX/materials/Tiles.tres" id="23_bau3y"]
 [ext_resource type="Material" uid="uid://df8gefbdmblpw" path="res://assets/models/Environment/Metro_PSX/materials/Door_01.tres" id="23_x6vlt"]
 [ext_resource type="Material" uid="uid://caaryh10tskl1" path="res://assets/models/Environment/Metro_PSX/materials/TactilePaving.tres" id="24_a81kf"]
@@ -1144,434 +1145,438 @@ size = Vector2(5, 7)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vf1by"]
 albedo_color = Color(0, 0, 0, 1)
 
-[node name="base_level" type="Node3D" node_paths=PackedStringArray("_out_door") groups=["Level"]]
+[node name="base_level" type="Node3D" unique_id=584331111 node_paths=PackedStringArray("_out_door") groups=["Level"]]
 script = ExtResource("1_pktld")
 _out_door = NodePath("Door")
 metadata/level_id = -1
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=178138333]
 environment = ExtResource("2_pktld")
 
-[node name="Level trigger" type="Area3D" parent="." groups=["Unload"]]
+[node name="Level trigger" type="Area3D" parent="." unique_id=877192431 groups=["Unload"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5487, 7.77593, -76.2571)
 script = ExtResource("3_pktld")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Level trigger"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Level trigger" unique_id=2057916255]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
 shape = SubResource("BoxShape3D_8u6pu")
 
-[node name="Enviroment" type="Node3D" parent="."]
+[node name="Enviroment" type="Node3D" parent="." unique_id=278527095]
 
-[node name="FogVolume" type="FogVolume" parent="Enviroment"]
+[node name="FogVolume" type="FogVolume" parent="Enviroment" unique_id=2022971550]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6151, 3.01069, 7.60512)
 size = Vector3(7.09984, 7.48425, 12.1033)
 material = SubResource("FogMaterial_r64ux")
 
-[node name="FogVolume2" type="FogVolume" parent="Enviroment"]
+[node name="FogVolume2" type="FogVolume" parent="Enviroment" unique_id=1430174735]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.0263, 3.01069, -63.378)
 size = Vector3(7.92211, 7.48425, 12.1033)
 material = SubResource("FogMaterial_r64ux")
 
-[node name="Sewers" type="StaticBody3D" parent="Enviroment"]
+[node name="Sewers" type="StaticBody3D" parent="Enviroment" unique_id=1069382704]
 
-[node name="Serwers_012" parent="Enviroment/Sewers" instance=ExtResource("3_nk765")]
+[node name="Serwers_012" parent="Enviroment/Sewers" unique_id=1033357773 instance=ExtResource("3_nk765")]
 transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, -21.546, 1.09977, -45.0656)
 
-[node name="SerwersP1_012" parent="Enviroment/Sewers" instance=ExtResource("4_kflkk")]
+[node name="SerwersP1_012" parent="Enviroment/Sewers" unique_id=1529856647 instance=ExtResource("4_kflkk")]
 transform = Transform3D(-7.44711e-06, 7.97051e-06, 170.37, 0, 182.344, -7.44711e-06, -170.37, 9.47229e-13, -7.44711e-06, 0.385892, 1.06077, 20.2344)
 
-[node name="Serwers_021" parent="Enviroment/Sewers" instance=ExtResource("5_udoio")]
+[node name="Serwers_021" parent="Enviroment/Sewers" unique_id=2114062537 instance=ExtResource("5_udoio")]
 transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, 0.36599, 1.09991, 10.6442)
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="Enviroment/Sewers"]
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Enviroment/Sewers" unique_id=257804508]
 transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, 0.36599, 1.09991, 10.6442)
 shape = SubResource("ConcavePolygonShape3D_1eq5v")
 
-[node name="Serwers_023" parent="Enviroment/Sewers" instance=ExtResource("5_udoio")]
+[node name="Serwers_023" parent="Enviroment/Sewers" unique_id=1756583992 instance=ExtResource("5_udoio")]
 transform = Transform3D(-1.48047e-05, -1.48047e-05, -338.693, 0, 338.693, -1.48047e-05, 338.693, -6.47134e-13, -1.48047e-05, -4.71161, 1.09983, 29.5984)
 
-[node name="Serwers_022" parent="Enviroment/Sewers" instance=ExtResource("6_q5lju")]
+[node name="Serwers_022" parent="Enviroment/Sewers" unique_id=1958557505 instance=ExtResource("6_q5lju")]
 transform = Transform3D(-338.693, -1.29427e-12, -2.96095e-05, 0, 338.693, -1.48047e-05, 2.96095e-05, -1.48047e-05, -338.693, 0.365891, 1.10003, 17.4181)
 
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="Enviroment/Sewers"]
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Enviroment/Sewers" unique_id=390389231]
 transform = Transform3D(-338.693, -1.29427e-12, -2.96095e-05, 0, 338.693, -1.48047e-05, 2.96095e-05, -1.48047e-05, -338.693, 0.365891, 1.10003, 17.4181)
 shape = SubResource("ConcavePolygonShape3D_hs1po")
 
-[node name="Serwers_003" parent="Enviroment/Sewers" instance=ExtResource("7_s7o62")]
+[node name="Serwers_003" parent="Enviroment/Sewers" unique_id=1819582888 instance=ExtResource("7_s7o62")]
 transform = Transform3D(-1.48047e-05, 0, -338.693, 0, 338.693, 0, 338.693, 0, -1.48047e-05, -4.99985, 1.09947, -3.20124)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Enviroment/Sewers"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Enviroment/Sewers" unique_id=1374599705]
 transform = Transform3D(-1.48047e-05, 0, -338.693, 0, 338.693, 0, 338.693, 0, -1.48047e-05, -4.99985, 1.09947, -3.20124)
 shape = SubResource("ConcavePolygonShape3D_8u6pu")
 
-[node name="Serwers2" parent="Enviroment/Sewers" instance=ExtResource("8_e5ibc")]
+[node name="Serwers2" parent="Enviroment/Sewers" unique_id=1480086980 instance=ExtResource("8_e5ibc")]
 transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -12.7739, 1.09982, 5.56753)
 
-[node name="CollisionShape3D9" type="CollisionShape3D" parent="Enviroment/Sewers"]
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Enviroment/Sewers" unique_id=1644134296]
 transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -12.7739, 1.09982, 5.56753)
 shape = SubResource("ConcavePolygonShape3D_8xhuy")
 
-[node name="Serwers_007" parent="Enviroment/Sewers" instance=ExtResource("7_s7o62")]
+[node name="Serwers_007" parent="Enviroment/Sewers" unique_id=896617660 instance=ExtResource("7_s7o62")]
 transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.24638e-05, 0, 1.48047e-05, 285.139, -12.7735, 1.0999, -10.4395)
 
-[node name="Serwers_009" parent="Enviroment/Sewers" instance=ExtResource("7_s7o62")]
+[node name="Serwers_009" parent="Enviroment/Sewers" unique_id=1553134548 instance=ExtResource("7_s7o62")]
 transform = Transform3D(338.693, 0, 0, 0, 338.693, -1.48047e-05, 0, 1.48047e-05, 338.693, -12.7753, 1.0999, -22.5178)
 
-[node name="Serwers3" parent="Enviroment/Sewers" instance=ExtResource("8_e5ibc")]
+[node name="Serwers3" parent="Enviroment/Sewers" unique_id=149845641 instance=ExtResource("8_e5ibc")]
 transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -21.5472, 1.09987, -37.292)
 
-[node name="Serwers_008" parent="Enviroment/Sewers" instance=ExtResource("7_s7o62")]
+[node name="Serwers_008" parent="Enviroment/Sewers" unique_id=1005256163 instance=ExtResource("7_s7o62")]
 transform = Transform3D(-1.48047e-05, 0, 338.693, 0, 338.693, 0, -338.693, 0, -1.48047e-05, 1.99975, 1.09979, -37.2888)
 
-[node name="Serwers_013" parent="Enviroment/Sewers" instance=ExtResource("7_s7o62")]
+[node name="Serwers_013" parent="Enviroment/Sewers" unique_id=1150055183 instance=ExtResource("7_s7o62")]
 transform = Transform3D(-1.48048e-05, 0, -338.693, 0, 338.693, 0, 338.693, 0, -1.48048e-05, -26.5329, 1.0999, 38.3627)
 
-[node name="Serwers_001" parent="Enviroment/Sewers" instance=ExtResource("9_aob5m")]
+[node name="Serwers_001" parent="Enviroment/Sewers" unique_id=4225121 instance=ExtResource("9_aob5m")]
 transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -12.7736, 1.09963, -3.20123)
 
-[node name="CollisionShape3D17" type="CollisionShape3D" parent="Enviroment/Sewers"]
+[node name="CollisionShape3D17" type="CollisionShape3D" parent="Enviroment/Sewers" unique_id=566724989]
 transform = Transform3D(-4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -12.7736, 1.09963, -3.20123)
 shape = SubResource("ConcavePolygonShape3D_c5p3b")
 
-[node name="Serwers_002" parent="Enviroment/Sewers" instance=ExtResource("9_aob5m")]
+[node name="Serwers_002" parent="Enviroment/Sewers" unique_id=900737852 instance=ExtResource("9_aob5m")]
 transform = Transform3D(100, 0, -0.0366449, 0, 100, 0, 0.0366449, 0, 100, -12.7735, 1.09989, -37.2904)
 
-[node name="Serwers_010" parent="Enviroment/Sewers" instance=ExtResource("9_aob5m")]
+[node name="Serwers_010" parent="Enviroment/Sewers" unique_id=864649147 instance=ExtResource("9_aob5m")]
 transform = Transform3D(0.0366405, 0, 100, 0, 100, 0, -100, 0, 0.0366405, -12.4846, 1.09959, 29.5969)
 
-[node name="Serwers_011" parent="Enviroment/Sewers" instance=ExtResource("9_aob5m")]
+[node name="Serwers_011" parent="Enviroment/Sewers" unique_id=2085424770 instance=ExtResource("9_aob5m")]
 transform = Transform3D(-100, 0, 0.0366362, 0, 100, 0, -0.0366362, 0, -100, -12.4893, 1.09959, 38.3643)
 
-[node name="Sewer Gate 1" parent="Enviroment/Sewers" instance=ExtResource("4_kflkk")]
+[node name="Sewer Gate 1" parent="Enviroment/Sewers" unique_id=1078124080 instance=ExtResource("4_kflkk")]
 transform = Transform3D(-7.63245e-06, 2.08477e-08, 174.59, 0.45713, 182.177, 2.28029e-14, -174.61, 0.47694, -7.63157e-06, -12.8143, 1.04028, -6.65139)
 
-[node name="Sewer Gate Doorway" parent="Enviroment/Sewers" instance=ExtResource("60_w6x52")]
+[node name="Sewer Gate Doorway" parent="Enviroment/Sewers" unique_id=280420010 instance=ExtResource("60_w6x52")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.34501, -1.71582, -2.40534)
 
-[node name="SerwersP1_015" type="MeshInstance3D" parent="Enviroment/Sewers"]
+[node name="SerwersP1_015" type="MeshInstance3D" parent="Enviroment/Sewers" unique_id=1982221684]
 transform = Transform3D(14.2152, -6.78356e-06, -172.865, -12.1127, 173.023, -0.996064, 172.441, 12.1535, 14.1802, 5.32597, 0.52244, -2.14936)
 mesh = SubResource("ArrayMesh_ypj02")
 skeleton = NodePath("")
 
-[node name="Subway" type="StaticBody3D" parent="Enviroment"]
+[node name="Subway" type="StaticBody3D" parent="Enviroment" unique_id=203288480]
 
-[node name="Subway out far" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Sprite3D" type="Sprite3D" parent="Enviroment/Subway" unique_id=1099300642]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 18.967302, 7.428812, -71.50498)
+texture = ExtResource("13_6rxox")
+
+[node name="Subway out far" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=625528194]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.5, 3.05642, 2.54126)
 shape = SubResource("BoxShape3D_mmwoj")
 
-[node name="Subway out far2" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Subway out far2" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=1553035218]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.5478, 3.05642, 1.84874)
 shape = SubResource("BoxShape3D_loslf")
 
-[node name="Subway out near" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Subway out near" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=997473455]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1528, 3.05642, -60.6107)
 shape = SubResource("BoxShape3D_g0iqu")
 
-[node name="Floor" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Floor" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=734239685]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0744, 0.694138, -28.7957)
 shape = SubResource("BoxShape3D_28da1")
 
-[node name="Floor2" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Floor2" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=605282028]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.651, -0.712878, -29.2613)
 shape = SubResource("BoxShape3D_x050o")
 
-[node name="Upper Floor" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Upper Floor" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=1281397054]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.4498, 5.35758, -72.3856)
 shape = SubResource("BoxShape3D_8ejdx")
 
-[node name="Stairs" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Stairs" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=6774322]
 transform = Transform3D(-8.74228e-08, 1, -7.57103e-08, 0.866025, 3.78552e-08, -0.5, 0.5, 1.09278e-07, 0.866025, 21.8452, 3.35305, -59.6367)
 shape = SubResource("BoxShape3D_r64ux")
 
-[node name="Stairs2" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Stairs2" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=896539361]
 transform = Transform3D(-8.74228e-08, 1, -7.57103e-08, 0.866025, 3.78552e-08, -0.5, 0.5, 1.09278e-07, 0.866025, 21.8452, 8.00739, -59.9625)
 shape = SubResource("BoxShape3D_r64ux")
 
-[node name="Upper Left Wall" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Upper Left Wall" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=1726224880]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.7906, 5.60832, -67.3135)
 shape = SubResource("BoxShape3D_6w72y")
 
-[node name="Lower Left Wall" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Lower Left Wall" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=1148144462]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3668, 3.20547, -29.6182)
 shape = SubResource("BoxShape3D_drwwt")
 
-[node name="Lower Right Wall" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Lower Right Wall" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=1581650301]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.049, 2.92271, -39.2731)
 shape = SubResource("BoxShape3D_mtro8")
 
-[node name="Lower Right Wall2" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Lower Right Wall2" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=898496249]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.049, 2.92271, 1.31268)
 shape = SubResource("BoxShape3D_nmuv1")
 
-[node name="Upper Right Wall" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Upper Right Wall" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=40397439]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.8055, 7.75616, -74.3568)
 shape = SubResource("BoxShape3D_4oxtu")
 
-[node name="Upper Right Wall2" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Upper Right Wall2" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=1893534155]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0597, 5.60832, -64.5753)
 shape = SubResource("BoxShape3D_j3brg")
 
-[node name="Back Wall" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Back Wall" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=252647092]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.3681, 7.79383, -80.031)
 shape = SubResource("BoxShape3D_pktld")
 
-[node name="Back Wall2" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Back Wall2" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=406365818]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.1334, 7.79383, -80.031)
 shape = SubResource("BoxShape3D_vf1by")
 
-[node name="Back Wall3" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Back Wall3" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=1469635805]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8133, 8.97647, -80.031)
 shape = SubResource("BoxShape3D_w6x52")
 
-[node name="Pillar" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Pillar" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=878496226]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.7675, 3.8362, -36.0135)
 shape = SubResource("BoxShape3D_nqmpd")
 
-[node name="Pillar2" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Pillar2" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=1948131080]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.7675, 3.83895, -23.498)
 shape = SubResource("BoxShape3D_nqmpd")
 
-[node name="Sewer Connection" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Sewer Connection" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=1110569949]
 transform = Transform3D(0, 0, -0.756441, 0, 0.756441, 0, -0.756441, 0, 0, 18.4388, 3.71432, -10.9655)
 shape = SubResource("ConcavePolygonShape3D_g0iqu")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=1408584492]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.9543, 3.80621, -1.80653)
 shape = SubResource("BoxShape3D_mp6dy")
 
-[node name="Subway light" parent="Enviroment/Subway" instance=ExtResource("49_1ofoh")]
+[node name="Subway light" parent="Enviroment/Subway" unique_id=294936615 instance=ExtResource("49_1ofoh")]
 transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 100, 4.37114e-06, 5.21079e-13, 21.6309, 6.48184, -51.9358)
 
-[node name="Subway light2" parent="Enviroment/Subway" instance=ExtResource("49_1ofoh")]
+[node name="Subway light2" parent="Enviroment/Subway" unique_id=1975888638 instance=ExtResource("49_1ofoh")]
 transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 100, 4.37114e-06, 5.21079e-13, 21.6309, 6.48184, -34.9694)
 
-[node name="Subway light3" parent="Enviroment/Subway" instance=ExtResource("49_1ofoh")]
+[node name="Subway light3" parent="Enviroment/Subway" unique_id=248711343 instance=ExtResource("49_1ofoh")]
 transform = Transform3D(-4.37114e-06, 100, 4.37114e-06, 0, -4.37114e-06, 100, 100, 4.37114e-06, 1.91069e-13, 21.6255, 6.48184, -18.7423)
 
-[node name="Hallway Light1" parent="Enviroment/Subway" instance=ExtResource("49_1ofoh")]
+[node name="Hallway Light1" parent="Enviroment/Subway" unique_id=930570696 instance=ExtResource("49_1ofoh")]
 transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 100, 4.37114e-06, 5.21079e-13, 21.6309, 9.95316, -77.3057)
 
-[node name="Hallway Light2" parent="Enviroment/Subway" instance=ExtResource("49_1ofoh")]
+[node name="Hallway Light2" parent="Enviroment/Subway" unique_id=297749805 instance=ExtResource("49_1ofoh")]
 transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 100, 4.37114e-06, 5.21079e-13, 21.6309, 9.95316, -71.7829)
 
-[node name="Hallway Light3" parent="Enviroment/Subway" instance=ExtResource("49_1ofoh")]
+[node name="Hallway Light3" parent="Enviroment/Subway" unique_id=453830416 instance=ExtResource("49_1ofoh")]
 transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 100, 4.37114e-06, 5.21079e-13, 21.6309, 9.95316, -66.1583)
 
-[node name="trash_can" parent="Enviroment/Subway" instance=ExtResource("46_40bsx")]
+[node name="trash_can" parent="Enviroment/Subway" unique_id=875115309 instance=ExtResource("46_40bsx")]
 transform = Transform3D(87.8458, 0, 0, 0, 5.23602e-06, 87.8458, 0, -87.8458, 5.23602e-06, 24.7417, 1.99133, -54.0719)
 
-[node name="trash_can2" parent="Enviroment/Subway" instance=ExtResource("46_40bsx")]
+[node name="trash_can2" parent="Enviroment/Subway" unique_id=1456218072 instance=ExtResource("46_40bsx")]
 transform = Transform3D(87.8458, 0, 0, 0, 5.23602e-06, 87.8458, 0, -87.8458, 5.23602e-06, 24.7417, 1.99133, -31.4567)
 
-[node name="trash_can3" parent="Enviroment/Subway" instance=ExtResource("46_40bsx")]
+[node name="trash_can3" parent="Enviroment/Subway" unique_id=1091645895 instance=ExtResource("46_40bsx")]
 transform = Transform3D(-3.83986e-06, 87.8458, -5.23602e-06, 0, 5.23602e-06, 87.8458, 87.8458, 3.83986e-06, -2.28874e-13, 22.6889, 1.99133, -5.39572)
 
-[node name="Vending_machine" parent="Enviroment/Subway" instance=ExtResource("47_o4e1k")]
+[node name="Vending_machine" parent="Enviroment/Subway" unique_id=1089949332 instance=ExtResource("47_o4e1k")]
 transform = Transform3D(-4.94953e-06, -113.232, -1.34983e-05, 0, -1.34983e-05, 113.232, -113.232, 4.94953e-06, 5.90029e-13, 25.0011, 2.66998, -30.0201)
 
-[node name="Vending_machine2" parent="Enviroment/Subway" instance=ExtResource("47_o4e1k")]
+[node name="Vending_machine2" parent="Enviroment/Subway" unique_id=800722898 instance=ExtResource("47_o4e1k")]
 transform = Transform3D(113.232, -2.72848e-12, 3.79471e-19, -3.51685e-20, -1.34983e-05, 113.232, -2.72848e-12, -113.232, -1.34983e-05, 21.432, 2.66998, -5.13632)
 
-[node name="Chair" parent="Enviroment/Subway" instance=ExtResource("48_qy58j")]
+[node name="Chair" parent="Enviroment/Subway" unique_id=1431034670 instance=ExtResource("48_qy58j")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -51.6062)
 
-[node name="Chair3" parent="Enviroment/Subway" instance=ExtResource("48_qy58j")]
+[node name="Chair3" parent="Enviroment/Subway" unique_id=1439079066 instance=ExtResource("48_qy58j")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -48.3957)
 
-[node name="Chair4" parent="Enviroment/Subway" instance=ExtResource("48_qy58j")]
+[node name="Chair4" parent="Enviroment/Subway" unique_id=414883550 instance=ExtResource("48_qy58j")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -39.6899)
 
-[node name="Chair5" parent="Enviroment/Subway" instance=ExtResource("48_qy58j")]
+[node name="Chair5" parent="Enviroment/Subway" unique_id=1293631701 instance=ExtResource("48_qy58j")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -36.4772)
 
-[node name="Chair6" parent="Enviroment/Subway" instance=ExtResource("48_qy58j")]
+[node name="Chair6" parent="Enviroment/Subway" unique_id=1001717967 instance=ExtResource("48_qy58j")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -23.7472)
 
-[node name="Chair2" parent="Enviroment/Subway" instance=ExtResource("48_qy58j")]
+[node name="Chair2" parent="Enviroment/Subway" unique_id=2125384612 instance=ExtResource("48_qy58j")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -20.772)
 
-[node name="Poster_01" parent="Enviroment/Subway" instance=ExtResource("38_krytd")]
+[node name="Poster_01" parent="Enviroment/Subway" unique_id=372053566 instance=ExtResource("38_krytd")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.321, 3.65871, -51.3293)
 
-[node name="Poster_02" parent="Enviroment/Subway" instance=ExtResource("39_t64nj")]
+[node name="Poster_02" parent="Enviroment/Subway" unique_id=1535896467 instance=ExtResource("39_t64nj")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.321, 3.60898, -46.1525)
 
-[node name="Poster_03" parent="Enviroment/Subway" instance=ExtResource("40_5mv4a")]
+[node name="Poster_03" parent="Enviroment/Subway" unique_id=270495805 instance=ExtResource("40_5mv4a")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.3206, 3.86647, -40.9819)
 
-[node name="Poster_04" parent="Enviroment/Subway" instance=ExtResource("41_7sbmd")]
+[node name="Poster_04" parent="Enviroment/Subway" unique_id=1783081036 instance=ExtResource("41_7sbmd")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.3206, 3.86647, -35.7989)
 
-[node name="Poster_05" parent="Enviroment/Subway" instance=ExtResource("42_d2t6b")]
+[node name="Poster_05" parent="Enviroment/Subway" unique_id=2084988495 instance=ExtResource("42_d2t6b")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.321, 3.86656, -23.8165)
 
-[node name="Poster_06" parent="Enviroment/Subway" instance=ExtResource("43_oapd1")]
+[node name="Poster_06" parent="Enviroment/Subway" unique_id=1699386143 instance=ExtResource("43_oapd1")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.321, 3.86656, -18.6397)
 
-[node name="Poster_07" parent="Enviroment/Subway" instance=ExtResource("44_j4nvw")]
+[node name="Poster_07" parent="Enviroment/Subway" unique_id=42968891 instance=ExtResource("44_j4nvw")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.321, 3.86656, -13.4629)
 
-[node name="Poster_08" parent="Enviroment/Subway" instance=ExtResource("45_eibpg")]
+[node name="Poster_08" parent="Enviroment/Subway" unique_id=1381242545 instance=ExtResource("45_eibpg")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.321, 3.86656, -8.2861)
 
-[node name="Frame" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="Frame" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=1312076924]
 transform = Transform3D(-1, 0, -3.25841e-07, 0, 1, 0, -3.25841e-07, 0, 1, 19.3621, 7.36687, -71.0047)
 mesh = SubResource("ArrayMesh_je7gi")
 skeleton = NodePath("")
 
-[node name="Glass_01" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="Glass_01" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=1709692899]
 transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, 1, 0, 1.19209e-07, 19.3777, 7.47625, -70.9382)
 mesh = SubResource("ArrayMesh_2tsu6")
 skeleton = NodePath("")
 
-[node name="SerwersP1_008" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="SerwersP1_008" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=27879361]
 transform = Transform3D(0, 1, 0, 0, 0, -1, 1, 0, 0, 21.789, 7.45413, -80.8252)
 mesh = SubResource("ArrayMesh_4mvg8")
 skeleton = NodePath("")
 
-[node name="SerwersP_009" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="SerwersP_009" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=1704252145]
 transform = Transform3D(4.37114e-08, 1, 4.37114e-08, 0, 4.37114e-08, -1, 1, -4.37114e-08, -1.91069e-15, 21.8216, 6.73961, -79.8898)
 mesh = SubResource("ArrayMesh_mpyrv")
 skeleton = NodePath("")
 
-[node name="St_02" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="St_02" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=880392253]
 transform = Transform3D(-3.30651e-08, -2.89064e-15, -0.756441, -6.61302e-08, 0.756441, 0, -0.756441, -6.61302e-08, 3.30651e-08, 18.4396, 3.71422, -36.0095)
 mesh = SubResource("ArrayMesh_d06ka")
 skeleton = NodePath("")
 
-[node name="St_01" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="St_01" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=1922510080]
 transform = Transform3D(0, 75.6441, -2.25437e-06, 2.25437e-06, 0, 75.6441, -75.6441, 2.25437e-06, 0, 18.439, 3.71425, -23.4875)
 mesh = SubResource("ArrayMesh_likke")
 skeleton = NodePath("")
 
-[node name="Column" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="Column" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=743367217]
 transform = Transform3D(0, 66.6506, -2.25437e-06, 1.97955e-06, 0, 75.6441, -66.4227, 1.98634e-06, 0, 18.7677, 3.86614, -23.4977)
 mesh = SubResource("ArrayMesh_qvhyj")
 skeleton = NodePath("")
 
-[node name="Column2" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="Column2" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=2105354420]
 transform = Transform3D(1.38409, -66.6361, 2.25388e-06, 1.97955e-06, 8.26284e-14, 75.6441, 66.4083, 1.38884, -4.6976e-08, 18.7677, 3.86614, -23.4977)
 mesh = SubResource("ArrayMesh_qvhyj")
 skeleton = NodePath("")
 
-[node name="Column3" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="Column3" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=1712658207]
 transform = Transform3D(0, 0, -0.666506, 0, 0.756441, 0, -0.664227, 0, 0, 18.7681, 3.87509, -36.0099)
 mesh = SubResource("ArrayMesh_7nbq8")
 skeleton = NodePath("")
 
-[node name="St_05" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="St_05" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=686850286]
 transform = Transform3D(6.61302e-08, 0, -0.756441, 0, 0.756441, 0, 0.756441, 0, 6.61302e-08, 18.4347, 3.71432, -66.17)
 mesh = SubResource("ArrayMesh_vqoxn")
 skeleton = NodePath("")
 
-[node name="St_06" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="St_06" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=753257162]
 transform = Transform3D(0, 0, -0.756441, 0, 0.756441, 0, -0.756441, 0, 0, 18.439, 3.71432, 6.67275)
 mesh = SubResource("ArrayMesh_vqoxn")
 skeleton = NodePath("")
 
-[node name="St_04" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="St_04" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=1829491206]
 transform = Transform3D(0, 0, -0.756441, 0, 0.756441, 0, -0.756441, 0, 0, 18.4357, 3.70264, -10.9715)
 mesh = SubResource("ArrayMesh_durkq")
 skeleton = NodePath("")
 
-[node name="Door_A_01" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="Door_A_01" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=273069288]
 transform = Transform3D(-1.3668e-07, 0, 0.573277, 0, 0.573277, 0, 0.573277, 0, 1.3668e-07, 19.379, 6.91223, -69.4085)
 mesh = SubResource("ArrayMesh_6srnj")
 skeleton = NodePath("")
 
-[node name="Estruc_001" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="Estruc_001" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=162713855]
 transform = Transform3D(-0.756441, 0, 0, 0, 0.756441, 0, 0, 0, -0.756441, 17.806, 7.92951, -71.7908)
 mesh = SubResource("ArrayMesh_wqu8r")
 skeleton = NodePath("")
 
-[node name="debris" type="Node3D" parent="Enviroment"]
+[node name="debris" type="Node3D" parent="Enviroment" unique_id=1754914372]
 transform = Transform3D(1.26383, -0.288196, -1.35823, 1.0895, -0.366483, 1.53274, -0.457349, -1.66943, -0.102004, 11.5701, -0.408311, -3.36564)
 
-[node name="debris" parent="Enviroment/debris" instance=ExtResource("50_0ttal")]
+[node name="debris" parent="Enviroment/debris" unique_id=1309683498 instance=ExtResource("50_0ttal")]
 transform = Transform3D(1, 0, -8.3819e-08, -2.98023e-08, 1, -1.49012e-08, -2.8871e-08, 3.72529e-09, 1, -0.316398, -1.15073, -0.0502408)
 
-[node name="debris4" parent="Enviroment/debris" instance=ExtResource("50_0ttal")]
+[node name="debris4" parent="Enviroment/debris" unique_id=1129306424 instance=ExtResource("50_0ttal")]
 transform = Transform3D(-0.239041, -0.0887509, 0.640215, -0.0553893, -0.582504, -0.142053, 0.45952, -0.083041, 0.224875, -0.352086, -1.30921, 0.249614)
 
-[node name="debris3" parent="Enviroment/debris" instance=ExtResource("50_0ttal")]
+[node name="debris3" parent="Enviroment/debris" unique_id=1625406326 instance=ExtResource("50_0ttal")]
 transform = Transform3D(-0.210756, -0.606249, 0.618027, 0.280342, -0.561021, -0.635889, 0.63101, 0.0339409, 0.348831, -0.232148, 1.48487, 0.649266)
 
-[node name="debris2" parent="Enviroment/debris" instance=ExtResource("50_0ttal")]
+[node name="debris2" parent="Enviroment/debris" unique_id=2042700773 instance=ExtResource("50_0ttal")]
 transform = Transform3D(-0.163894, -0.390596, 0.902885, -0.066812, -0.767467, -0.481671, 0.719901, -0.114206, 0.114405, 0.112036, 1.3457, 0.445115)
 
-[node name="debris_01" parent="Enviroment/debris" instance=ExtResource("51_u0jr1")]
+[node name="debris_01" parent="Enviroment/debris" unique_id=1772700893 instance=ExtResource("51_u0jr1")]
 transform = Transform3D(67.0404, 20.2976, 31.4588, -16.6377, 73.8217, -12.1744, -28.2864, 3.22305, 58.2003, -0.414924, -0.0621681, 0.0495663)
 
-[node name="debris_18" parent="Enviroment/debris" instance=ExtResource("52_3gssm")]
+[node name="debris_18" parent="Enviroment/debris" unique_id=160345842 instance=ExtResource("52_3gssm")]
 transform = Transform3D(42.2199, 15.2784, 36.3962, -9.59254, 55.5669, -12.1984, -32.3043, 2.42605, 36.4549, 0.230875, -0.373746, -0.328737)
 
-[node name="debris_19" parent="Enviroment/debris" instance=ExtResource("52_3gssm")]
+[node name="debris_19" parent="Enviroment/debris" unique_id=2134517362 instance=ExtResource("52_3gssm")]
 transform = Transform3D(-11.4132, -20.4177, 15.5382, 26.9599, -12.3484, -2.62783, 7.92556, 9.08168, 22.3181, -2.77164, 0.14809, 1.22627)
 
-[node name="debris_12" parent="Enviroment/debris" instance=ExtResource("53_jhfv4")]
+[node name="debris_12" parent="Enviroment/debris" unique_id=1000901927 instance=ExtResource("53_jhfv4")]
 transform = Transform3D(43.303, 13.5644, 23.9582, -10.5525, 49.3331, -8.85779, -21.4497, 2.15388, 37.5496, -2.0277, -0.0236503, 0.839126)
 
-[node name="debris_11" parent="Enviroment/debris" instance=ExtResource("53_jhfv4")]
+[node name="debris_11" parent="Enviroment/debris" unique_id=166709226 instance=ExtResource("53_jhfv4")]
 transform = Transform3D(-75.8587, -42.7642, 59.36, 39.0957, -95.7881, -19.0455, 52.1394, 7.02592, 71.6928, -1.53114, 1.09245, 0.776671)
 
-[node name="debris_09" parent="Enviroment/debris" instance=ExtResource("53_jhfv4")]
+[node name="debris_09" parent="Enviroment/debris" unique_id=912889361 instance=ExtResource("53_jhfv4")]
 transform = Transform3D(82.1209, 27.8586, 59.891, -19.2402, 101.321, -20.7479, -53.3085, 4.42365, 71.0375, -2.2622, 1.11469, 1.0984)
 
-[node name="debris_10" parent="Enviroment/debris" instance=ExtResource("53_jhfv4")]
+[node name="debris_10" parent="Enviroment/debris" unique_id=88272971 instance=ExtResource("53_jhfv4")]
 transform = Transform3D(-79.3035, -39.517, 57.0635, 34.7011, -97.4269, -19.2435, 50.6918, 3.64226, 72.9712, -1.36664, -1.06723, 0.706006)
 
-[node name="debris_14" parent="Enviroment/debris" instance=ExtResource("54_b7vxu")]
+[node name="debris_14" parent="Enviroment/debris" unique_id=2061418663 instance=ExtResource("54_b7vxu")]
 transform = Transform3D(19.5279, -53.963, 46.5194, 71.0222, 12.2606, -15.5912, 3.10083, 41.2894, 46.5944, -0.385437, -1.94023, 0.0728438)
 
-[node name="debris_13" parent="Enviroment/debris" instance=ExtResource("54_b7vxu")]
+[node name="debris_13" parent="Enviroment/debris" unique_id=627590376 instance=ExtResource("54_b7vxu")]
 transform = Transform3D(-33.4503, -45.0302, 48.0702, 47.0935, -53.9039, -17.724, 38.7823, 19.1197, 44.898, 0.517866, 1.21065, 0.213506)
 
-[node name="debris_15" parent="Enviroment/debris" instance=ExtResource("55_wrc8c")]
+[node name="debris_15" parent="Enviroment/debris" unique_id=170670079 instance=ExtResource("55_wrc8c")]
 transform = Transform3D(-19.5831, 64.5179, 13.5389, -65.7689, -18.663, -6.19311, -1.80555, -12.4358, 56.65, -0.0646191, -0.219534, -0.0288603)
 
-[node name="debris_16" parent="Enviroment/debris" instance=ExtResource("55_wrc8c")]
+[node name="debris_16" parent="Enviroment/debris" unique_id=2058223411 instance=ExtResource("55_wrc8c")]
 transform = Transform3D(-2.61606, 39.1923, 29.329, -47.7246, 4.24759, -9.93295, -8.86118, -24.5846, 32.0621, 0.676593, 0.442715, -0.0778887)
 
-[node name="debris_17" parent="Enviroment/debris" instance=ExtResource("55_wrc8c")]
+[node name="debris_17" parent="Enviroment/debris" unique_id=80576910 instance=ExtResource("55_wrc8c")]
 transform = Transform3D(38.5196, -7.68944, 29.329, 16.5397, 44.9679, -9.93293, -21.4253, 14.9626, 32.0621, 0.119566, -0.984965, -0.0311627)
 
-[node name="debris_06" parent="Enviroment/debris" instance=ExtResource("55_wrc8c")]
+[node name="debris_06" parent="Enviroment/debris" unique_id=1971300743 instance=ExtResource("55_wrc8c")]
 transform = Transform3D(72.4902, 23.5796, 46.3262, -17.333, 85.758, -16.5275, -41.3416, 3.7442, 62.7847, -0.897394, 0.354397, 0.322118)
 
-[node name="debris_08" parent="Enviroment/debris" instance=ExtResource("55_wrc8c")]
+[node name="debris_08" parent="Enviroment/debris" unique_id=988171898 instance=ExtResource("55_wrc8c")]
 transform = Transform3D(-63.9097, -118.424, 81.8334, 126.219, -88.6789, -29.1952, 57.3158, 45.5308, 110.907, -1.09729, -0.364577, 0.295316)
 
-[node name="debris_07" parent="Enviroment/debris" instance=ExtResource("55_wrc8c")]
+[node name="debris_07" parent="Enviroment/debris" unique_id=298292914 instance=ExtResource("55_wrc8c")]
 transform = Transform3D(72.4902, 23.5796, 46.3262, -17.333, 85.758, -16.5275, -41.3416, 3.7442, 62.7847, -1.62158, 0.260966, 0.688102)
 
-[node name="InNode" type="Node3D" parent="." groups=["InNode"]]
+[node name="InNode" type="Node3D" parent="." unique_id=1574496256 groups=["InNode"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.2498, 5.53115, -80.1987)
 
-[node name="OutNode" type="Node3D" parent="." groups=["OutNode"]]
+[node name="OutNode" type="Node3D" parent="." unique_id=620813663 groups=["OutNode"]]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.445, -1.036, 16.974)
 script = ExtResource("57_vf1by")
 
-[node name="FarTunnelBlackout" type="MeshInstance3D" parent="."]
+[node name="FarTunnelBlackout" type="MeshInstance3D" parent="." unique_id=1033738600]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14.6508, 2.82225, 12.4852)
 mesh = SubResource("QuadMesh_pktld")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_vf1by")
 
-[node name="NearTunnelBlackout" type="MeshInstance3D" parent="."]
+[node name="NearTunnelBlackout" type="MeshInstance3D" parent="." unique_id=793142050]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6508, 2.82225, -71.1201)
 mesh = SubResource("QuadMesh_pktld")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_vf1by")
 
-[node name="Door" parent="." instance=ExtResource("58_w6x52")]
+[node name="Door" parent="." unique_id=1001844927 instance=ExtResource("58_w6x52")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.71484, -0.957562, 16.8889)
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1055631784]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.59753, 0.319362, 17.4403)
 stream = ExtResource("59_vf1by")
 attenuation_model = 3
 
-[node name="PlayerSpawn" type="Node3D" parent="." groups=["PlayerSpawn"]]
+[node name="PlayerSpawn" type="Node3D" parent="." unique_id=466170838 groups=["PlayerSpawn"]]
 transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 21.8599, 5.80914, -77.1457)
 
 [editable path="Enviroment/Sewers/Sewer Gate Doorway"]

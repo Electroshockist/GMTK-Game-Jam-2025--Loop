@@ -16,3 +16,4 @@ func _ready():
 func _process(_delta: float) -> void:
 	if interactor != null and interactor.is_colliding():
 		interactable_display.global_position = interactor.get_collision_point()
+		print(interactable_display.global_position)

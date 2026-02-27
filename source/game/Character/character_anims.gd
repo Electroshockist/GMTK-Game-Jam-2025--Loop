@@ -33,6 +33,7 @@ func _handle_interactables(interactable):
 	var sm: AnimationNodeStateMachinePlayback = get("parameters/playback")
 	if (interactable == null):
 		sm.travel("arms_anim_dot")
+		# TODO: Enable pen and
 		return
 			
 			# match interactable:
