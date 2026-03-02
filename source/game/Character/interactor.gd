@@ -2,6 +2,8 @@ extends RayCast3D
 
 class_name Interactor
 
+signal interacted(interactable)
+
 var _collision: Node
 
 var _hovered_interactable: Node
@@ -11,10 +13,10 @@ func _input(_event):
 		if (_is_collider_interactable(_collision)):
 			var col: Interactable = _collision
 			col.interact()
-			
+		interacted.emit(get_collider())
+
 func _process(_delta):
 	_collision = get_collider()
-
 	
 	if _is_collider_interactable(_collision):
 		_hovered_interactable = _collision

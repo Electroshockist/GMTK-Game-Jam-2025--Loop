@@ -1,33 +1,37 @@
-[gd_scene load_steps=76 format=4 uid="uid://c0o17r85gxfui"]
+[gd_scene format=4 uid="uid://c0o17r85gxfui"]
 
 [ext_resource type="Script" uid="uid://bs56ayrlo47wf" path="res://source/game/levels/level.gd" id="1_ouvpk"]
 [ext_resource type="Environment" uid="uid://pq7vqvfywr8t" path="res://source/game/levels/level_env.tres" id="2_p56g6"]
 [ext_resource type="Script" uid="uid://cts7ja6veofqq" path="res://source/game/levels/level_stitching/level_trigger.gd" id="3_1ti2n"]
-[ext_resource type="PackedScene" uid="uid://yx5g6gub48g" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/light.tscn" id="4_on3kf"]
-[ext_resource type="PackedScene" uid="uid://d26nnggxojrx4" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/trash_can.tscn" id="5_44wqk"]
-[ext_resource type="PackedScene" uid="uid://3g4l8qqfd515" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/vending_machine.tscn" id="6_wdgyb"]
-[ext_resource type="PackedScene" uid="uid://daq2ktcnqj41c" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/chair.tscn" id="7_o1d6k"]
-[ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_01.tscn" id="8_3n0v3"]
-[ext_resource type="PackedScene" uid="uid://dit2phk8j4yj8" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_02.tscn" id="9_htuts"]
-[ext_resource type="PackedScene" uid="uid://c4pjrhejiegb6" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_03.tscn" id="10_7f2uo"]
-[ext_resource type="PackedScene" uid="uid://dxgqniedvllnp" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_04.tscn" id="11_8pv1n"]
-[ext_resource type="PackedScene" uid="uid://db1w44w0gdaly" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_05.tscn" id="12_wvew7"]
-[ext_resource type="PackedScene" uid="uid://dl0itebvpe5fy" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_06.tscn" id="13_qjdf2"]
-[ext_resource type="PackedScene" uid="uid://c2prm0sxpm4dx" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_07.tscn" id="14_x0oog"]
-[ext_resource type="PackedScene" uid="uid://c2qvfmytwf71t" path="res://assets/model/models/Environment/model_scenes/Metro_PSX_split/poster_08.tscn" id="15_adqkr"]
-[ext_resource type="Texture2D" uid="uid://uov44fo4jrrd" path="res://assets/model/models/Environment/textures/Metro_PSX/tile_tile.jpg" id="19_il81c"]
-[ext_resource type="ArrayMesh" uid="uid://8ybcpe16qgyn" path="res://assets/model/models/Environment/modified/Metro_Pit/tunnel_end.res" id="19_xlege"]
-[ext_resource type="Texture2D" uid="uid://dkp3ibarnnqp0" path="res://assets/model/models/Environment/textures/Metro_PSX/ConcreteBare.png" id="21_4dnxo"]
-[ext_resource type="ArrayMesh" uid="uid://ddvxuse5s8fib" path="res://assets/model/models/Environment/modified/Metro_Pit/Metro_Pit_Far.res" id="22_q62um"]
-[ext_resource type="ArrayMesh" uid="uid://bht7u2pm7un25" path="res://assets/model/models/Environment/modified/Metro_Pit/Metro_Pit_Stairs.res" id="24_r7iov"]
+[ext_resource type="Texture2D" uid="uid://cctarfyjvdl26" path="res://assets/sprites/Black_bar.png" id="4_k5a5i"]
+[ext_resource type="PackedScene" uid="uid://yx5g6gub48g" path="res://assets/models/Environment/Metro_PSX_split/light.tscn" id="4_on3kf"]
+[ext_resource type="PackedScene" uid="uid://d26nnggxojrx4" path="res://assets/models/Environment/Metro_PSX_split/trash_can.tscn" id="5_44wqk"]
+[ext_resource type="PackedScene" uid="uid://3g4l8qqfd515" path="res://assets/models/Environment/Metro_PSX_split/vending_machine.tscn" id="6_wdgyb"]
+[ext_resource type="PackedScene" uid="uid://daq2ktcnqj41c" path="res://assets/models/Environment/Metro_PSX_split/chair.tscn" id="7_o1d6k"]
+[ext_resource type="PackedScene" uid="uid://cfhx033y1bq1n" path="res://assets/models/Environment/Metro_PSX_split/poster_01.tscn" id="8_3n0v3"]
+[ext_resource type="PackedScene" uid="uid://dit2phk8j4yj8" path="res://assets/models/Environment/Metro_PSX_split/poster_02.tscn" id="9_htuts"]
+[ext_resource type="PackedScene" uid="uid://c4pjrhejiegb6" path="res://assets/models/Environment/Metro_PSX_split/poster_03.tscn" id="10_7f2uo"]
+[ext_resource type="PackedScene" uid="uid://dxgqniedvllnp" path="res://assets/models/Environment/Metro_PSX_split/poster_04.tscn" id="11_8pv1n"]
+[ext_resource type="PackedScene" uid="uid://db1w44w0gdaly" path="res://assets/models/Environment/Metro_PSX_split/poster_05.tscn" id="12_wvew7"]
+[ext_resource type="PackedScene" uid="uid://dl0itebvpe5fy" path="res://assets/models/Environment/Metro_PSX_split/poster_06.tscn" id="13_qjdf2"]
+[ext_resource type="PackedScene" uid="uid://c2prm0sxpm4dx" path="res://assets/models/Environment/Metro_PSX_split/poster_07.tscn" id="14_x0oog"]
+[ext_resource type="PackedScene" uid="uid://c2qvfmytwf71t" path="res://assets/models/Environment/Metro_PSX_split/poster_08.tscn" id="15_adqkr"]
+[ext_resource type="Material" uid="uid://bswqapa42tbt" path="res://assets/models/Environment/Metro_PSX/materials/ConcreteBare.tres" id="18_sj0p0"]
+[ext_resource type="ArrayMesh" uid="uid://8ybcpe16qgyn" path="res://assets/models/Environment/modified/Metro_Pit/tunnel_end.res" id="19_xlege"]
+[ext_resource type="Material" uid="uid://b0r4bnveh2c12" path="res://assets/models/Environment/Metro_PSX/materials/tile_tile.tres" id="21_1bnys"]
+[ext_resource type="Material" uid="uid://df8gefbdmblpw" path="res://assets/models/Environment/Metro_PSX/materials/Door_01.tres" id="21_r7iov"]
+[ext_resource type="ArrayMesh" uid="uid://ddvxuse5s8fib" path="res://assets/models/Environment/modified/Metro_Pit/Metro_Pit_Far.res" id="22_q62um"]
+[ext_resource type="Material" uid="uid://c07hlj0bxt8e4" path="res://assets/models/Environment/Metro_PSX/materials/metal_02.tres" id="23_bn6st"]
+[ext_resource type="ArrayMesh" uid="uid://bht7u2pm7un25" path="res://assets/models/Environment/modified/Metro_Pit/Metro_Pit_Stairs.res" id="24_r7iov"]
+[ext_resource type="Material" uid="uid://1e6dbgomjyqt" path="res://assets/models/Environment/Metro_PSX/materials/Glass.tres" id="24_sj0p0"]
+[ext_resource type="Material" uid="uid://d73eycybvdkj" path="res://assets/models/Environment/Metro_PSX/materials/brick_modern.tres" id="26_bn6st"]
 [ext_resource type="Script" uid="uid://e60yvnf7q1n4" path="res://source/game/levels/level_06_pit.gd" id="28_r7iov"]
-[ext_resource type="Texture2D" uid="uid://vm2iqc1p7sef" path="res://assets/model/models/Environment/modified/metro stairs_Door_01.jpg" id="30_je0um"]
-[ext_resource type="Texture2D" uid="uid://b2ixijxkbntd2" path="res://assets/model/models/Environment/modified/metro stairs_tile_tile.jpg" id="31_cwie2"]
-[ext_resource type="Texture2D" uid="uid://cdlkvhw8clr1w" path="res://assets/model/models/Environment/modified/metro stairs_metal_02.png" id="32_iioe7"]
-[ext_resource type="Texture2D" uid="uid://q3cqbfgf5stx" path="res://assets/model/models/Environment/modified/metro stairs_brick_modern.jpg" id="37_00h8j"]
-[ext_resource type="ArrayMesh" uid="uid://b8s47vfi4f5pa" path="res://assets/model/models/Environment/modified/Metro_Pit/St_01.res" id="38_ouvpk"]
-[ext_resource type="Texture2D" uid="uid://1rn2884sybr" path="res://assets/model/models/Environment/modified/metro pillar_tile_tile.jpg" id="39_yngx8"]
-[ext_resource type="Texture2D" uid="uid://peheuq4363q6" path="res://assets/model/models/Environment/modified/metro pillar_ConcreteBare.png" id="40_jtgml"]
+[ext_resource type="AudioStream" uid="uid://1dvf7q3s0sh8" path="res://assets/sounds/pretty long fall.mp3" id="30_sj0p0"]
+[ext_resource type="Script" uid="uid://b7q02nmtmt4nv" path="res://source/game/levels/Props/hover_display.gd" id="31_2s68e"]
+[ext_resource type="Script" uid="uid://dp6ov6sut21io" path="res://source/game/levels/Props/Anomalies/anomaly.gd" id="31_q62um"]
+[ext_resource type="Script" uid="uid://dht8mbnpa5y0y" path="res://source/game/levels/Props/Interactable.gd" id="32_nivj7"]
+[ext_resource type="PackedScene" uid="uid://cwoxfa1buwbuf" path="res://source/game/levels/Props/interactable_input_display.tscn" id="33_xt5gq"]
+[ext_resource type="ArrayMesh" uid="uid://b8s47vfi4f5pa" path="res://assets/models/Environment/modified/Metro_Pit/St_01.res" id="38_ouvpk"]
 [ext_resource type="Script" uid="uid://b5hjojq8wyiqd" path="res://source/game/levels/level_stitching/out_node.gd" id="47_e3pow"]
 [ext_resource type="PackedScene" uid="uid://bjw0ehsvtney3" path="res://source/game/levels/Props/door_metal.tscn" id="48_20doo"]
 [ext_resource type="AudioStream" uid="uid://bhnam8ajx6n8o" path="res://assets/sounds/ding or dong.mp3" id="49_soibn"]
@@ -40,16 +44,16 @@ albedo = Color(0.0962047, 0.0962048, 0.0962047, 1)
 height_falloff = 1.27456e-05
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xlege"]
-size = Vector3(5.31323, 40, 0.460815)
+size = Vector3(5.31323, 163, 0.460815)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_loslf"]
 size = Vector3(5.49353, 6.61052, 2.03558)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_r7iov"]
-size = Vector3(6.61896, 40, 0.460815)
+size = Vector3(6.61896, 163, 0.460815)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_bn6st"]
-size = Vector3(8.75932, 35, 63.4261)
+size = Vector3(8.75932, 158, 63.4261)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8ejdx"]
 size = Vector3(5.90845, 0.459824, 18.3373)
@@ -64,7 +68,7 @@ size = Vector3(1.21594, 8.91364, 25.0609)
 size = Vector3(0.208389, 5.30447, 50.6088)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_sj0p0"]
-size = Vector3(0.157776, 40, 65)
+size = Vector3(0.157776, 162, 65)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4oxtu"]
 size = Vector3(0.365479, 4.61795, 10.9743)
@@ -86,22 +90,6 @@ size = Vector3(0.78064, 4.85638, 0.83461)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_mp6dy"]
 size = Vector3(7.10437, 4.69043, 5.98651)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t8c41"]
-resource_name = "tile_tile"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("19_il81c")
-emission_enabled = true
-emission = Color(1, 1, 1, 1)
-emission_energy_multiplier = 0.0
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lq56n"]
-resource_name = "ConcreteBare"
-vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("21_4dnxo")
-emission_enabled = true
-emission = Color(1, 1, 1, 1)
-emission_energy_multiplier = 0.0
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_pktld"]
 _surfaces = [{
@@ -136,7 +124,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 24,
 "index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwA"),
-"material": SubResource("StandardMaterial3D_t8c41"),
+"material": ExtResource("21_1bnys"),
 "name": "tile_tile",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -149,7 +137,7 @@ _surfaces = [{
 "index_count": 120,
 "index_data": PackedByteArray("MAABAAIAAgAxADAAAQAyADMAMwA0AAEANQACAAcABwA2ADUADAA3ADgACgA3AAwADAANAAoAOAALAAwADgALADgAOAAPAA4AEAARABIAEgATABAAFAAVABYAFgAXABQAAwAFAAQABAA5AAMAGAAaADoAGAAZABoAGAA6ADsAGAA7ABsAHwA8AB4AHwAcADwAHAA9ADwAHAAdAD0APgA/AEAAQAAAAD4AIAAhACIAIgAjACAAJAAlACYAJgAnACQAKAApACoAKgArACgAQQBCAAgACAAJAEEABgBDAEQARABFAAYALAAtAC4ALgAvACwA"),
 "lods": [2.98157e-06, PackedByteArray("AAABAAIAAQAAAAMAAwAEAAEAAwAFAAQABgAAAAIABgACAAcABgAHAAgACAAJAAYACgALAAwADAANAAoADgALAAoACgAPAA4AEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGAAaABsAHAAdAB4AHwAcAB4AIAAhACIAIgAjACAAJAAlACYAJgAnACQAKAApACoAKgArACgALAAtAC4ALgAvACwA")],
-"material": SubResource("StandardMaterial3D_lq56n"),
+"material": ExtResource("18_sj0p0"),
 "name": "ConcreteBare",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -158,12 +146,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_pktld")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3dfwu"]
-resource_name = "Door_01"
-cull_mode = 2
-albedo_texture = ExtResource("30_je0um")
-texture_filter = 2
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_k4xuy"]
 _surfaces = [{
@@ -187,7 +169,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 144,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAaABsAGgAcABsAGgAdABwAGQAdABoAGQAeAB0AHwAgACEAIAAiACEAIAAjACIAJAAlACYAJQAnACYAJQAoACcAKQAqACsAKgAsACsAKgAtACwALgAvADAALwAuADEALwAxADIAMwA0ADUANAA2ADUANAA3ADYANQA2ADgANQA4ADkAMwA1ADkAMwA6ADsAOgA8ADsAOgA9ADwAMwA+AD8APgBAAD8APgBBAEAAMwBCAEMAQgBEAEMAQgBFAEQARgBHAEgARwBGAEkARwBJAEoA"),
-"material": SubResource("StandardMaterial3D_3dfwu"),
+"material": ExtResource("21_r7iov"),
 "name": "Door_01",
 "primitive": 3,
 "uv_scale": Vector4(2, 1.98788, 0, 0),
@@ -196,11 +178,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_k4xuy")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y2qyd"]
-resource_name = "tile_tile"
-albedo_texture = ExtResource("31_cwie2")
-texture_filter = 2
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_4cvhl"]
 _surfaces = [{
@@ -225,7 +202,7 @@ _surfaces = [{
 "format": 34359742519,
 "index_count": 84,
 "index_data": PackedByteArray("AAABAAIAAwACAAEAAwAEAAIAAAAFAAEABAADAAYABgAFAAAABgADAAcABwAFAAYABQAHAAgABQAIAAkACQAIAAoACQAKAAsADAANAA4ADAAPAA0AEAARABIAEwAQABIAFAARABAAEwAVABAAFQATABYAFgATABcAGAARABQAGAAXABEAFwAYABYAFgAYABkAGQAYABoAGgAYABsAHAAdAB4AHAAfAB0A"),
-"material": SubResource("StandardMaterial3D_y2qyd"),
+"material": ExtResource("21_1bnys"),
 "name": "tile_tile",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -234,11 +211,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_4cvhl")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k4a2c"]
-resource_name = "metal_02"
-albedo_texture = ExtResource("32_iioe7")
-texture_filter = 2
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ltqh3"]
 _surfaces = [{
@@ -262,7 +234,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 348,
 "index_data": PackedByteArray("AAABAAIAAAADAAEAAgAEAAAAAgAFAAQABQAGAAQABQAHAAYACAAJAAoACAALAAkACgAMAAgACgANAAwADQAOAAwADQAPAA4AEAARABIAEAATABEAEgAUABAAEwAVABEAEgAWABQAEwAXABUAFgAVABcAFgAXABQAGAAZABoAGAAbABkAGgAcABgAGwAdABkAGgAeABwAGwAfAB0AHwAeAB0AHwAcAB4AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUAOAA5ADoAOAA7ADkAPAA9AD4APAA/AD0AQABBAEIAQABDAEEARABFAEYARABHAEUASABJAEoASABLAEkATABNAE4ATABPAE0AUABRAFIAUABTAFEAVABVAFYAVABXAFUAWABZAFoAWABbAFkAXABdAF4AXABfAF0AYABhAGIAYABjAGEAZABlAGYAZABnAGUAaABpAGoAaABrAGkAbABtAG4AbABvAG0AcABxAHIAcABzAHEAdAB1AHYAdAB3AHUAeAB5AHoAeAB7AHkAfAB9AH4AfAB/AH0AgACBAIIAgACDAIEAhACFAIYAhACHAIUAiACJAIoAiACLAIkAjACNAI4AjACPAI0AkACRAJIAkACTAJEAlACVAJYAlACXAJUAmACZAJoAmACbAJkAnACdAJ4AnACfAJ0AoAChAKIAoACjAKEApAClAKYApACnAKUAqACpAKoAqACrAKkArACtAK4ArACvAK0AsACxALIAsACzALEAtAC1ALYAtAC3ALUAuAC5ALoAuAC7ALkAvAC9AL4AvAC/AL0AwADBAMIAwADDAMEAxADFAMYAxADHAMUAyADJAMoAyADLAMkAzADNAM4AzADPAM0A"),
-"material": SubResource("StandardMaterial3D_k4a2c"),
+"material": ExtResource("23_bn6st"),
 "name": "metal_02",
 "primitive": 3,
 "uv_scale": Vector4(3.31591, 3.08729, 0, 0),
@@ -271,12 +243,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ltqh3")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_22ols"]
-resource_name = "Glass"
-cull_mode = 2
-albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
-roughness = 0.015625
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_6qtdd"]
 _surfaces = [{
@@ -300,7 +266,7 @@ _surfaces = [{
 "format": 34359742487,
 "index_count": 168,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABwAFAAQABQAHAAgABQAIAAkACQAIAAoABQAJAAsADAANAA4ADAAPAA0AEAARABIAEwARABAAEQATABQAEQAUABUAFQAUABYAEQAVABcAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANwA1ADQANQA3ADgANQA4ADkAOQA4ADoANQA5ADsAPAA9AD4APAA/AD0AQABBAEIAQwBBAEAAQQBDAEQAQQBEAEUARQBEAEYAQQBFAEcASABJAEoASABLAEkATABNAE4ATABPAE0AUABRAFIAUABTAFEAVABVAFYAVABXAFUAWABZAFoAWABbAFkAXABdAF4AXABfAF0A"),
-"material": SubResource("StandardMaterial3D_22ols"),
+"material": ExtResource("24_sj0p0"),
 "name": "Glass",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -309,12 +275,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_6qtdd")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1hww6"]
-resource_name = "brick_modern"
-cull_mode = 2
-albedo_texture = ExtResource("37_00h8j")
-texture_filter = 2
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_s3dwq"]
 _surfaces = [{
@@ -338,7 +298,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 120,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUAOAA5ADoAOAA7ADkAPAA9AD4APAA/AD0AQABBAEIAQABDAEEARABFAEYARABHAEUASABJAEoASABLAEkATABNAE4ATABPAE0A"),
-"material": SubResource("StandardMaterial3D_1hww6"),
+"material": ExtResource("26_bn6st"),
 "name": "brick_modern",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -347,16 +307,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_s3dwq")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7htrj"]
-resource_name = "tile_tile"
-albedo_texture = ExtResource("39_yngx8")
-texture_filter = 2
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qq8jf"]
-resource_name = "ConcreteBare"
-albedo_texture = ExtResource("40_jtgml")
-texture_filter = 2
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_2chxd"]
 _surfaces = [{
@@ -391,7 +341,7 @@ _surfaces = [{
 "format": 34896613399,
 "index_count": 24,
 "index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0A"),
-"material": SubResource("StandardMaterial3D_7htrj"),
+"material": ExtResource("21_1bnys"),
 "name": "tile_tile",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -404,7 +354,7 @@ _surfaces = [{
 "index_count": 120,
 "index_data": PackedByteArray("AAACACQAAAAlAAIAAwAlAAAABAAAACQAAwAmACUABAAkACcAKAAmAAMAKAABACYABQAoAAMABQApACgABQAHACkABQAqAAcABAAqAAUABAArACoAJwArAAQAJwAGACsACAAKACwACAAJAAoALQAIACwALQAMAAgALQANAAwALQALAA0ALgAPABAALgAOAA8ALwAuABAALwAQABEAEQASAC8AEQATABIAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AMAAdABwAHQAwADEAHQAxAB8AMgAhACIAMwAhADIAIQAzACAAIQAgACMA"),
 "lods": [0.000334361, PackedByteArray("AAABAAIAAwABAAAABAAAAAIABQABAAMAAgAGAAQABQAHAAEABAAGAAcABAAHAAUACAAJAAoACwAIAAoACwAMAAgACwANAAwADgAPABAADgAQABEAEQASAA4AEQATABIAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHQAcAB8AIAAhACIAIQAgACMA")],
-"material": SubResource("StandardMaterial3D_qq8jf"),
+"material": ExtResource("18_sj0p0"),
 "name": "ConcreteBare",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -415,7 +365,48 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_2chxd")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2s68e"]
-size = Vector3(9.98047, 26, 75.4922)
+size = Vector3(6.57971, 152.032, 75.4922)
+
+[sub_resource type="Animation" id="Animation_q62um"]
+resource_name = "Fall"
+length = 30.0
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(22.3),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"trigger_scene_change"
+}]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AudioStreamPlayer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("30_sj0p0")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nivj7"]
+_data = {
+&"Fall": SubResource("Animation_q62um")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8ou78"]
+size = Vector3(5.09839, 7.180666, 67.4854)
 
 [sub_resource type="QuadMesh" id="QuadMesh_pktld"]
 size = Vector2(5, 7)
@@ -423,289 +414,328 @@ size = Vector2(5, 7)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vf1by"]
 albedo_color = Color(0, 0, 0, 1)
 
-[node name="level_06" type="Node3D" node_paths=PackedStringArray("_out_door") groups=["Level"]]
+[node name="level_06" type="Node3D" unique_id=112231481 node_paths=PackedStringArray("_out_door") groups=["Level"]]
 script = ExtResource("1_ouvpk")
 _out_door = NodePath("Door")
 metadata/level_id = 6
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1768744944]
 environment = ExtResource("2_p56g6")
 
-[node name="Level trigger" type="Area3D" parent="." groups=["Unload"]]
+[node name="Level trigger" type="Area3D" parent="." unique_id=79462335 groups=["Unload"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.5487, 7.77593, -76.2571)
 script = ExtResource("3_1ti2n")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Level trigger"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Level trigger" unique_id=488284288]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
 shape = SubResource("BoxShape3D_8u6pu")
 
-[node name="Enviroment" type="Node3D" parent="."]
+[node name="Enviroment" type="Node3D" parent="." unique_id=263819686]
 
-[node name="FogVolume" type="FogVolume" parent="Enviroment"]
+[node name="FogVolume" type="FogVolume" parent="Enviroment" unique_id=1431850870]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6151, 3.01069, 7.60512)
 size = Vector3(7.09984, 7.48425, 12.1033)
 material = SubResource("FogMaterial_r64ux")
 
-[node name="FogVolume2" type="FogVolume" parent="Enviroment"]
+[node name="FogVolume2" type="FogVolume" parent="Enviroment" unique_id=2060535169]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.0263, 3.01069, -63.378)
 size = Vector3(7.92211, 7.48425, 12.1033)
 material = SubResource("FogMaterial_r64ux")
 
-[node name="Subway" type="StaticBody3D" parent="Enviroment"]
+[node name="Subway" type="StaticBody3D" parent="Enviroment" unique_id=1701468388]
 
-[node name="Subway out far" type="CollisionShape3D" parent="Enviroment/Subway"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.5, -13.6383, 2.54126)
+[node name="Sprite3D" type="Sprite3D" parent="Enviroment/Subway" unique_id=1104087886]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 18.967302, 7.428812, -71.50498)
+texture = ExtResource("4_k5a5i")
+
+[node name="Subway out far" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=392891323]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.5, -75.1384, 2.54126)
 shape = SubResource("BoxShape3D_xlege")
 
-[node name="Subway out far2" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Subway out far2" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=122844451]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.5478, 3.05642, 1.84874)
 shape = SubResource("BoxShape3D_loslf")
 
-[node name="Subway out near" type="CollisionShape3D" parent="Enviroment/Subway"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1528, -13.6383, -60.6107)
+[node name="Subway out near" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=218186234]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1528, -75.1383, -60.6107)
 shape = SubResource("BoxShape3D_r7iov")
 
-[node name="Floor" type="CollisionShape3D" parent="Enviroment/Subway"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0744, -16.0592, -28.7957)
+[node name="Floor" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=428293851]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0744, -77.5592, -28.7957)
 shape = SubResource("BoxShape3D_bn6st")
 
-[node name="Upper Floor" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Upper Floor" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=1823283733]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.4498, 5.35758, -72.3856)
 shape = SubResource("BoxShape3D_8ejdx")
 
-[node name="Stairs" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Stairs" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=2060278268]
 transform = Transform3D(-8.74228e-08, 1, -7.57103e-08, 0.866025, 3.78552e-08, -0.5, 0.5, 1.09278e-07, 0.866025, 21.8452, 3.35305, -59.6367)
 shape = SubResource("BoxShape3D_r64ux")
 
-[node name="Stairs2" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Stairs2" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=913507808]
 transform = Transform3D(-8.74228e-08, 1, -7.57103e-08, 0.866025, 3.78552e-08, -0.5, 0.5, 1.09278e-07, 0.866025, 21.8452, 8.00739, -59.9625)
 shape = SubResource("BoxShape3D_r64ux")
 
-[node name="Upper Left Wall" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Upper Left Wall" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=2014276802]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.7906, 5.60832, -67.3135)
 shape = SubResource("BoxShape3D_6w72y")
 
-[node name="Lower Left Wall" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Lower Left Wall" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=266880847]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3668, 3.20547, -29.6182)
 shape = SubResource("BoxShape3D_drwwt")
 
-[node name="Lower Right Wall" type="CollisionShape3D" parent="Enviroment/Subway"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.049, -14.1423, -29.3626)
+[node name="Lower Right Wall" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=367589492]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.049, -75.1423, -29.3626)
 shape = SubResource("BoxShape3D_sj0p0")
 
-[node name="Upper Right Wall" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Upper Right Wall" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=896047765]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.8055, 7.75616, -74.3568)
 shape = SubResource("BoxShape3D_4oxtu")
 
-[node name="Upper Right Wall2" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Upper Right Wall2" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=1322001704]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0597, 5.60832, -64.5753)
 shape = SubResource("BoxShape3D_j3brg")
 
-[node name="Back Wall" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Back Wall" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=1810961514]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.3681, 7.79383, -80.031)
 shape = SubResource("BoxShape3D_pktld")
 
-[node name="Back Wall2" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Back Wall2" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=417493376]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.1334, 7.79383, -80.031)
 shape = SubResource("BoxShape3D_vf1by")
 
-[node name="Back Wall3" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Back Wall3" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=738646778]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8133, 8.97647, -80.031)
 shape = SubResource("BoxShape3D_w6x52")
 
-[node name="Pillar" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Pillar" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=1984749929]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.7675, 3.8362, -36.0135)
 shape = SubResource("BoxShape3D_nqmpd")
 
-[node name="Pillar2" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="Pillar2" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=214835281]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.7675, 3.83895, -23.498)
 shape = SubResource("BoxShape3D_nqmpd")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Enviroment/Subway"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Enviroment/Subway" unique_id=848279332]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.9543, 3.80621, -1.80653)
 shape = SubResource("BoxShape3D_mp6dy")
 
-[node name="Subway light" parent="Enviroment/Subway" instance=ExtResource("4_on3kf")]
+[node name="Subway light" parent="Enviroment/Subway" unique_id=1100591500 instance=ExtResource("4_on3kf")]
 transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 100, 4.37114e-06, 5.21079e-13, 21.6309, 6.48184, -51.9358)
 
-[node name="Hallway Light1" parent="Enviroment/Subway" instance=ExtResource("4_on3kf")]
+[node name="Hallway Light1" parent="Enviroment/Subway" unique_id=536796530 instance=ExtResource("4_on3kf")]
 transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 100, 4.37114e-06, 5.21079e-13, 21.6309, 9.95316, -77.3057)
 
-[node name="Hallway Light2" parent="Enviroment/Subway" instance=ExtResource("4_on3kf")]
+[node name="Hallway Light2" parent="Enviroment/Subway" unique_id=1354677792 instance=ExtResource("4_on3kf")]
 transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 100, 4.37114e-06, 5.21079e-13, 21.6309, 9.95316, -71.7829)
 
-[node name="Hallway Light3" parent="Enviroment/Subway" instance=ExtResource("4_on3kf")]
+[node name="Hallway Light3" parent="Enviroment/Subway" unique_id=1009645356 instance=ExtResource("4_on3kf")]
 transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 100, 4.37114e-06, 5.21079e-13, 21.6309, 9.95316, -66.1583)
 
-[node name="Subway light2" parent="Enviroment/Subway" instance=ExtResource("4_on3kf")]
+[node name="Subway light2" parent="Enviroment/Subway" unique_id=421665705 instance=ExtResource("4_on3kf")]
 transform = Transform3D(-4.37114e-06, 100, 1.19209e-05, 0, -1.19209e-05, 100, 100, 4.37114e-06, 5.21079e-13, 21.6309, 6.48184, -34.9694)
 
-[node name="Subway light3" parent="Enviroment/Subway" instance=ExtResource("4_on3kf")]
+[node name="Subway light3" parent="Enviroment/Subway" unique_id=548590439 instance=ExtResource("4_on3kf")]
 transform = Transform3D(-4.37114e-06, 100, 4.37114e-06, 0, -4.37114e-06, 100, 100, 4.37114e-06, 1.91069e-13, 21.6255, 6.48184, -18.7423)
 
-[node name="trash_can" parent="Enviroment/Subway" instance=ExtResource("5_44wqk")]
+[node name="trash_can" parent="Enviroment/Subway" unique_id=533489663 instance=ExtResource("5_44wqk")]
 transform = Transform3D(87.8458, 0, 0, 0, 5.23602e-06, 87.8458, 0, -87.8458, 5.23602e-06, 24.7417, 1.99133, -54.0719)
 
-[node name="trash_can2" parent="Enviroment/Subway" instance=ExtResource("5_44wqk")]
+[node name="trash_can2" parent="Enviroment/Subway" unique_id=1207590551 instance=ExtResource("5_44wqk")]
 transform = Transform3D(87.8458, 0, 0, 0, 5.23602e-06, 87.8458, 0, -87.8458, 5.23602e-06, 24.7417, 1.99133, -31.4567)
 
-[node name="trash_can3" parent="Enviroment/Subway" instance=ExtResource("5_44wqk")]
+[node name="trash_can3" parent="Enviroment/Subway" unique_id=1025724096 instance=ExtResource("5_44wqk")]
 transform = Transform3D(-3.83986e-06, 87.8458, -5.23602e-06, 0, 5.23602e-06, 87.8458, 87.8458, 3.83986e-06, -2.28874e-13, 22.6889, 1.99133, -5.39572)
 
-[node name="Vending_machine" parent="Enviroment/Subway" instance=ExtResource("6_wdgyb")]
+[node name="Vending_machine" parent="Enviroment/Subway" unique_id=1510014422 instance=ExtResource("6_wdgyb")]
 transform = Transform3D(-4.94953e-06, -113.232, -1.34983e-05, 0, -1.34983e-05, 113.232, -113.232, 4.94953e-06, 5.90029e-13, 25.0011, 2.66998, -30.0201)
-material_override = null
 
-[node name="Vending_machine2" parent="Enviroment/Subway" instance=ExtResource("6_wdgyb")]
+[node name="Vending_machine2" parent="Enviroment/Subway" unique_id=1766355392 instance=ExtResource("6_wdgyb")]
 transform = Transform3D(113.232, -2.72848e-12, 3.79471e-19, -3.51685e-20, -1.34983e-05, 113.232, -2.72848e-12, -113.232, -1.34983e-05, 21.432, 2.66998, -5.13632)
-material_override = null
 
-[node name="Chair" parent="Enviroment/Subway" instance=ExtResource("7_o1d6k")]
+[node name="Chair" parent="Enviroment/Subway" unique_id=443514994 instance=ExtResource("7_o1d6k")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -51.6062)
 
-[node name="Chair3" parent="Enviroment/Subway" instance=ExtResource("7_o1d6k")]
+[node name="Chair3" parent="Enviroment/Subway" unique_id=1534205045 instance=ExtResource("7_o1d6k")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -48.3957)
 
-[node name="Chair4" parent="Enviroment/Subway" instance=ExtResource("7_o1d6k")]
+[node name="Chair4" parent="Enviroment/Subway" unique_id=617056411 instance=ExtResource("7_o1d6k")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -39.6899)
 
-[node name="Chair5" parent="Enviroment/Subway" instance=ExtResource("7_o1d6k")]
+[node name="Chair5" parent="Enviroment/Subway" unique_id=513075800 instance=ExtResource("7_o1d6k")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -36.4772)
 
-[node name="Chair6" parent="Enviroment/Subway" instance=ExtResource("7_o1d6k")]
+[node name="Chair6" parent="Enviroment/Subway" unique_id=1172186724 instance=ExtResource("7_o1d6k")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -23.7472)
 
-[node name="Chair2" parent="Enviroment/Subway" instance=ExtResource("7_o1d6k")]
+[node name="Chair2" parent="Enviroment/Subway" unique_id=885675228 instance=ExtResource("7_o1d6k")]
 transform = Transform3D(-4.98087e-06, -113.949, 0, -4.98087e-06, 2.17721e-13, 113.949, -113.949, 4.98087e-06, -4.98087e-06, 25.1648, 1.92368, -20.772)
 
-[node name="Poster_01" parent="Enviroment/Subway" instance=ExtResource("8_3n0v3")]
+[node name="Poster_01" parent="Enviroment/Subway" unique_id=2065073973 instance=ExtResource("8_3n0v3")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.321, 3.65871, -51.3293)
 
-[node name="Poster_02" parent="Enviroment/Subway" instance=ExtResource("9_htuts")]
+[node name="Poster_02" parent="Enviroment/Subway" unique_id=54920150 instance=ExtResource("9_htuts")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.321, 3.60898, -46.1525)
 
-[node name="Poster_03" parent="Enviroment/Subway" instance=ExtResource("10_7f2uo")]
+[node name="Poster_03" parent="Enviroment/Subway" unique_id=1068139962 instance=ExtResource("10_7f2uo")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.3206, 3.86647, -40.9819)
 
-[node name="Poster_04" parent="Enviroment/Subway" instance=ExtResource("11_8pv1n")]
+[node name="Poster_04" parent="Enviroment/Subway" unique_id=916199661 instance=ExtResource("11_8pv1n")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.3206, 3.86647, -35.7989)
 
-[node name="Poster_05" parent="Enviroment/Subway" instance=ExtResource("12_wvew7")]
+[node name="Poster_05" parent="Enviroment/Subway" unique_id=1203926287 instance=ExtResource("12_wvew7")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.321, 3.86656, -23.8165)
 
-[node name="Poster_06" parent="Enviroment/Subway" instance=ExtResource("13_qjdf2")]
+[node name="Poster_06" parent="Enviroment/Subway" unique_id=563872855 instance=ExtResource("13_qjdf2")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.321, 3.86656, -18.6397)
 
-[node name="Poster_07" parent="Enviroment/Subway" instance=ExtResource("14_x0oog")]
+[node name="Poster_07" parent="Enviroment/Subway" unique_id=620205939 instance=ExtResource("14_x0oog")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.321, 3.86656, -13.4629)
 
-[node name="Poster_08" parent="Enviroment/Subway" instance=ExtResource("15_adqkr")]
+[node name="Poster_08" parent="Enviroment/Subway" unique_id=1772087751 instance=ExtResource("15_adqkr")]
 transform = Transform3D(-6.54896e-06, 101.294, 5.64596e-06, 0, -4.4277e-06, 129.165, 149.823, 4.4277e-06, 2.46793e-13, 25.321, 3.86656, -8.2861)
 
-[node name="St_01" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="St_01" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=1533623440]
 transform = Transform3D(-3.30651e-08, -4.99269e-15, -0.756441, -1.14219e-07, 0.756441, 3.81165e-21, -0.756441, -1.14219e-07, 3.30651e-08, 18.439, 3.71425, -23.4875)
 mesh = ExtResource("38_ouvpk")
 skeleton = NodePath("")
 
-[node name="Column" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="Column" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=1500828040]
 transform = Transform3D(0, 66.6506, -2.25437e-06, 1.97955e-06, 0, 75.6441, -66.4227, 1.98634e-06, 0, 18.7677, 3.86614, -23.4977)
 mesh = SubResource("ArrayMesh_qvhyj")
 skeleton = NodePath("")
 
-[node name="Column2" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="Column2" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=545164762]
 transform = Transform3D(1.38409, -66.6361, 2.25388e-06, 1.97955e-06, 8.26284e-14, 75.6441, 66.4083, 1.38884, -4.6976e-08, 18.7677, 3.86614, -23.4977)
 mesh = SubResource("ArrayMesh_qvhyj")
 skeleton = NodePath("")
 
-[node name="St_05" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="St_05" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=1204732493]
 transform = Transform3D(6.61302e-08, 0, -0.756441, 0, 0.756441, 0, 0.756441, 0, 6.61302e-08, 18.4347, 3.71432, -66.17)
 mesh = ExtResource("19_xlege")
 skeleton = NodePath("")
 
-[node name="St_06" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="St_06" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=685027101]
 transform = Transform3D(-3.30651e-08, -2.89064e-15, -0.756441, -6.61302e-08, 0.756441, 0, -0.756441, -6.61302e-08, 3.30651e-08, 18.439, 3.71432, 6.67275)
 mesh = ExtResource("19_xlege")
 skeleton = NodePath("")
 
-[node name="St_04" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="St_04" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=581926283]
 transform = Transform3D(0, 0, -0.756441, 0, 0.756441, 0, -0.756441, 0, 0, 18.4357, 3.70264, -10.9715)
 mesh = ExtResource("22_q62um")
 skeleton = NodePath("")
 
-[node name="Door_A_01" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="Door_A_01" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=1542349814]
 transform = Transform3D(-1.3668e-07, 0, 0.573277, 0, 0.573277, 0, 0.573277, 0, 1.3668e-07, 19.379, 6.91223, -69.4085)
 mesh = SubResource("ArrayMesh_6srnj")
 skeleton = NodePath("")
 
-[node name="Estruc_001" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="Estruc_001" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=2056959764]
 transform = Transform3D(-0.756441, 0, 0, 0, 0.756441, 0, 0, 0, -0.756441, 17.806, 7.92951, -71.7908)
 mesh = SubResource("ArrayMesh_wqu8r")
 skeleton = NodePath("")
 
-[node name="Frame" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="Frame" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=877283190]
 transform = Transform3D(-1, 0, -3.25841e-07, 0, 1, 0, -3.25841e-07, 0, 1, 19.3621, 7.36687, -71.0047)
 mesh = SubResource("ArrayMesh_je7gi")
 skeleton = NodePath("")
 
-[node name="Glass_01" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="Glass_01" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=1209964028]
 transform = Transform3D(-1.19209e-07, 0, 1, 0, 1, 0, 1, 0, 1.19209e-07, 19.3777, 7.47625, -70.9382)
 mesh = SubResource("ArrayMesh_2tsu6")
 skeleton = NodePath("")
 
-[node name="SerwersP1_008" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="SerwersP1_008" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=1771817281]
 transform = Transform3D(0, 1, 0, 0, 0, -1, 1, 0, 0, 21.789, 7.45413, -80.8252)
 mesh = ExtResource("24_r7iov")
 skeleton = NodePath("")
 
-[node name="SerwersP_009" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="SerwersP_009" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=707073729]
 transform = Transform3D(4.37114e-08, 1, 4.37114e-08, 0, 4.37114e-08, -1, 1, -4.37114e-08, -1.91069e-15, 21.8216, 6.73961, -79.8898)
 mesh = SubResource("ArrayMesh_mpyrv")
 skeleton = NodePath("")
 
-[node name="St_02" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="St_02" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=691666308]
 transform = Transform3D(-3.30651e-08, -2.89064e-15, -0.756441, -6.61302e-08, 0.756441, 0, -0.756441, -6.61302e-08, 3.30651e-08, 18.4396, 3.71422, -36.0095)
 mesh = ExtResource("38_ouvpk")
 skeleton = NodePath("")
 
-[node name="Column3" type="MeshInstance3D" parent="Enviroment/Subway"]
+[node name="Column3" type="MeshInstance3D" parent="Enviroment/Subway" unique_id=1213116148]
 transform = Transform3D(0, 0, -0.666506, 0, 0.756441, 0, -0.664227, 0, 0, 18.7681, 3.87509, -36.0099)
 mesh = SubResource("ArrayMesh_7nbq8")
 skeleton = NodePath("")
 
-[node name="Area3D" type="Area3D" parent="Enviroment"]
+[node name="Pit" type="Node3D" parent="Enviroment" unique_id=230915993]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.2191, 0, -18.5101)
+
+[node name="Pit" type="Area3D" parent="Enviroment/Pit" unique_id=2134721014]
 script = ExtResource("28_r7iov")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Enviroment/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.884956, -14.0889, -8.80203)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Enviroment/Pit/Pit" unique_id=1631727862]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0504074, -77.1048, -8.80203)
 shape = SubResource("BoxShape3D_2s68e")
 
-[node name="InNode" type="Node3D" parent="." groups=["InNode"]]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Enviroment/Pit/Pit" unique_id=202265166]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Enviroment/Pit/Pit" unique_id=570488760]
+libraries/ = SubResource("AnimationLibrary_nivj7")
+
+[node name="Anomaly" type="Node3D" parent="Enviroment/Pit" unique_id=960821072]
+script = ExtResource("31_q62um")
+metadata/_custom_type_script = "uid://dp6ov6sut21io"
+
+[node name="InteractableInputDisplay" parent="Enviroment/Pit" unique_id=1877201737 instance=ExtResource("33_xt5gq")]
+transform = Transform3D(2.46363, 0, 0, 0, 2.46363, 0, 0, 0, 2.46363, 1.23468, 2.36864, -24.4729)
+
+[node name="Interactable" type="Area3D" parent="Enviroment/Pit" unique_id=137565461 node_paths=PackedStringArray("interact_audio_player")]
+script = ExtResource("32_nivj7")
+interact_audio_player = NodePath("../../../AudioStreamPlayer3D")
+metadata/_custom_type_script = "uid://dht8mbnpa5y0y"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Enviroment/Pit/Interactable" unique_id=117989475]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7786875, 3.0903332, -12.4053)
+shape = SubResource("BoxShape3D_8ou78")
+
+[node name="FogVolume" type="FogVolume" parent="Enviroment/Pit" unique_id=1685038336]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0902224, -82.0205, -10.9777)
+size = Vector3(7.09984, 161.013, 61.2904)
+material = SubResource("FogMaterial_r64ux")
+
+[node name="HoverDisplay" type="Node" parent="Enviroment/Pit" unique_id=1661988278 node_paths=PackedStringArray("interactable", "interactable_display")]
+script = ExtResource("31_2s68e")
+interactable = NodePath("../Interactable")
+interactable_display = NodePath("../InteractableInputDisplay")
+
+[node name="InNode" type="Node3D" parent="." unique_id=1654800291 groups=["InNode"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.2498, 5.53115, -80.1987)
 
-[node name="OutNode" type="Node3D" parent="." groups=["OutNode"]]
+[node name="OutNode" type="Node3D" parent="." unique_id=1109684863 groups=["OutNode"]]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.445, -1.036, 16.974)
 script = ExtResource("47_e3pow")
 
-[node name="FarTunnelBlackout" type="MeshInstance3D" parent="."]
+[node name="FarTunnelBlackout" type="MeshInstance3D" parent="." unique_id=1473620094]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14.6508, 2.82225, 12.4852)
 mesh = SubResource("QuadMesh_pktld")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_vf1by")
 
-[node name="NearTunnelBlackout" type="MeshInstance3D" parent="."]
+[node name="NearTunnelBlackout" type="MeshInstance3D" parent="." unique_id=1856887172]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6508, 2.82225, -71.1201)
 mesh = SubResource("QuadMesh_pktld")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_vf1by")
 
-[node name="Door" parent="." instance=ExtResource("48_20doo")]
+[node name="Door" parent="." unique_id=1420272237 instance=ExtResource("48_20doo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.71484, -0.957562, 16.8889)
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.59753, 0.319362, 17.4403)
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1477600994]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.6784, -151.215, -23.61981)
 stream = ExtResource("49_soibn")
 attenuation_model = 3
 
-[node name="PlayerSpawn" type="Node3D" parent="." groups=["PlayerSpawn"]]
+[node name="PlayerSpawn" type="Node3D" parent="." unique_id=790111263 groups=["PlayerSpawn"]]
 transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 21.8599, 5.80914, -77.1457)
+
+[connection signal="on_hover_state_set" from="Enviroment/Pit/Interactable" to="Enviroment/Pit/InteractableInputDisplay" method="set_hovered_state"]
+[connection signal="on_interacted" from="Enviroment/Pit/Interactable" to="Enviroment/Pit/Anomaly" method="collect_anomaly"]

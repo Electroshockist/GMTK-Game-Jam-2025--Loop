@@ -2,6 +2,8 @@ extends Node
 
 signal game_created()
 
+signal character_created()
+
 const game_scene := preload("res://source/game/game.tscn")
 
 const char_scene := preload("res://source/game/character/character.tscn")
@@ -40,6 +42,7 @@ func _create_character(level: Node3D):
 
 				character.camera.current = true
 				break
+	character_created.emit()
 
 # func on_level_loaded(anomaly: Anomaly):
 

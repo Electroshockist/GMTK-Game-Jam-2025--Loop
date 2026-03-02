@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b22103bljmid4"]
+[gd_scene format=3 uid="uid://b22103bljmid4"]
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/base_level.tscn" id="1_ce4r4"]
 [ext_resource type="PackedScene" uid="uid://2gyp74jynwr2" path="res://source/game/effects/eyeballs.tscn" id="2_pssjk"]
@@ -10,36 +10,37 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_p2s2h"]
 size = Vector3(6.58398, 6.35522, 1)
 
-[node name="level_04" instance=ExtResource("1_ce4r4")]
+[node name="level_04" unique_id=852474200 instance=ExtResource("1_ce4r4")]
 metadata/level_id = 4
 
-[node name="Eyeballs" parent="." index="3" instance=ExtResource("2_pssjk")]
+[node name="Eyeballs" parent="." index="3" unique_id=623585103 instance=ExtResource("2_pssjk")]
 transform = Transform3D(0.397558, 0, 0, 0, 0.370243, 0, 0, 0, 0.745621, 15.0003, 4.19282, -61.4822)
 amount = 5
 
-[node name="EyeballWhisper" parent="." index="4" instance=ExtResource("3_ufmmj")]
+[node name="EyeballWhisper" parent="." index="4" unique_id=896541249 instance=ExtResource("3_ufmmj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.7469, 3.45949, -60.3306)
 
 [node name="AudioStreamPlayer3D" parent="EyeballWhisper" index="0"]
-volume_db = -6.038
-max_db = 1.311
+volume_db = -3.0
+unit_size = 3.9
+max_db = -6.0
 
-[node name="Eyeball Anomaly" type="Node3D" parent="." index="5" node_paths=PackedStringArray("eyeball", "sound")]
+[node name="Eyeball Anomaly" type="Node3D" parent="." index="5" unique_id=1477451891 node_paths=PackedStringArray("eyeball", "sound")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9472, 3.07186, -59.4228)
 script = ExtResource("4_ufmmj")
 eyeball = NodePath("../Eyeballs")
 sound = NodePath("../EyeballWhisper/AudioStreamPlayer3D")
 is_deleted_on_interact = false
 
-[node name="Interactable" type="Area3D" parent="Eyeball Anomaly" index="0"]
+[node name="Interactable" type="Area3D" parent="Eyeball Anomaly" index="0" unique_id=1903466945]
 script = ExtResource("5_hpkmr")
 metadata/_custom_type_script = "uid://dht8mbnpa5y0y"
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Eyeball Anomaly/Interactable" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Eyeball Anomaly/Interactable" index="0" unique_id=1856087410]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.33143, 0, 0)
 shape = SubResource("BoxShape3D_p2s2h")
 
-[node name="InteractableInputDisplay" parent="Eyeball Anomaly/Interactable/CollisionShape3D" index="0" instance=ExtResource("6_p18gm")]
+[node name="InteractableInputDisplay" parent="Eyeball Anomaly/Interactable/CollisionShape3D" index="0" unique_id=2143491704 instance=ExtResource("6_p18gm")]
 transform = Transform3D(2.055, 0, 0, 0, 2.055, 0, 0, 0, 2.055, 0, -0.900378, 0)
 
 [connection signal="on_hover_state_set" from="Eyeball Anomaly/Interactable" to="Eyeball Anomaly/Interactable/CollisionShape3D/InteractableInputDisplay" method="set_hovered_state"]

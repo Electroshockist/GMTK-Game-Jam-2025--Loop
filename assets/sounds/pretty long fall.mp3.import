@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://1dvf7q3s0sh8"
+path="res://.godot/imported/pretty long fall.mp3-ddc4feab1b171f0648eae00d02b5c687.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/pretty long fall.mp3"
+dest_files=["res://.godot/imported/pretty long fall.mp3-ddc4feab1b171f0648eae00d02b5c687.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

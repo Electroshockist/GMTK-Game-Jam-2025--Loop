@@ -1,11 +1,11 @@
 [gd_resource type="ArrayMesh" load_steps=14 format=4 uid="uid://b4k087j2mgkrq"]
 
-[ext_resource type="Texture2D" uid="uid://blg0u1yu78vq2" path="res://assets/model/models/Environment/modified/metro stairs_Tiles.png" id="1_cggh1"]
-[ext_resource type="Texture2D" uid="uid://bo0s0kulhkqva" path="res://assets/model/models/Environment/modified/metro stairs_TactilePaving.png" id="2_mpijh"]
-[ext_resource type="Texture2D" uid="uid://cc4ghklm4ahi1" path="res://assets/model/models/Environment/modified/metro stairs_road_rails.jpg" id="3_nqb15"]
-[ext_resource type="Texture2D" uid="uid://b2ixijxkbntd2" path="res://assets/model/models/Environment/modified/metro stairs_tile_tile.jpg" id="4_lvesm"]
-[ext_resource type="Texture2D" uid="uid://cdlkvhw8clr1w" path="res://assets/model/models/Environment/modified/metro stairs_metal_02.png" id="5_csbl1"]
-[ext_resource type="Texture2D" uid="uid://bjbr6yk33ru5q" path="res://assets/model/models/Environment/modified/metro stairs_ConcreteBare.png" id="6_cuh1x"]
+[ext_resource type="Texture2D" uid="uid://blg0u1yu78vq2" path="res://assets/models/Environment/modified/metro stairs_Tiles.png" id="1_cggh1"]
+[ext_resource type="Texture2D" uid="uid://bo0s0kulhkqva" path="res://assets/models/Environment/modified/metro stairs_TactilePaving.png" id="2_mpijh"]
+[ext_resource type="Texture2D" uid="uid://cc4ghklm4ahi1" path="res://assets/models/Environment/modified/metro stairs_road_rails.jpg" id="3_nqb15"]
+[ext_resource type="Texture2D" uid="uid://b2ixijxkbntd2" path="res://assets/models/Environment/modified/metro stairs_tile_tile.jpg" id="4_lvesm"]
+[ext_resource type="Texture2D" uid="uid://cdlkvhw8clr1w" path="res://assets/models/Environment/modified/metro stairs_metal_02.png" id="5_csbl1"]
+[ext_resource type="Texture2D" uid="uid://bjbr6yk33ru5q" path="res://assets/models/Environment/modified/metro stairs_ConcreteBare.png" id="6_cuh1x"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v4h8e"]
 resource_name = "Tiles"

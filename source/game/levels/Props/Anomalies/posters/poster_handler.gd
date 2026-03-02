@@ -2,8 +2,8 @@ extends Node
 
 @export var are_posters_evil_on_interact: bool = false
 
-const base_texture := preload("res://assets/model/models/Environment/textures/Metro_PSX/Posters.png")
-const evil_texture := preload("res://assets/model/models/Environment/textures/Metro_PSX/PostersBAD.png")
+const base_texture := preload("res://assets/models/Environment/Metro_PSX/materials/textures/Posters.png")
+const evil_texture := preload("res://assets/models/Environment/Metro_PSX/materials/textures/PostersBAD.png")
 
 func _ready():
 	if (are_posters_evil_on_interact):

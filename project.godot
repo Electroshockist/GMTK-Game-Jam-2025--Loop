@@ -18,14 +18,15 @@ config/name="No Service (GMTK Game Jam 2025)"
 config/tags=PackedStringArray("game_jams", "released_games")
 run/main_scene="uid://djrevjl0ilf82"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="res://icon.svg"
 boot_splash/show_image=false
 boot_splash/image="uid://bgrxwbxk027co"
+config/icon="res://icon.svg"
 
 [autoload]
 
 GameManager="*res://source/globals/game_manager.gd"
 SceneManager="*res://source/globals/scene_manager.gd"
+MenuManager="*res://source/globals/menu_manager.gd"
 InputHelper="res://source/globals/input_helper.gd"
 
 [display]
@@ -41,6 +42,7 @@ window/stretch/scale=1.5
 InNode="The node that the previous level's \"OutNode\"should be attached to."
 OutNode="The node that the next level's \"InNode\"should be attached to."
 Level="Root note of a level"
+Interactor="Player interaction ray"
 
 [input]
 

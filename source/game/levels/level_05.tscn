@@ -1,12 +1,12 @@
-[gd_scene load_steps=18 format=3 uid="uid://pime6tmmcgr8"]
+[gd_scene format=3 uid="uid://pime6tmmcgr8"]
 
 [ext_resource type="PackedScene" uid="uid://upfh8uyt1rip" path="res://source/game/levels/base_level.tscn" id="1_na2kr"]
-[ext_resource type="PackedScene" uid="uid://c5ouyrekxlh6e" path="res://assets/model/models/Environment/Sewer/Sewer_split/debris_01.tscn" id="2_30bkp"]
+[ext_resource type="PackedScene" uid="uid://c5ouyrekxlh6e" path="res://assets/models/Environment/Sewer/Sewer_split/debris_01.tscn" id="2_30bkp"]
 [ext_resource type="Texture2D" uid="uid://bxu1viif7c7li" path="res://assets/sprites/shadowyFigure.png" id="2_g4p8p"]
 [ext_resource type="Script" uid="uid://yuk3r6ykteoo" path="res://source/game/levels/Props/Anomalies/shadow_figure.gd" id="2_xa5m8"]
-[ext_resource type="PackedScene" uid="uid://bayjcxtfwaphs" path="res://assets/model/models/Environment/Sewer/Sewer_split/debris_03.tscn" id="3_g4p8p"]
+[ext_resource type="PackedScene" uid="uid://bayjcxtfwaphs" path="res://assets/models/Environment/Sewer/Sewer_split/debris_03.tscn" id="3_g4p8p"]
 [ext_resource type="AudioStream" uid="uid://ctnylvjn5wryd" path="res://assets/sounds/shadow creature breathing.mp3" id="3_m7mxa"]
-[ext_resource type="PackedScene" uid="uid://dotut1d78ligr" path="res://assets/model/models/Environment/Sewer/Sewer_split/debris_04.tscn" id="4_e5kjo"]
+[ext_resource type="PackedScene" uid="uid://dotut1d78ligr" path="res://assets/models/Environment/Sewer/Sewer_split/debris_04.tscn" id="4_e5kjo"]
 [ext_resource type="Script" uid="uid://dp6ov6sut21io" path="res://source/game/levels/Props/Anomalies/anomaly.gd" id="4_xa5m8"]
 [ext_resource type="Script" uid="uid://dcquwsbgmwllq" path="res://source/game/levels/demoend.gd" id="5_30bkp"]
 [ext_resource type="Script" uid="uid://dht8mbnpa5y0y" path="res://source/game/levels/Props/Interactable.gd" id="5_vjmiw"]
@@ -58,90 +58,87 @@ size = Vector3(1, 7.65601, 6.42096)
 height = 0.23
 radius = 3.366
 
-[node name="level_05" instance=ExtResource("1_na2kr")]
+[node name="level_05" unique_id=1137880265 instance=ExtResource("1_na2kr")]
 metadata/level_id = 5
 
-[node name="ShadowFigure" type="Node3D" parent="Enviroment/Sewers" index="1"]
+[node name="ShadowFigure" type="Node3D" parent="Enviroment/Sewers" index="1" unique_id=267096208]
 transform = Transform3D(-4.37114e-08, 4.37114e-08, 1, 0, 1, -4.37114e-08, -1, -1.91069e-15, -4.37114e-08, 0.461243, -0.0244827, 22.8767)
 script = ExtResource("2_xa5m8")
 
-[node name="Sprite3D" type="Sprite3D" parent="Enviroment/Sewers/ShadowFigure" index="0"]
+[node name="Sprite3D" type="Sprite3D" parent="Enviroment/Sewers/ShadowFigure" index="0" unique_id=568404755]
 transform = Transform3D(-3.84694e-08, 1.05879e-22, 0.880078, -1.47006e-22, 0.880078, 0, -0.880078, 7.35032e-23, -3.84694e-08, -0.31982, 0.691498, -0.187475)
 pixel_size = 0.003
 billboard = 2
 double_sided = false
 texture = ExtResource("2_g4p8p")
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Enviroment/Sewers/ShadowFigure" index="1"]
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Enviroment/Sewers/ShadowFigure" index="1" unique_id=93355193]
 transform = Transform3D(1, 0, 0, 0, 1, 8.35187e-23, 0, 8.35187e-23, 1, 0, 2.32597, -0.183241)
 stream = ExtResource("3_m7mxa")
 attenuation_model = 1
-volume_db = -6.533
 autoplay = true
 
-[node name="Anomaly" type="Node3D" parent="Enviroment/Sewers/ShadowFigure" index="2"]
+[node name="Anomaly" type="Node3D" parent="Enviroment/Sewers/ShadowFigure" index="2" unique_id=83993386]
 transform = Transform3D(1, 0, 0, 0, 1, 8.35188e-23, 0, 8.35189e-23, 1, 2.59611, 0, 1.49012e-07)
 script = ExtResource("4_xa5m8")
 metadata/_custom_type_script = "uid://dp6ov6sut21io"
 
-[node name="Interactable" type="Area3D" parent="Enviroment/Sewers/ShadowFigure/Anomaly" index="0" node_paths=PackedStringArray("interact_audio_player")]
+[node name="Interactable" type="Area3D" parent="Enviroment/Sewers/ShadowFigure/Anomaly" index="0" unique_id=1419060418 node_paths=PackedStringArray("interact_audio_player")]
 transform = Transform3D(1, 0, 0, 0, 1, 8.35187e-23, 0, 8.35187e-23, 1, 0.700001, 0.731539, 0)
 script = ExtResource("5_vjmiw")
 interact_audio_player = NodePath("../../AudioStreamPlayer3D")
 metadata/_custom_type_script = "uid://dht8mbnpa5y0y"
 
-[node name="InteractableInputDisplay" parent="Enviroment/Sewers/ShadowFigure/Anomaly/Interactable" index="0" instance=ExtResource("6_8qdpq")]
+[node name="InteractableInputDisplay" parent="Enviroment/Sewers/ShadowFigure/Anomaly/Interactable" index="0" unique_id=299888908 instance=ExtResource("6_8qdpq")]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Enviroment/Sewers/ShadowFigure/Anomaly/Interactable" index="1"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Enviroment/Sewers/ShadowFigure/Anomaly/Interactable" index="1" unique_id=1016472711]
 transform = Transform3D(1, 0, 0, 0, 1, 8.35187e-23, 0, 8.35187e-23, 1, -0.126282, 0, 3.27826e-07)
 shape = SubResource("BoxShape3D_5bhaw")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Enviroment/Sewers/ShadowFigure" index="3"]
-libraries = {
-&"": SubResource("AnimationLibrary_8qdpq")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Enviroment/Sewers/ShadowFigure" index="3" unique_id=867321849]
+libraries/ = SubResource("AnimationLibrary_8qdpq")
 
-[node name="debris_StaticBody3D" type="StaticBody3D" parent="." index="6"]
+[node name="debris_StaticBody3D" type="StaticBody3D" parent="." index="6" unique_id=726648292]
 transform = Transform3D(-0.99989, 0.00444323, 0.0141911, 0.0142706, 0.0184084, 0.999729, 0.0041808, 0.999821, -0.0184698, 11.4738, 1.14961, -3.37361)
 visible = false
 collision_layer = 0
 collision_mask = 0
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="debris_StaticBody3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="debris_StaticBody3D" index="0" unique_id=826390229]
 transform = Transform3D(0.999994, -2.08616e-07, -2.61934e-09, -9.49949e-08, 0.999996, -4.52623e-07, 1.83412e-07, -2.23517e-07, 1, 1.90735e-06, 0.159545, 1.26914)
 shape = SubResource("BoxShape3D_v1ct6")
 
-[node name="debris_01" parent="debris_StaticBody3D" index="1" instance=ExtResource("2_30bkp")]
+[node name="debris_01" parent="debris_StaticBody3D" index="1" unique_id=1442947976 instance=ExtResource("2_30bkp")]
 transform = Transform3D(302.747, -69.1681, -56.6925, 69.4501, 303.707, 1.72816, 24.1401, -6.29745, 706.025, 4.504, -0.0277679, -0.0596999)
 
-[node name="debris_03" parent="debris_StaticBody3D" index="2" instance=ExtResource("3_g4p8p")]
+[node name="debris_03" parent="debris_StaticBody3D" index="2" unique_id=1028048288 instance=ExtResource("3_g4p8p")]
 transform = Transform3D(-324.637, -1.67378, -532.662, -2.97041, -400.285, 15.8585, -234.281, 7.39446, 737.895, -0.24993, 1.91803, -1.01644)
 
-[node name="debris_08" parent="debris_StaticBody3D" index="3" instance=ExtResource("3_g4p8p")]
+[node name="debris_08" parent="debris_StaticBody3D" index="3" unique_id=1551742048 instance=ExtResource("3_g4p8p")]
 transform = Transform3D(141.588, 292.138, -532.662, -357.994, 179.1, 15.8585, 109.901, 207.036, 737.895, 0.204856, -1.68802, -0.610659)
 
-[node name="debris_04" parent="debris_StaticBody3D" index="4" instance=ExtResource("4_e5kjo")]
+[node name="debris_04" parent="debris_StaticBody3D" index="4" unique_id=1053820859 instance=ExtResource("4_e5kjo")]
 transform = Transform3D(-0.534363, 127.8, 4.14681, -127.791, -0.567904, 5.34917, 2.36069, -1.81382, 290.504, -1.04552, 1.78421, -1.00262)
 
-[node name="debris_06" parent="debris_StaticBody3D" index="5" instance=ExtResource("4_e5kjo")]
+[node name="debris_06" parent="debris_StaticBody3D" index="5" unique_id=167309166 instance=ExtResource("4_e5kjo")]
 transform = Transform3D(-0.534363, 127.8, 4.14681, -127.791, -0.567904, 5.34917, 2.36069, -1.81382, 290.504, -0.814144, -0.0826154, -0.971551)
 
-[node name="debris_07" parent="debris_StaticBody3D" index="6" instance=ExtResource("4_e5kjo")]
+[node name="debris_07" parent="debris_StaticBody3D" index="6" unique_id=677372331 instance=ExtResource("4_e5kjo")]
 transform = Transform3D(-0.534363, 127.8, 4.14681, -127.791, -0.567904, 5.34917, 2.36069, -1.81382, 290.504, -0.764974, -1.78643, -0.94088)
 
-[node name="debris_09" parent="debris_StaticBody3D" index="7" instance=ExtResource("4_e5kjo")]
+[node name="debris_09" parent="debris_StaticBody3D" index="7" unique_id=741394177 instance=ExtResource("4_e5kjo")]
 transform = Transform3D(-2.6885, 640.605, -127.53, -642.947, -1.64172, 27.4331, 11.8772, 56.1347, 1456.16, 6.51442, 3.86792, -1.11526)
 
-[node name="debris_10" parent="debris_StaticBody3D" index="8" instance=ExtResource("4_e5kjo")]
+[node name="debris_10" parent="debris_StaticBody3D" index="8" unique_id=407655851 instance=ExtResource("4_e5kjo")]
 transform = Transform3D(-2.6885, 640.605, -127.53, -642.947, -1.64172, 27.4331, 11.8772, 56.1347, 1456.16, 6.7603, -4.70384, -0.932237)
 
-[node name="Area3D" type="Area3D" parent="." index="11"]
+[node name="Area3D" type="Area3D" parent="." index="11" unique_id=263140173]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8926, 8.14397, -70.9377)
 monitoring = false
 monitorable = false
 script = ExtResource("5_30bkp")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0" unique_id=530247502]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
 shape = SubResource("CylinderShape3D_e5kjo")
 

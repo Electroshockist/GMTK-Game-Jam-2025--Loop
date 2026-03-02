@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bqruam7l5fjtn"]
 
-[ext_resource type="PackedScene" uid="uid://0oitx7uc3blr" path="res://assets/Skeletons/metal_door_2/scene.gltf" id="1_si860"]
+[ext_resource type="PackedScene" uid="uid://0oitx7uc3blr" path="res://assets/models/Skeletons/metal_door_2/scene.gltf" id="1_si860"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_10vm2"]
 size = Vector3(1, 6.5849, 6.42096)

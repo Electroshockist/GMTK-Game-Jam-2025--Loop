@@ -5,7 +5,8 @@ enum SCENES {
 	GAME,
 	OPTIONS,
 	CREDITS,
-	DEMO_END
+	DEMO_END,
+	GAME_END
 }
 
 signal scene_changed(scene: SCENES)
@@ -15,7 +16,8 @@ signal scene_changed(scene: SCENES)
 	SCENES.GAME: preload("res://source/game/levels/level_00.tscn"),
 	SCENES.OPTIONS: preload("res://source/UI/options.tscn"),
 	SCENES.CREDITS: preload("res://source/UI/credits.tscn"),
-	SCENES.DEMO_END: preload("res://source/UI/demo_end.tscn")
+	SCENES.DEMO_END: preload("res://source/UI/demo_end.tscn"),
+	SCENES.GAME_END: preload("res://source/UI/game_end.tscn")
 }
 
 func change_scene(scene: SCENES):

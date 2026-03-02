@@ -51,6 +51,7 @@ func _init():
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	MenuManager.set_mouse_lock(true)
 	# sets ids correctly, if not staring from level 0
 	if (current_level != null and current_level.has_meta("level_id")):
 			var id: int = current_level.get_meta("level_id")
