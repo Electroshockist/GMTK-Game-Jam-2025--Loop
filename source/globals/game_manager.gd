@@ -6,7 +6,7 @@ signal character_created()
 
 const game_scene := preload("res://source/game/game.tscn")
 
-const char_scene := preload("res://source/game/character/character.tscn")
+const char_scene := preload("res://source/game/Character/character.tscn")
 
 var character: Character
 
